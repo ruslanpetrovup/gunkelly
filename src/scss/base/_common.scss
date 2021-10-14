@@ -6,6 +6,14 @@ p,
 ul,
 ol,
 li,
+a,
+button {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-transform: none;
+}
+
 a {
   padding: 0;
   margin: 0;
