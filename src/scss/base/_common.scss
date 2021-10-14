@@ -1,4 +1,9 @@
+// TODO Kostia till 2021-10-16: fix colors based on mockup.
 .svg {
   display: inline-flex;
   outline: none;
+
+  // background-color: black; // FIXME
+  fill: currentColor; // FIXME
+  // stroke: red; // FIXME
 }
