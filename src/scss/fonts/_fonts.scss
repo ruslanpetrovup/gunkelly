@@ -4,5 +4,29 @@ $font-stack: -apple-system, BlinkMacSystemFont, Roboto, 'Open Sans', 'Helvetica 
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/Roboto-Regular.ttf);
+  src: url('../fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Rogan';
+  src: url('../fonts/rogan/Rogan-Regular.eot');
+  src: local('Rogan Regular'), local('Rogan-Regular'),
+    url('../fonts/rogan/Rogan-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/rogan/Rogan-Regular.woff2') format('woff2'),
+    url('../fonts/rogan/Rogan-Regular.woff') format('woff'),
+    url('../fonts/rogan/Rogan-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rogan';
+  src: url('../fonts/rogan/Rogan-Bold.eot');
+  src: local('Rogan Bold'), local('Rogan-Bold'),
+    url('../fonts/rogan/Rogan-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/rogan/Rogan-Bold.woff2') format('woff2'),
+    url('../fonts/rogan/Rogan-Bold.woff') format('woff'),
+    url('../fonts/rogan/Rogan-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
 }

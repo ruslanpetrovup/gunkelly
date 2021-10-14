@@ -1,18 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <link rel="stylesheet" href="css/style.bundle.css" />
-  <title>Главная страница</title>
-</head>
-<body>
-  <!-- Header -->
-  <%= _.template(require('./../includes/header.html').default)(data) %>
-<p>Все нормально - мы ток начали</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Guns and weaponry site" />
+    <meta name="theme-color" content="#212121" />
+    <title>Главная страница</title>
 
-  <!-- Footer -->
-  <%= _.template(require('./../includes/footer.html').default)(data) %>
-</body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="css/style.bundle.css" />
+
+    <link rel="preload" href="./sass/fonts/CaviarDreams.woff2" crossorigin="anonymous" as="font" />
+
+    <!-- 700 -->
+    <link
+      rel="preload"
+      href="../../fonts/rogan/Rogan-Bold.woff2"
+      crossorigin="anonymous"
+      as="font"
+      type="font/woff2"
+    />
+
+    <!-- 400 -->
+    <link
+      rel="preload"
+      href="../../fonts/rogan/Rogan-Regular.woff2"
+      crossorigin="anonymous"
+      as="font"
+      type="font/woff2"
+    />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <%= _.template(require('./../includes/header.html').default)(data) %>
+    <p>Привет мир</p>
+
+    <a href="./page-profile-forums.html">Forums</a>
+
+    <h1 class="title-v2">Top builds</h1>
+    <h2 class="title-v2">Recent builds</h2>
+
+    <div class="hero">
+      <h2 class="title-v2">Presented the new KAC SR15</h2>
+    </div>
+
+    <!-- Footer -->
+    <%= _.template(require('./../includes/footer.html').default)(data) %>
+  </body>
 </html>
