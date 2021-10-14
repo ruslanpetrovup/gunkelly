@@ -1,4 +1,19 @@
 // TODO Kostia till 2021-10-16: fix colors based on mockup.
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+a,
+button {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-transform: none;
+}
 .svg {
   display: inline-flex;
   outline: none;
