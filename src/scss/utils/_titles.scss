@@ -1,30 +1,21 @@
 /* Presented the new KAC SR15 */
 .title-v1 {
-  font-family: 'Rogan';
-  font-style: normal;
-  font-weight: bold;
   font-size: 30px;
+  font-weight: 700;
   line-height: 36px;
-
   color: $color-white;
 }
 
 /* Top builds */
 .title-v2 {
-  font-family: 'Rogan';
-  font-style: normal;
-  font-weight: bold;
   font-size: 36px;
+  font-weight: 700;
   line-height: 43px;
-
   color: $color-black;
 }
 
 /* builds */
 .title-v4 {
-  font-family: 'Rogan';
-  font-style: normal;
-  font-weight: normal;
   font-size: 20px;
   line-height: 24px; // identical to box height
   color: $color-white;
@@ -33,11 +24,8 @@
 
 /* Forums */
 .section-title {
-  font-family: 'Rogan';
-  font-style: normal;
-  font-weight: bold;
   font-size: 30px;
+  font-weight: 700;
   line-height: 36px; // identical to box height
-
   color: $color-black;
 }
