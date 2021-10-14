@@ -1,4 +1,3 @@
-// TODO Kostia till 2021-10-16: fix colors based on mockup.
 h1,
 h2,
 h3,
@@ -14,10 +13,38 @@ button {
   list-style: none;
   text-transform: none;
 }
+
+a {
+  padding: 0;
+  margin: 0;
+  text-transform: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
 .svg {
   display: inline-flex;
   outline: none;
 
+  // TODO Kostia till 2021-10-16: fix colors based on mockup.
   // background-color: black; // FIXME
   fill: currentColor; // FIXME
   // stroke: red; // FIXME
