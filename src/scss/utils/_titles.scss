@@ -6,7 +6,7 @@
   font-size: 30px;
   line-height: 36px;
 
-  color: #ffffff;
+  color: $color-white;
 }
 
 /* Top builds */
@@ -17,7 +17,18 @@
   font-size: 36px;
   line-height: 43px;
 
-  color: #000000;
+  color: $color-black;
+}
+
+/* builds */
+.title-v4 {
+  font-family: 'Rogan';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px; // identical to box height
+  color: $color-white;
+  opacity: 0.25;
 }
 
 /* Forums */
@@ -26,7 +37,7 @@
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
-  line-height: 36px; /* identical to box height */
+  line-height: 36px; // identical to box height
 
-  color: #000000;
+  color: $color-black;
 }

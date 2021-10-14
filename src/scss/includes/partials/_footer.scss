@@ -1,16 +1,42 @@
 // Footer
+.footer {
+  height: 338px;
+  padding: 40px 0px 30px;
+  background-color: $color-brand;
+}
+
+.footer__brand-wrapper {
+  border-right: 1px solid $color-border;
+}
+
+.logo-wrapper {
+  padding-right: 85px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid $color-border;
+}
+
+.footer-navigation-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+
 .footer__social-svg {
-  color: $color-social-icon;
+  fill: $color-social-icon;
 }
 
-// Mobile
-@media screen and (max-width: 767px) {
+.footer__container {
+  display: flex;
 }
 
-// Tablet
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-}
+// // Mobile
+// @media screen and (max-width: 767px) {
+// }
 
-// Desktop
-@media screen and (min-width: 1200px) {
-}
+// // Tablet
+// @media screen and (min-width: 768px) and (max-width: 1199px) {
+// }
+
+// // Desktop
+// @media screen and (min-width: 1200px) {
+// }

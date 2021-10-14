@@ -1,11 +1,20 @@
+:root {
+  --main-font: 'Rogan';
+}
+
 $color-accent: #198ccd; // blue
 $color-brand: #263238; // black-dark blue
 
 $color-social-icon: #c9cccd;
 
-$color-black: #1f292f; // black
-$color-dark-grey: #4d5a63; // dark blue
+$color-black: #000000; // black
+$color-white: #ffffff; // black
+
+$color-grey-darker: #1f292f; // darker grey
+$color-grey-dark: #4d5a63; // dark blue
 $color-grey: #666666; // dark grey
 $color-dark-red: #c41616; // dark red
 $color-golden: #e1cd18; // golden
 $color-green: #7abf51; // green
+
+$color-border: #313c42;
