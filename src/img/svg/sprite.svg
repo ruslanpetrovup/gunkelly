@@ -57,7 +57,7 @@
     <symbol id="icon-star-outline" viewBox="0 0 32 32">
       <path fill="none" stroke="var(--color5, #e1cd18)" stroke-width="2.13" d="m19.48 10.35.25.5.56.1 7.8 1.13-5.65 5.5-.4.38.1.56 1.33 7.76L16 22.36l-.49.25-6.98 3.67 1.33-7.76.1-.56-.42-.38-5.63-5.5 8.36-1.22.25-.51L16 3.29l3.48 7.06z" opacity=".5"/>
     </symbol>
-    <symbol id="icon-post-vieweye" viewBox="0 0 32 32">
+    <symbol id="icon-post-eye" viewBox="0 0 32 32">
       <path fill="none" stroke="var(--color1, #fff)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M29.34 16.16 25.86 20a13.31 13.31 0 0 1-19.71.01h-.01l-3.48-3.85 3.1-3.7a13.32 13.32 0 0 1 20.46-.02l.02.02 3.1 3.7z"/>
       <path fill="none" stroke="var(--color1, #fff)" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="2" d="M16.12 19h.06a3.4 3.4 0 0 0 3.4-3.31h0a3.4 3.4 0 0 0-3.4-3.35h-.06 0-.06a3.4 3.4 0 0 0-3.4 3.34h0a3.4 3.4 0 0 0 3.46 3.34z"/>
     </symbol>
