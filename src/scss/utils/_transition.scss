@@ -1,0 +1,3 @@
+@mixin transition {
+  transition: var(--time) var(--cubic);
+}
