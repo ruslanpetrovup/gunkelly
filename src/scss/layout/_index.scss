@@ -1,5 +1,4 @@
 // .trending-now { }
-
 .trending-now__title-wrapper {
   margin-bottom: 30px;
   display: flex;
@@ -26,16 +25,11 @@
 .trending-now__list {
   display: flex;
   flex-wrap: wrap;
-  margin: -30px 0 0 -30px;
+  gap: $gap;
 }
 
-// li { p30 }
-// avatar { mb25 }
-// post-title { mb10 }
-
 .trending-now__item {
-  flex-basis: calc(100% / 4 - 30px);
-  margin: 30px 0 0 30px;
+  flex-basis: calc(((100% - 3 * #{$gap}) / 4));
 
   border: 1px solid rgba($color-black, 0.05);
 }
@@ -83,6 +77,34 @@
 .trending-now__post-meta {
   font-size: 14px;
   line-height: 17px; /* identical to box height */
+  color: rgba($color-black, 0.5);
+}
+
+.top-blogposts__title-wrapper {
+  margin-bottom: 30px;
+}
+
+// .top-blogposts__title {}
+// .top-blogposts__list {}
+// .top-blogposts__item {}
+
+.top-blogposts__thumb {
+  max-width: 400px;
+  min-width: 200px;
+}
+// .top-blogposts__image {}
+
+.post {
+  display: flex;
+}
+
+// .top-blogposts__post-type {}
+// .top-blogposts__post-title {}
+
+/* troz */
+.post__author-name {
+  font-size: 14px;
+  line-height: 17px;
   color: rgba($color-black, 0.5);
 }
 
