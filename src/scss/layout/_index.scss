@@ -106,6 +106,16 @@
 
 .top-blogposts__link {
   display: flex;
+  width: 100%;
+  height: 100%;
+
+  @include transition;
+  transition-property: box-shadow;
+
+  &:focus,
+  &:hover {
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.05);
+  }
 }
 
 .top-blogposts__thumb {
@@ -135,6 +145,9 @@
 
   border-bottom: 1px solid rgba($color-black, 0.1);
 
+  @include transition;
+  transition-property: color;
+
   .top-blogposts__link:focus &,
   .top-blogposts__link:hover & {
     color: $color-accent;
@@ -150,6 +163,9 @@
   line-height: 1.2;
   color: $color-black;
 
+  @include transition;
+  transition-property: color;
+
   .top-blogposts__link:focus &,
   .top-blogposts__link:hover & {
     color: $color-accent;
@@ -163,6 +179,7 @@
   font-size: 14px;
   line-height: 17px;
   color: rgba($color-black, 0.5);
+  white-space: nowrap;
 }
 
 .post__views {
@@ -178,6 +195,7 @@
   font-size: 14px;
   line-height: 17px;
   color: $color-black;
+  white-space: nowrap;
 }
 
 .post__views-svg,
@@ -190,6 +208,21 @@
   align-items: center;
 }
 
+// .guns {}
+// .rifle {}
+// .shotgun {}
+// .handgun {}
+
+.guns__title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 30px;
+}
+
+// .guns__title {}
+
 .rifle__title {
   color: $color-title-v2-red;
 }
@@ -198,4 +231,104 @@
 }
 .handgun__title {
   color: $color-title-v2-blue;
+}
+
+.guns__list {
+  display: flex;
+  gap: $gap;
+}
+
+.guns__item {
+  flex-basis: calc((100% - 3 * #{$gap}) / 4);
+}
+
+.guns__link {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  height: 100%;
+  border: 1px solid transparent;
+
+  @include transition;
+  transition-property: box-shadow;
+
+  &:focus,
+  &:hover {
+    box-shadow: 0 0 35px rgba($color-black, 0.05);
+    border-color: rgba($color-black, 0.05);
+  }
+}
+
+.guns__thumb {
+  min-width: 277px;
+  max-width: 300px;
+}
+// .rifle__thumb {}
+
+.guns__post-title {
+  margin-bottom: 5px;
+
+  @include transition;
+  transition-property: color;
+
+  .guns__link:focus &,
+  .guns__link:hover & {
+    color: $color-accent;
+  }
+}
+
+.guns__post-meta {
+  display: flex;
+  align-items: center;
+}
+
+.guns__image {
+  margin-bottom: 25px;
+}
+
+.guns__avatar-thumb {
+  min-width: 25px;
+  max-width: 25px;
+  margin-right: 10px;
+}
+
+.guns__author-avatar {
+  border-radius: 4px;
+}
+
+/* troz */
+.guns__author-name {
+  margin-right: 10px;
+
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba($color-black, 0.5);
+}
+
+.guns__post {
+  margin-bottom: 15px;
+}
+
+.guns__build {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.guns__build-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 6px;
+
+  border: 1px solid rgba(25, 140, 205, 0.25);
+  border-radius: 2px;
+}
+
+/* Remington */
+.guns__build-tag {
+  font-size: 14px;
+  line-height: 17px;
 }
