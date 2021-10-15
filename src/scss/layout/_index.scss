@@ -354,7 +354,7 @@
 
   background: rgba($color-slider-btn, 0.2);
 
-  &--active {
+  &.active {
     background: $color-slider-btn;
   }
 }
