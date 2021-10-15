@@ -26,6 +26,7 @@
 }
 
 .trending-now__list {
+  contain: content;
   display: flex;
   flex-wrap: wrap;
   gap: $gap;
@@ -95,6 +96,7 @@
 
 // .top-blogposts__title {}
 .top-blogposts__list {
+  contain: content;
   display: flex;
   flex-wrap: wrap;
   gap: 43px;
@@ -234,8 +236,10 @@
 }
 
 .guns__list {
+  contain: content;
   display: flex;
   gap: $gap;
+  flex-wrap: wrap;
 }
 
 .guns__item {
@@ -248,7 +252,6 @@
 
   width: 100%;
   height: 100%;
-  border: 1px solid transparent;
 
   @include transition;
   transition-property: box-shadow;
@@ -256,7 +259,6 @@
   &:focus,
   &:hover {
     box-shadow: 0 0 35px rgba($color-black, 0.05);
-    border-color: rgba($color-black, 0.05);
   }
 }
 
@@ -331,4 +333,49 @@
 .guns__build-tag {
   font-size: 14px;
   line-height: 17px;
+}
+
+.guns__slider-list {
+  contain: content;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.guns__slider-item {
+}
+
+.guns__slider-button {
+  appearance: none;
+  border: none;
+  background: $color-slider-btn;
+  width: 6px;
+  height: 6px;
+
+  background: rgba($color-slider-btn, 0.2);
+
+  &--active {
+    background: $color-slider-btn;
+  }
+}
+
+// mobile
+@media screen and (max-width: 767px) {
+  .guns__list {
+    margin-bottom: 25px;
+    flex-wrap: nowrap;
+  }
+
+  .trending-now__list,
+  .top-blogposts__list,
+  .guns__list {
+    flex-wrap: nowrap;
+  }
+}
+
+// tablet
+@media screen and (min-width: 768px) {
+  .guns__slider-list {
+    display: none;
+  }
 }
