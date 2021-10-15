@@ -1,0 +1,97 @@
+// .trending-now { }
+
+.trending-now__title-wrapper {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+// .trending-now__title { }
+
+// .trending-now__view-all { }
+/* View all */
+.view-all {
+  font-size: 18px;
+  line-height: 22px; /* identical to box height */
+
+  color: $color-black;
+  border-bottom: 1px solid rgba($color-black, 0.1);
+
+  &:focus,
+  &:hover {
+    color: $color-accent;
+  }
+}
+
+.trending-now__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -30px 0 0 -30px;
+}
+
+// li { p30 }
+// avatar { mb25 }
+// post-title { mb10 }
+
+.trending-now__item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin: 30px 0 0 30px;
+
+  border: 1px solid rgba($color-black, 0.05);
+}
+
+.trending-now__link {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  height: 100%;
+
+  padding: 30px;
+
+  &:focus,
+  &:hover {
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.05);
+  }
+}
+
+.trending-now__thumb {
+  min-width: 40px;
+  max-width: 40px;
+  margin-bottom: 25px;
+}
+
+.trending-now__author-avatar {
+  border-radius: 4px; // width: 40px; height: 40px;
+}
+
+/* 10 Tips for Choosing a Concealed Carry Handgun */
+.trending-now__post-title {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3; /* or 23px */
+  color: $color-black;
+
+  .trending-now__link:focus &,
+  .trending-now__link:hover & {
+    color: $color-accent;
+  }
+}
+
+/* troz, today */
+.trending-now__post-meta {
+  font-size: 14px;
+  line-height: 17px; /* identical to box height */
+  color: rgba($color-black, 0.5);
+}
+
+.rifle__title {
+  color: $color-title-v2-red;
+}
+.shotgun__title {
+  color: $color-title-v2-green;
+}
+.handgun__title {
+  color: $color-title-v2-blue;
+}

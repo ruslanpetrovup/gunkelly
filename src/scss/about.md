@@ -15,3 +15,11 @@ footer header comments build search
     _page-profile-blog.scss
     _page-profile-friends.scss
     _page-profile-settings.scss
+
+Sizes:
+
+Index - `Trending Now` section:
+
+    li { p30 }
+    avatar { mb25 }
+    post-title { mb10 }

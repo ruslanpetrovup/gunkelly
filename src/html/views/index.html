@@ -43,12 +43,108 @@
     <!-- Header -->
     <%= _.template(require('./../includes/header.html').default)(data) %>
     <!-- Search -->
-    <%= _.template(require('./../includes/search.html').default)(data) %>
-    <%= _.template(require('./../includes/hero.html').default)(data) %>
+    <%= _.template(require('./../includes/search.html').default)(data) %> <%=
+    _.template(require('./../includes/hero.html').default)(data) %>
 
+    <section class="trending-now section">
+      <div class="container">
+        <div class="title-wrapper trending-now__title-wrapper">
+          <h2 class="title-v2 trending-now__title">Trending now</h2>
 
-    <!-- <a href="./page-profile-forums.html">Forums</a>
+          <a class="view-all trending-now__view-all link" href="#">View all</a>
+        </div>
 
+        <ul class="trending-now__list">
+          <li class="trending-now__item">
+            <a class="trending-now__link" href="#">
+              <div class="trending-now__thumb">
+                <img
+                  class="trending-now__author-avatar"
+                  src="./img/avatars-40x40/avatar-001-man-gray-shirt.jpg"
+                  alt="Man-gray-shirt"
+                  width="40"
+                  height="40"
+                />
+              </div>
+
+              <h3 class="trending-now__post-title">
+                10 Tips for Choosing a Concealed Carry Handgun
+              </h3>
+
+              <p class="trending-now__post-meta">
+                <span class="trending-now__author-name">troz</span>,
+                <span class="trending-now__post-date">today</span>
+              </p>
+            </a>
+          </li>
+
+          <li class="trending-now__item">
+            <a class="trending-now__link" href="#">
+              <div class="trending-now__thumb">
+                <img
+                  class="trending-now__author-avatar"
+                  src="./img/avatars-40x40/avatar-002-man-red-tshirt.jpg"
+                  alt="Man-red-tshirt"
+                  width="40"
+                  height="40"
+                />
+              </div>
+
+              <h3 class="trending-now__post-title">Firearms definitions and requirements</h3>
+
+              <p class="trending-now__post-meta">
+                <span class="trending-now__author-name">troz</span>,
+                <span class="trending-now__post-date">yesterday</span>
+              </p>
+            </a>
+          </li>
+
+          <li class="trending-now__item">
+            <a class="trending-now__link" href="#">
+              <div class="trending-now__thumb">
+                <img
+                  class="trending-now__author-avatar"
+                  src="./img/avatars-40x40/avatar-003-man-white-tshirt.jpg"
+                  alt="Man-white-tshirt"
+                  width="40"
+                  height="40"
+                />
+              </div>
+
+              <h3 class="trending-now__post-title">New Members: Please Read Guidelines</h3>
+
+              <p class="trending-now__post-meta">
+                <span class="trending-now__author-name">troz</span>,
+                <span class="trending-now__post-date">yesterday</span>
+              </p>
+            </a>
+          </li>
+
+          <li class="trending-now__item">
+            <a class="trending-now__link" href="#">
+              <div class="trending-now__thumb">
+                <img
+                  class="trending-now__author-avatar"
+                  src="./img/avatars-40x40/avatar-004-man-striped-tshirt.jpg"
+                  alt="Man-striped-tshirt"
+                  width="40"
+                  height="40"
+                />
+              </div>
+
+              <h3 class="trending-now__post-title">Pencil Barrel Whip</h3>
+
+              <p class="trending-now__post-meta">
+                <span class="trending-now__author-name">troz</span>,
+                <span class="trending-now__post-date">10 September 2020</span>
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!--
     <h1 class="title-v2">Top builds</h1>
     <h2 class="title-v2">Recent builds</h2>
 
@@ -128,55 +224,55 @@
       </svg>
 
       <svg class="svg" width="40" height="40">
-        <use href="./img/sprite.svg#icon-arrow-down"></use>
+        <use href="./img/svg/sprite.svg#icon-arrow-down"></use>
       </svg>
 
       <svg class="svg" width="40" height="40">
-        <use href="./img/sprite.svg#icon-arrow-right"></use>
+        <use href="./img/svg/sprite.svg#icon-arrow-right"></use>
       </svg>
 
       <svg class="svg" width="40" height="40">
-        <use href="./img/sprite.svg#icon-delete"></use>
+        <use href="./img/svg/sprite.svg#icon-delete"></use>
       </svg>
 
       <svg class="svg" width="40" height="40">
-        <use href="./img/sprite.svg#icon-plus-bold"></use>
+        <use href="./img/svg/sprite.svg#icon-plus-bold"></use>
       </svg>
 
       <svg class="svg" width="40" height="40">
-        <use href="./img/sprite.svg#icon-users-add"></use>
+        <use href="./img/svg/sprite.svg#icon-users-add"></use>
       </svg>
 
       <svg class="svg" width="40" height="40">
-        <use href="./img/sprite.svg#icon-checkbox-checked"></use>
+        <use href="./img/svg/sprite.svg#icon-checkbox-checked"></use>
       </svg>
 
       <svg class="svg" width="40" height="40">
-        <use href="./img/sprite.svg#icon-dot-in-box"></use>
+        <use href="./img/svg/sprite.svg#icon-dot-in-box"></use>
       </svg>
 
       <svg class="svg" width="40" height="40">
-        <use href="./img/sprite.svg#icon-crop"></use>
+        <use href="./img/svg/sprite.svg#icon-crop"></use>
       </svg>
 
       <svg class="svg" width="40" height="40">
-        <use href="./img/sprite.svg#icon-preloader"></use>
+        <use href="./img/svg/sprite.svg#icon-preloader"></use>
       </svg>
 
       <svg class="svg" width="40" height="40">
-        <use href="./img/sprite.svg#icon-text-area"></use>
+        <use href="./img/svg/sprite.svg#icon-text-area"></use>
       </svg>
 
       <svg class="svg" width="40" height="40">
-        <use href="./img/sprite.svg#icon-facebook"></use>
+        <use href="./img/svg/sprite.svg#icon-facebook"></use>
       </svg>
 
       <svg class="svg" width="40" height="40">
-        <use href="./img/sprite.svg#icon-twitter"></use>
+        <use href="./img/svg/sprite.svg#icon-twitter"></use>
       </svg>
 
       <svg class="svg" width="40" height="40">
-        <use href="./img/sprite.svg#icon-google-plus"></use>
+        <use href="./img/svg/sprite.svg#icon-google-plus"></use>
       </svg>
     </div> -->
 
