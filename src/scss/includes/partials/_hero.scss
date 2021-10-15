@@ -224,6 +224,8 @@
 .hero__recentbuilds-item-stats-list {
   display: flex;
   margin-top: 20px;
+  flex-wrap: wrap;
+  gap: 5px;
 }
 
 .hero__recentbuilds-item-stats-item {
@@ -236,9 +238,6 @@
   padding: 4px 4px;
   border: 1px solid rgba(25, 140, 205, 0.25);
   border-radius: 2px;
-  &:not(:first-child) {
-    margin-left: 5px;
-  }
 }
 .hero__recentbuilds-cards-images {
   margin-left: 35px;

@@ -1,0 +1,234 @@
+.searchbuilds__content {
+  margin-top: 41px;
+}
+.searchbuilds-list {
+  display: flex;
+}
+.searchbuilds-link {
+  font-family: Rogan;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140%;
+  &:not(:first-child) {
+    position: relative;
+    padding-left: 6px;
+    margin-left: 6px;
+  }
+  &:last-child {
+    color: #198ccd;
+  }
+  &:not(:first-child)::before {
+    content: ' ';
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 50%;
+    left: 0;
+    background: #999999;
+    transform: translateY(-50%);
+  }
+}
+.searchbuilds-head {
+  font-family: Rogan;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 43px;
+  color: #000000;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.searchbuilds__block {
+  display: flex;
+}
+.searchbuilds__block__filter-toomb-category {
+  background: #ffffff;
+  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.05);
+  padding-top: 30px;
+  //   padding-bottom: 30px;
+  margin-bottom: 20px;
+}
+.searchbuilds__block__filter-toomb-head {
+  font-family: Rogan;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 11px;
+  margin-left: 25px;
+}
+.searchbuilds__block__filter-item {
+  &.active {
+    background: #f5f5f5;
+  }
+}
+.searchbuilds__block__filter-button {
+  appearance: none;
+  background: none;
+  border: none;
+  padding: 19px 0;
+  text-align: left;
+  width: 100%;
+  padding-left: 25px;
+  font-family: Rogan;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+
+  &.rifle {
+    color: #f34236;
+  }
+  &.shotgun {
+    color: #059664;
+  }
+  &.handgun {
+    color: #148dcc;
+  }
+}
+.searchbuilds__block__filter-toomb-head.next {
+  margin-left: 0;
+  margin-bottom: 30px;
+}
+.searchbuilds__block__filter-toomb__type {
+  background: #ffffff;
+  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.05);
+  padding-left: 25px;
+  padding: 30px 25px;
+}
+.searchbuilds__block__filter-toomb-list {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #f2f2f2;
+  margin-bottom: 30px;
+}
+.searchbuilds__block__filter-toomb-input {
+  appearance: none;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 19px 20px;
+  font-family: Rogan;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #999999;
+  &::placeholder {
+    font-family: Rogan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #999999;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+.searchbuilds__block__filter-toomb__sunk {
+  margin-bottom: 30px;
+}
+.searchbuilds__block__filter-toomb__sunk-span {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.searchbuilds__block__filter-toomb__sunk-head {
+  color: #000;
+  font-family: Rogan;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+.searchbuilds__block__filter-toomb__sunk-icon {
+  width: 15px;
+  height: 16px;
+  margin-left: 17px;
+}
+.searchbuilds__block__filter-toomb__sunk-item {
+  background: #f5f5f5;
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  padding: 19px 20px;
+  font-family: Rogan;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+.searchbuilds__block__filter-toomb__type-button {
+  appearance: none;
+  background: none;
+  border: 1px solid rgba(25, 140, 205, 0.25);
+  border-radius: 4px;
+  font-family: Rogan;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 16px 58px;
+  color: #198ccd;
+}
+.searchbuilds__block__filter-Sbutton {
+  appearance: none;
+  border: none;
+  background: #198ccd;
+  border-radius: 4px;
+  padding: 16px 112px;
+  font-family: Rogan;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 120%;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.searchbuilds__block__cards_sorte {
+  display: flex;
+  margin-bottom: 15px;
+}
+.searchbuilds__block__cards_sorte-text {
+  font-family: Rogan;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #999999;
+  margin-right: 30px;
+}
+.searchbuilds__block__cards_sorte-list {
+  display: flex;
+  gap: 32px;
+}
+.searchbuilds__block__cards_sorte-item {
+  display: flex;
+  align-items: center;
+}
+.searchbuilds__block__cards_sorte-item-text {
+  font-family: Rogan;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  border-bottom: 1px solid #e6e6e6;
+  &.active {
+    color: #198ccd;
+    border: none;
+  }
+}
+.searchbuilds__block__cards_sorte-item-icon {
+  width: 15px;
+  height: 15px;
+  margin-left: 7px;
+}
