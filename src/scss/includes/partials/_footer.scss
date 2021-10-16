@@ -1,12 +1,22 @@
 // Footer
 .footer {
-  padding: 40px 0px 30px;
   background-color: $color-brand;
+  display: flex;
 }
 
 .footer__brand-wrapper {
   border-right: 1px solid $color-border;
+
+  flex-grow: 1;
 }
+
+.footer__left-side-container {
+  max-width: calc(#{$container} * 0.271875);
+  min-width: 107px;
+  margin-left: auto;
+}
+
+// .footer__logo { // margin-left: auto; }
 
 .social__list {
   display: flex;
@@ -33,12 +43,21 @@
   justify-content: center;
 }
 
-.logo-wrapper {
-  border-bottom: 1px solid $color-border;
+.footer__logo-wrapper {
+  padding-left: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social {
+  min-width: 107px;
 }
 
 .footer__social {
-  padding-top: 38px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 38px clamp(31px, 8vw, 128px) 30px 15px;
 }
 
 .footer__nav {
@@ -82,17 +101,23 @@
 }
 
 .footer-lists-wrapper {
+  padding-top: 40px;
+  flex-grow: 1;
+}
+
+.footer__right-side-container {
+  max-width: calc(#{$container} * 0.7275);
+}
+
+.footer__lists-flex-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .footer-navigation-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  flex-grow: 1;
-  justify-content: space-between;
-
-  padding-bottom: 40px;
+  padding: 0 15px 40px clamp(31px, 8vw, 80px);
+  margin-right: auto;
   border-bottom: 1px solid $color-border;
 }
 
@@ -105,7 +130,7 @@
 }
 
 .copyright-wrapper {
-  padding-top: 30px;
+  padding: 30px 15px 30px clamp(31px, 8vw, 80px);
 }
 
 /* © 2017 MyGun.pro. All rights reserved. Registration on or use of this site constitutes acceptance of our Terms of Service and Privacy Policy */
@@ -135,18 +160,46 @@
 
 // Mobile
 @media screen and (max-width: 767px) {
+  .footer {
+    flex-wrap: wrap;
+  }
+
   .footer__container {
     flex-wrap: wrap;
   }
 
-  .footer__logo-wrapper {
-    padding-right: clamp(0px, 5.33vw, 31px);
-    padding-bottom: 30px;
+  .footer__brand-wrapper {
+    display: flex;
+    border-bottom: 1px solid $color-border;
   }
 
-  .footer__logo {
-    width: 125px;
-    height: 101.71px;
+  .footer__logo-wrapper {
+    border-right: 1px solid $color-border;
+    margin-left: auto;
+    padding-left: 0;
+  }
+
+  .footer__logo-thumb {
+    padding: 30px clamp(1px, 5.33vw, 31px) 30px 0;
+  }
+
+  .footer__social {
+    padding: 47px 0 48px 31px;
+    margin-right: auto;
+  }
+
+  .footer-legal__title.is-hidden {
+    display: none;
+  }
+
+  .footer-navigation-wrapper {
+    padding-left: 15px;
+    margin: 0;
+  }
+
+  .footer__builds-links-wrapper,
+  .footer-nav-wrapper {
+    flex-basis: calc((100% - 91px) / 2);
   }
 }
 
@@ -154,11 +207,12 @@
 // @media screen and (min-width: 768px) and (max-width: 1199px) {}
 
 @media screen and (min-width: 768px) {
-  .footer-navigation-wrapper {
-    padding-left: 80px;
+  .footer__brand-wrapper {
+    padding-top: 40px;
   }
 
   .footer__logo-wrapper {
+    border-bottom: 1px solid $color-border;
     padding-right: clamp(31px, 5.33vw, 85px);
     padding-bottom: 40px;
   }
@@ -166,10 +220,6 @@
   .footer__logo {
     min-width: 150px;
     min-height: 122.05px;
-  }
-
-  .copyright-wrapper {
-    padding-left: 80px;
   }
 }
 
