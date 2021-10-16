@@ -37,6 +37,10 @@
   }
 }
 
+.social__link {
+  color: $color-social-icon;
+}
+
 .social__svg {
   display: inline-flex;
   align-items: center;
@@ -92,6 +96,20 @@
   opacity: 0.75;
 }
 
+.social__link,
+.builds-links__link,
+.footer-nav__link,
+.footer-legal__link,
+.footer__copyright-link {
+  @include transition;
+  transition-property: color;
+
+  &:focus,
+  &:hover {
+    color: lighten($color-accent, 5);
+  }
+}
+
 /* Terms of Service, Privacy Policy, Feedback */
 .footer-legal__link {
   font-size: 14px;
@@ -121,9 +139,7 @@
   border-bottom: 1px solid $color-border;
 }
 
-.footer__social-svg {
-  color: $color-social-icon;
-}
+// .footer__social-svg {color: $color-social-icon; }
 
 .footer__container {
   display: flex;
