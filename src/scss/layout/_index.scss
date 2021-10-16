@@ -378,4 +378,8 @@
   .guns__slider-list {
     display: none;
   }
+
+  .guns__slider-list.simbuilds__slider-list {
+    display: flex;
+  }
 }
