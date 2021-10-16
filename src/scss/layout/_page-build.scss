@@ -1,7 +1,241 @@
+// .build__container { }
+
+.build__main-container {
+  display: flex;
+  gap: 30px;
+}
+
+.build__main-content {
+  order: 2;
+}
+
+.build__part-list {
+  order: 1;
+}
+
+.build__searchbuilds-list {
+  margin-bottom: 40px;
+}
+
+/* Custom browning Hi Power */
+// .build__title { margin-bottom: 20px;}
+
+.build-h1 {
+  margin-bottom: 10px;
+}
+
+.build__post-meta-wrapper {
+  margin-bottom: 20px;
+}
+
+.post-meta__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.build__post-meta {
+  margin-right: auto;
+}
+
 // .build__post-metadata { }
 
+.rating__svg {
+  color: $color-white;
+}
+
+.rating__item {
+  &:not(:last-child) {
+    margin-right: 2px;
+  }
+}
+
+.build__avatar-thumb {
+  margin-right: 10px;
+  max-width: 30px;
+  max-height: 30px;
+}
+
+/* troz */
+.build__author-name,
+.builds__post-date {
+  display: inline-flex;
+  align-items: center;
+
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba($color-black, 0.5);
+  white-space: nowrap;
+
+  &::after {
+    display: inline-block;
+    width: 1px;
+    height: 20px;
+    margin: 0 15px;
+    content: '';
+    background-color: rgba($color-black, 0.05);
+  }
+}
+
+.rating__list {
+  display: inline-flex;
+  align-items: center;
+}
+
+.rating__item {
+  display: inline-flex;
+  align-items: center;
+}
+
+.build__share-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+/* Rectangle 109 */
+.build__copy-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  min-height: 50px;
+  padding-left: 20px;
+
+  margin-right: 15px;
+
+  border: 1px solid rgba($color-black, 0.05);
+  border-radius: 4px;
+}
+
+/* http://mygun.pro/b/4rlHsd */
+.build__link-to-copy {
+  margin-right: 22px;
+
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+/* Copy */
+.copy-btn {
+  appearance: none;
+  padding: 16px 25px 14px 25px;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 120%;
+  color: $color-accent;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+
+  background: none;
+  border: none;
+
+  @include transition;
+  transition-property: color, box-shadow;
+
+  &:focus,
+  &:hover {
+    color: lighten($color-accent, 21);
+    box-shadow: 0 0 35px rgba($color-black, 0.05);
+  }
+}
+// .build__copy-btn {}
+// .copy-btn__span {}
+
+/* share */
+.share-btn {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+
+  padding: 16px 22px 14px 23px;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: $color-accent;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+
+  background: none;
+  border: 1px solid rgba($color-accent, 0.25);
+  border-radius: 4px;
+
+  @include transition;
+  transition-property: color, box-shadow;
+
+  &:focus,
+  &:hover {
+    color: lighten($color-accent, 21);
+    box-shadow: 0 0 35px rgba($color-black, 0.05);
+  }
+}
+// .build__share-btn {}
+.share-btn__svg {
+  color: $color-accent;
+}
+.build__share-btn-svg {
+  margin-right: 8px;
+}
+// .share__share-btn-text {}
+// .build__share-btn-text {}
+
+.build__thumb {
+  margin-bottom: 23px;
+}
+
+.build__photos-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 23px;
+}
+// .build__photos-item  { }
+// .build__photos-thumb {}
+
+.build__description {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 27px;
+}
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ */
+
+// mobile
+@media screen and (min-width: 767px) {
+  .build__searchbuilds-list {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+// tablet
 @media screen and (min-width: 768px) {
   .simbuilds__list {
+    margin-top: 41px;
     margin-bottom: 40px;
   }
 }

@@ -68,7 +68,7 @@
     </symbol>
 
     <symbol id="icon-star-outline" viewBox="0 0 32 32">
-      <path stroke="var(--color5, #e1cd18)" stroke-width="2.13" d="m19.48 10.35.25.5.56.1 7.8 1.13-5.65 5.5-.4.38.1.56 1.33 7.76L16 22.36l-.49.25-6.98 3.67 1.33-7.76.1-.56-.42-.38-5.63-5.5 8.36-1.22.25-.51L16 3.29l3.48 7.06z" opacity=".5"/>
+      <path fill="currentColor" stroke="var(--color5, #e1cd18)" stroke-width="2.13" d="m19.48 10.35.25.5.56.1 7.8 1.13-5.65 5.5-.4.38.1.56 1.33 7.76L16 22.36l-.49.25-6.98 3.67 1.33-7.76.1-.56-.42-.38-5.63-5.5 8.36-1.22.25-.51L16 3.29l3.48 7.06z" opacity=".5"/>
     </symbol>
 
     <symbol id="icon-post-vieweye" viewBox="0 0 32 32">
