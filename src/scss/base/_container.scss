@@ -1,6 +1,9 @@
+$container: 1230px;
+$padding: 15px;
+
 .container {
-  max-width: 1230px;
-  padding-right: 15px;
-  padding-left: 15px;
+  max-width: $container;
+  padding-right: $padding;
+  padding-left: $padding;
   margin: 0 auto;
 }

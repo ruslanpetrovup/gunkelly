@@ -374,12 +374,4 @@
 }
 
 // tablet
-@media screen and (min-width: 768px) {
-  .guns__slider-list {
-    display: none;
-  }
-
-  .guns__slider-list.simbuilds__slider-list {
-    display: flex;
-  }
-}
+// @media screen and (min-width: 768px) {}

@@ -4,10 +4,7 @@
   display: flex;
 }
 
-$container: 1230px;
-
 .footer__brand-wrapper {
-  padding-top: 40px;
   border-right: 1px solid $color-border;
 
   flex-grow: 1;
@@ -15,6 +12,8 @@ $container: 1230px;
 
 .footer__left-side-container {
   max-width: calc(#{$container} * 0.271875);
+  min-width: 107px;
+  margin-left: auto;
 }
 
 // .footer__logo { // margin-left: auto; }
@@ -50,10 +49,6 @@ $container: 1230px;
   justify-content: flex-end;
 }
 
-.logo-wrapper {
-  border-bottom: 1px solid $color-border;
-}
-
 .social {
   min-width: 107px;
 }
@@ -62,7 +57,7 @@ $container: 1230px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  padding: 38px clamp(31px, 8vw, 128px) 0 15px;
+  padding: 38px clamp(31px, 8vw, 128px) 30px 15px;
 }
 
 .footer__nav {
@@ -121,9 +116,8 @@ $container: 1230px;
 }
 
 .footer-navigation-wrapper {
+  padding: 0 15px 40px clamp(31px, 8vw, 80px);
   margin-right: auto;
-  padding-right: 15px;
-  padding-bottom: 40px;
   border-bottom: 1px solid $color-border;
 }
 
@@ -136,8 +130,7 @@ $container: 1230px;
 }
 
 .copyright-wrapper {
-  padding-top: 30px;
-  padding-right: 15px;
+  padding: 30px 15px 30px clamp(31px, 8vw, 80px);
 }
 
 /* © 2017 MyGun.pro. All rights reserved. Registration on or use of this site constitutes acceptance of our Terms of Service and Privacy Policy */
@@ -177,18 +170,36 @@ $container: 1230px;
 
   .footer__brand-wrapper {
     display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
+    border-bottom: 1px solid $color-border;
   }
 
   .footer__logo-wrapper {
-    padding-right: clamp(1px, 5.33vw, 31px);
-    padding-bottom: 30px;
+    border-right: 1px solid $color-border;
+    margin-left: auto;
+    padding-left: 0;
   }
 
-  .footer__logo {
-    width: 125px;
-    height: 101.71px;
+  .footer__logo-thumb {
+    padding: 30px clamp(1px, 5.33vw, 31px) 30px 0;
+  }
+
+  .footer__social {
+    padding: 47px 0 48px 31px;
+    margin-right: auto;
+  }
+
+  .footer-legal__title.is-hidden {
+    display: none;
+  }
+
+  .footer-navigation-wrapper {
+    padding-left: 15px;
+    margin: 0;
+  }
+
+  .footer__builds-links-wrapper,
+  .footer-nav-wrapper {
+    flex-basis: calc((100% - 91px) / 2);
   }
 }
 
@@ -196,14 +207,14 @@ $container: 1230px;
 // @media screen and (min-width: 768px) and (max-width: 1199px) {}
 
 @media screen and (min-width: 768px) {
-  .footer__right-side-container {
-    padding-left: clamp(31px, 5.33vw, 80px);
+  .footer__brand-wrapper {
+    padding-top: 40px;
   }
 
   .footer__logo-wrapper {
+    border-bottom: 1px solid $color-border;
     padding-right: clamp(31px, 5.33vw, 85px);
     padding-bottom: 40px;
-    margin-left: auto;
   }
 
   .footer__logo {
