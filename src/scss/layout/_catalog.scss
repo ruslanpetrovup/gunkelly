@@ -303,6 +303,9 @@
 .hero__recentbuilds-item-block-human-vieweye.res {
   margin-right: 5px;
 }
+.top-blogposts__list.res {
+  gap: 18px;
+}
 .top-blogposts__link.res {
   flex-direction: column;
 }
@@ -316,4 +319,139 @@
 }
 .top-blogposts-meta.res {
   padding: 0;
+}
+.top-blogposts__post-title {
+  width: 125px;
+}
+.searchbuilds__pagin {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 55px;
+}
+.searchbuilds__pagin-back {
+  display: flex;
+  align-items: center;
+  appearance: none;
+  background: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  padding: 5px 8px;
+}
+.searchbuilds__pagin-back-icon {
+  width: 15px;
+  height: 13px;
+  transform: rotate(180deg);
+}
+.searchbuilds__pagin-back-text {
+  font-family: Rogan;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  color: #666666;
+}
+.searchbuilds__pagin-list {
+  display: flex;
+  gap: 7px;
+}
+.searchbuilds__pagin-item-button {
+  padding: 5px 11px;
+  appearance: none;
+  appearance: none;
+  background: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  font-family: Rogan;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  color: #666666;
+}
+
+.searchbuilds__pagin-next {
+  display: flex;
+  align-items: center;
+  appearance: none;
+  background: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  padding: 5px 8px;
+}
+.searchbuilds__pagin-next-text {
+  font-family: Rogan;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  color: #666666;
+}
+.searchbuilds__pagin-next-icon {
+  width: 15px;
+  height: 13px;
+}
+.searchbuilds__mostparts {
+  margin-bottom: 60px;
+}
+.searchbuilds__mostparts-head {
+  font-family: Rogan;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 43px;
+  color: #000000;
+  margin-bottom: 30px;
+}
+.searchbuilds__mostparts-list {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+.searchbuilds__mostparts-item-img {
+  width: 277px;
+  height: 200px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  margin-bottom: 26px;
+}
+.hero__topbuilds-toomb-list.res {
+  margin-bottom: 12px;
+}
+.searchbuilds__mostparts-item-head {
+  font-family: Rogan;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 130%;
+  color: #000000;
+  width: 200px;
+  margin-bottom: 10px;
+}
+.searchbuilds__mostparts-item-text {
+  font-family: Rogan;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+
+  opacity: 0.5;
+}
+.hero__topbuilds-toomb-buttons.res {
+  display: flex;
+  position: static;
+  justify-content: center;
+  gap: 30px;
+}
+.hero__topbuilds-toomb-buttons-item.res {
+  margin-left: 0;
+}
+.hero__topbuilds-toomb-item-button.res {
+  width: 8px;
+  height: 8px;
+  background: #4c585f;
+  opacity: 0.2;
+}
+.hero__topbuilds-toomb-item-button.res.active {
+  background: #4c585f;
+  opacity: 1;
 }
