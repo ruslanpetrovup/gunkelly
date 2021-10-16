@@ -1,163 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="Guns and weaponry site" />
-    <meta name="theme-color" content="#212121" />
-    <title>Главная страница</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet" href="css/style.bundle.css" />
-
-    <link rel="preload" href="./sass/fonts/CaviarDreams.woff2" crossorigin="anonymous" as="font" />
+    <meta name="theme-color" content="#263238" />
+    <title>Catalogs page</title>
 
     <!-- 700 -->
-    <link rel="preload" href="../../fonts/rogan/Rogan-Bold.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
+    <link
+      rel="preload"
+      href="../../fonts/rogan/Rogan-Bold.woff2"
+      crossorigin="anonymous"
+      as="font"
+      type="font/woff2"
+    />
 
     <!-- 400 -->
-    <link rel="preload" href="../../fonts/rogan/Rogan-Regular.woff2" crossorigin="anonymous" as="font"
-        type="font/woff2" />
-</head>
+    <link
+      rel="preload"
+      href="../../fonts/rogan/Rogan-Regular.woff2"
+      crossorigin="anonymous"
+      as="font"
+      type="font/woff2"
+    />
 
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="css/style.bundle.css" />
+  </head>
+
+  <body>
     <!-- Header -->
-        <%= _.template(require('./../includes/header.html').default)(data) %>
+    <%= _.template(require('./../includes/header.html').default)(data) %>
     <!-- Search -->
-        <%= _.template(require('./../includes/search.html').default)(data) %>
+    <%= _.template(require('./../includes/search.html').default)(data) %>
 
-        <!-- Search Builds -->
-        <div class="searchbuilds">
-            <div class="container">
-                <div class="searchbuilds__content">
-                    <ul class="searchbuilds-list">
-                        <li class="searchbuilds-link">
-                            <a href="">Home</a>
-                        </li>
-                        <li class="searchbuilds-link">
-                            <a href="">Search Builds</a>
-                        </li>
+    <main>
+      <!-- Search Builds -->
+      <section class="searchbuilds">
+        <div class="container">
+          <div class="searchbuilds__content">
+            <ul class="searchbuilds-list">
+              <li class="searchbuilds-link">
+                <a href="./">Home</a>
+              </li>
+              <li class="searchbuilds-link">
+                <a href="./catalogs.html">Search Builds</a>
+              </li>
+            </ul>
+
+            <h1 class="searchbuilds-head">Search Builds</h1>
+
+            <div class="searchbuilds__block">
+              <!-- Filter -->
+              <div class="searchbuilds__block__filter">
+                <div class="searchbuilds__block__filter-toomb">
+                  <div class="searchbuilds__block__filter-toomb-category">
+                    <h2 class="searchbuilds__block__filter-toomb-head">Choose a category:</h2>
+
+                    <ul class="searchbuilds__block__filter-list">
+                      <li class="searchbuilds__block__filter-item active">
+                        <button class="searchbuilds__block__filter-button">All</button>
+                      </li>
+                      <li class="searchbuilds__block__filter-item">
+                        <button class="searchbuilds__block__filter-button rifle">Rifle</button>
+                      </li>
+                      <li class="searchbuilds__block__filter-item">
+                        <button class="searchbuilds__block__filter-button shotgun">Shotgun</button>
+                      </li>
+                      <li class="searchbuilds__block__filter-item">
+                        <button class="searchbuilds__block__filter-button handgun">Handgun</button>
+                      </li>
                     </ul>
-
-                    <h1 class="searchbuilds-head">Search Builds</h1>
-
-                    <div class="searchbuilds__block">
-
-                        <!-- Filter -->
-                        <div class="searchbuilds__block__filter">
-                            <div class="searchbuilds__block__filter-toomb">
-                                <div class="searchbuilds__block__filter-toomb-category">
-                                <h2 class="searchbuilds__block__filter-toomb-head">
-                                    Choose a category:
-                                </h2>
-
-                                <ul class="searchbuilds__block__filter-list">
-                                    <li class="searchbuilds__block__filter-item active">
-                                        <button class="searchbuilds__block__filter-button ">
-                                            All
-                                        </button>
-                                    </li>
-                                    <li class="searchbuilds__block__filter-item">
-                                        <button class="searchbuilds__block__filter-button rifle">
-                                            Rifle
-                                        </button>
-                                    </li>
-                                    <li class="searchbuilds__block__filter-item">
-                                        <button class="searchbuilds__block__filter-button shotgun">
-                                            Shotgun
-                                        </button>
-                                    </li>
-                                    <li class="searchbuilds__block__filter-item">
-                                        <button class="searchbuilds__block__filter-button handgun">
-                                            Handgun
-                                        </button>
-                                    </li>
-                                </ul>
-
-                                </div>
-                                <div class="searchbuilds__block__filter-toomb__type">
-                                    <h2 class="searchbuilds__block__filter-toomb-head next">
-                                        Choose type of build:
-                                    </h2>
-                                        <ul class="searchbuilds__block__filter-toomb-list">
-                                            <li class="searchbuilds__block__filter-toomb-item">
-                                                <input type="text" placeholder="Brand" class="searchbuilds__block__filter-toomb-input"/>
-                                            </li>
-                                            <li class="searchbuilds__block__filter-toomb-item">
-                                                <input type="text" placeholder="Model" class="searchbuilds__block__filter-toomb-input"/>
-                                            </li>
-                                            <li class="searchbuilds__block__filter-toomb-item">
-                                                <input type="text" placeholder="Caliber" class="searchbuilds__block__filter-toomb-input"/>
-                                            </li>
-                                        </ul>
-                                        <!-- Option -->
-                                        <div class="searchbuilds__block__filter-toomb__sunk">
-                                            <span class="searchbuilds__block__filter-toomb__sunk-span">
-                                            <h2 class="searchbuilds__block__filter-toomb__sunk-head">
-                                                Option set 1
-                                            </h2>
-                                                <svg class="searchbuilds__block__filter-toomb__sunk-icon"><use href="../../img/svg/sprite.svg#icon-delete"></use>
-                                                </svg>
-                                            </span>
-                                            <ul class="searchbuilds__block__filter-toomb__sunk-list">
-                                                <li class="searchbuilds__block__filter-toomb__sunk-item">Manufacturer</li>
-                                                <li class="searchbuilds__block__filter-toomb__sunk-item">Model</li>
-                                                <li class="searchbuilds__block__filter-toomb__sunk-item">Part</li>
-                                            </ul>
-                                        </div>
-                                        <button class="searchbuilds__block__filter-toomb__type-button">
-                                            Add new filter
-                                        </button>
-                                </div>
-                            </div>
-                            <button class="searchbuilds__block__filter-Sbutton">
-                                search
-                            </button>
-                        </div>
-
-                        <!-- Cards -->
-                        <div class="searchbuilds__block__cards">
-                            <div class="searchbuilds__block__cards_sorte">
-                                <p class="searchbuilds__block__cards_sorte-text">
-                                    Order by:
-                                </p>
-                                <ul class="searchbuilds__block__cards_sorte-list">
-                                    <li class="searchbuilds__block__cards_sorte-item">
-                                        <p class="searchbuilds__block__cards_sorte-item-text active">date</p>
-                                        <svg class="searchbuilds__block__cards_sorte-item-icon">
-                                            <use href="../../img/svg/sprite.svg#icon-arrow-down"></use>
-                                        </svg>
-                                    </li>
-                                    <li class="searchbuilds__block__cards_sorte-item">
-                                        <p class="searchbuilds__block__cards_sorte-item-text">rating</p>
-                                        <!-- <svg class="searchbuilds__block__cards_sorte-item-icon">
-                                            <use href=""></use>
-                                        </svg> -->
-                                    </li>
-                                    <li class="searchbuilds__block__cards_sorte-item">
-                                        <p class="searchbuilds__block__cards_sorte-item-text">comments</p>
-                                        <!-- <svg class="searchbuilds__block__cards_sorte-item-icon">
-                                            <use href=""></use>
-                                        </svg> -->
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="searchbuilds__block__cards-cart">
-                                
-                            </div>
-                        </div>
-
-                        <!-- Trending -->
-                        <div class="searchbuilds__block__trending">
-
-                        </div>
+                  </div>
+                  <div class="searchbuilds__block__filter-toomb__type">
+                    <h2 class="searchbuilds__block__filter-toomb-head next">
+                      Choose type of build:
+                    </h2>
+                    <ul class="searchbuilds__block__filter-toomb-list">
+                      <li class="searchbuilds__block__filter-toomb-item">
+                        <input
+                          type="text"
+                          placeholder="Brand"
+                          class="searchbuilds__block__filter-toomb-input"
+                        />
+                      </li>
+                      <li class="searchbuilds__block__filter-toomb-item">
+                        <input
+                          type="text"
+                          placeholder="Model"
+                          class="searchbuilds__block__filter-toomb-input"
+                        />
+                      </li>
+                      <li class="searchbuilds__block__filter-toomb-item">
+                        <input
+                          type="text"
+                          placeholder="Caliber"
+                          class="searchbuilds__block__filter-toomb-input"
+                        />
+                      </li>
+                    </ul>
+                    <!-- Option -->
+                    <div class="searchbuilds__block__filter-toomb__sunk">
+                      <span class="searchbuilds__block__filter-toomb__sunk-span">
+                        <h2 class="searchbuilds__block__filter-toomb__sunk-head">Option set 1</h2>
+                        <svg class="searchbuilds__block__filter-toomb__sunk-icon">
+                          <use href="../../img/svg/sprite.svg#icon-delete"></use>
+                        </svg>
+                      </span>
+                      <ul class="searchbuilds__block__filter-toomb__sunk-list">
+                        <li class="searchbuilds__block__filter-toomb__sunk-item">Manufacturer</li>
+                        <li class="searchbuilds__block__filter-toomb__sunk-item">Model</li>
+                        <li class="searchbuilds__block__filter-toomb__sunk-item">Part</li>
+                      </ul>
                     </div>
+                    <button class="searchbuilds__block__filter-toomb__type-button">
+                      Add new filter
+                    </button>
+                  </div>
                 </div>
+                <button class="searchbuilds__block__filter-Sbutton">search</button>
+              </div>
+
+              <!-- Cards -->
+              <div class="searchbuilds__block__cards">
+                <div class="searchbuilds__block__cards_sorte">
+                  <p class="searchbuilds__block__cards_sorte-text">Order by:</p>
+                  <ul class="searchbuilds__block__cards_sorte-list">
+                    <li class="searchbuilds__block__cards_sorte-item">
+                      <p class="searchbuilds__block__cards_sorte-item-text active">date</p>
+                      <svg class="searchbuilds__block__cards_sorte-item-icon">
+                        <use href="../../img/svg/sprite.svg#icon-arrow-down"></use>
+                      </svg>
+                    </li>
+                    <li class="searchbuilds__block__cards_sorte-item">
+                      <p class="searchbuilds__block__cards_sorte-item-text">rating</p>
+                      <!-- <svg class="searchbuilds__block__cards_sorte-item-icon">
+                                            <use href=""></use>
+                                        </svg> -->
+                    </li>
+                    <li class="searchbuilds__block__cards_sorte-item">
+                      <p class="searchbuilds__block__cards_sorte-item-text">comments</p>
+                      <!-- <svg class="searchbuilds__block__cards_sorte-item-icon">
+                                            <use href=""></use>
+                                        </svg> -->
+                    </li>
+                  </ul>
+                </div>
+                <div class="searchbuilds__block__cards-cart"></div>
+              </div>
+
+              <!-- Trending -->
+              <div class="searchbuilds__block__trending"></div>
             </div>
+          </div>
         </div>
-<body>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <%= _.template(require('./../includes/footer.html').default)(data) %>
+  </body>
+</html>

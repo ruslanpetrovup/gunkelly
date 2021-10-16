@@ -1,26 +1,21 @@
-body {
-  margin: 0;
-  font-family: var(--main-font), sans-serif;
-  color: var(--color-black);
-  position: relative;
-}
-
 .page-html {
   min-height: 100%;
   overflow-y: scroll;
+
   &.no-scroll {
     overflow-y: hidden; // STOP MOVING AROUND!
   }
 }
-.index-body,
-.modeling-body,
-.scanning-body,
-.printing-body,
-.order-body,
-.contacts-body {
+
+body {
   position: relative;
   min-height: 100%;
-  overflow: hidden;
+
+  margin: 0;
+
+  font-family: var(--main-font), sans-serif;
+  color: $color-black;
+
   &.no-scroll {
     overflow-y: scroll;
   }
