@@ -193,9 +193,14 @@
   text-transform: uppercase;
   color: #ffffff;
 }
+.searchbuilds__block__cards {
+  margin-left: 30px;
+}
 .searchbuilds__block__cards_sorte {
   display: flex;
-  margin-bottom: 15px;
+  border-bottom: 1px solid #f2f2f2;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
 }
 .searchbuilds__block__cards_sorte-text {
   font-family: Rogan;
@@ -231,4 +236,222 @@
   width: 15px;
   height: 15px;
   margin-left: 7px;
+}
+.searchbuilds__block__trending {
+  margin-left: 30px;
+}
+.searchbuilds__block__trending-head {
+  font-family: Rogan;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #ffffff;
+  padding: 15px 0;
+  width: 275px;
+  text-align: center;
+  background: #263238;
+  margin-bottom: 18px;
+}
+.trending-now__list.res {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 30px;
+}
+.trending-now__thumb.res {
+  display: flex;
+  margin-bottom: 0px;
+  max-width: 0px;
+  min-width: 0px;
+  align-items: center;
+}
+.trending-now__author-avatar.res {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+.hero__recentbuilds-item.res {
+  border: none;
+  padding: 0;
+}
+.hero__recentbuilds-item-block.res {
+  gap: 2px;
+  flex-wrap: wrap;
+}
+.trending-now__post-meta.res {
+  display: flex;
+}
+.hero__recentbuilds-list.res {
+  display: flex;
+  margin-bottom: 30px;
+}
+.hero__recentbuilds-cards-images.res {
+  margin-left: 0;
+}
+.hero__recentbuilds-item-block-human-images.res {
+  margin-right: 0;
+}
+.hero__recentbuilds-item-block-human-name.res {
+  margin-right: 0;
+}
+.hero__recentbuilds-item-block-human-icon.res {
+  margin-right: 0;
+}
+.hero__recentbuilds-item-block-human-vieweye.res {
+  margin-right: 5px;
+}
+.top-blogposts__list.res {
+  gap: 18px;
+}
+.top-blogposts__link.res {
+  flex-direction: column;
+}
+.top-blogposts__image.res {
+  width: 130px;
+  height: 100px;
+}
+.top-blogposts__thumb.res {
+  max-width: 0;
+  min-width: 0;
+}
+.top-blogposts-meta.res {
+  padding: 0;
+}
+.top-blogposts__post-title {
+  width: 125px;
+}
+.searchbuilds__pagin {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 55px;
+}
+.searchbuilds__pagin-back {
+  display: flex;
+  align-items: center;
+  appearance: none;
+  background: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  padding: 5px 8px;
+}
+.searchbuilds__pagin-back-icon {
+  width: 15px;
+  height: 13px;
+  transform: rotate(180deg);
+}
+.searchbuilds__pagin-back-text {
+  font-family: Rogan;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  color: #666666;
+}
+.searchbuilds__pagin-list {
+  display: flex;
+  gap: 7px;
+}
+.searchbuilds__pagin-item-button {
+  padding: 5px 11px;
+  appearance: none;
+  appearance: none;
+  background: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  font-family: Rogan;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  color: #666666;
+}
+
+.searchbuilds__pagin-next {
+  display: flex;
+  align-items: center;
+  appearance: none;
+  background: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  padding: 5px 8px;
+}
+.searchbuilds__pagin-next-text {
+  font-family: Rogan;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  color: #666666;
+}
+.searchbuilds__pagin-next-icon {
+  width: 15px;
+  height: 13px;
+}
+.searchbuilds__mostparts {
+  margin-bottom: 60px;
+}
+.searchbuilds__mostparts-head {
+  font-family: Rogan;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 43px;
+  color: #000000;
+  margin-bottom: 30px;
+}
+.searchbuilds__mostparts-list {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+.searchbuilds__mostparts-item-img {
+  width: 277px;
+  height: 200px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  margin-bottom: 26px;
+}
+.hero__topbuilds-toomb-list.res {
+  margin-bottom: 12px;
+}
+.searchbuilds__mostparts-item-head {
+  font-family: Rogan;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 130%;
+  color: #000000;
+  width: 200px;
+  margin-bottom: 10px;
+}
+.searchbuilds__mostparts-item-text {
+  font-family: Rogan;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+
+  opacity: 0.5;
+}
+.hero__topbuilds-toomb-buttons.res {
+  display: flex;
+  position: static;
+  justify-content: center;
+  gap: 30px;
+}
+.hero__topbuilds-toomb-buttons-item.res {
+  margin-left: 0;
+}
+.hero__topbuilds-toomb-item-button.res {
+  width: 8px;
+  height: 8px;
+  background: #4c585f;
+  opacity: 0.2;
+}
+.hero__topbuilds-toomb-item-button.res.active {
+  background: #4c585f;
+  opacity: 1;
 }
