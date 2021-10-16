@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Guns and weaponry site" />
+    <meta name="theme-color" content="#263238" />
+    <title>Build page</title>
+
+    <!-- 700 -->
+    <link
+      rel="preload"
+      href="../../fonts/rogan/Rogan-Bold.woff2"
+      crossorigin="anonymous"
+      as="font"
+      type="font/woff2"
+    />
+
+    <!-- 400 -->
+    <link
+      rel="preload"
+      href="../../fonts/rogan/Rogan-Regular.woff2"
+      crossorigin="anonymous"
+      as="font"
+      type="font/woff2"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="css/style.bundle.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <%= _.template(require('./../includes/header.html').default)(data) %>
+    <!-- Search -->
+    <%= _.template(require('./../includes/search.html').default)(data) %>
+
+    <main>
+      <section class="build section">
+        <div class="container build__container">
+          <ul class="searchbuilds-list">
+            <li class="searchbuilds-link">
+              <a class="searchbuilds-link-a" href="./">Home</a>
+            </li>
+
+            <li class="searchbuilds-link">
+              <a class="searchbuilds-link-a" href="./catalog.html">Search Builds</a>
+            </li>
+
+            <li class="searchbuilds-link">
+              <a class="searchbuilds-link-a" href="#">Custom browning Hi Power</a>
+            </li>
+          </ul>
+
+          <h1>Custom browning Hi Power</h1>
+
+          <aside class="build-aside"></aside>
+        </div>
+      </section>
+
+      <section class="guns similar-builds simbuilds section">
+        <div class="container">
+          <div class="title-wrapper guns__title-wrapper simbuilds__title-wrapper">
+            <h2 class="title-v2 guns__title simbuilds__title section__title">Similar builds</h2>
+          </div>
+
+          <ul class="guns__list simbuilds__list">
+            <li class="guns__item simbuilds__item">
+              <a class="guns__link simbuilds__link" href="#">
+                <div class="guns__thumb simbuilds__thumb">
+                  <img
+                    class="guns__image simbuilds__image"
+                    src="../../img/photos/rifle/rifle-001.jpg"
+                    alt="Gun image"
+                    width="277"
+                    height="200"
+                  />
+                </div>
+
+                <div class="guns__post simbuilds__post">
+                  <h3 class="title-v3 guns__post-title simbuilds__post-title">
+                    Remington 700 Rebuild
+                  </h3>
+
+                  <div class="guns__post-meta simbuilds__post-meta">
+                    <div class="guns__avatar-thumb simbuilds__avatar-thumb">
+                      <img
+                        class="guns__author-avatar simbuilds__author-avatar"
+                        src="../../img/photos/avatar.jpg"
+                        alt="Author avatar - man in white t-shirt"
+                        width="25"
+                        height="25"
+                      />
+                    </div>
+
+                    <span class="guns__author-name simbuilds__author-name">troz</span>
+
+                    <div class="post__views simbuilds__post-views">
+                      <svg
+                        class="post__views-svg svg simbuilds__post-views-svg"
+                        width="16"
+                        height="16"
+                      >
+                        <use href="./img/svg/sprite.svg#icon-post-vieweye"></use>
+                      </svg>
+
+                      <span class="post__views-count simbuilds__post-views-count">12</span>
+                    </div>
+
+                    <div class="post__comments simbuilds__post-comments">
+                      <svg
+                        class="post__comments-svg simbuilds__post-comments-svg svg"
+                        width="14"
+                        height="14"
+                      >
+                        <use href="../../img/svg/sprite.svg#icon-post-message"></use>
+                      </svg>
+
+                      <span class="post__comments-count simbuilds__post-comments-count">5</span>
+                    </div>
+                  </div>
+                </div>
+
+                <ul class="guns__build simbuilds__build">
+                  <li class="guns__build-item simbuilds__build-item">
+                    <span class="guns__build-tag simbuilds__build-tag">Remington</span>
+                  </li>
+                  <li class="guns__build-item simbuilds__build-item">
+                    <span class="guns__build-tag simbuilds__build-tag">1911 R1 Enhanced</span>
+                  </li>
+                  <li class="guns__build-item simbuilds__build-item">
+                    <span class="guns__build-tag simbuilds__build-tag">.45 ACP</span>
+                  </li>
+                </ul>
+              </a>
+            </li>
+
+            <li class="guns__item simbuilds__item">
+              <a class="guns__link simbuilds__link" href="#">
+                <div class="guns__thumb simbuilds__thumb">
+                  <img
+                    class="guns__image simbuilds__image"
+                    src="../../img/photos/rifle/rifle-002.jpg"
+                    alt="Rifle image Accuracy Int’l AT 308"
+                    width="277"
+                    height="200"
+                  />
+                </div>
+
+                <div class="guns__post simbuilds__post">
+                  <h3 class="title-v3 guns__post-title simbuilds__post-title">
+                    Accuracy Int’l AT 308
+                  </h3>
+
+                  <div class="guns__post-meta simbuilds__post-meta">
+                    <div class="guns__avatar-thumb simbuilds__avatar-thumb">
+                      <img
+                        class="guns__author-avatar simbuilds__author-avatar"
+                        src="../../img/photos/avatar.jpg"
+                        alt="Author avatar - man in white t-shirt"
+                        width="25"
+                        height="25"
+                      />
+                    </div>
+
+                    <span class="guns__author-name simbuilds__author-name">troz</span>
+
+                    <div class="post__views simbuilds__post-views">
+                      <svg
+                        class="post__views-svg svg simbuilds__post-views-svg"
+                        width="16"
+                        height="16"
+                      >
+                        <use href="./img/svg/sprite.svg#icon-post-vieweye"></use>
+                      </svg>
+
+                      <span class="post__views-count simbuilds__post-views-count">12</span>
+                    </div>
+
+                    <div class="post__comments simbuilds__post-comments">
+                      <svg
+                        class="post__comments-svg simbuilds__post-comments-svg svg"
+                        width="14"
+                        height="14"
+                      >
+                        <use href="../../img/svg/sprite.svg#icon-post-message"></use>
+                      </svg>
+
+                      <span class="post__comments-count simbuilds__post-comments-count">5</span>
+                    </div>
+                  </div>
+                </div>
+
+                <ul class="guns__build simbuilds__build">
+                  <li class="guns__build-item simbuilds__build-item">
+                    <span class="guns__build-tag simbuilds__build-tag">Remington</span>
+                  </li>
+                  <li class="guns__build-item simbuilds__build-item">
+                    <span class="guns__build-tag simbuilds__build-tag">1911 R1 Enhanced</span>
+                  </li>
+                  <li class="guns__build-item simbuilds__build-item">
+                    <span class="guns__build-tag simbuilds__build-tag">.45 ACP</span>
+                  </li>
+                </ul>
+              </a>
+            </li>
+
+            <li class="guns__item simbuilds__item">
+              <a class="guns__link simbuilds__link" href="#">
+                <div class="guns__thumb simbuilds__thumb">
+                  <img
+                    class="guns__image simbuilds__image"
+                    src="../../img/photos/rifle/rifle-003.jpg"
+                    alt="Gun image Golden Anniversary"
+                    width="277"
+                    height="200"
+                  />
+                </div>
+
+                <div class="guns__post simbuilds__post">
+                  <h3 class="title-v3 guns__post-title simbuilds__post-title">
+                    Golden Anniversary
+                  </h3>
+
+                  <div class="guns__post-meta simbuilds__post-meta">
+                    <div class="guns__avatar-thumb simbuilds__avatar-thumb">
+                      <img
+                        class="guns__author-avatar simbuilds__author-avatar"
+                        src="../../img/photos/avatar.jpg"
+                        alt="Author avatar - man in white t-shirt"
+                        width="25"
+                        height="25"
+                      />
+                    </div>
+
+                    <span class="guns__author-name simbuilds__author-name">troz</span>
+
+                    <div class="post__views simbuilds__post-views">
+                      <svg
+                        class="post__views-svg svg simbuilds__post-views-svg"
+                        width="16"
+                        height="16"
+                      >
+                        <use href="./img/svg/sprite.svg#icon-post-vieweye"></use>
+                      </svg>
+
+                      <span class="post__views-count simbuilds__post-views-count">12</span>
+                    </div>
+
+                    <div class="post__comments simbuilds__post-comments">
+                      <svg
+                        class="post__comments-svg simbuilds__post-comments-svg svg"
+                        width="14"
+                        height="14"
+                      >
+                        <use href="../../img/svg/sprite.svg#icon-post-message"></use>
+                      </svg>
+
+                      <span class="post__comments-count simbuilds__post-comments-count">5</span>
+                    </div>
+                  </div>
+                </div>
+
+                <ul class="guns__build simbuilds__build">
+                  <li class="guns__build-item simbuilds__build-item">
+                    <span class="guns__build-tag simbuilds__build-tag">Remington</span>
+                  </li>
+                  <li class="guns__build-item simbuilds__build-item">
+                    <span class="guns__build-tag simbuilds__build-tag">1911 R1 Enhanced</span>
+                  </li>
+                  <li class="guns__build-item simbuilds__build-item">
+                    <span class="guns__build-tag simbuilds__build-tag">.45 ACP</span>
+                  </li>
+                </ul>
+              </a>
+            </li>
+
+            <li class="guns__item simbuilds__item">
+              <a class="guns__link simbuilds__link" href="#">
+                <div class="guns__thumb simbuilds__thumb">
+                  <img
+                    class="guns__image simbuilds__image"
+                    src="../../img/photos/rifle/rifle-004.jpg"
+                    alt="Gun image Savage 260 build"
+                    width="277"
+                    height="200"
+                  />
+                </div>
+
+                <div class="guns__post simbuilds__post">
+                  <h3 class="title-v3 guns__post-title simbuilds__post-title">Savage 260 build</h3>
+
+                  <div class="guns__post-meta simbuilds__post-meta">
+                    <div class="guns__avatar-thumb simbuilds__avatar-thumb">
+                      <img
+                        class="guns__author-avatar simbuilds__author-avatar"
+                        src="../../img/photos/avatar.jpg"
+                        alt="Author avatar - man in white t-shirt"
+                        width="25"
+                        height="25"
+                      />
+                    </div>
+
+                    <span class="guns__author-name simbuilds__author-name">troz</span>
+
+                    <div class="post__views simbuilds__post-views">
+                      <svg
+                        class="post__views-svg svg simbuilds__post-views-svg"
+                        width="16"
+                        height="16"
+                      >
+                        <use href="./img/svg/sprite.svg#icon-post-vieweye"></use>
+                      </svg>
+
+                      <span class="post__views-count simbuilds__post-views-count">12</span>
+                    </div>
+
+                    <div class="post__comments simbuilds__post-comments">
+                      <svg
+                        class="post__comments-svg simbuilds__post-comments-svg svg"
+                        width="14"
+                        height="14"
+                      >
+                        <use href="../../img/svg/sprite.svg#icon-post-message"></use>
+                      </svg>
+
+                      <span class="post__comments-count simbuilds__post-comments-count">5</span>
+                    </div>
+                  </div>
+                </div>
+
+                <ul class="guns__build simbuilds__build">
+                  <li class="guns__build-item simbuilds__build-item">
+                    <span class="guns__build-tag simbuilds__build-tag">Remington</span>
+                  </li>
+                  <li class="guns__build-item simbuilds__build-item">
+                    <span class="guns__build-tag simbuilds__build-tag">1911 R1 Enhanced</span>
+                  </li>
+                  <li class="guns__build-item simbuilds__build-item">
+                    <span class="guns__build-tag simbuilds__build-tag">.45 ACP</span>
+                  </li>
+                </ul>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="guns__slider-list simbuilds__slider-list">
+            <li class="guns__slider-item simbuilds__slider-item">
+              <button class="guns__slider-button simbuilds__slider-button active"></button>
+            </li>
+
+            <li class="guns__slider-item simbuilds__slider-button simbuilds__slider-item">
+              <button class="guns__slider-button"></button>
+            </li>
+
+            <li class="guns__slider-item simbuilds__slider-button simbuilds__slider-item">
+              <button class="guns__slider-button"></button>
+            </li>
+
+            <li class="guns__slider-item simbuilds__slider-button simbuilds__slider-item">
+              <button class="guns__slider-button"></button>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <%= _.template(require('./../includes/footer.html').default)(data) %>
+  </body>
+</html>

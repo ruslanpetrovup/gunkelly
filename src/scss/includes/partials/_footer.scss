@@ -1,10 +1,10 @@
 // Footer
 .footer {
-  padding: 40px 0px 30px;
   background-color: $color-brand;
 }
 
 .footer__brand-wrapper {
+  padding-top: 40px;
   border-right: 1px solid $color-border;
 }
 
@@ -37,8 +37,13 @@
   border-bottom: 1px solid $color-border;
 }
 
+.social {
+  min-width: 107px;
+}
+
 .footer__social {
   padding-top: 38px;
+  padding-right: clamp(31px, 8vw, 128px);
 }
 
 .footer__nav {
@@ -140,7 +145,7 @@
   }
 
   .footer__logo-wrapper {
-    padding-right: clamp(0px, 5.33vw, 31px);
+    padding-right: clamp(1px, 5.33vw, 31px);
     padding-bottom: 30px;
   }
 
