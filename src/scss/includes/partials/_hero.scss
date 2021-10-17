@@ -177,11 +177,18 @@
 .hero__recentbuilds-item-head {
   font-family: Rogan;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   color: #000000;
 }
+/* Glock 22 Gen 4 */
+.profile__recentbuilds-item-head {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
 .hero__recentbuilds-item-block-human-images {
   margin-right: 10px;
 }

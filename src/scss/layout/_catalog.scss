@@ -249,7 +249,7 @@
 .searchbuilds__block__trending {
   margin-left: 30px;
   &.res {
-    width: 275px;
+    width: calc(#{($container - 2 * $padding) * $searchbuilds-block-width});
   }
 }
 .searchbuilds__block__trending-head {
@@ -261,7 +261,7 @@
 
   color: #ffffff;
   padding: 15px 0;
-  width: 275px;
+
   text-align: center;
   background: #263238;
   margin-bottom: 18px;
@@ -349,6 +349,7 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 2px;
   padding: 5px 8px;
+  color: #666666;
 }
 .searchbuilds__pagin-back-icon {
   width: 15px;
@@ -361,7 +362,6 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 140%;
-  color: #666666;
 }
 .searchbuilds__pagin-list {
   display: flex;
@@ -390,14 +390,28 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 2px;
   padding: 5px 8px;
+  color: #666666;
 }
+.searchbuilds__pagin-back,
+.searchbuilds__pagin-next,
+.searchbuilds__pagin-item-button {
+  @include transition;
+  transition-property: color, border-color, box-shadow;
+
+  &:focus,
+  &:hover {
+    color: lighten($color-accent, 3);
+    border-color: lighten($color-accent, 30);
+    box-shadow: rgba($color-black, 0.15);
+  }
+}
+
 .searchbuilds__pagin-next-text {
   font-family: Rogan;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 140%;
-  color: #666666;
 }
 .searchbuilds__pagin-next-icon {
   width: 15px;

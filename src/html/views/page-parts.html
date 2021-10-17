@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -9,327 +8,348 @@
     <meta name="theme-color" content="#212121" />
     <title>Главная страница</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <link rel="stylesheet" href="css/style.bundle.css" />
 
     <link rel="preload" href="./sass/fonts/CaviarDreams.woff2" crossorigin="anonymous" as="font" />
 
     <!-- 700 -->
-    <link rel="preload" href="../../fonts/rogan/Rogan-Bold.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
+    <link
+      rel="preload"
+      href="../../fonts/rogan/Rogan-Bold.woff2"
+      crossorigin="anonymous"
+      as="font"
+      type="font/woff2"
+    />
 
     <!-- 400 -->
-    <link rel="preload" href="../../fonts/rogan/Rogan-Regular.woff2" crossorigin="anonymous" as="font"
-        type="font/woff2" />
-</head>
+    <link
+      rel="preload"
+      href="../../fonts/rogan/Rogan-Regular.woff2"
+      crossorigin="anonymous"
+      as="font"
+      type="font/woff2"
+    />
+  </head>
 
-<body>
+  <body>
     <!-- Header -->
     <%= _.template(require('./../includes/header.html').default)(data) %>
     <!-- Search -->
     <%= _.template(require('./../includes/search.html').default)(data) %>
 
-
     <!-- Page Parts -->
     <div class="parts">
-        <div class="container">
-            <div class="parts__content">
-                <ul class="searchbuilds-list">
-                    <li class="searchbuilds-link">
-                        <a href="">Home</a>
-                    </li>
-                    <li class="searchbuilds-link">
-                        <a href="">Parts</a>
-                    </li>
-                    <li class="searchbuilds-link">
-                        <a href="">RMR RM06</a>
-                    </li>
-                    </ul>
-                    <div class="parts__block">
-                        <div class="parts__part">
-                            <div class="parts__part__toomb">
-                                <img src="../../img/photos/catalogs/parts5.png" class="parts__part-img">
-                            </div>
-                            <div class="parts__part__info">
-                                <h1 class="parts__part__info-head">
-                                    RMR RM06
-                                </h1>
-                                <button class="parts__part__info-button">
-                                    manufacturer
-                                </button>
-                                <div class="parts__part__info-descript">
-                                    <p class="parts__part__info-descript-text">
-                                        With eight available brightness settings, the reticle can be manually adjusted by pressing the plus or minus buttons
-                                        on
-                                        either side of the unit. To switch to auto adjust mode simply press both buttons simultaneously and release. To save
-                                        battery life turn the optic off by pressing both buttons simultaneously and holding for 3 seconds.
-                                    </p>
-                                    <button class="parts__part__info-all">
-                                        Show all
-                                    </button>
-                                </div>
-                                <h2 class="parts__part__info-sharehead">
-                                    Share part
-                                </h2>
-                                <ul class="parts__part__info-list">
-                                    <li class="parts__part__info-item">
-                                        <button class="parts__part__info-item-button">
-                                            <svg class="parts__part__info-item-button-icon">
-                                                <use href="../../img/svg/sprite.svg#icon-facebook"></use>
-                                            </svg>
-                                            Facebook
-                                        </button>
-                                    </li>
-                                    <li class="parts__part__info-item">
-                                        <button class="parts__part__info-item-button">
-                                            <svg class="parts__part__info-item-button-icon">
-                                                <use href="../../img/svg/sprite.svg#icon-twitter"></use>
-                                            </svg>
-                                            Twitter
-                                        </button>
-                                    </li>
-                                    <li class="parts__part__info-item">
-                                        <button class="parts__part__info-item-button">
-                                            <svg class="parts__part__info-item-button-icon">
-                                                <use href="../../img/svg/sprite.svg#icon-plus-bold"></use>
-                                            </svg>
-                                            More
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- Trending -->
-                        <div class="searchbuilds__block__trending">
-                            <div class="searchbuilds__block__trending-builds">
-                                <h2 class="searchbuilds__block__trending-head">
-                                    Top builds
-                                </h2>
-                                <ul class="hero__recentbuilds-list res">
-                                    <li class="hero__recentbuilds-item res">
-                                        <div class="hero__recentbuilds-cards-toomb">
-                                            <div class="hero__recentbuilds-cards-images res">
-                                                <img src="../../img/photos/pistol1.png" class="hero__recentbuilds-cards-img">
-                                            </div>
-                                            <h2 class="hero__recentbuilds-item-head">Glock 22 Gen 4</h2>
-                                            <div class="hero__recentbuilds-item-block res">
-                                                <img src="../../img/photos/avatar.png" class="hero__recentbuilds-item-block-human-images res">
-                                                <p class="hero__recentbuilds-item-block-human-name res">troz</p>
-                                                <svg class="hero__recentbuilds-item-block-human-icon res">
-                                                    <use href="../../img/svg/sprite.svg#icon-post-vieweye"></use>
-                                                </svg>
-                                                <p class="hero__recentbuilds-item-block-human-vieweye res">12</p>
-                                                <svg class="hero__recentbuilds-item-block-human-icon res">
-                                                    <use href="../../img/svg/sprite.svg#icon-post-message"></use>
-                                                </svg>
-                                                <p class="hero__recentbuilds-item-block-human-comment">5</p>
-                                            </div>
-                                            <ul class="hero__recentbuilds-item-stats-list">
-                                                <li class="hero__recentbuilds-item-stats-item">
-                                                    Remington
-                                                </li>
-                                                <li class="hero__recentbuilds-item-stats-item">
-                                                    1911 R1 Enhanced
-                                                </li>
-                                                <li class="hero__recentbuilds-item-stats-item">
-                                                    .45 ACP
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="hero__recentbuilds-item res">
-
-                                        <div class="hero__recentbuilds-cards-toomb">
-                                            <div class="hero__recentbuilds-cards-images res">
-                                                <img src="../../img/photos/ak1.png" class="hero__recentbuilds-cards-img">
-                                            </div>
-                                            <h2 class="hero__recentbuilds-item-head">Glock 22 Gen 4</h2>
-                                            <div class="hero__recentbuilds-item-block res">
-                                                <img src="../../img/photos/avatar.png" class="hero__recentbuilds-item-block-human-images res">
-                                                <p class="hero__recentbuilds-item-block-human-name res">troz</p>
-                                                <svg class="hero__recentbuilds-item-block-human-icon res">
-                                                    <use href="../../img/svg/sprite.svg#icon-post-vieweye"></use>
-                                                </svg>
-                                                <p class="hero__recentbuilds-item-block-human-vieweye res">12</p>
-                                                <svg class="hero__recentbuilds-item-block-human-icon res">
-                                                    <use href="../../img/svg/sprite.svg#icon-post-message"></use>
-                                                </svg>
-                                                <p class="hero__recentbuilds-item-block-human-comment">5</p>
-                                            </div>
-                                            <ul class="hero__recentbuilds-item-stats-list">
-                                                <li class="hero__recentbuilds-item-stats-item">
-                                                    Remington
-                                                </li>
-                                                <li class="hero__recentbuilds-item-stats-item">
-                                                    1911 R1 Enhanced
-                                                </li>
-                                                <li class="hero__recentbuilds-item-stats-item">
-                                                    .45 ACP
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    
-                                </ul>
-                            </div>
-                            <div class="searchbuilds__block__trending-now">
-                                <h2 class="searchbuilds__block__trending-head">
-                                    Trending now
-                                </h2>
-                                <ul class="trending-now__list res">
-                                    <li class="trending-now__item">
-                                        <a class="trending-now__link" href="#">
-                            
-                                            <h3 class="trending-now__post-title">
-                                                10 Tips for Choosing <br />
-                                                a Concealed Carry Handgun
-                                            </h3>
-                                            <div class="trending-now__thumb res">
-                                                <img class="trending-now__author-avatar res"
-                                                    src="./img/photos/avatars-40x40/avatar-001-man-gray-shirt.jpg" alt="Man-gray-shirt" />
-                            
-                                                <p class="trending-now__post-meta res">
-                                                    <span class="trending-now__author-name">troz</span>,
-                                                    <span class="trending-now__post-date">today</span>
-                                                </p>
-                                            </div>
-                                        </a>
-                                    </li>
-                            
-                                    <li class="trending-now__item">
-                                        <a class="trending-now__link" href="#">
-                            
-                                            <h3 class="trending-now__post-title">Firearms definitions and requirements</h3>
-                                            <div class="trending-now__thumb res">
-                                                <img class="trending-now__author-avatar res"
-                                                    src="./img/photos/avatars-40x40/avatar-002-man-red-tshirt.jpg" alt="Man-red-tshirt" />
-                                                <p class="trending-now__post-meta res">
-                                                    <span class="trending-now__author-name">troz</span>,
-                                                    <span class="trending-now__post-date">yesterday</span>
-                                                </p>
-                                            </div>
-                                        </a>
-                                    </li>
-                            
-                                    <li class="trending-now__item">
-                                        <a class="trending-now__link" href="#">
-                            
-                                            <h3 class="trending-now__post-title">New Members: Please Read Guidelines</h3>
-                                            <div class="trending-now__thumb res">
-                                                <img class="trending-now__author-avatar res"
-                                                    src="./img/photos/avatars-40x40/avatar-003-man-white-tshirt.jpg" alt="Man-white-tshirt" />
-                            
-                                                <p class="trending-now__post-meta res">
-                                                    <span class="trending-now__author-name">troz</span>,
-                                                    <span class="trending-now__post-date">yesterday</span>
-                                                </p>
-                                            </div>
-                                        </a>
-                                    </li>
-                            
-                                    <li class="trending-now__item">
-                                        <a class="trending-now__link" href="#">
-                            
-                                            <h3 class="trending-now__post-title">Pencil Barrel Whip</h3>
-                                            <div class="trending-now__thumb res">
-                                                <img class="trending-now__author-avatar res"
-                                                    src="./img/photos/avatars-40x40/avatar-004-man-striped-tshirt.jpg" alt="Man-striped-tshirt" />
-                            
-                                                <p class="trending-now__post-meta res">
-                                                    <span class="trending-now__author-name">troz</span>,
-                                                    <span class="trending-now__post-date">today</span>
-                                                </p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="searchbuilds__block__trending-blogs">
-                                <h2 class="searchbuilds__block__trending-head">
-                                    Top blogposts
-                                </h2>
-                                <ul class="top-blogposts__list res">
-                                    <li class="top-blogposts__item">
-                                        <a class="top-blogposts__link link res" href="#">
-                                            <div class="top-blogposts__thumb res">
-                                                <img class="top-blogposts__image res" src="../../img/photos/top-blogposts/top-blogpost-001-ak-12.jpg"
-                                                    alt="top blogposts gun image ak-12" width="200" height="200" />
-                                            </div>
-                                
-                                            <div class="top-blogposts-meta res">
-                                                <p class="top-blogposts__post-type">Rifle</p>
-                                
-                                                <p class="top-blogposts__post-title res">Izhmash officially presented the new AK-12</p>
-                                
-                                                <div class="post top-blogposts__post">
-                                                    <span class="post__author-name">troz</span>
-                                
-                                                    <div class="post__views">
-                                                        <svg class="post__views-svg svg" width="16" height="16">
-                                                            <use href="./img/svg/sprite.svg#icon-post-vieweye"></use>
-                                                        </svg>
-                                
-                                                        <span class="post__views-count">12</span>
-                                                    </div>
-                                
-                                                    <div class="post__comments">
-                                                        <svg class="post__comments-svg svg" width="14" height="14">
-                                                            <use href="../../img/svg/sprite.svg#icon-post-message"></use>
-                                                        </svg>
-                                
-                                                        <span class="post__comments-count">5</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                
-                                    <li class="top-blogposts__item">
-                                        <a class="top-blogposts__link link res" href="#">
-                                            <div class="top-blogposts__thumb res">
-                                                <img class="top-blogposts__image res"
-                                                    src="../../img/photos/top-blogposts/top-blogpost-002-savage-mark-2.jpg"
-                                                    alt="top blogposts gun image savage-mark-2"/>
-                                            </div>
-                                
-                                            <div class="top-blogposts-meta res">
-                                                <p class="top-blogposts__post-type">Shotgun</p>
-                                
-                                                <p class="top-blogposts__post-title res">Savage Mark 2 and a problem of extraction</p>
-                                
-                                                <div class="post top-blogposts__post">
-                                                    <span class="post__author-name">troz</span>
-                                
-                                                    <div class="post__views">
-                                                        <svg class="post__views-svg svg" width="16" height="16">
-                                                            <use href="./img/svg/sprite.svg#icon-post-vieweye"></use>
-                                                        </svg>
-                                
-                                                        <span class="post__views-count">12</span>
-                                                    </div>
-                                
-                                                    <div class="post__comments">
-                                                        <svg class="post__comments-svg svg" width="14" height="14">
-                                                            <use href="../../img/svg/sprite.svg#icon-post-message"></use>
-                                                        </svg>
-                                
-                                                        <span class="post__comments-count">5</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+      <div class="container">
+        <div class="parts__content">
+          <ul class="searchbuilds-list">
+            <li class="searchbuilds-link">
+              <a href="">Home</a>
+            </li>
+            <li class="searchbuilds-link">
+              <a href="">Parts</a>
+            </li>
+            <li class="searchbuilds-link">
+              <a href="">RMR RM06</a>
+            </li>
+          </ul>
+          <div class="parts__block">
+            <div class="parts__part">
+              <div class="parts__part__toomb">
+                <img src="../../img/photos/catalogs/parts5.png" class="parts__part-img" />
+              </div>
+              <div class="parts__part__info">
+                <h1 class="parts__part__info-head">RMR RM06</h1>
+                <button class="parts__part__info-button">manufacturer</button>
+                <div class="parts__part__info-descript">
+                  <p class="parts__part__info-descript-text">
+                    With eight available brightness settings, the reticle can be manually adjusted
+                    by pressing the plus or minus buttons on either side of the unit. To switch to
+                    auto adjust mode simply press both buttons simultaneously and release. To save
+                    battery life turn the optic off by pressing both buttons simultaneously and
+                    holding for 3 seconds.
+                  </p>
+                  <button class="parts__part__info-all">Show all</button>
+                </div>
+                <h2 class="parts__part__info-sharehead">Share part</h2>
+                <ul class="parts__part__info-list">
+                  <li class="parts__part__info-item">
+                    <button class="parts__part__info-item-button">
+                      <svg class="parts__part__info-item-button-icon">
+                        <use href="../../img/svg/sprite.svg#icon-facebook"></use>
+                      </svg>
+                      Facebook
+                    </button>
+                  </li>
+                  <li class="parts__part__info-item">
+                    <button class="parts__part__info-item-button">
+                      <svg class="parts__part__info-item-button-icon">
+                        <use href="../../img/svg/sprite.svg#icon-twitter"></use>
+                      </svg>
+                      Twitter
+                    </button>
+                  </li>
+                  <li class="parts__part__info-item">
+                    <button class="parts__part__info-item-button">
+                      <svg class="parts__part__info-item-button-icon">
+                        <use href="../../img/svg/sprite.svg#icon-plus-bold"></use>
+                      </svg>
+                      More
+                    </button>
+                  </li>
+                </ul>
+              </div>
             </div>
+            <!-- Trending -->
+            <div class="searchbuilds__block__trending">
+              <div class="searchbuilds__block__trending-builds">
+                <h2 class="searchbuilds__block__trending-head">Top builds</h2>
+                <ul class="hero__recentbuilds-list res">
+                  <li class="hero__recentbuilds-item res">
+                    <div class="hero__recentbuilds-cards-toomb">
+                      <div class="hero__recentbuilds-cards-images res">
+                        <img
+                          src="../../img/photos/pistol1.png"
+                          class="hero__recentbuilds-cards-img"
+                        />
+                      </div>
+                      <h2 class="hero__recentbuilds-item-head profile__recentbuilds-item-head">
+                        Glock 22 Gen 4
+                      </h2>
+                      <div class="hero__recentbuilds-item-block res">
+                        <img
+                          src="../../img/photos/avatar.png"
+                          class="hero__recentbuilds-item-block-human-images res"
+                        />
+                        <p class="hero__recentbuilds-item-block-human-name res">troz</p>
+                        <svg class="hero__recentbuilds-item-block-human-icon res">
+                          <use href="../../img/svg/sprite.svg#icon-post-vieweye"></use>
+                        </svg>
+                        <p class="hero__recentbuilds-item-block-human-vieweye res">12</p>
+                        <svg class="hero__recentbuilds-item-block-human-icon res">
+                          <use href="../../img/svg/sprite.svg#icon-post-message"></use>
+                        </svg>
+                        <p class="hero__recentbuilds-item-block-human-comment">5</p>
+                      </div>
+                      <ul class="hero__recentbuilds-item-stats-list">
+                        <li class="hero__recentbuilds-item-stats-item">Remington</li>
+                        <li class="hero__recentbuilds-item-stats-item">1911 R1 Enhanced</li>
+                        <li class="hero__recentbuilds-item-stats-item">.45 ACP</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="hero__recentbuilds-item res">
+                    <div class="hero__recentbuilds-cards-toomb">
+                      <div class="hero__recentbuilds-cards-images res">
+                        <img src="../../img/photos/ak1.png" class="hero__recentbuilds-cards-img" />
+                      </div>
+                      <h2 class="hero__recentbuilds-item-head profile__recentbuilds-item-head">
+                        Glock 22 Gen 4
+                      </h2>
+                      <div class="hero__recentbuilds-item-block res">
+                        <img
+                          src="../../img/photos/avatar.png"
+                          class="hero__recentbuilds-item-block-human-images res"
+                        />
+                        <p class="hero__recentbuilds-item-block-human-name res">troz</p>
+                        <svg class="hero__recentbuilds-item-block-human-icon res">
+                          <use href="../../img/svg/sprite.svg#icon-post-vieweye"></use>
+                        </svg>
+                        <p class="hero__recentbuilds-item-block-human-vieweye res">12</p>
+                        <svg class="hero__recentbuilds-item-block-human-icon res">
+                          <use href="../../img/svg/sprite.svg#icon-post-message"></use>
+                        </svg>
+                        <p class="hero__recentbuilds-item-block-human-comment">5</p>
+                      </div>
+                      <ul class="hero__recentbuilds-item-stats-list">
+                        <li class="hero__recentbuilds-item-stats-item">Remington</li>
+                        <li class="hero__recentbuilds-item-stats-item">1911 R1 Enhanced</li>
+                        <li class="hero__recentbuilds-item-stats-item">.45 ACP</li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="searchbuilds__block__trending-now">
+                <h2 class="searchbuilds__block__trending-head">Trending now</h2>
+                <ul class="trending-now__list res">
+                  <li class="trending-now__item">
+                    <a class="trending-now__link" href="#">
+                      <h3 class="trending-now__post-title">
+                        10 Tips for Choosing <br />
+                        a Concealed Carry Handgun
+                      </h3>
+                      <div class="trending-now__thumb res">
+                        <img
+                          class="trending-now__author-avatar res"
+                          src="./img/photos/avatars-40x40/avatar-001-man-gray-shirt.jpg"
+                          alt="Man-gray-shirt"
+                        />
+
+                        <p class="trending-now__post-meta res">
+                          <span class="trending-now__author-name">troz</span>,
+                          <span class="trending-now__post-date">today</span>
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="trending-now__item">
+                    <a class="trending-now__link" href="#">
+                      <h3 class="trending-now__post-title">
+                        Firearms definitions and requirements
+                      </h3>
+                      <div class="trending-now__thumb res">
+                        <img
+                          class="trending-now__author-avatar res"
+                          src="./img/photos/avatars-40x40/avatar-002-man-red-tshirt.jpg"
+                          alt="Man-red-tshirt"
+                        />
+                        <p class="trending-now__post-meta res">
+                          <span class="trending-now__author-name">troz</span>,
+                          <span class="trending-now__post-date">yesterday</span>
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="trending-now__item">
+                    <a class="trending-now__link" href="#">
+                      <h3 class="trending-now__post-title">New Members: Please Read Guidelines</h3>
+                      <div class="trending-now__thumb res">
+                        <img
+                          class="trending-now__author-avatar res"
+                          src="./img/photos/avatars-40x40/avatar-003-man-white-tshirt.jpg"
+                          alt="Man-white-tshirt"
+                        />
+
+                        <p class="trending-now__post-meta res">
+                          <span class="trending-now__author-name">troz</span>,
+                          <span class="trending-now__post-date">yesterday</span>
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="trending-now__item">
+                    <a class="trending-now__link" href="#">
+                      <h3 class="trending-now__post-title">Pencil Barrel Whip</h3>
+                      <div class="trending-now__thumb res">
+                        <img
+                          class="trending-now__author-avatar res"
+                          src="./img/photos/avatars-40x40/avatar-004-man-striped-tshirt.jpg"
+                          alt="Man-striped-tshirt"
+                        />
+
+                        <p class="trending-now__post-meta res">
+                          <span class="trending-now__author-name">troz</span>,
+                          <span class="trending-now__post-date">today</span>
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="searchbuilds__block__trending-blogs">
+                <h2 class="searchbuilds__block__trending-head">Top blogposts</h2>
+                <ul class="top-blogposts__list res">
+                  <li class="top-blogposts__item">
+                    <a class="top-blogposts__link link res" href="#">
+                      <div class="top-blogposts__thumb res">
+                        <img
+                          class="top-blogposts__image res"
+                          src="../../img/photos/top-blogposts/top-blogpost-001-ak-12.jpg"
+                          alt="top blogposts gun image ak-12"
+                          width="200"
+                          height="200"
+                        />
+                      </div>
+
+                      <div class="top-blogposts-meta res">
+                        <p class="top-blogposts__post-type">Rifle</p>
+
+                        <p class="top-blogposts__post-title res">
+                          Izhmash officially presented the new AK-12
+                        </p>
+
+                        <div class="post top-blogposts__post">
+                          <span class="post__author-name">troz</span>
+
+                          <div class="post__views">
+                            <svg class="post__views-svg svg" width="16" height="16">
+                              <use href="./img/svg/sprite.svg#icon-post-vieweye"></use>
+                            </svg>
+
+                            <span class="post__views-count">12</span>
+                          </div>
+
+                          <div class="post__comments">
+                            <svg class="post__comments-svg svg" width="14" height="14">
+                              <use href="../../img/svg/sprite.svg#icon-post-message"></use>
+                            </svg>
+
+                            <span class="post__comments-count">5</span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="top-blogposts__item">
+                    <a class="top-blogposts__link link res" href="#">
+                      <div class="top-blogposts__thumb res">
+                        <img
+                          class="top-blogposts__image res"
+                          src="../../img/photos/top-blogposts/top-blogpost-002-savage-mark-2.jpg"
+                          alt="top blogposts gun image savage-mark-2"
+                        />
+                      </div>
+
+                      <div class="top-blogposts-meta res">
+                        <p class="top-blogposts__post-type">Shotgun</p>
+
+                        <p class="top-blogposts__post-title res">
+                          Savage Mark 2 and a problem of extraction
+                        </p>
+
+                        <div class="post top-blogposts__post">
+                          <span class="post__author-name">troz</span>
+
+                          <div class="post__views">
+                            <svg class="post__views-svg svg" width="16" height="16">
+                              <use href="./img/svg/sprite.svg#icon-post-vieweye"></use>
+                            </svg>
+
+                            <span class="post__views-count">12</span>
+                          </div>
+
+                          <div class="post__comments">
+                            <svg class="post__comments-svg svg" width="14" height="14">
+                              <use href="../../img/svg/sprite.svg#icon-post-message"></use>
+                            </svg>
+
+                            <span class="post__comments-count">5</span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
-<!-- Footer -->
-<%= _.template(require('./../includes/footer.html').default)(data) %>
-</body>
+    <!-- Footer -->
+    <%= _.template(require('./../includes/footer.html').default)(data) %>
+  </body>
+</html>

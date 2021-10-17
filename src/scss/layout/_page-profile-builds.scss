@@ -1,0 +1,27 @@
+/* Add build */
+.profile__add-build-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 35px;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: $color-accent;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.profile__add-build-button-icon {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+.profile-builds__title-wrapper {
+  margin-bottom: 20px;
+}
+.profile-builds__searchbuilds__pagin {
+  margin-top: 50px;
+}
