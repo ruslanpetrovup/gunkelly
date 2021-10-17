@@ -49,11 +49,13 @@
   color: #ffffff;
   padding: 12px 15px;
   transition: opacity 300ms linear;
+  cursor: pointer;
 }
 .profile__hero-toomb-button-icon {
   width: 20px;
   height: 17px;
   margin-right: 10px;
+  fill: #ffffff;
 }
 .profile__human {
   display: flex;
