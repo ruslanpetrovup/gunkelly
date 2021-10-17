@@ -63,7 +63,7 @@
 }
 .profile__human {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 .profile__human-img {
   width: 170px;
@@ -186,6 +186,12 @@
   display: block;
 }
 
+// .profile-profile-forums__title-wrapper { }
+
+.profile__title-wrapper {
+  margin-bottom: 25px;
+}
+
 /* Builds */
 .profile__title {
   font-weight: 700;
@@ -210,6 +216,7 @@
 }
 // .profile__item { }
 .profile__thumb {
+  position: relative;
   max-width: 277px;
 }
 .profile-profile-forums__list {
@@ -227,4 +234,13 @@
 }
 .profile-profile-forums__post-meta-date {
   margin-bottom: 10px;
+}
+/* Glock 22 Gen 4 */
+.profile__recentbuilds-item-head {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+.searchbuilds__block__trending-blogs {
+  margin-bottom: 60px;
 }
