@@ -1,19 +1,28 @@
+.build__flex-container {
+  display: flex;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.build__part-list-aside {
+  max-width: calc(100% * #{$build__aside-width});
+}
+
+.build__main-content-wrapper {
+  max-width: calc(100% * #{$build__main-width});
+  margin-left: auto;
+}
+
 // .build__container { }
 
-.build__main-container {
-  position: relative;
-}
+// .build__main-container { }
 
 .build__searchbuilds-container {
   margin-top: 40px;
   margin-bottom: 40px;
 }
 
-.build__main-content {
-  max-width: calc(100% * #{$build__main-width});
-  order: 2;
-  margin-left: auto;
-}
+// .build__main-content { }
 
 /* Custom browning Hi Power */
 .build__title {
@@ -160,7 +169,10 @@
   background: none;
   border: 1px solid rgba($color-accent, 0.25);
   border-radius: 4px;
+}
 
+.share-btn,
+.comments__show-more-btn {
   @include transition;
   transition-property: color, box-shadow;
 
@@ -170,6 +182,7 @@
     box-shadow: 0 0 35px rgba($color-black, 0.05);
   }
 }
+
 // .build__share-btn {}
 .share-btn__svg {
   color: $color-accent;
@@ -189,18 +202,36 @@
   display: flex;
   gap: 23px;
 }
-// .build__photos-item  { }
-// .build__photos-thumb {}
 
-.build__part-list-aside {
+.build__photos-item {
+  position: relative;
+}
+
+.build__photos-to-show-wrapper {
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
 
-  max-width: calc(100% * #{$build__aside-width});
+  display: flex;
 
-  order: 1;
+  background: rgba($color-black, 0.15);
+  backdrop-filter: blur(4px);
 }
+
+/* +30 */
+.build__photos-to-show-count {
+  margin: auto;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $color-white;
+}
+
+// .build__photos-thumb {}
 
 // (aside - 1st and 2nd box)
 .build__basis-wrapper,
@@ -248,9 +279,15 @@
   display: flex;
 }
 
-.build__part-list-item {
+// .build__part-list-item { }
+.build__part-list-link {
   display: flex;
+  align-items: center;
   gap: 13px;
+}
+
+.build__part-list-image {
+  border: 1px solid rgba($color-black, 0.05); // width: 80px; height: 80px;
 }
 
 .build__part-list-meta {
@@ -278,15 +315,188 @@
   opacity: 0.5;
 }
 
-.build__details-wrapper {
-  max-width: calc(100% * #{$build__main-width});
-  margin-left: auto;
+.build__details-thumb {
+  margin-bottom: 30px;
 }
 
 .build__image,
 .build__details-image {
   max-width: 100%;
   height: auto;
+}
+
+/* Build comments 25 */
+.build__comments-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  margin-bottom: 40px;
+}
+
+.build__comments-count {
+  color: $color-comments-count;
+}
+
+// .comments__form {}
+
+.comments-review-label {
+  display: flex;
+  flex-direction: column;
+}
+
+.build__comments-review-label {
+  margin-bottom: 20px;
+}
+
+.build__comments-review {
+  box-sizing: border-box;
+  min-height: 140px;
+
+  padding: 20px 25px;
+  resize: none;
+
+  background-color: $color-white;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+
+  /* Enter your review */
+  &::placeholder {
+    font-size: 18px;
+    line-height: 22px;
+    color: #999999;
+  }
+}
+
+/* post */
+.build__comments-submit-review-btn {
+  appearance: none;
+  min-width: 200px;
+  min-height: 50px;
+
+  display: block;
+
+  padding: 16px 42px;
+  margin-bottom: 20px;
+  margin-left: auto;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 120%;
+  color: $color-white;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+
+  background-color: $color-accent;
+  border-radius: 4px;
+  border: none;
+
+  @include transition;
+  transition-property: color, background-color, box-shadow;
+
+  &:focus,
+  &:hover {
+    background-color: lighten($color-accent, 5);
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.build__comments-avatar-thumb {
+  margin-right: 13px;
+}
+
+/* Alexander */
+.comments__author-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 140%;
+  margin-right: 30px;
+}
+// .build__comments-author-name { }
+
+/* I found a 2007 study on effects */
+.comments__posted-review {
+  font-size: 14px;
+  line-height: 140%;
+  color: $color-comments-posted-review;
+}
+// .build__comments-posted-review { }
+
+/* Edit */
+.comments__edit-review-btn {
+  appearance: none;
+  background: none;
+  border: none;
+
+  margin-right: 15px;
+  font-size: 14px;
+  line-height: 140%;
+  color: $color-accent;
+  text-align: right;
+
+  @include transition;
+  transition-property: color;
+
+  &:focus,
+  &:hover {
+    color: lighten($color-accent, 21);
+  }
+}
+
+.build__comments-post-meta {
+  margin-bottom: 15px;
+}
+
+/* 11 December 2021 */
+.comments__posted-date {
+  font-size: 14px;
+  line-height: 140%;
+  text-align: right;
+  color: $color-comments-posted-date;
+}
+
+.comments__posted-review {
+  margin-bottom: 15px;
+}
+
+.comments__item {
+  &::after {
+    display: block;
+    width: 100%;
+    height: 1px;
+
+    margin-top: 20px;
+    content: '';
+
+    background: $color-black;
+    opacity: 0.05;
+  }
+
+  &:not(:last-child)::after {
+    margin-bottom: 25px;
+  }
+
+  &:last-child::after {
+    margin-bottom: 30px;
+  }
+}
+
+.comments__show-more-btn {
+  appearance: none;
+
+  display: block;
+  width: 100%;
+  padding: 16px 42px;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: $color-accent;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+
+  background: none;
+  border: 1px solid rgba(25, 140, 205, 0.25);
+  border-radius: 4px;
 }
 
 /*
@@ -373,11 +583,6 @@
 
 // tablet
 @media screen and (min-width: 768px) {
-  .build__main-container {
-    display: flex;
-    gap: $build-gap;
-  }
-
   .build__part-list {
     flex-direction: column;
     gap: 20px;

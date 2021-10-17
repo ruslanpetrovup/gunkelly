@@ -19,6 +19,13 @@
   }
   &:last-child {
     color: #198ccd;
+
+    @include transition;
+    transition-property: color;
+    &:focus,
+    &:hover {
+      color: lighten($color-accent, 21);
+    }
   }
   &:not(:first-child)::before {
     content: ' ';
