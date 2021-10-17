@@ -51,6 +51,9 @@
 .searchbuilds__block {
   display: flex;
 }
+.searchbuilds__block__filter {
+  width: calc(#{($container - 2 * $padding) * $searchbuilds-block-width});
+}
 .searchbuilds__block__filter-toomb-category {
   background: #ffffff;
   box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.05);
