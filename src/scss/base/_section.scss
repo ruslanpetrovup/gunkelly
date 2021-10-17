@@ -1,3 +1,13 @@
 .section {
   padding-bottom: 60px;
 }
+
+@media screen and (max-width: 767px) {
+  .section {
+    padding-bottom: 40px;
+  }
+
+  .build__section {
+    padding-bottom: 50px;
+  }
+}
