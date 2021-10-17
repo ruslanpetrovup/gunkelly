@@ -241,6 +241,9 @@
 }
 .searchbuilds__block__trending {
   margin-left: 30px;
+  &.res {
+    width: 275px;
+  }
 }
 .searchbuilds__block__trending-head {
   font-family: Rogan;
@@ -289,6 +292,7 @@
 .hero__recentbuilds-list.res {
   display: flex;
   margin-bottom: 30px;
+  gap: 18px;
 }
 .hero__recentbuilds-cards-images.res {
   margin-left: 0;
