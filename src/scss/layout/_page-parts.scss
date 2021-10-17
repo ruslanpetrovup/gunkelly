@@ -6,7 +6,11 @@
   margin-top: 40px;
 }
 .parts__part {
+  // display: flex;
+}
+.parts__part__two {
   display: flex;
+  margin-bottom: 60px;
 }
 .parts__part__toomb {
   margin-right: 30px;
@@ -99,4 +103,7 @@
   height: 18px;
   margin-right: 10px;
   width: 17px;
+}
+.build__comments-wrapper.res {
+  margin-top: 60px;
 }
