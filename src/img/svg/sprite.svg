@@ -14,7 +14,7 @@
     </symbol>
 
     <symbol id="icon-add-simple" viewBox="0 0 32 32">
-      <path fill="none" stroke="var(--color1, #fff)" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="2.29" d="M29.71 16H2.28M16 29.71V2.28"/>
+      <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="2.29" d="M29.71 16H2.28M16 29.71V2.28"/>
     </symbol>
 
     <symbol id="icon-gear-pistol" viewBox="0 0 32 32">
@@ -93,7 +93,7 @@
     </symbol>
 
     <symbol id="icon-arrow-right" viewBox="0 0 34 32">
-      <path fill="var(--color2, #666)" d="M10.62 26.03a1 1 0 0 1-.08-1.29l.08-.12L19.26 16l-8.64-8.62a1 1 0 0 1-.08-1.3l.08-.13a1 1 0 0 1 1.33-.08l.1.08 9.33 9.35c.36.34.38.91.1 1.28l-.1.13-9.33 9.34a1 1 0 0 1-1.43 0z"/>
+      <path fill="currentColor" d="M10.62 26.03a1 1 0 0 1-.08-1.29l.08-.12L19.26 16l-8.64-8.62a1 1 0 0 1-.08-1.3l.08-.13a1 1 0 0 1 1.33-.08l.1.08 9.33 9.35c.36.34.38.91.1 1.28l-.1.13-9.33 9.34a1 1 0 0 1-1.43 0z"/>
     </symbol>
 
     <symbol id="icon-delete" viewBox="0 0 32 32">
@@ -148,6 +148,16 @@
     <symbol id="icon-gallery" viewBox="0 0 37 32">
       <path d="M31.86 30.8H5.48a4.62 4.62 0 0 1-4.6-4.58V5.78a4.62 4.62 0 0 1 4.6-4.59h26.38a4.62 4.62 0 0 1 4.59 4.59v20.44a4.62 4.62 0 0 1-4.59 4.59zM5.48 4.15c-.9 0-1.62.75-1.62 1.64v20.44c0 .9.73 1.64 1.62 1.64h26.38c.89 0 1.62-.75 1.62-1.64V5.78c0-.9-.73-1.64-1.62-1.64H5.48z"/>
       <path d="M5.08 27.11a1.24 1.24 0 0 1-1.06-.67 1.83 1.83 0 0 1 .39-2.12l10.88-8.94c.98-.84 2.22-.77 3.02.21l2.9 3.56 10.27-9.5c.56-.53 1.3-.37 1.73.3s.3 1.59-.25 2.1l-10.2 9.57c-.98.89-2.35.89-3.15-.15l-2.9-3.55-10.95 8.96c-.18.14-.42.23-.67.23zm3.97-15.55a2.22 2.22 0 0 0 0-4.45 2.22 2.22 0 0 0 0 4.45z"/>
+    </symbol>
+
+    <symbol id="icon-eye-off" viewBox="0 0 32 32">
+      <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="m4 4 24 24M14 14.24a2.67 2.67 0 0 0 3.76 3.75h0"/>
+      <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M9.81 10.08C7.57 11.65 5.71 13.88 4 16c2.52 3.99 7.04 8 12 8 2.07 0 4.05-.7 5.87-1.8M16 8c5.34 0 8.94 4.21 12 8-.44.7-.92 1.36-1.44 2"/>
+    </symbol>
+
+    <symbol id="icon-gear-settings" viewBox="0 0 32 32">
+      <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="1.85" d="m13.9 4.52.13-.3a2.68 2.68 0 0 1 4.97.2v.02l.09.31a2.68 2.68 0 0 0 3.59 1.64l-.02.01.28-.12a2.67 2.67 0 0 1 3.36 3.68l.01-.01-.13.28a2.67 2.67 0 0 0 1.31 3.67h.02l.3.13a2.68 2.68 0 0 1-.2 4.97h-.03l-.3.1a2.68 2.68 0 0 0-1.67 3.58v-.02l.11.28a2.67 2.67 0 0 1-3.68 3.36l.01.01-.28-.13a2.67 2.67 0 0 0-3.67 1.31v.02l-.13.3a2.68 2.68 0 0 1-4.97-.2v-.03l-.09-.3a2.68 2.68 0 0 0-3.59-1.67h.02l-.28.11a2.67 2.67 0 0 1-3.38-3.68v.01l.14-.28a2.67 2.67 0 0 0-1.31-3.67h-.02l-.3-.13A2.68 2.68 0 0 1 4.4 13h.03l.3-.09a2.68 2.68 0 0 0 1.67-3.59l.01.02-.12-.28a2.67 2.67 0 0 1 3.68-3.34l-.02-.01.29.15a2.67 2.67 0 0 0 3.67-1.32v-.02z"/>
+      <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="1.85" d="M16 21.22a5.22 5.22 0 1 0 0-10.44v0a5.22 5.22 0 1 0 0 10.44v0z"/>
     </symbol>
   </defs>
 </svg>
