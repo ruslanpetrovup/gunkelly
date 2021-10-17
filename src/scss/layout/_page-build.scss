@@ -1,20 +1,15 @@
 // .build__container { }
 
-.build__main-container {
-  display: flex;
-  gap: 30px;
+// .build__main-container { }
+.build__searchbuilds-container {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .build__main-content {
+  flex-basis: calc((100% - #{$build-gap}) * #{$build__main-width});
+
   order: 2;
-}
-
-.build__part-list {
-  order: 1;
-}
-
-.build__searchbuilds-list {
-  margin-bottom: 40px;
 }
 
 /* Custom browning Hi Power */
@@ -185,12 +180,105 @@
 }
 
 .build__photos-list {
+  contain: content;
   display: flex;
-  flex-wrap: wrap;
   gap: 23px;
 }
 // .build__photos-item  { }
 // .build__photos-thumb {}
+
+.build__part-list-aside {
+  flex-basis: calc((100% - #{$build-gap}) * #{$build__aside-width});
+  order: 1;
+}
+
+// (aside - 1st box)
+.build__part-list-wrapper {
+  padding: 30px 25px;
+  margin-bottom: 30px;
+}
+
+// 150x106
+.build__build-basis-thumb {
+  min-width: 150px;
+  min-height: 106px;
+  padding-top: 5px;
+  margin-bottom: 30px;
+}
+
+.build__build-basis-image {
+  margin: 0 auto;
+}
+
+// aside content (1st image - build basis)
+// tag list
+.build__build {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.build__part-list-title {
+  margin-bottom: 30px;
+}
+
+.build__part-list {
+  contain: content;
+  display: flex;
+}
+
+.build__part-list-item {
+  display: flex;
+  gap: 13px;
+}
+
+.build__part-list-meta {
+  padding: 8px 0;
+}
+
+.build__part-list-rating {
+  margin-bottom: 6px;
+}
+
+/* RMR RM06 */
+.build__part-list-name {
+  margin-bottom: 6px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+/* BCU */
+.build__part-list-type {
+  position: static;
+  font-size: 14px;
+  line-height: 17px;
+  opacity: 0.5;
+}
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
 
 .build__description {
   font-size: 14px;
@@ -225,15 +313,45 @@
  */
 
 // mobile
-@media screen and (min-width: 767px) {
-  .build__searchbuilds-list {
+@media screen and (max-width: 767px) {
+  .build__searchbuilds-container {
     margin-top: 30px;
     margin-bottom: 30px;
+  }
+
+  .build__section {
+    padding-bottom: 50px;
+  }
+
+  .build__photos-list {
+    margin-bottom: 20px;
+  }
+
+  .build__part-list-wrapper {
+    padding: 0;
+  }
+
+  .build__part-list-title {
+    margin-bottom: 20px;
+  }
+
+  .build__part-list {
+    gap: 40px;
   }
 }
 
 // tablet
 @media screen and (min-width: 768px) {
+  .build__main-container {
+    display: flex;
+    gap: $build-gap;
+  }
+
+  .build__part-list {
+    flex-direction: column;
+    gap: 20px;
+  }
+
   .simbuilds__list {
     margin-top: 41px;
     margin-bottom: 40px;

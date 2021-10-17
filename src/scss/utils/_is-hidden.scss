@@ -4,8 +4,14 @@
   opacity: 0;
 }
 
+@media screen and (max-width: 767px) {
+  .hidden-on-mobile {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 768px) {
-  .mobile-is-hidden {
+  .hidden-on-tablet {
     display: none;
   }
 }

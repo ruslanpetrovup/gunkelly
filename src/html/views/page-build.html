@@ -24,8 +24,8 @@
     <!-- Search -->
     <%= _.template(require('./../includes/search.html').default)(data) %>
 
-    <div class="container">
-      <ul class="searchbuilds-list build__searchbuilds-list">
+    <div class="container build__searchbuilds-container">
+      <ul class="searchbuilds-list">
         <li class="searchbuilds-link">
           <a class="searchbuilds-link-a" href="./">Home</a>
         </li>
@@ -41,7 +41,7 @@
     </div>
 
     <main>
-      <section class="build section">
+      <section class="build section build__section">
         <div class="container build__main-container">
           <div class="build__main-content">
             <h1 class="title-v2 build__title build-h1">Custom browning Hi Power</h1>
@@ -224,11 +224,11 @@
             </ul>
           </div>
 
-          <aside class="build__part-list">
-            <div class="build__part-list-wrapper">
-              <div class="guns__thumb build__thumb">
+          <aside class="build__part-list-aside">
+            <div class="build__part-list-wrapper hidden-on-mobile">
+              <div class="guns__thumb build__build-basis-thumb">
                 <img
-                  class="guns__image build__image"
+                  class="guns__image build__build-basis-image"
                   src="../../img/photos/build-parts/build-basis-001.jpg"
                   alt="Gun image"
                   width="150"
@@ -236,7 +236,7 @@
                 />
               </div>
 
-              <ul class="guns__build build__build">
+              <ul class="build__build">
                 <li class="guns__build-item build__build-item">
                   <span class="guns__build-tag">Remington</span>
                 </li>
@@ -249,12 +249,68 @@
               </ul>
             </div>
 
-            <div class="build__part-list-wrapper">2</div>
+            <div class="build__part-list-wrapper">
+              <h3 class="build__part-list-title">Part list</h3>
+
+              <ul class="build__part-list">
+                <li class="build__part-list-item">
+                  <div class="build__part-list-thumb">
+                    <img
+                      class="build__part-list-image"
+                      src="../../img/photos/build-parts/build-part-001.jpg"
+                      alt="Build part - optical sight"
+                      width="80"
+                      height="80"
+                    />
+                  </div>
+
+                  <!-- part-list__card__meta-container - stars, h4, p -->
+                  <div class="build__part-list-meta">
+                    <!-- stars -->
+                    <ul class="rating__list build__rating build__part-list-rating">
+                      <li class="rating__item build__rating-item">
+                        <svg class="rating__svg build__rating-svg" width="15" height="15">
+                          <use href="../../img/svg/sprite.svg#icon-star-filled"></use>
+                        </svg>
+                      </li>
+
+                      <li class="rating__item build__rating-item">
+                        <svg class="rating__svg build__rating-svg" width="15" height="15">
+                          <use href="../../img/svg/sprite.svg#icon-star-filled"></use>
+                        </svg>
+                      </li>
+
+                      <li class="rating__item build__rating-item">
+                        <svg class="rating__svg build__rating-svg" width="15" height="15">
+                          <use href="../../img/svg/sprite.svg#icon-star-outline"></use>
+                        </svg>
+                      </li>
+
+                      <li class="rating__item build__rating-item">
+                        <svg class="rating__svg build__rating-svg" width="15" height="15">
+                          <use href="../../img/svg/sprite.svg#icon-star-outline"></use>
+                        </svg>
+                      </li>
+
+                      <li class="rating__item build__rating-item">
+                        <svg class="rating__svg build__rating-svg" width="15" height="15">
+                          <use href="../../img/svg/sprite.svg#icon-star-outline"></use>
+                        </svg>
+                      </li>
+                    </ul>
+
+                    <h4 class="build__part-list-name">RMR RM06</h4>
+
+                    <p class="build__part-list-type">BCU</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </aside>
         </div>
       </section>
 
-      <section class="build-details section">
+      <section class="build-details section build__section">
         <div class="container build__container">
           <h2 class="title-v2 build__title build-details__title">Build details</h2>
 
@@ -316,7 +372,7 @@
         </div>
       </section>
 
-      <section class="guns similar-builds simbuilds section">
+      <section class="guns similar-builds simbuilds section build__section">
         <div class="container">
           <div class="title-wrapper guns__title-wrapper simbuilds__title-wrapper">
             <h2 class="title-v2 guns__title simbuilds__title section__title">Similar builds</h2>
