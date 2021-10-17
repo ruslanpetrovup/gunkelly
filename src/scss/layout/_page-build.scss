@@ -1,19 +1,28 @@
+.build__flex-container {
+  display: flex;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.build__part-list-aside {
+  max-width: calc(100% * #{$build__aside-width});
+}
+
+.build__main-content-wrapper {
+  max-width: calc(100% * #{$build__main-width});
+  margin-left: auto;
+}
+
 // .build__container { }
 
-.build__main-container {
-  position: relative;
-}
+// .build__main-container { }
 
 .build__searchbuilds-container {
   margin-top: 40px;
   margin-bottom: 40px;
 }
 
-.build__main-content {
-  max-width: calc(100% * #{$build__main-width});
-  order: 2;
-  margin-left: auto;
-}
+// .build__main-content { }
 
 /* Custom browning Hi Power */
 .build__title {
@@ -192,16 +201,6 @@
 // .build__photos-item  { }
 // .build__photos-thumb {}
 
-.build__part-list-aside {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  max-width: calc(100% * #{$build__aside-width});
-
-  order: 1;
-}
-
 // (aside - 1st and 2nd box)
 .build__basis-wrapper,
 .build__part-list-wrapper {
@@ -253,6 +252,10 @@
   gap: 13px;
 }
 
+.build__part-list-image {
+  border: 1px solid rgba($color-black, 0.05); // width: 80px; height: 80px;
+}
+
 .build__part-list-meta {
   padding: 8px 0;
 }
@@ -278,9 +281,8 @@
   opacity: 0.5;
 }
 
-.build__details-wrapper {
-  max-width: calc(100% * #{$build__main-width});
-  margin-left: auto;
+.build__details-thumb {
+  margin-bottom: 30px;
 }
 
 .build__image,
@@ -373,11 +375,6 @@
 
 // tablet
 @media screen and (min-width: 768px) {
-  .build__main-container {
-    display: flex;
-    gap: $build-gap;
-  }
-
   .build__part-list {
     flex-direction: column;
     gap: 20px;
