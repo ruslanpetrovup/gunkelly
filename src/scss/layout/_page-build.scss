@@ -1,19 +1,24 @@
 // .build__container { }
 
-// .build__main-container { }
+.build__main-container {
+  position: relative;
+}
+
 .build__searchbuilds-container {
   margin-top: 40px;
   margin-bottom: 40px;
 }
 
 .build__main-content {
-  flex-basis: calc((100% - #{$build-gap}) * #{$build__main-width});
-
+  max-width: calc(100% * #{$build__main-width});
   order: 2;
+  margin-left: auto;
 }
 
 /* Custom browning Hi Power */
-// .build__title { margin-bottom: 20px;}
+.build__title {
+  margin-bottom: 30px;
+}
 
 .build-h1 {
   margin-bottom: 10px;
@@ -188,25 +193,36 @@
 // .build__photos-thumb {}
 
 .build__part-list-aside {
-  flex-basis: calc((100% - #{$build-gap}) * #{$build__aside-width});
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  max-width: calc(100% * #{$build__aside-width});
+
   order: 1;
 }
 
-// (aside - 1st box)
+// (aside - 1st and 2nd box)
+.build__basis-wrapper,
 .build__part-list-wrapper {
-  padding: 30px 25px;
+  padding: 30px 0 30px 25px;
+  background: $color-white;
+  box-shadow: 0 0 35px rgba($color-black, 0.05);
+}
+
+.build__basis-wrapper {
   margin-bottom: 30px;
 }
 
 // 150x106
-.build__build-basis-thumb {
+.build__basis-thumb {
   min-width: 150px;
   min-height: 106px;
   padding-top: 5px;
   margin-bottom: 30px;
 }
 
-.build__build-basis-image {
+.build__basis-image {
   margin: 0 auto;
 }
 
@@ -219,8 +235,12 @@
   gap: 10px;
 }
 
+/* Part list */
 .build__part-list-title {
   margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .build__part-list {
@@ -256,6 +276,17 @@
   font-size: 14px;
   line-height: 17px;
   opacity: 0.5;
+}
+
+.build__details-wrapper {
+  max-width: calc(100% * #{$build__main-width});
+  margin-left: auto;
+}
+
+.build__image,
+.build__details-image {
+  max-width: 100%;
+  height: auto;
 }
 
 /*
