@@ -330,8 +330,9 @@
   height: 100px;
 }
 .top-blogposts__thumb.res {
-  max-width: 0;
-  min-width: 0;
+  max-width: unset;
+  min-width: unset;
+  margin-bottom: 15px;
 }
 .top-blogposts-meta.res {
   padding: 0;

@@ -1,0 +1,88 @@
+.profile-friends__list {
+  row-gap: 30px;
+  contain: unset;
+  column-gap: 25px;
+}
+
+.profile-friends__item {
+  position: relative;
+  flex-basis: calc(25% - 25px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  min-width: 202px;
+  min-height: 166px;
+  padding: 25px 15px 15px;
+
+  background: $color-white;
+  border: 1px solid rgba($color-black, 0.05);
+
+  @include transition;
+  transition-property: box-shadow;
+
+  &:focus-within,
+  &:hover,
+  .profile-friends__btn:focus,
+  .profile-friends__btn:hover {
+    box-shadow: 0 0 35px rgba($color-black, 0.05);
+  }
+}
+
+.profile-friends__thumb {
+  max-width: 70px;
+  margin: 0 auto 15px;
+}
+
+.profile-friends__toolbar-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0.01;
+
+  @include transition;
+  transition-property: visibility, opacity;
+
+  .profile-friends__item:focus-within &,
+  .profile-friends__item:hover &,
+  .profile-friends__btn:focus &,
+  .profile-friends__btn:hover & {
+    pointer-events: initial;
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.profile-friends__toolbar-remove-friend-btn {
+  min-width: 19px;
+  min-height: 19px;
+  padding: 10px 10px 10px 0;
+
+  color: $color-dark-red;
+
+  background: none;
+  border: none;
+}
+
+.profile-friends__friend-name {
+  margin: 0 auto 5px;
+}
+.profile-friends__searchbuilds-block-trending {
+  margin-left: auto; // 29px
+}
+.profile-friends__block {
+  width: calc(#{($container - 2 * $padding) * $page-profile-friends-block-width});
+}
+
+.profile-friends__friend-name-link {
+  .profile-friends__item:focus-within &,
+  .profile-friends__item:hover &,
+  .profile-friends__btn:focus &,
+  .profile-friends__btn:hover & {
+    color: $color-accent;
+  }
+}

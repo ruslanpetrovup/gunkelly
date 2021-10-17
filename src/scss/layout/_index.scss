@@ -26,7 +26,6 @@
 }
 
 .trending-now__list {
-  contain: content;
   display: flex;
   flex-wrap: wrap;
   gap: $gap;
@@ -96,7 +95,6 @@
 
 // .top-blogposts__title {}
 .top-blogposts__list {
-  contain: content;
   display: flex;
   flex-wrap: wrap;
   gap: 43px;
@@ -236,7 +234,6 @@
 }
 
 .guns__list {
-  contain: content;
   display: flex;
   gap: $gap;
   flex-wrap: wrap;
@@ -336,7 +333,6 @@
 }
 
 .guns__slider-list {
-  contain: content;
   display: flex;
   justify-content: center;
   gap: 15px;
@@ -363,12 +359,13 @@
 @media screen and (max-width: 767px) {
   .guns__list {
     margin-bottom: 25px;
-    flex-wrap: nowrap;
   }
 
+  .guns__list,
   .trending-now__list,
-  .top-blogposts__list,
-  .guns__list {
+  .guns__slider-list,
+  .top-blogposts__list {
+    contain: content;
     flex-wrap: nowrap;
   }
 }
