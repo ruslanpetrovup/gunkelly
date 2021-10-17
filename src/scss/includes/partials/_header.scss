@@ -2,7 +2,7 @@
 
 .header {
   background: #263238;
-  padding: 18px 0;
+  padding: 17px 0;
 }
 .header__content {
   display: flex;
@@ -63,6 +63,7 @@
   }
 }
 .header__span {
+  display: inline-flex;
   margin-right: 12px;
 }
 .header__item-text {
@@ -96,21 +97,35 @@
   &:not(:first-child) {
     margin-left: 15px;
   }
-  &:last-child > .header__button {
-    background: #198ccd;
-    border-radius: 4px;
-  }
 }
+
 .header__button {
   appearance: none;
   background: none;
-  padding: 12px 20px;
-  border: 1px solid #198ccd;
-  border-radius: 4px;
+
+  height: 40px;
+
   font-family: Rogan;
+  font-size: 14px;
   font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 22px;
+  font-weight: 700;
+  line-height: 1.2;
   color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+
+  border: none;
+  border-radius: 4px;
+}
+
+/* log in */
+.header__button--primary {
+  padding: 12px 20px;
+  background: #198ccd;
+}
+
+/* register */
+.header__button--secondary {
+  padding: 11px 30px;
+  border: 1px solid #198ccd;
 }

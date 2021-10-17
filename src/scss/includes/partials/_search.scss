@@ -13,6 +13,10 @@
   width: 14px;
   height: 14px;
 }
+.search__icon-search {
+  width: 20px;
+  height: 20px;
+}
 .search__input {
   width: 100%;
   appearance: none;
@@ -24,6 +28,14 @@
   font-size: 18px;
   line-height: 22px;
   color: #000000;
+
+  /* What article can you find? */
+  &::placeholder {
+    // margin: 0px 20px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #999999;
+  }
 
   &:focus {
     outline: none;
