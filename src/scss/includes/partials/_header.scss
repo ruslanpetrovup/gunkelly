@@ -168,6 +168,9 @@
 }
 // Tablet
 @media screen and(min-width: 768px) and(max-width: 1199px) {
+  .header__menu-mobile-open {
+    display: none;
+  }
   .header__menu-mobile {
     display: none;
   }
@@ -304,6 +307,9 @@
 
 @media screen and(min-width: 1200px) {
   // Desktop
+  .header__menu-mobile-open {
+    display: none;
+  }
   .header__menu-mobile {
     display: none;
   }
