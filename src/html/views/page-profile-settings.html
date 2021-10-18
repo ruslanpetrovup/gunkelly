@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Guns and weaponry site" />
+    <meta name="theme-color" content="#263238" />
+    <title>Profile - Friends page</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="css/style.bundle.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <%= _.template(require('./../includes/header.html').default)(data) %>
+    <!-- Search -->
+    <%= _.template(require('./../includes/search.html').default)(data) %>
+
+    <!-- Profile -->
+    <div class="profile">
+      <div class="profile__hero">
+        <div class="profile__hero-toomb">
+          <img
+            class="profile__hero-img"
+            src="../../img/photos/profile/heroprofile.png"
+            width="1600"
+            height="325"
+          />
+          <div class="profile__hero-backdrop">
+            <button class="profile__hero-toomb-button">
+              <svg class="profile__hero-toomb-button-icon">
+                <use href="../../img/svg/sprite.svg#icon-gallery"></use>
+              </svg>
+              update cover Photo
+            </button>
+          </div>
+        </div>
+        <div class="container">
+          <div class="profile__content">
+            <div class="profile-friends__block">
+              <div class="profile__human">
+                <div class="profile__human-toomb">
+                  <img class="profile__human-img" src="../../img/photos/profile/avatar.png" />
+                  <div class="profile__human-backdrop">
+                    <button class="profile__human-backdrop-button">
+                      <svg class="profile__human-backdrop-button-icon">
+                        <use href="../../img/svg/sprite.svg#icon-search"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <h1 class="profile__human-head">Troz</h1>
+                <button class="profile__human-button">
+                  <svg class="profile__human-button-icon">
+                    <use href="../../img/svg/sprite.svg#icon-users-add"></use>
+                  </svg>
+                  Add to friends
+                </button>
+              </div>
+
+              <div class="profile__pages">
+                <!-- Menu Profile -->
+                <ul class="profile__pages-list">
+                  <li class="profile__pages-item">
+                    <a class="profile__pages-item-button" href="./page-profile.html">Profile</a>
+                  </li>
+
+                  <li class="profile__pages-item">
+                    <a class="profile__pages-item-button" href="./page-profile-builds.html"
+                      >Builds</a
+                    >
+                  </li>
+
+                  <li class="profile__pages-item">
+                    <a class="profile__pages-item-button" href="./page-profile-forums.html"
+                      >Forums</a
+                    >
+                  </li>
+
+                  <li class="profile__pages-item">
+                    <a class="profile__pages-item-button" href="./page-profile-blog.html">Blogs</a>
+                  </li>
+
+                  <li class="profile__pages-item">
+                    <a class="profile__pages-item-button" href="./page-profile-friends.html"
+                      >Friends</a
+                    >
+                  </li>
+
+                  <li class="profile__pages-item">
+                    <a class="profile__pages-item-button active" href="./page-profile-settings.html"
+                      >Settings</a
+                    >
+                  </li>
+                </ul>
+                <!-- Next Content -->
+
+                <section class="account-settings section profile-settings__section">
+                  <div class="profile-settings__settings-wrapper">
+                    <form class="profile-settings__general-account-settings-form">
+                      <h2 class="profile-settings__settings-title">General account settings</h2>
+
+                      <ul class="profile-settings__list">
+                        <li class="profile-settings__item">
+                          <label class="profile-settings__form-label" for="customer-full-name-id"
+                            >Full Name</label
+                          >
+
+                          <div class="build__copy-wrapper profile-settings__change-wrapper">
+                            <input
+                              class="profile-settings__form-input"
+                              id="customer-full-name-id"
+                              name="customer-full-name"
+                              type="text"
+                              value="troz"
+                              disabled
+                              minlength="3"
+                              maxlength="64"
+                              required
+                            />
+
+                            <button class="copy-btn profile-settings__change-btn" type="button">
+                              <span class="profile-settings__change-btn-span">Change</span>
+                            </button>
+                          </div>
+                        </li>
+
+                        <li class="profile-settings__item">
+                          <label class="profile-settings__form-label" for="customer-gender-id"
+                            >Gender</label
+                          >
+
+                          <div class="build__copy-wrapper profile-settings__change-wrapper">
+                            <input
+                              class="profile-settings__form-input"
+                              id="customer-gender-id"
+                              type="text"
+                              value="No data"
+                              disabled
+                              minlength="3"
+                              maxlength="64"
+                            />
+
+                            <button class="copy-btn profile-settings__change-btn" type="button">
+                              <span class="profile-settings__change-btn-span">Change</span>
+                            </button>
+                          </div>
+                        </li>
+
+                        <li class="profile-settings__item">
+                          <label
+                            class="profile-settings__form-label"
+                            for="customer-primary-email-id"
+                            >Primary Email</label
+                          >
+
+                          <div class="build__copy-wrapper profile-settings__change-wrapper">
+                            <input
+                              class="profile-settings__form-input"
+                              id="customer-primary-email-id"
+                              type="email"
+                              value="troz@mail.ua"
+                              disabled
+                              minlength="3"
+                              maxlength="64"
+                              required
+                            />
+
+                            <button class="copy-btn profile-settings__change-btn" type="button">
+                              <span class="profile-settings__change-btn-span">Change</span>
+                            </button>
+                          </div>
+                        </li>
+
+                        <li class="profile-settings__item">
+                          <label class="profile-settings__form-label" for="customer-timezone-id"
+                            >UTC</label
+                          >
+
+                          <div class="build__copy-wrapper profile-settings__change-wrapper">
+                            <input
+                              class="profile-settings__form-input"
+                              id="customer-timezone-id"
+                              type="text"
+                              value="Timezone"
+                              disabled
+                              minlength="3"
+                              maxlength="64"
+                            />
+
+                            <button class="copy-btn profile-settings__change-btn" type="button">
+                              <span class="profile-settings__change-btn-span">Change</span>
+                            </button>
+                          </div>
+                        </li>
+
+                        <li class="profile-settings__item">
+                          <label class="profile-settings__form-label" for="customer-country-id"
+                            >Country</label
+                          >
+
+                          <div class="build__copy-wrapper profile-settings__change-wrapper">
+                            <input
+                              class="profile-settings__form-input"
+                              id="customer-country-id"
+                              type="text"
+                              value="Not selected"
+                              disabled
+                              minlength="2"
+                              maxlength="64"
+                            />
+
+                            <button class="copy-btn profile-settings__change-btn" type="button">
+                              <span class="profile-settings__change-btn-span">Change</span>
+                            </button>
+                          </div>
+                        </li>
+                      </ul>
+                    </form>
+                  </div>
+                </section>
+
+                <section class="security-settings section profile-settings__section">
+                  <div class="profile-settings__settings-wrapper">
+                    <form class="profile-settings__general-account-settings-form">
+                      <h2 class="profile-settings__settings-title">Security settings</h2>
+
+                      <ul class="profile-settings__list">
+                        <li class="profile-settings__item">
+                          <label class="profile-settings__form-label" for="customer-password-id"
+                            >Password</label
+                          >
+
+                          <div class="build__copy-wrapper profile-settings__change-wrapper">
+                            <input
+                              class="profile-settings__input-password profile-settings__form-input"
+                              id="customer-password-id"
+                              name="customer-password"
+                              type="password"
+                              placeholder="* * * * * * *"
+                              required
+                              disabled
+                              minlength="7"
+                              maxlength="64"
+                            />
+
+                            <button class="copy-btn profile-settings__change-btn" type="button">
+                              <span class="profile-settings__change-btn-span">Change</span>
+                            </button>
+                          </div>
+                        </li>
+                      </ul>
+                    </form>
+                  </div>
+                </section>
+
+                <section class="privacy-settings section profile-settings__section">
+                  <div class="profile-settings__settings-wrapper">
+                    <form class="profile-settings__privacy-settings-form">
+                      <h2 class="profile-settings__settings-title">Privacy setting</h2>
+
+                      <ul class="profile-settings__list">
+                        <li class="profile-settings__item">
+                          <label
+                            class="profile-settings__form-label"
+                            for="customer-account-visibility-id"
+                            >Who can see my stuff?</label
+                          >
+
+                          <div class="build__copy-wrapper profile-settings__change-wrapper">
+                            <input
+                              class="profile-settings__input-password profile-settings__form-input"
+                              id="customer-account-visibility-id"
+                              name="customer-account-visibility"
+                              type="text"
+                              value="Anyone"
+                              required
+                              disabled
+                              minlength="7"
+                              maxlength="64"
+                            />
+
+                            <button class="copy-btn profile-settings__change-btn" type="button">
+                              <span class="profile-settings__change-btn-span">Change</span>
+                            </button>
+                          </div>
+                        </li>
+
+                        <li class="profile-settings__item">
+                          <label
+                            class="profile-settings__form-label"
+                            for="customer-who-can-contact-me-id"
+                            >Who can contact me?</label
+                          >
+
+                          <div class="build__copy-wrapper profile-settings__change-wrapper">
+                            <input
+                              class="profile-settings__input-password profile-settings__form-input"
+                              id="customer-who-can-contact-me-id"
+                              name="customer-who-can-contact-me"
+                              type="text"
+                              value="Anyone"
+                              required
+                              disabled
+                              minlength="7"
+                              maxlength="64"
+                            />
+
+                            <button class="copy-btn profile-settings__change-btn" type="button">
+                              <span class="profile-settings__change-btn-span">Change</span>
+                            </button>
+                          </div>
+                        </li>
+
+                        <li class="profile-settings__item">
+                          <label
+                            class="profile-settings__form-label"
+                            for="customer-invisible-account-option-id"
+                            >Invisible profile (paid option)</label
+                          >
+
+                          <div class="build__copy-wrapper profile-settings__change-wrapper">
+                            <input
+                              class="profile-settings__input-password profile-settings__form-input"
+                              id="customer-invisible-account-option-id"
+                              name="customer-invisible-account-option"
+                              type="text"
+                              value="Anyone"
+                              required
+                              disabled
+                              minlength="7"
+                              maxlength="64"
+                            />
+
+                            <button class="copy-btn profile-settings__change-btn" type="button">
+                              <span class="profile-settings__change-btn-span">Change</span>
+                            </button>
+                          </div>
+                        </li>
+                      </ul>
+                    </form>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <!-- Trending -->
+            <div
+              class="searchbuilds__block__trending res profile-friends__searchbuilds-block-trending"
+            >
+              <div class="searchbuilds__block__trending-builds">
+                <h2 class="searchbuilds__block__trending-head">Top builds</h2>
+                <ul class="hero__recentbuilds-list res">
+                  <li class="hero__recentbuilds-item res">
+                    <div class="hero__recentbuilds-cards-toomb">
+                      <div class="hero__recentbuilds-cards-images res">
+                        <img
+                          class="hero__recentbuilds-cards-img"
+                          src="../../img/photos/pistol1.png"
+                        />
+                      </div>
+                      <h2 class="hero__recentbuilds-item-head profile__recentbuilds-item-head">
+                        Glock 22 Gen 4
+                      </h2>
+                      <div class="hero__recentbuilds-item-block res">
+                        <img
+                          class="hero__recentbuilds-item-block-human-images res"
+                          src="../../img/photos/avatar.png"
+                        />
+                        <p class="hero__recentbuilds-item-block-human-name res">troz</p>
+                        <svg class="hero__recentbuilds-item-block-human-icon res">
+                          <use href="../../img/svg/sprite.svg#icon-post-vieweye"></use>
+                        </svg>
+                        <p class="hero__recentbuilds-item-block-human-vieweye res">12</p>
+                        <svg class="hero__recentbuilds-item-block-human-icon res">
+                          <use href="../../img/svg/sprite.svg#icon-post-message"></use>
+                        </svg>
+                        <p class="hero__recentbuilds-item-block-human-comment">5</p>
+                      </div>
+                      <ul class="hero__recentbuilds-item-stats-list">
+                        <li class="hero__recentbuilds-item-stats-item">Remington</li>
+                        <li class="hero__recentbuilds-item-stats-item">1911 R1 Enhanced</li>
+                        <li class="hero__recentbuilds-item-stats-item">.45 ACP</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="hero__recentbuilds-item res">
+                    <div class="hero__recentbuilds-cards-toomb">
+                      <div class="hero__recentbuilds-cards-images res">
+                        <img class="hero__recentbuilds-cards-img" src="../../img/photos/ak1.png" />
+                      </div>
+                      <h2 class="hero__recentbuilds-item-head profile__recentbuilds-item-head">
+                        Glock 22 Gen 4
+                      </h2>
+                      <div class="hero__recentbuilds-item-block res">
+                        <img
+                          class="hero__recentbuilds-item-block-human-images res"
+                          src="../../img/photos/avatar.png"
+                        />
+                        <p class="hero__recentbuilds-item-block-human-name res">troz</p>
+                        <svg class="hero__recentbuilds-item-block-human-icon res">
+                          <use href="../../img/svg/sprite.svg#icon-post-vieweye"></use>
+                        </svg>
+                        <p class="hero__recentbuilds-item-block-human-vieweye res">12</p>
+                        <svg class="hero__recentbuilds-item-block-human-icon res">
+                          <use href="../../img/svg/sprite.svg#icon-post-message"></use>
+                        </svg>
+                        <p class="hero__recentbuilds-item-block-human-comment">5</p>
+                      </div>
+                      <ul class="hero__recentbuilds-item-stats-list">
+                        <li class="hero__recentbuilds-item-stats-item">Remington</li>
+                        <li class="hero__recentbuilds-item-stats-item">1911 R1 Enhanced</li>
+                        <li class="hero__recentbuilds-item-stats-item">.45 ACP</li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="searchbuilds__block__trending-now">
+                <h2 class="searchbuilds__block__trending-head">Trending now</h2>
+                <ul class="trending-now__list res">
+                  <li class="trending-now__item">
+                    <a class="trending-now__link" href="#">
+                      <h3 class="trending-now__post-title">
+                        10 Tips for Choosing <br />
+                        a Concealed Carry Handgun
+                      </h3>
+                      <div class="trending-now__thumb res">
+                        <img
+                          class="trending-now__author-avatar res"
+                          src="./img/photos/avatars-40x40/avatar-001-man-gray-shirt.jpg"
+                          alt="Man-gray-shirt"
+                        />
+
+                        <p class="trending-now__post-meta res">
+                          <span class="trending-now__author-name">troz</span>,
+                          <span class="trending-now__post-date">today</span>
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="trending-now__item">
+                    <a class="trending-now__link" href="#">
+                      <h3 class="trending-now__post-title">
+                        Firearms definitions and requirements
+                      </h3>
+                      <div class="trending-now__thumb res">
+                        <img
+                          class="trending-now__author-avatar res"
+                          src="./img/photos/avatars-40x40/avatar-002-man-red-tshirt.jpg"
+                          alt="Man-red-tshirt"
+                        />
+                        <p class="trending-now__post-meta res">
+                          <span class="trending-now__author-name">troz</span>,
+                          <span class="trending-now__post-date">yesterday</span>
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="trending-now__item">
+                    <a class="trending-now__link" href="#">
+                      <h3 class="trending-now__post-title">New Members: Please Read Guidelines</h3>
+                      <div class="trending-now__thumb res">
+                        <img
+                          class="trending-now__author-avatar res"
+                          src="./img/photos/avatars-40x40/avatar-003-man-white-tshirt.jpg"
+                          alt="Man-white-tshirt"
+                        />
+
+                        <p class="trending-now__post-meta res">
+                          <span class="trending-now__author-name">troz</span>,
+                          <span class="trending-now__post-date">yesterday</span>
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="trending-now__item">
+                    <a class="trending-now__link" href="#">
+                      <h3 class="trending-now__post-title">Pencil Barrel Whip</h3>
+                      <div class="trending-now__thumb res">
+                        <img
+                          class="trending-now__author-avatar res"
+                          src="./img/photos/avatars-40x40/avatar-004-man-striped-tshirt.jpg"
+                          alt="Man-striped-tshirt"
+                        />
+
+                        <p class="trending-now__post-meta res">
+                          <span class="trending-now__author-name">troz</span>,
+                          <span class="trending-now__post-date">today</span>
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="searchbuilds__block__trending-blogs">
+                <h2 class="searchbuilds__block__trending-head">Top blogposts</h2>
+                <ul class="top-blogposts__list res">
+                  <li class="top-blogposts__item">
+                    <a class="top-blogposts__link link res" href="#">
+                      <div class="top-blogposts__thumb res">
+                        <img
+                          class="top-blogposts__image res"
+                          src="../../img/photos/top-blogposts/top-blogpost-001-ak-12.jpg"
+                          alt="top blogposts gun image ak-12"
+                          width="200"
+                          height="200"
+                        />
+                      </div>
+
+                      <div class="top-blogposts-meta res">
+                        <p class="top-blogposts__post-type">Rifle</p>
+
+                        <p class="top-blogposts__post-title res">
+                          Izhmash officially presented the new AK-12
+                        </p>
+
+                        <div class="post top-blogposts__post">
+                          <span class="post__author-name">troz</span>
+
+                          <div class="post__views">
+                            <svg class="post__views-svg svg" width="16" height="16">
+                              <use href="./img/svg/sprite.svg#icon-post-vieweye"></use>
+                            </svg>
+
+                            <span class="post__views-count">12</span>
+                          </div>
+
+                          <div class="post__comments">
+                            <svg class="post__comments-svg svg" width="14" height="14">
+                              <use href="../../img/svg/sprite.svg#icon-post-message"></use>
+                            </svg>
+
+                            <span class="post__comments-count">5</span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="top-blogposts__item">
+                    <a class="top-blogposts__link link res" href="#">
+                      <div class="top-blogposts__thumb res">
+                        <img
+                          class="top-blogposts__image res"
+                          src="../../img/photos/top-blogposts/top-blogpost-002-savage-mark-2.jpg"
+                          alt="top blogposts gun image savage-mark-2"
+                        />
+                      </div>
+
+                      <div class="top-blogposts-meta res">
+                        <p class="top-blogposts__post-type">Shotgun</p>
+
+                        <p class="top-blogposts__post-title res">
+                          Savage Mark 2 and a problem of extraction
+                        </p>
+
+                        <div class="post top-blogposts__post">
+                          <span class="post__author-name">troz</span>
+
+                          <div class="post__views">
+                            <svg class="post__views-svg svg" width="16" height="16">
+                              <use href="./img/svg/sprite.svg#icon-post-vieweye"></use>
+                            </svg>
+
+                            <span class="post__views-count">12</span>
+                          </div>
+
+                          <div class="post__comments">
+                            <svg class="post__comments-svg svg" width="14" height="14">
+                              <use href="../../img/svg/sprite.svg#icon-post-message"></use>
+                            </svg>
+
+                            <span class="post__comments-count">5</span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <%= _.template(require('./../includes/footer.html').default)(data) %>
+  </body>
+</html>

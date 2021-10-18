@@ -29,6 +29,10 @@ $color-title-v2-red: #f34236;
 $color-title-v2-green: #059664;
 $color-title-v2-blue: #148dcc;
 
+// container
+$container: 1230px;
+$padding: 15px;
+
 // right-side
 $searchbuilds-block-width: 0.23166666666666666666666666666667;
 
@@ -42,3 +46,32 @@ $build-gap: 30px;
 $page-profile-gap: 25px;
 $page-profile-content-width: 0.735;
 $page-profile-friends-block-width: 0.73583333333333333333333333333333;
+
+// page-settings
+$page-settings-form-parent-px: 883px;
+$page-settings-form-width-px: 570px;
+
+$page-settings-form-width: (
+  $page-settings-form-width-px / $page-settings-form-parent-px
+); // 570 / 1200;
+
+$profile-settings__form-label-width: (
+  $page-settings-form-width * 0.35087719298245614035087719298246
+); // = 200 / 570;
+
+$profile-settings__form-change-wrapper-width: (
+  $page-settings-form-width * 0.6140350877192982456140350877193
+); // = 350 / 570;
+
+// footer
+$footer__brand-wrapper-px: 435px;
+$footer__brand-wrapper-width: ($footer__brand-wrapper-px / ($container - 2 * $padding));
+
+$footer-lists-wrapper-px: 1164px;
+$footer-lists-wrapper-width: ($footer-lists-wrapper-px / ($container - 2 * $padding));
+
+// footer__right-side-container
+$footer__right-side-container-width-px: 884px;
+$footer__right-side-container-width: (
+  $footer__right-side-container-width-px / $footer-lists-wrapper-px
+);
