@@ -1,1 +1,2 @@
-import './openWindow';
+import initMobileMenu from './openWindow.js';
+initMobileMenu();
