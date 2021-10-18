@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Guns and weaponry site" />
+    <meta name="theme-color" content="#263238" />
+    <title>Add build page</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="css/style.bundle.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <%= _.template(require('./../includes/header.html').default)(data) %>
+    <!-- Search -->
+    <%= _.template(require('./../includes/search.html').default)(data) %>
+
+    <div class="container build__searchbuilds-container">
+      <ul class="searchbuilds-list">
+        <li class="searchbuilds-link">
+          <a class="searchbuilds-link-a" href="./">Home</a>
+        </li>
+
+        <li class="searchbuilds-link">
+          <a class="searchbuilds-link-a" href="./page-add-build.html">Add build</a>
+        </li>
+      </ul>
+    </div>
+
+    <main>
+      <section class="page-add-build__section">
+        <div class="container">
+          <h1 class="title-v2 page-add-build__title">Add build</h1>
+
+          <ul class="breadcrumbs__list page-add-build__breadcrumbs-list">
+            <li class="breadcrumbs__item page-add-build__breadcrumbs-item">
+              <button class="breadcrumbs__btn page-add-build__breadcrumbs-btn">
+                <svg class="breadcrumbs__svg page-add-build__breadcrumbs-svg">
+                  <use href="."></use>
+                </svg>
+
+                <span class="breadcrumbs__btn-text">Main features</span>
+              </button>
+            </li>
+          </ul>
+
+          <section class="main-features page-add-build__subsection">
+            <div class="page-add-build__container">
+              <h2 class="title-v3 page-add-build__container">Main features</h2>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <%= _.template(require('./../includes/footer.html').default)(data) %>
+  </body>
+</html>

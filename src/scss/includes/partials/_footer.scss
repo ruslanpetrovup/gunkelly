@@ -1,18 +1,17 @@
 // Footer
 
 .footer {
+  contain: content;
   background-color: $color-brand;
 }
 
 .footer__container {
   display: flex;
-  max-width: 1600px;
-  margin: 0 auto;
+  justify-content: space-between;
 }
 
 .footer__brand-wrapper {
   flex-grow: 1;
-
   max-width: $footer__brand-wrapper-px;
 
   border-right: 1px solid $color-border;
@@ -56,7 +55,7 @@
 }
 
 .footer__logo-wrapper {
-  padding-left: 15px;
+  position: relative;
   display: flex;
   justify-content: flex-end;
 }
@@ -69,7 +68,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  padding: 38px clamp(31px, 8vw, 128px) 30px 15px;
+  padding: 38px clamp(31px, 8vw, 128px) 30px 0;
 }
 
 .footer__nav {
@@ -145,7 +144,8 @@
 }
 
 .footer-navigation-wrapper {
-  padding: 0 15px 40px clamp(31px, 8vw, 80px);
+  position: relative;
+  padding: 0 0 40px clamp(31px, 8vw, 80px);
   margin-right: auto;
   border-bottom: 1px solid $color-border;
 }
@@ -153,7 +153,7 @@
 // .footer__social-svg {color: $color-social-icon; }
 
 .copyright-wrapper {
-  padding: 30px 15px 30px clamp(31px, 8vw, 80px);
+  padding: 30px 0 30px clamp(31px, 8vw, 80px);
 }
 
 /* © 2017 MyGun.pro. All rights reserved. Registration on or use of this site constitutes acceptance of our Terms of Service and Privacy Policy */
@@ -197,9 +197,8 @@
   }
 
   .footer__logo-wrapper {
-    border-right: 1px solid $color-border;
     margin-left: auto;
-    padding-left: 0;
+    border-right: 1px solid $color-border;
   }
 
   .footer__logo-thumb {
@@ -235,14 +234,36 @@
   }
 
   .footer__logo-wrapper {
-    border-bottom: 1px solid $color-border;
     padding-right: clamp(31px, 5.33vw, 85px);
     padding-bottom: 40px;
+    border-bottom: 1px solid $color-border;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 100vw;
+      height: 1px;
+      background-color: $color-border;
+    }
   }
 
   .footer__logo {
     min-width: 150px;
     min-height: 122.05px;
+  }
+
+  .footer-navigation-wrapper {
+    &::after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100vw;
+      height: 1px;
+      background-color: $color-border;
+    }
   }
 }
 
