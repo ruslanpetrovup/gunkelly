@@ -40,10 +40,12 @@
   <body>
     <!-- Header -->
     <%= _.template(require('./../includes/header.html').default)(data) %>
+    <div class="suka">
     <!-- Search -->
     <%= _.template(require('./../includes/search.html').default)(data) %>
 
     <main>
+
       <!-- Hero -->
       <%= _.template(require('./../includes/hero.html').default)(data) %>
 
@@ -1165,5 +1167,6 @@
 
     <!-- Footer -->
     <%= _.template(require('./../includes/footer.html').default)(data) %>
+  </div>
   </body>
 </html>
