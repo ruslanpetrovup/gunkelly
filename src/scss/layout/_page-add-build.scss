@@ -7,6 +7,12 @@
   margin: 0 auto;
 }
 
+.page-add-build__form-group {
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid rgba($color-black, 0.05);
+}
+
 .breadcrumbs__list {
   display: flex;
   flex-wrap: wrap;
@@ -214,14 +220,144 @@
   color: $color-title-v2-blue;
 }
 
+.page-add-build__build-base-list {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+// .page-add-build__build-base-item { }
+
+/* Make */
+.page-add-build__drop-btn {
+  width: 100%;
+
+  padding: 19px 20px;
+
+  font-size: 18px;
+  line-height: 22px;
+  text-align: left;
+
+  background-color: $color-position-counter;
+  border: 1px solid rgba($color-black, 0.02);
+}
+
+.page-add-build__label-input-filter {
+  display: flex;
+  flex-direction: column;
+
+  padding: 15px 20px;
+
+  background: $color-white;
+  border: 1px solid rgba($color-black, 0.05);
+
+  border-radius: 4px;
+}
+
+/* Search */
+.page-add-build__input-filter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 40px;
+  padding: 12px 15px;
+
+  font-size: 14px;
+  line-height: 17px;
+
+  background: $color-white;
+  border: 1px solid rgba($color-black, 0.05);
+  border-radius: 4px;
+
+  &::placeholder {
+    color: $color-comments-posted-date;
+  }
+}
+
+.page-add-build__dropdown-content {
+  min-height: 243px;
+  background: $color-white;
+  box-shadow: 2px 2px 35px rgba($color-black, 0.07);
+  contain: strict;
+  overflow-y: auto;
+
+  @include transition;
+  transition-property: transform, visibility, opacity, height, min-height;
+
+  transform: translateY(0);
+
+  &.is-hidden {
+    width: 1px;
+    min-width: 1px;
+    max-width: 1px;
+    height: 1px;
+    min-height: 1px;
+    max-height: 1px;
+
+    transform: translateY(0);
+  }
+}
+
+.page-add-build__dropdown-options-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px 20px;
+
+  max-height: 150px;
+}
+
+/* Adirondack leather products */
+.page-add-build__dropdown-option-text {
+  font-size: 14px;
+  line-height: 17px;
+  color: #666666;
+}
+
+.page-add-build__part-list {
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: $page-add-build__part-list-gap;
+}
+
+.page-add-build__part-item {
+  flex-basis: calc((100% - 2 * #{$page-add-build__part-list-gap}) / 3);
+}
+
+.build__part-list-link {
+  position: relative;
+}
+
+.page-add-build__toolbar-remove-part-btn {
+  width: 34px;
+  height: 34px;
+  padding: 5px 5px 10px 10px;
+  top: 2px;
+  right: 2px;
+}
+
+/*
+
+
+
+
+
+
+
+
+
+
+ */
+
 // up to bigger mobile
 @media screen and (max-width: 479px) {
   .page-add-build__type-item {
     margin: 0 auto 12px;
   }
 }
-
-$page-add-build__type-list-gap: 25px;
 
 // from bigger mobile
 @media screen and (min-width: 480px) {
@@ -252,9 +388,14 @@ $page-add-build__type-list-gap: 25px;
   .page-add-build__label-radio-group {
     margin-bottom: 20px;
   }
+
+  .page-add-build__part-list {
+    gap: 20px;
+  }
 }
 
 // from tablet
 @media screen and (min-width: 768px) {
-  // .page-add-build__type-list { }
+  .page-add-build__type-list {
+  }
 }
