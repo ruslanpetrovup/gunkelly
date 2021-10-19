@@ -2,6 +2,15 @@ const initMobileMenu = () => {
   const menuEl = document.querySelector('.header__menu-mobile');
   const menuBtn = document.querySelector('.header__menu-mobile-menu-button');
   const closeBtn = document.querySelector('.header__menu-mobile-close-button');
+  const searchBtn = document.querySelector('.header__menu-mobile-search-button');
+  const searchEl = document.querySelector('.search')
+  const search = () => {
+    if (searchEl.classList.contains('open')) {
+      searchEl.classList.remove('open');
+    } else {
+      searchEl.classList.add('open');
+    }
+  }
   const body = document.body;
   const html = document.querySelector('html');
   body.classList.add('no-scroll');
@@ -22,6 +31,7 @@ const initMobileMenu = () => {
   };
 
   menuBtn.addEventListener('click', openMenu);
+  closeBtn.addEventListener('click', closeMenu);
+  searchBtn.addEventListener('click', search);
 };
-
 export default initMobileMenu;

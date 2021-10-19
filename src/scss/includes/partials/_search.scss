@@ -52,3 +52,69 @@
     background: url('../../../img/svg/sprite.svg#icon-search');
   }
 }
+.search__content-mobile {
+  display: none;
+}
+@media screen and(max-width: 767px) {
+  .search {
+    opacity: 0;
+    width: 100%;
+    position: absolute;
+    transform: translateY(-200%);
+    transition: all 450ms linear;
+    background: #ffffff;
+  }
+  .search.open {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .search__content {
+    display: none;
+  }
+  .search__content-mobile {
+    display: flex;
+    align-items: center;
+  }
+  .search__span-mobile {
+    display: inline-flex;
+    margin-right: 20px;
+  }
+  .search__icon-search-mobile {
+    width: 20px;
+    height: 20px;
+    stroke: #000000;
+  }
+  .search__input-mobile {
+    width: 100%;
+    appearance: none;
+    border: none;
+    background: none;
+    padding: 0;
+    font-family: Rogan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+
+    /* What article can you find? */
+    &::placeholder {
+      // margin: 0px 20px;
+      font-size: 18px;
+      line-height: 22px;
+      color: #999999;
+    }
+
+    &:focus {
+      outline: none;
+    }
+    &::-webkit-search-cancel-button {
+      -webkit-appearance: none;
+      width: 15px;
+      height: 15px;
+      cursor: pointer;
+      transition: all 250ms linear;
+      background: url(../../../img/svg/search.svg);
+    }
+  }
+}
