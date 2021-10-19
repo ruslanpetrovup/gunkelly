@@ -39,23 +39,30 @@
     height: 20px;
   }
   .header__menu-mobile {
-    overflow-y: scroll;
-    padding: 13px 15px;
-    margin: 0 auto;
-    opacity: 0;
     position: fixed;
     top: 0;
-    left: 0;
+    right: 100%;
+    z-index: 4;
+
     width: 100%;
     height: 100%;
+
+    padding: 13px 15px;
+    margin: 0 auto;
+
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+
     background: #263238;
-    z-index: 4;
-    transform: translateX(-100%);
-    transition: all 300ms linear;
+
+    @include transition;
+    transition-property: transform, opacity, visibility;
   }
   .header__menu-mobile.open {
-    transform: translateX(0);
+    transform: translateX(100%);
     opacity: 1;
+    visibility: visible;
   }
   .header__menu-mobile-close {
     display: flex;

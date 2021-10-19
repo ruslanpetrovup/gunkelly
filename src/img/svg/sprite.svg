@@ -111,13 +111,13 @@
     </symbol>
 
     <symbol id="icon-checkbox-checked" viewBox="0 0 32 32">
-      <path fill="var(--color8, #7abf51)" d="M4.92 0h22.16C29.8 0 32 2.2 32 4.92v22.16C32 29.8 29.8 32 27.08 32H4.92A4.92 4.92 0 0 1 0 27.08V4.92C0 2.2 2.2 0 4.92 0z"/>
+      <path fill="currentColor" d="M4.92 0h22.16C29.8 0 32 2.2 32 4.92v22.16C32 29.8 29.8 32 27.08 32H4.92A4.92 4.92 0 0 1 0 27.08V4.92C0 2.2 2.2 0 4.92 0z"/>
       <path fill="none" stroke="var(--color1, #fff)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.46" d="m8.62 17.23 5.53 5.54 9.23-11.08"/>
     </symbol>
 
     <symbol id="icon-dot-in-box" viewBox="0 0 32 32">
-      <path fill="var(--color6, #198ccd)" d="M4.92 0h22.16C29.8 0 32 2.2 32 4.92v22.16C32 29.8 29.8 32 27.08 32H4.92A4.92 4.92 0 0 1 0 27.08V4.92C0 2.2 2.2 0 4.92 0z"/>
-      <path fill="var(--color6, #198ccd)" stroke="var(--color1, #fff)" stroke-width="4.92" d="M16 8.62a7.39 7.39 0 1 1 0 14.77A7.39 7.39 0 0 1 16 8.6z"/>
+      <path fill="currentColor" d="M4.92 0h22.16C29.8 0 32 2.2 32 4.92v22.16C32 29.8 29.8 32 27.08 32H4.92A4.92 4.92 0 0 1 0 27.08V4.92C0 2.2 2.2 0 4.92 0z"/>
+      <path fill="currentColor" stroke="var(--color1, #fff)" stroke-width="4.92" d="M16 8.62a7.39 7.39 0 1 1 0 14.77A7.39 7.39 0 0 1 16 8.6z"/>
     </symbol>
 
     <symbol id="icon-crop" viewBox="0 0 30 32">

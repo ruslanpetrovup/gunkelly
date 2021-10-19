@@ -1,8 +1,221 @@
 .page-add-build__title {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .page-add-build__container {
   max-width: 811px;
   margin: 0 auto;
+}
+
+.breadcrumbs__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+
+  padding: 21px 43px;
+  margin-bottom: 60px;
+
+  background: $color-white;
+  box-shadow: 0 0 35px rgba($color-black, 0.05);
+}
+
+.breadcrumbs__item {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+/* bx:bxs-down-arrow */
+.breadcrumbs__next-page-arrow-svg {
+  display: inline-flex;
+  align-items: center;
+
+  width: 8px;
+  height: 8px;
+
+  opacity: 0.25;
+  transform: rotate(-90deg);
+}
+
+.breadcrumbs__position-counter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 26px;
+  min-height: 26px;
+  padding: 5px 9px 5px;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  color: $color-comments-posted-date;
+
+  background: $color-position-counter;
+  border-radius: 4px;
+}
+
+.breadcrumbs__btn {
+  appearance: none;
+
+  display: inline-flex;
+  align-items: center;
+
+  gap: 15px;
+  height: 26px;
+
+  background: none;
+  border: none;
+}
+
+/* Main features */
+.breadcrumbs__btn-text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: $color-black;
+
+  &.current {
+    color: $color-accent;
+  }
+
+  /* Build parts */
+  &.inactive {
+    color: $color-comments-posted-date;
+  }
+}
+
+.page-add-build__breadcrumbs-svg {
+  width: 26px;
+  height: 26px;
+  border-radius: 4px;
+}
+
+.icon-checkbox-checked {
+  color: $color-green;
+}
+
+.icon-dot-in-box {
+  color: $color-accent;
+}
+
+.page-add-build__subtitle {
+  margin-bottom: 50px;
+}
+
+/* Build name */
+.page-add-build__label {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  margin-bottom: 40px;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.page-add-build__label-text {
+}
+
+/* New Budget rifles from armalite */
+.page-add-build__input {
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+
+  padding: 21px 22px 22px;
+
+  background-color: $color-white;
+  border: 1px solid rgba($color-black, 0.05);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  &:disabled {
+    // color: # 000000;
+  }
+}
+
+.page-add-build__type-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-wrap: wrap;
+  gap: 25px;
+
+  padding: 10px 15px;
+
+  background: $color-white;
+  box-shadow: 0 0 35px rgba($color-black, 0.05);
+  border-radius: 4px;
+}
+
+.page-add-build__type-item {
+  display: flex;
+  flex: 1 1 calc((100% - 2 * 25px) / 3);
+  align-items: center;
+  justify-content: center;
+  max-width: 240px;
+  height: 40px;
+}
+
+.page-add-build__label-radio {
+  position: relative;
+
+  display: flex;
+  flex: 1 0 calc((100% - 2 * 25px) / 3);
+  align-items: center;
+  justify-content: center;
+
+  max-width: 240px;
+  height: 40px;
+  padding: 6px clamp(15px, 35%, 103px) 9px;
+
+  border-radius: 4px;
+}
+
+.page-add-build__input-radio {
+  position: absolute;
+  appearance: none;
+
+  pointer-events: none;
+  opacity: 0;
+}
+
+/* Rifle */
+.page-add-build__label-radio-text {
+  display: flex;
+  flex: 1 0 calc((100% - 2 * 25px) / 3);
+  align-items: center;
+  justify-content: center;
+
+  max-width: 240px;
+  height: 40px;
+  padding: 6px clamp(15px, 35%, 103px) 9px;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  border-radius: 4px;
+
+  @include transition;
+  transition-property: background-color;
+  .page-add-build__input-radio:checked + & {
+    background-color: $color-position-counter;
+  }
+}
+
+.option-one {
+  color: $color-title-v2-red;
+}
+
+/* Shotgun */
+.option-two {
+  color: $color-title-v2-green;
+}
+
+.option-three {
+  color: $color-title-v2-blue;
 }
