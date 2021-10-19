@@ -3,10 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <meta name="description" content="Guns and weaponry site" />
     <meta name="theme-color" content="#263238" />
-    <title>Profile - Settings page</title>
+    <title>Profile-settings</title>
 
     <link
       rel="stylesheet"
@@ -19,7 +22,7 @@
     <link rel="stylesheet" href="css/style.bundle.css" />
   </head>
 
-  <body>
+  <body class="no-scroll">
     <!-- Header -->
     <%= _.template(require('./../includes/header.html').default)(data) %>
     <!-- Search -->
@@ -49,7 +52,10 @@
             <div class="profile-friends__block">
               <div class="profile__human">
                 <div class="profile__human-toomb">
-                  <img class="profile__human-img" src="../../img/photos/profile/avatar.jpg" />
+                  <img
+                    class="profile__human-img"
+                    src="../../img/photos/profile/avatar.jpg"
+                  />
                   <div class="profile__human-backdrop">
                     <button class="profile__human-backdrop-button">
                       <svg class="profile__human-backdrop-button-icon">
@@ -71,51 +77,80 @@
                 <!-- Menu Profile -->
                 <ul class="profile__pages-list">
                   <li class="profile__pages-item">
-                    <a class="profile__pages-item-button" href="./page-profile.html">Profile</a>
+                    <a
+                      class="profile__pages-item-button"
+                      href="./page-profile.html"
+                      >Profile</a
+                    >
                   </li>
 
                   <li class="profile__pages-item">
-                    <a class="profile__pages-item-button" href="./page-profile-builds.html"
+                    <a
+                      class="profile__pages-item-button"
+                      href="./page-profile-builds.html"
                       >Builds</a
                     >
                   </li>
 
                   <li class="profile__pages-item">
-                    <a class="profile__pages-item-button" href="./page-profile-forums.html"
+                    <a
+                      class="profile__pages-item-button"
+                      href="./page-profile-forums.html"
                       >Forums</a
                     >
                   </li>
 
                   <li class="profile__pages-item">
-                    <a class="profile__pages-item-button" href="./page-profile-blog.html">Blogs</a>
+                    <a
+                      class="profile__pages-item-button"
+                      href="./page-profile-blog.html"
+                      >Blogs</a
+                    >
                   </li>
 
                   <li class="profile__pages-item">
-                    <a class="profile__pages-item-button" href="./page-profile-friends.html"
+                    <a
+                      class="profile__pages-item-button"
+                      href="./page-profile-friends.html"
                       >Friends</a
                     >
                   </li>
 
                   <li class="profile__pages-item">
-                    <a class="profile__pages-item-button active" href="./page-profile-settings.html"
+                    <a
+                      class="profile__pages-item-button active"
+                      href="./page-profile-settings.html"
                       >Settings</a
                     >
                   </li>
                 </ul>
                 <!-- Next Content -->
 
-                <section class="account-settings section profile-settings__section">
+                <section
+                  class="account-settings section profile-settings__section"
+                >
                   <div class="profile-settings__settings-wrapper">
-                    <form class="profile-settings__general-account-settings-form">
-                      <h2 class="profile-settings__settings-title">General account settings</h2>
+                    <form
+                      class="profile-settings__general-account-settings-form"
+                    >
+                      <h2 class="profile-settings__settings-title">
+                        General account settings
+                      </h2>
 
                       <ul class="profile-settings__list">
                         <li class="profile-settings__item">
-                          <label class="profile-settings__form-label" for="customer-full-name-id"
+                          <label
+                            class="profile-settings__form-label"
+                            for="customer-full-name-id"
                             >Full Name</label
                           >
 
-                          <div class="build__copy-wrapper profile-settings__change-wrapper">
+                          <div
+                            class="
+                              build__copy-wrapper
+                              profile-settings__change-wrapper
+                            "
+                          >
                             <input
                               class="profile-settings__form-input"
                               id="customer-full-name-id"
@@ -128,18 +163,30 @@
                               required
                             />
 
-                            <button class="copy-btn profile-settings__change-btn" type="button">
-                              <span class="profile-settings__change-btn-span">Change</span>
+                            <button
+                              class="copy-btn profile-settings__change-btn"
+                              type="button"
+                            >
+                              <span class="profile-settings__change-btn-span"
+                                >Change</span
+                              >
                             </button>
                           </div>
                         </li>
 
                         <li class="profile-settings__item">
-                          <label class="profile-settings__form-label" for="customer-gender-id"
+                          <label
+                            class="profile-settings__form-label"
+                            for="customer-gender-id"
                             >Gender</label
                           >
 
-                          <div class="build__copy-wrapper profile-settings__change-wrapper">
+                          <div
+                            class="
+                              build__copy-wrapper
+                              profile-settings__change-wrapper
+                            "
+                          >
                             <input
                               class="profile-settings__form-input"
                               id="customer-gender-id"
@@ -150,8 +197,13 @@
                               maxlength="64"
                             />
 
-                            <button class="copy-btn profile-settings__change-btn" type="button">
-                              <span class="profile-settings__change-btn-span">Change</span>
+                            <button
+                              class="copy-btn profile-settings__change-btn"
+                              type="button"
+                            >
+                              <span class="profile-settings__change-btn-span"
+                                >Change</span
+                              >
                             </button>
                           </div>
                         </li>
@@ -163,7 +215,12 @@
                             >Primary Email</label
                           >
 
-                          <div class="build__copy-wrapper profile-settings__change-wrapper">
+                          <div
+                            class="
+                              build__copy-wrapper
+                              profile-settings__change-wrapper
+                            "
+                          >
                             <input
                               class="profile-settings__form-input"
                               id="customer-primary-email-id"
@@ -175,18 +232,30 @@
                               required
                             />
 
-                            <button class="copy-btn profile-settings__change-btn" type="button">
-                              <span class="profile-settings__change-btn-span">Change</span>
+                            <button
+                              class="copy-btn profile-settings__change-btn"
+                              type="button"
+                            >
+                              <span class="profile-settings__change-btn-span"
+                                >Change</span
+                              >
                             </button>
                           </div>
                         </li>
 
                         <li class="profile-settings__item">
-                          <label class="profile-settings__form-label" for="customer-timezone-id"
+                          <label
+                            class="profile-settings__form-label"
+                            for="customer-timezone-id"
                             >UTC</label
                           >
 
-                          <div class="build__copy-wrapper profile-settings__change-wrapper">
+                          <div
+                            class="
+                              build__copy-wrapper
+                              profile-settings__change-wrapper
+                            "
+                          >
                             <input
                               class="profile-settings__form-input"
                               id="customer-timezone-id"
@@ -197,18 +266,30 @@
                               maxlength="64"
                             />
 
-                            <button class="copy-btn profile-settings__change-btn" type="button">
-                              <span class="profile-settings__change-btn-span">Change</span>
+                            <button
+                              class="copy-btn profile-settings__change-btn"
+                              type="button"
+                            >
+                              <span class="profile-settings__change-btn-span"
+                                >Change</span
+                              >
                             </button>
                           </div>
                         </li>
 
                         <li class="profile-settings__item">
-                          <label class="profile-settings__form-label" for="customer-country-id"
+                          <label
+                            class="profile-settings__form-label"
+                            for="customer-country-id"
                             >Country</label
                           >
 
-                          <div class="build__copy-wrapper profile-settings__change-wrapper">
+                          <div
+                            class="
+                              build__copy-wrapper
+                              profile-settings__change-wrapper
+                            "
+                          >
                             <input
                               class="profile-settings__form-input"
                               id="customer-country-id"
@@ -219,8 +300,13 @@
                               maxlength="64"
                             />
 
-                            <button class="copy-btn profile-settings__change-btn" type="button">
-                              <span class="profile-settings__change-btn-span">Change</span>
+                            <button
+                              class="copy-btn profile-settings__change-btn"
+                              type="button"
+                            >
+                              <span class="profile-settings__change-btn-span"
+                                >Change</span
+                              >
                             </button>
                           </div>
                         </li>
@@ -229,20 +315,36 @@
                   </div>
                 </section>
 
-                <section class="security-settings section profile-settings__section">
+                <section
+                  class="security-settings section profile-settings__section"
+                >
                   <div class="profile-settings__settings-wrapper">
-                    <form class="profile-settings__general-account-settings-form">
-                      <h2 class="profile-settings__settings-title">Security settings</h2>
+                    <form
+                      class="profile-settings__general-account-settings-form"
+                    >
+                      <h2 class="profile-settings__settings-title">
+                        Security settings
+                      </h2>
 
                       <ul class="profile-settings__list">
                         <li class="profile-settings__item">
-                          <label class="profile-settings__form-label" for="customer-password-id"
+                          <label
+                            class="profile-settings__form-label"
+                            for="customer-password-id"
                             >Password</label
                           >
 
-                          <div class="build__copy-wrapper profile-settings__change-wrapper">
+                          <div
+                            class="
+                              build__copy-wrapper
+                              profile-settings__change-wrapper
+                            "
+                          >
                             <input
-                              class="profile-settings__input-password profile-settings__form-input"
+                              class="
+                                profile-settings__input-password
+                                profile-settings__form-input
+                              "
                               id="customer-password-id"
                               name="customer-password"
                               type="password"
@@ -253,8 +355,13 @@
                               maxlength="64"
                             />
 
-                            <button class="copy-btn profile-settings__change-btn" type="button">
-                              <span class="profile-settings__change-btn-span">Change</span>
+                            <button
+                              class="copy-btn profile-settings__change-btn"
+                              type="button"
+                            >
+                              <span class="profile-settings__change-btn-span"
+                                >Change</span
+                              >
                             </button>
                           </div>
                         </li>
@@ -263,10 +370,14 @@
                   </div>
                 </section>
 
-                <section class="privacy-settings section profile-settings__section">
+                <section
+                  class="privacy-settings section profile-settings__section"
+                >
                   <div class="profile-settings__settings-wrapper">
                     <form class="profile-settings__privacy-settings-form">
-                      <h2 class="profile-settings__settings-title">Privacy setting</h2>
+                      <h2 class="profile-settings__settings-title">
+                        Privacy setting
+                      </h2>
 
                       <ul class="profile-settings__list">
                         <li class="profile-settings__item">
@@ -276,9 +387,17 @@
                             >Who can see my stuff?</label
                           >
 
-                          <div class="build__copy-wrapper profile-settings__change-wrapper">
+                          <div
+                            class="
+                              build__copy-wrapper
+                              profile-settings__change-wrapper
+                            "
+                          >
                             <input
-                              class="profile-settings__input-password profile-settings__form-input"
+                              class="
+                                profile-settings__input-password
+                                profile-settings__form-input
+                              "
                               id="customer-account-visibility-id"
                               name="customer-account-visibility"
                               type="text"
@@ -289,8 +408,13 @@
                               maxlength="64"
                             />
 
-                            <button class="copy-btn profile-settings__change-btn" type="button">
-                              <span class="profile-settings__change-btn-span">Change</span>
+                            <button
+                              class="copy-btn profile-settings__change-btn"
+                              type="button"
+                            >
+                              <span class="profile-settings__change-btn-span"
+                                >Change</span
+                              >
                             </button>
                           </div>
                         </li>
@@ -302,9 +426,17 @@
                             >Who can contact me?</label
                           >
 
-                          <div class="build__copy-wrapper profile-settings__change-wrapper">
+                          <div
+                            class="
+                              build__copy-wrapper
+                              profile-settings__change-wrapper
+                            "
+                          >
                             <input
-                              class="profile-settings__input-password profile-settings__form-input"
+                              class="
+                                profile-settings__input-password
+                                profile-settings__form-input
+                              "
                               id="customer-who-can-contact-me-id"
                               name="customer-who-can-contact-me"
                               type="text"
@@ -315,8 +447,13 @@
                               maxlength="64"
                             />
 
-                            <button class="copy-btn profile-settings__change-btn" type="button">
-                              <span class="profile-settings__change-btn-span">Change</span>
+                            <button
+                              class="copy-btn profile-settings__change-btn"
+                              type="button"
+                            >
+                              <span class="profile-settings__change-btn-span"
+                                >Change</span
+                              >
                             </button>
                           </div>
                         </li>
@@ -328,9 +465,17 @@
                             >Invisible profile (paid option)</label
                           >
 
-                          <div class="build__copy-wrapper profile-settings__change-wrapper">
+                          <div
+                            class="
+                              build__copy-wrapper
+                              profile-settings__change-wrapper
+                            "
+                          >
                             <input
-                              class="profile-settings__input-password profile-settings__form-input"
+                              class="
+                                profile-settings__input-password
+                                profile-settings__form-input
+                              "
                               id="customer-invisible-account-option-id"
                               name="customer-invisible-account-option"
                               type="text"
@@ -341,8 +486,13 @@
                               maxlength="64"
                             />
 
-                            <button class="copy-btn profile-settings__change-btn" type="button">
-                              <span class="profile-settings__change-btn-span">Change</span>
+                            <button
+                              class="copy-btn profile-settings__change-btn"
+                              type="button"
+                            >
+                              <span class="profile-settings__change-btn-span"
+                                >Change</span
+                              >
                             </button>
                           </div>
                         </li>
@@ -354,7 +504,11 @@
             </div>
             <!-- Trending -->
             <div
-              class="searchbuilds__block__trending res profile-friends__searchbuilds-block-trending"
+              class="
+                searchbuilds__block__trending
+                res
+                profile-friends__searchbuilds-block-trending
+              "
             >
               <div class="searchbuilds__block__trending-builds">
                 <h2 class="searchbuilds__block__trending-head">Top builds</h2>
@@ -367,7 +521,12 @@
                           src="../../img/photos/pistol1.png"
                         />
                       </div>
-                      <h2 class="hero__recentbuilds-item-head profile__recentbuilds-item-head">
+                      <h2
+                        class="
+                          hero__recentbuilds-item-head
+                          profile__recentbuilds-item-head
+                        "
+                      >
                         Glock 22 Gen 4
                       </h2>
                       <div class="hero__recentbuilds-item-block res">
@@ -375,29 +534,62 @@
                           class="hero__recentbuilds-item-block-human-images res"
                           src="../../img/photos/avatar.png"
                         />
-                        <p class="hero__recentbuilds-item-block-human-name res">troz</p>
-                        <svg class="hero__recentbuilds-item-block-human-icon res">
-                          <use href="../../img/svg/sprite.svg#icon-post-vieweye"></use>
+                        <p class="hero__recentbuilds-item-block-human-name res">
+                          troz
+                        </p>
+                        <svg
+                          class="hero__recentbuilds-item-block-human-icon res"
+                        >
+                          <use
+                            href="../../img/svg/sprite.svg#icon-post-vieweye"
+                          ></use>
                         </svg>
-                        <p class="hero__recentbuilds-item-block-human-vieweye res">12</p>
-                        <svg class="hero__recentbuilds-item-block-human-icon res">
-                          <use href="../../img/svg/sprite.svg#icon-post-message"></use>
+                        <p
+                          class="
+                            hero__recentbuilds-item-block-human-vieweye
+                            res
+                          "
+                        >
+                          12
+                        </p>
+                        <svg
+                          class="hero__recentbuilds-item-block-human-icon res"
+                        >
+                          <use
+                            href="../../img/svg/sprite.svg#icon-post-message"
+                          ></use>
                         </svg>
-                        <p class="hero__recentbuilds-item-block-human-comment">5</p>
+                        <p class="hero__recentbuilds-item-block-human-comment">
+                          5
+                        </p>
                       </div>
                       <ul class="hero__recentbuilds-item-stats-list">
-                        <li class="hero__recentbuilds-item-stats-item">Remington</li>
-                        <li class="hero__recentbuilds-item-stats-item">1911 R1 Enhanced</li>
-                        <li class="hero__recentbuilds-item-stats-item">.45 ACP</li>
+                        <li class="hero__recentbuilds-item-stats-item">
+                          Remington
+                        </li>
+                        <li class="hero__recentbuilds-item-stats-item">
+                          1911 R1 Enhanced
+                        </li>
+                        <li class="hero__recentbuilds-item-stats-item">
+                          .45 ACP
+                        </li>
                       </ul>
                     </div>
                   </li>
                   <li class="hero__recentbuilds-item res">
                     <div class="hero__recentbuilds-cards-toomb">
                       <div class="hero__recentbuilds-cards-images res">
-                        <img class="hero__recentbuilds-cards-img" src="../../img/photos/ak1.png" />
+                        <img
+                          class="hero__recentbuilds-cards-img"
+                          src="../../img/photos/ak1.png"
+                        />
                       </div>
-                      <h2 class="hero__recentbuilds-item-head profile__recentbuilds-item-head">
+                      <h2
+                        class="
+                          hero__recentbuilds-item-head
+                          profile__recentbuilds-item-head
+                        "
+                      >
                         Glock 22 Gen 4
                       </h2>
                       <div class="hero__recentbuilds-item-block res">
@@ -405,20 +597,45 @@
                           class="hero__recentbuilds-item-block-human-images res"
                           src="../../img/photos/avatar.png"
                         />
-                        <p class="hero__recentbuilds-item-block-human-name res">troz</p>
-                        <svg class="hero__recentbuilds-item-block-human-icon res">
-                          <use href="../../img/svg/sprite.svg#icon-post-vieweye"></use>
+                        <p class="hero__recentbuilds-item-block-human-name res">
+                          troz
+                        </p>
+                        <svg
+                          class="hero__recentbuilds-item-block-human-icon res"
+                        >
+                          <use
+                            href="../../img/svg/sprite.svg#icon-post-vieweye"
+                          ></use>
                         </svg>
-                        <p class="hero__recentbuilds-item-block-human-vieweye res">12</p>
-                        <svg class="hero__recentbuilds-item-block-human-icon res">
-                          <use href="../../img/svg/sprite.svg#icon-post-message"></use>
+                        <p
+                          class="
+                            hero__recentbuilds-item-block-human-vieweye
+                            res
+                          "
+                        >
+                          12
+                        </p>
+                        <svg
+                          class="hero__recentbuilds-item-block-human-icon res"
+                        >
+                          <use
+                            href="../../img/svg/sprite.svg#icon-post-message"
+                          ></use>
                         </svg>
-                        <p class="hero__recentbuilds-item-block-human-comment">5</p>
+                        <p class="hero__recentbuilds-item-block-human-comment">
+                          5
+                        </p>
                       </div>
                       <ul class="hero__recentbuilds-item-stats-list">
-                        <li class="hero__recentbuilds-item-stats-item">Remington</li>
-                        <li class="hero__recentbuilds-item-stats-item">1911 R1 Enhanced</li>
-                        <li class="hero__recentbuilds-item-stats-item">.45 ACP</li>
+                        <li class="hero__recentbuilds-item-stats-item">
+                          Remington
+                        </li>
+                        <li class="hero__recentbuilds-item-stats-item">
+                          1911 R1 Enhanced
+                        </li>
+                        <li class="hero__recentbuilds-item-stats-item">
+                          .45 ACP
+                        </li>
                       </ul>
                     </div>
                   </li>
@@ -469,7 +686,9 @@
 
                   <li class="trending-now__item">
                     <a class="trending-now__link" href="#">
-                      <h3 class="trending-now__post-title">New Members: Please Read Guidelines</h3>
+                      <h3 class="trending-now__post-title">
+                        New Members: Please Read Guidelines
+                      </h3>
                       <div class="trending-now__thumb res">
                         <img
                           class="trending-now__author-avatar res"
@@ -487,7 +706,9 @@
 
                   <li class="trending-now__item">
                     <a class="trending-now__link" href="#">
-                      <h3 class="trending-now__post-title">Pencil Barrel Whip</h3>
+                      <h3 class="trending-now__post-title">
+                        Pencil Barrel Whip
+                      </h3>
                       <div class="trending-now__thumb res">
                         <img
                           class="trending-now__author-avatar res"
@@ -505,7 +726,9 @@
                 </ul>
               </div>
               <div class="searchbuilds__block__trending-blogs">
-                <h2 class="searchbuilds__block__trending-head">Top blogposts</h2>
+                <h2 class="searchbuilds__block__trending-head">
+                  Top blogposts
+                </h2>
                 <ul class="top-blogposts__list res">
                   <li class="top-blogposts__item">
                     <a class="top-blogposts__link link res" href="#">
@@ -530,16 +753,28 @@
                           <span class="post__author-name">troz</span>
 
                           <div class="post__views">
-                            <svg class="post__views-svg svg" width="16" height="16">
-                              <use href="./img/svg/sprite.svg#icon-post-vieweye"></use>
+                            <svg
+                              class="post__views-svg svg"
+                              width="16"
+                              height="16"
+                            >
+                              <use
+                                href="./img/svg/sprite.svg#icon-post-vieweye"
+                              ></use>
                             </svg>
 
                             <span class="post__views-count">12</span>
                           </div>
 
                           <div class="post__comments">
-                            <svg class="post__comments-svg svg" width="14" height="14">
-                              <use href="../../img/svg/sprite.svg#icon-post-message"></use>
+                            <svg
+                              class="post__comments-svg svg"
+                              width="14"
+                              height="14"
+                            >
+                              <use
+                                href="../../img/svg/sprite.svg#icon-post-message"
+                              ></use>
                             </svg>
 
                             <span class="post__comments-count">5</span>
@@ -570,16 +805,28 @@
                           <span class="post__author-name">troz</span>
 
                           <div class="post__views">
-                            <svg class="post__views-svg svg" width="16" height="16">
-                              <use href="./img/svg/sprite.svg#icon-post-vieweye"></use>
+                            <svg
+                              class="post__views-svg svg"
+                              width="16"
+                              height="16"
+                            >
+                              <use
+                                href="./img/svg/sprite.svg#icon-post-vieweye"
+                              ></use>
                             </svg>
 
                             <span class="post__views-count">12</span>
                           </div>
 
                           <div class="post__comments">
-                            <svg class="post__comments-svg svg" width="14" height="14">
-                              <use href="../../img/svg/sprite.svg#icon-post-message"></use>
+                            <svg
+                              class="post__comments-svg svg"
+                              width="14"
+                              height="14"
+                            >
+                              <use
+                                href="../../img/svg/sprite.svg#icon-post-message"
+                              ></use>
                             </svg>
 
                             <span class="post__comments-count">5</span>

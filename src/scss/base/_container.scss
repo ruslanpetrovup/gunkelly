@@ -1,6 +1,11 @@
 .container {
-  max-width: $container;
   padding-right: $padding;
   padding-left: $padding;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: $container;
+  }
 }

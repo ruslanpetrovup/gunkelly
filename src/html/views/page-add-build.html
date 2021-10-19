@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <meta name="description" content="Guns and weaponry site" />
     <meta name="theme-color" content="#263238" />
     <title>Add build page</title>
@@ -18,7 +21,7 @@
 
     <link rel="stylesheet" href="css/style.bundle.css" />
   </head>
-  <body>
+  <body class="no-scroll">
     <!-- Header -->
     <%= _.template(require('./../includes/header.html').default)(data) %>
     <!-- Search -->
@@ -31,31 +34,207 @@
         </li>
 
         <li class="searchbuilds-link">
-          <a class="searchbuilds-link-a" href="./page-add-build.html">Add build</a>
+          <a class="searchbuilds-link-a" href="./page-add-build.html"
+            >Add build</a
+          >
         </li>
       </ul>
     </div>
 
     <main>
-      <section class="page-add-build__section">
+      <section class="page-add-build__section section">
         <div class="container">
           <h1 class="title-v2 page-add-build__title">Add build</h1>
 
           <ul class="breadcrumbs__list page-add-build__breadcrumbs-list">
             <li class="breadcrumbs__item page-add-build__breadcrumbs-item">
               <button class="breadcrumbs__btn page-add-build__breadcrumbs-btn">
-                <svg class="breadcrumbs__svg page-add-build__breadcrumbs-svg">
-                  <use href="."></use>
+                <svg
+                  width="26"
+                  height="26"
+                  class="
+                    breadcrumbs__svg
+                    icon-checkbox-checked
+                    page-add-build__breadcrumbs-svg
+                  "
+                >
+                  <use
+                    href="../../img/svg/sprite.svg#icon-checkbox-checked"
+                  ></use>
                 </svg>
 
                 <span class="breadcrumbs__btn-text">Main features</span>
+              </button>
+
+              <svg
+                width="8"
+                height="8"
+                class="breadcrumbs__next-page-arrow-svg"
+              >
+                <use href="../../img/svg/sprite.svg#icon-down-arrow"></use>
+              </svg>
+            </li>
+
+            <li class="breadcrumbs__item page-add-build__breadcrumbs-item">
+              <button class="breadcrumbs__btn page-add-build__breadcrumbs-btn">
+                <svg
+                  width="26"
+                  height="26"
+                  class="
+                    breadcrumbs__svg
+                    icon-dot-in-box
+                    page-add-build__breadcrumbs-svg
+                  "
+                >
+                  <use href="../../img/svg/sprite.svg#icon-dot-in-box"></use>
+                </svg>
+
+                <span class="breadcrumbs__btn-text current">Build options</span>
+              </button>
+
+              <svg
+                width="8"
+                height="8"
+                class="breadcrumbs__next-page-arrow-svg"
+              >
+                <use href="../../img/svg/sprite.svg#icon-down-arrow"></use>
+              </svg>
+            </li>
+
+            <li class="breadcrumbs__item page-add-build__breadcrumbs-item">
+              <button class="breadcrumbs__btn page-add-build__breadcrumbs-btn">
+                <span
+                  class="
+                    breadcrumbs__position-counter
+                    page-add-build__position-counter
+                  "
+                  >3</span
+                >
+
+                <span class="breadcrumbs__btn-text inactive">Build parts</span>
+              </button>
+
+              <svg
+                width="8"
+                height="8"
+                class="breadcrumbs__next-page-arrow-svg"
+              >
+                <use href="../../img/svg/sprite.svg#icon-down-arrow"></use>
+              </svg>
+            </li>
+
+            <li class="breadcrumbs__item page-add-build__breadcrumbs-item">
+              <button class="breadcrumbs__btn page-add-build__breadcrumbs-btn">
+                <span
+                  class="
+                    breadcrumbs__position-counter
+                    page-add-build__position-counter
+                  "
+                  >4</span
+                >
+
+                <span class="breadcrumbs__btn-text inactive"
+                  >Add pictures & description</span
+                >
+              </button>
+
+              <svg
+                width="8"
+                height="8"
+                class="breadcrumbs__next-page-arrow-svg"
+              >
+                <use href="../../img/svg/sprite.svg#icon-down-arrow"></use>
+              </svg>
+            </li>
+
+            <li class="breadcrumbs__item page-add-build__breadcrumbs-item">
+              <button class="breadcrumbs__btn page-add-build__breadcrumbs-btn">
+                <span
+                  class="
+                    breadcrumbs__position-counter
+                    page-add-build__position-counter
+                  "
+                  >5</span
+                >
+
+                <span class="breadcrumbs__btn-text inactive"
+                  >Save & publish</span
+                >
               </button>
             </li>
           </ul>
 
           <section class="main-features page-add-build__subsection">
             <div class="page-add-build__container">
-              <h2 class="title-v3 page-add-build__container">Main features</h2>
+              <form class="page-add-build__form">
+                <h2 class="section-title page-add-build__subtitle">
+                  Main features
+                </h2>
+
+                <label class="page-add-build__label">
+                  <span class="page-add-build__label-text">Build name</span>
+
+                  <input
+                    type="text"
+                    name="add-build__name"
+                    class="page-add-build__input"
+                    value="New Budget rifles from armalite"
+                    disabled
+                    minlength="3"
+                    maxlength="100"
+                  />
+                </label>
+
+                <label class="page-add-build__label-radio-group">
+                  <span class="page-add-build__label-text">Build type</span>
+                </label>
+
+                <ul class="page-add-build__type-list">
+                  <li class="page-add-build__type-item">
+                    <label class="page-add-build__label-radio option-one">
+                      <input
+                        type="radio"
+                        name="add-build__type"
+                        class="page-add-build__input-radio"
+                        value="rifle"
+                        checked
+                      />
+
+                      <p class="page-add-build__label-radio-text">Rifle</p>
+                    </label>
+                  </li>
+
+                  <li class="page-add-build__type-item">
+                    <label class="page-add-build__label-radio option-two">
+                      <input
+                        type="radio"
+                        name="add-build__type"
+                        class="page-add-build__input-radio"
+                        value="shotgun"
+                      />
+
+                      <p class="page-add-build__label-radio-text">Shotgun</p>
+                    </label>
+                  </li>
+
+                  <li class="page-add-build__type-item">
+                    <label class="page-add-build__label-radio option-three">
+                      <input
+                        type="radio"
+                        name="add-build__type"
+                        class="page-add-build__input-radio"
+                        value="handgun"
+                      />
+
+                      <p class="page-add-build__label-radio-text">Handgun</p>
+                    </label>
+                  </li>
+                </ul>
+
+                <h2 class="section-title page-add-build__subtitle">
+                  Build options
+                </h2>
+              </form>
             </div>
           </section>
         </div>

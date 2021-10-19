@@ -24,6 +24,7 @@ $color-slider-btn: #4c585f;
 $color-comments-count: #e5e5e5;
 $color-comments-posted-review: #444444;
 $color-comments-posted-date: #999999;
+$color-position-counter: #f5f5f5;
 
 $color-title-v2-red: #f34236;
 $color-title-v2-green: #059664;
@@ -65,10 +66,14 @@ $profile-settings__form-change-wrapper-width: (
 
 // footer
 $footer__brand-wrapper-px: 435px;
-$footer__brand-wrapper-width: ($footer__brand-wrapper-px / ($container - 2 * $padding));
+$footer__brand-wrapper-width: (
+  $footer__brand-wrapper-px / ($container - 2 * $padding)
+);
 
 $footer-lists-wrapper-px: 1164px;
-$footer-lists-wrapper-width: ($footer-lists-wrapper-px / ($container - 2 * $padding));
+$footer-lists-wrapper-width: (
+  $footer-lists-wrapper-px / ($container - 2 * $padding)
+);
 
 // footer__right-side-container
 $footer__right-side-container-width-px: 884px;

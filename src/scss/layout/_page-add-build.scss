@@ -1,8 +1,260 @@
 .page-add-build__title {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .page-add-build__container {
   max-width: 811px;
   margin: 0 auto;
+}
+
+.breadcrumbs__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+
+  padding: 21px 43px;
+  margin-bottom: 60px;
+
+  background: $color-white;
+  box-shadow: 0 0 35px rgba($color-black, 0.05);
+}
+
+.breadcrumbs__item {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+/* bx:bxs-down-arrow */
+.breadcrumbs__next-page-arrow-svg {
+  display: inline-flex;
+  align-items: center;
+
+  width: 8px;
+  height: 8px;
+
+  opacity: 0.25;
+  transform: rotate(-90deg);
+}
+
+.breadcrumbs__position-counter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 26px;
+  min-height: 26px;
+  padding: 5px 9px 5px;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  color: $color-comments-posted-date;
+
+  background: $color-position-counter;
+  border-radius: 4px;
+}
+
+.breadcrumbs__btn {
+  appearance: none;
+
+  display: inline-flex;
+  align-items: center;
+
+  gap: 15px;
+  height: 26px;
+
+  background: none;
+  border: none;
+}
+
+/* Main features */
+.breadcrumbs__btn-text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: $color-black;
+
+  &.current {
+    color: $color-accent;
+  }
+
+  /* Build parts */
+  &.inactive {
+    color: $color-comments-posted-date;
+  }
+}
+
+.page-add-build__breadcrumbs-svg {
+  width: 26px;
+  height: 26px;
+  border-radius: 4px;
+}
+
+.icon-checkbox-checked {
+  color: $color-green;
+}
+
+.icon-dot-in-box {
+  color: $color-accent;
+}
+
+.page-add-build__subtitle {
+  margin-bottom: 50px;
+}
+
+/* Build name */
+.page-add-build__label,
+.page-add-build__label-radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.page-add-build__label {
+  margin-bottom: 40px;
+}
+
+.page-add-build__label-radio-group {
+  gap: 0;
+  margin-bottom: 20px;
+}
+
+.page-add-build__label-text {
+}
+
+/* New Budget rifles from armalite */
+.page-add-build__input {
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+
+  padding: 21px 22px 22px;
+
+  background-color: $color-white;
+  border: 1px solid rgba($color-black, 0.05);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  &:disabled {
+    // color: # 000000;
+  }
+}
+
+.page-add-build__type-list {
+  padding: 10px 15px;
+
+  background: $color-white;
+  box-shadow: 0 0 35px rgba($color-black, 0.05);
+  border-radius: 4px;
+}
+
+.page-add-build__type-item {
+  max-width: 240px;
+  max-height: 40px;
+}
+
+.page-add-build__label-radio {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+
+  border-radius: 4px;
+}
+
+.page-add-build__input-radio {
+  position: absolute;
+  appearance: none;
+
+  pointer-events: none;
+  opacity: 0;
+}
+
+/* Rifle */
+.page-add-build__label-radio-text {
+  width: 100%;
+  height: 100%;
+
+  text-align: center;
+
+  padding: 9px 15px;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  border-radius: 4px;
+
+  @include transition;
+  transition-property: transform, background-color;
+
+  .page-add-build__input-radio:checked + & {
+    background-color: $color-position-counter;
+  }
+}
+
+.option-one {
+  color: $color-title-v2-red;
+}
+
+/* Shotgun */
+.option-two {
+  color: $color-title-v2-green;
+}
+
+.option-three {
+  color: $color-title-v2-blue;
+}
+
+// up to bigger mobile
+@media screen and (max-width: 479px) {
+  .page-add-build__type-item {
+    margin: 0 auto 12px;
+  }
+}
+
+$page-add-build__type-list-gap: 25px;
+
+// from bigger mobile
+@media screen and (min-width: 480px) {
+  .page-add-build__type-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: clamp(1px, 1.5vw, #{$page-add-build__type-list-gap});
+  }
+
+  .page-add-build__type-item {
+    flex: 1 1
+      calc(
+        (100% - 2 * clamp(1px, 1.5vw, #{$page-add-build__type-list-gap})) / 3
+      );
+  }
+}
+
+// up to tablet
+@media screen and (max-width: 767px) {
+  // .page-add-build__type-list { }
+
+  .page-add-build__type-item {
+    max-width: 315px;
+  }
+
+  .page-add-build__label-radio-group {
+    margin-bottom: 20px;
+  }
+}
+
+// from tablet
+@media screen and (min-width: 768px) {
+  // .page-add-build__type-list { }
 }
