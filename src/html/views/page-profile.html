@@ -3,10 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <meta name="description" content="Guns and weaponry site" />
     <meta name="theme-color" content="#263238" />
-    <title>Profile page</title>
+    <title>Profile</title>
 
     <link
       rel="stylesheet"
@@ -19,14 +22,14 @@
     <link rel="stylesheet" href="css/style.bundle.css" />
   </head>
 
-  <body>
+  <body class="no-scroll">
     <!-- Header -->
     <%= _.template(require('./../includes/header.html').default)(data) %>
     <!-- Search -->
     <%= _.template(require('./../includes/search.html').default)(data) %>
 
     <!-- Profile -->
-     <div class="profile">
+    <div class="profile">
       <div class="profile__hero">
         <div class="profile__hero-toomb">
           <img
@@ -49,7 +52,10 @@
             <div class="profile__block">
               <div class="profile__human">
                 <div class="profile__human-toomb">
-                  <img src="../../img/photos/profile/avatar.jpg" class="profile__human-img" />
+                  <img
+                    src="../../img/photos/profile/avatar.jpg"
+                    class="profile__human-img"
+                  />
                   <div class="profile__human-backdrop">
                     <button class="profile__human-backdrop-button">
                       <svg class="profile__human-backdrop-button-icon">
@@ -71,30 +77,44 @@
                 <!-- Menu Profile -->
                 <ul class="profile__pages-list">
                   <li class="profile__pages-item">
-                    <a href="./page-profile.html" class="profile__pages-item-button active"
+                    <a
+                      href="./page-profile.html"
+                      class="profile__pages-item-button active"
                       >Profile</a
                     >
                   </li>
                   <li class="profile__pages-item">
-                    <a href="./page-profile-builds.html" class="profile__pages-item-button"
+                    <a
+                      href="./page-profile-builds.html"
+                      class="profile__pages-item-button"
                       >Builds</a
                     >
                   </li>
                   <li class="profile__pages-item">
-                    <a href="./page-profile-forums.html" class="profile__pages-item-button"
+                    <a
+                      href="./page-profile-forums.html"
+                      class="profile__pages-item-button"
                       >Forums</a
                     >
                   </li>
                   <li class="profile__pages-item">
-                    <a href="./page-profile-blog.html" class="profile__pages-item-button">Blogs</a>
+                    <a
+                      href="./page-profile-blog.html"
+                      class="profile__pages-item-button"
+                      >Blogs</a
+                    >
                   </li>
                   <li class="profile__pages-item">
-                    <a href="./page-profile-friends.html" class="profile__pages-item-button"
+                    <a
+                      href="./page-profile-friends.html"
+                      class="profile__pages-item-button"
                       >Friends</a
                     >
                   </li>
                   <li class="profile__pages-item">
-                    <a href="./page-profile-settings.html" class="profile__pages-item-button"
+                    <a
+                      href="./page-profile-settings.html"
+                      class="profile__pages-item-button"
                       >Settings</a
                     >
                   </li>
@@ -102,8 +122,18 @@
                 <!-- Next Content -->
 
                 <section class="guns profile__profile-builds profile__section">
-                  <div class="title-wrapper guns__title-wrapper profile__title-wrapper">
-                    <h2 class="title-v2 guns__title profile__title section__title">Builds</h2>
+                  <div
+                    class="
+                      title-wrapper
+                      guns__title-wrapper
+                      profile__title-wrapper
+                    "
+                  >
+                    <h2
+                      class="title-v2 guns__title profile__title section__title"
+                    >
+                      Builds
+                    </h2>
                   </div>
 
                   <ul class="guns__list profile__list">
@@ -120,14 +150,25 @@
                         </div>
 
                         <div class="guns__post profile__post">
-                          <h3 class="title-v3 guns__post-title profile__post-title">
+                          <h3
+                            class="
+                              title-v3
+                              guns__post-title
+                              profile__post-title
+                            "
+                          >
                             Remington 700 Rebuild
                           </h3>
 
                           <div class="guns__post-meta profile__post-meta">
-                            <div class="guns__avatar-thumb profile__avatar-thumb">
+                            <div
+                              class="guns__avatar-thumb profile__avatar-thumb"
+                            >
                               <img
-                                class="guns__author-avatar profile__author-avatar"
+                                class="
+                                  guns__author-avatar
+                                  profile__author-avatar
+                                "
                                 src="../../img/photos/avatar.jpg"
                                 alt="Author avatar - man in white t-shirt"
                                 width="25"
@@ -135,19 +176,33 @@
                               />
                             </div>
 
-                            <span class="guns__author-name profile__author-name">troz</span>
+                            <span class="guns__author-name profile__author-name"
+                              >troz</span
+                            >
 
                             <div class="post__views">
-                              <svg class="post__views-svg svg" width="16" height="16">
-                                <use href="./img/svg/sprite.svg#icon-post-vieweye"></use>
+                              <svg
+                                class="post__views-svg svg"
+                                width="16"
+                                height="16"
+                              >
+                                <use
+                                  href="./img/svg/sprite.svg#icon-post-vieweye"
+                                ></use>
                               </svg>
 
                               <span class="post__views-count">12</span>
                             </div>
 
                             <div class="post__comments">
-                              <svg class="post__comments-svg svg" width="14" height="14">
-                                <use href="../../img/svg/sprite.svg#icon-post-message"></use>
+                              <svg
+                                class="post__comments-svg svg"
+                                width="14"
+                                height="14"
+                              >
+                                <use
+                                  href="../../img/svg/sprite.svg#icon-post-message"
+                                ></use>
                               </svg>
 
                               <span class="post__comments-count">5</span>
@@ -160,7 +215,9 @@
                             <span class="guns__build-tag">Remington</span>
                           </li>
                           <li class="guns__build-item profile__build-item">
-                            <span class="guns__build-tag">1911 R1 Enhanced</span>
+                            <span class="guns__build-tag"
+                              >1911 R1 Enhanced</span
+                            >
                           </li>
                           <li class="guns__build-item profile__build-item">
                             <span class="guns__build-tag">.45 ACP</span>
@@ -182,14 +239,25 @@
                         </div>
 
                         <div class="guns__post profile__post">
-                          <h3 class="title-v3 guns__post-title profile__post-title">
+                          <h3
+                            class="
+                              title-v3
+                              guns__post-title
+                              profile__post-title
+                            "
+                          >
                             Accuracy Int’l AT 308
                           </h3>
 
                           <div class="guns__post-meta profile__post-meta">
-                            <div class="guns__avatar-thumb profile__avatar-thumb">
+                            <div
+                              class="guns__avatar-thumb profile__avatar-thumb"
+                            >
                               <img
-                                class="guns__author-avatar profile__author-avatar"
+                                class="
+                                  guns__author-avatar
+                                  profile__author-avatar
+                                "
                                 src="../../img/photos/avatar.jpg"
                                 alt="Author avatar - man in white t-shirt"
                                 width="25"
@@ -197,19 +265,33 @@
                               />
                             </div>
 
-                            <span class="guns__author-name profile__author-name">troz</span>
+                            <span class="guns__author-name profile__author-name"
+                              >troz</span
+                            >
 
                             <div class="post__views">
-                              <svg class="post__views-svg svg" width="16" height="16">
-                                <use href="./img/svg/sprite.svg#icon-post-vieweye"></use>
+                              <svg
+                                class="post__views-svg svg"
+                                width="16"
+                                height="16"
+                              >
+                                <use
+                                  href="./img/svg/sprite.svg#icon-post-vieweye"
+                                ></use>
                               </svg>
 
                               <span class="post__views-count">12</span>
                             </div>
 
                             <div class="post__comments">
-                              <svg class="post__comments-svg svg" width="14" height="14">
-                                <use href="../../img/svg/sprite.svg#icon-post-message"></use>
+                              <svg
+                                class="post__comments-svg svg"
+                                width="14"
+                                height="14"
+                              >
+                                <use
+                                  href="../../img/svg/sprite.svg#icon-post-message"
+                                ></use>
                               </svg>
 
                               <span class="post__comments-count">5</span>
@@ -222,7 +304,9 @@
                             <span class="guns__build-tag">Remington</span>
                           </li>
                           <li class="guns__build-item profile__build-item">
-                            <span class="guns__build-tag">1911 R1 Enhanced</span>
+                            <span class="guns__build-tag"
+                              >1911 R1 Enhanced</span
+                            >
                           </li>
                           <li class="guns__build-item profile__build-item">
                             <span class="guns__build-tag">.45 ACP</span>
@@ -244,14 +328,25 @@
                         </div>
 
                         <div class="guns__post profile__post">
-                          <h3 class="title-v3 guns__post-title profile__post-title">
+                          <h3
+                            class="
+                              title-v3
+                              guns__post-title
+                              profile__post-title
+                            "
+                          >
                             Golden Anniversary
                           </h3>
 
                           <div class="guns__post-meta profile__post-meta">
-                            <div class="guns__avatar-thumb profile__avatar-thumb">
+                            <div
+                              class="guns__avatar-thumb profile__avatar-thumb"
+                            >
                               <img
-                                class="guns__author-avatar profile__author-avatar"
+                                class="
+                                  guns__author-avatar
+                                  profile__author-avatar
+                                "
                                 src="../../img/photos/avatar.jpg"
                                 alt="Author avatar - man in white t-shirt"
                                 width="25"
@@ -259,19 +354,33 @@
                               />
                             </div>
 
-                            <span class="guns__author-name profile__author-name">troz</span>
+                            <span class="guns__author-name profile__author-name"
+                              >troz</span
+                            >
 
                             <div class="post__views">
-                              <svg class="post__views-svg svg" width="16" height="16">
-                                <use href="./img/svg/sprite.svg#icon-post-vieweye"></use>
+                              <svg
+                                class="post__views-svg svg"
+                                width="16"
+                                height="16"
+                              >
+                                <use
+                                  href="./img/svg/sprite.svg#icon-post-vieweye"
+                                ></use>
                               </svg>
 
                               <span class="post__views-count">12</span>
                             </div>
 
                             <div class="post__comments">
-                              <svg class="post__comments-svg svg" width="14" height="14">
-                                <use href="../../img/svg/sprite.svg#icon-post-message"></use>
+                              <svg
+                                class="post__comments-svg svg"
+                                width="14"
+                                height="14"
+                              >
+                                <use
+                                  href="../../img/svg/sprite.svg#icon-post-message"
+                                ></use>
                               </svg>
 
                               <span class="post__comments-count">5</span>
@@ -284,7 +393,9 @@
                             <span class="guns__build-tag">Remington</span>
                           </li>
                           <li class="guns__build-item profile__build-item">
-                            <span class="guns__build-tag">1911 R1 Enhanced</span>
+                            <span class="guns__build-tag"
+                              >1911 R1 Enhanced</span
+                            >
                           </li>
                           <li class="guns__build-item profile__build-item">
                             <span class="guns__build-tag">.45 ACP</span>
@@ -294,25 +405,55 @@
                     </li>
                   </ul>
 
-                  <ul class="guns__slider-list profile__slider-list hidden-on-tablet">
+                  <ul
+                    class="
+                      guns__slider-list
+                      profile__slider-list
+                      hidden-on-tablet
+                    "
+                  >
                     <li class="guns__slider-item profile__slider-item">
-                      <button class="guns__slider-button profile__slider-button active"></button>
+                      <button
+                        class="
+                          guns__slider-button
+                          profile__slider-button
+                          active
+                        "
+                      ></button>
                     </li>
 
-                    <li class="guns__slider-item profile__slider-button profile__slider-item">
+                    <li
+                      class="
+                        guns__slider-item
+                        profile__slider-button profile__slider-item
+                      "
+                    >
                       <button class="guns__slider-button"></button>
                     </li>
 
-                    <li class="guns__slider-item profile__slider-button profile__slider-item">
+                    <li
+                      class="
+                        guns__slider-item
+                        profile__slider-button profile__slider-item
+                      "
+                    >
                       <button class="guns__slider-button"></button>
                     </li>
 
-                    <li class="guns__slider-item profile__slider-button profile__slider-item">
+                    <li
+                      class="
+                        guns__slider-item
+                        profile__slider-button profile__slider-item
+                      "
+                    >
                       <button class="guns__slider-button"></button>
                     </li>
                   </ul>
                   <button
-                    class="comments__show-more-btn profile__comments-show-more-btn"
+                    class="
+                      comments__show-more-btn
+                      profile__comments-show-more-btn
+                    "
                     type="button"
                   >
                     Show all
@@ -320,7 +461,13 @@
                 </section>
 
                 <section class="guns profile__profile-forums profile__section">
-                  <div class="title-wrapper guns__title-wrapper profile__title-wrapper">
+                  <div
+                    class="
+                      title-wrapper
+                      guns__title-wrapper
+                      profile__title-wrapper
+                    "
+                  >
                     <h2
                       class="
                         title-v2
@@ -336,22 +483,53 @@
 
                   <ul class="guns__list profile-profile-forums__list">
                     <li class="guns__item profile-profile-forums__item">
-                      <a class="guns__link profile-profile-forums__link" href="#">
+                      <a
+                        class="guns__link profile-profile-forums__link"
+                        href="#"
+                      >
                         <div class="guns__post profile-profile-forums__post">
-                          <p class="trending-now__post-meta profile-profile-forums__post-meta-date">
-                            <span class="trending-now__post-date profile-profile-forums__post-date"
+                          <p
+                            class="
+                              trending-now__post-meta
+                              profile-profile-forums__post-meta-date
+                            "
+                          >
+                            <span
+                              class="
+                                trending-now__post-date
+                                profile-profile-forums__post-date
+                              "
                               >Today</span
                             >
                           </p>
 
-                          <h3 class="title-v3 guns__post-title profile-profile-forums__post-title">
+                          <h3
+                            class="
+                              title-v3
+                              guns__post-title
+                              profile-profile-forums__post-title
+                            "
+                          >
                             10 Tips for Choosing a Concealed Carry Handgun
                           </h3>
 
-                          <div class="guns__post-meta profile-profile-forums__post-meta">
-                            <div class="guns__avatar-thumb profile-profile-forums__avatar-thumb">
+                          <div
+                            class="
+                              guns__post-meta
+                              profile-profile-forums__post-meta
+                            "
+                          >
+                            <div
+                              class="
+                                guns__avatar-thumb
+                                profile-profile-forums__avatar-thumb
+                              "
+                            >
                               <img
-                                class="guns__author-avatar profile-profile-forums__author-avatar"
+                                class="
+                                  guns__author-avatar
+                                  profile-profile-forums__author-avatar
+                                "
                                 src="../../img/photos/avatar.jpg"
                                 alt="Author avatar - man in white t-shirt"
                                 width="25"
@@ -359,21 +537,37 @@
                               />
                             </div>
 
-                            <span class="guns__author-name profile-profile-forums__author-name"
+                            <span
+                              class="
+                                guns__author-name
+                                profile-profile-forums__author-name
+                              "
                               >troz</span
                             >
 
                             <div class="post__views">
-                              <svg class="post__views-svg svg" width="16" height="16">
-                                <use href="./img/svg/sprite.svg#icon-post-vieweye"></use>
+                              <svg
+                                class="post__views-svg svg"
+                                width="16"
+                                height="16"
+                              >
+                                <use
+                                  href="./img/svg/sprite.svg#icon-post-vieweye"
+                                ></use>
                               </svg>
 
                               <span class="post__views-count">12</span>
                             </div>
 
                             <div class="post__comments">
-                              <svg class="post__comments-svg svg" width="14" height="14">
-                                <use href="../../img/svg/sprite.svg#icon-post-message"></use>
+                              <svg
+                                class="post__comments-svg svg"
+                                width="14"
+                                height="14"
+                              >
+                                <use
+                                  href="../../img/svg/sprite.svg#icon-post-message"
+                                ></use>
                               </svg>
 
                               <span class="post__comments-count">5</span>
@@ -384,22 +578,53 @@
                     </li>
 
                     <li class="guns__item profile-profile-forums__item">
-                      <a class="guns__link profile-profile-forums__link" href="#">
+                      <a
+                        class="guns__link profile-profile-forums__link"
+                        href="#"
+                      >
                         <div class="guns__post profile-profile-forums__post">
-                          <p class="trending-now__post-meta profile-profile-forums__post-meta-date">
-                            <span class="trending-now__post-date profile-profile-forums__post-date"
+                          <p
+                            class="
+                              trending-now__post-meta
+                              profile-profile-forums__post-meta-date
+                            "
+                          >
+                            <span
+                              class="
+                                trending-now__post-date
+                                profile-profile-forums__post-date
+                              "
                               >Yesterday</span
                             >
                           </p>
 
-                          <h3 class="title-v3 guns__post-title profile-profile-forums__post-title">
+                          <h3
+                            class="
+                              title-v3
+                              guns__post-title
+                              profile-profile-forums__post-title
+                            "
+                          >
                             Firearms definitions and requirements
                           </h3>
 
-                          <div class="guns__post-meta profile-profile-forums__post-meta">
-                            <div class="guns__avatar-thumb profile-profile-forums__avatar-thumb">
+                          <div
+                            class="
+                              guns__post-meta
+                              profile-profile-forums__post-meta
+                            "
+                          >
+                            <div
+                              class="
+                                guns__avatar-thumb
+                                profile-profile-forums__avatar-thumb
+                              "
+                            >
                               <img
-                                class="guns__author-avatar profile-profile-forums__author-avatar"
+                                class="
+                                  guns__author-avatar
+                                  profile-profile-forums__author-avatar
+                                "
                                 src="../../img/photos/avatar.jpg"
                                 alt="Author avatar - man in white t-shirt"
                                 width="25"
@@ -407,21 +632,37 @@
                               />
                             </div>
 
-                            <span class="guns__author-name profile-profile-forums__author-name"
+                            <span
+                              class="
+                                guns__author-name
+                                profile-profile-forums__author-name
+                              "
                               >troz</span
                             >
 
                             <div class="post__views">
-                              <svg class="post__views-svg svg" width="16" height="16">
-                                <use href="./img/svg/sprite.svg#icon-post-vieweye"></use>
+                              <svg
+                                class="post__views-svg svg"
+                                width="16"
+                                height="16"
+                              >
+                                <use
+                                  href="./img/svg/sprite.svg#icon-post-vieweye"
+                                ></use>
                               </svg>
 
                               <span class="post__views-count">12</span>
                             </div>
 
                             <div class="post__comments">
-                              <svg class="post__comments-svg svg" width="14" height="14">
-                                <use href="../../img/svg/sprite.svg#icon-post-message"></use>
+                              <svg
+                                class="post__comments-svg svg"
+                                width="14"
+                                height="14"
+                              >
+                                <use
+                                  href="../../img/svg/sprite.svg#icon-post-message"
+                                ></use>
                               </svg>
 
                               <span class="post__comments-count">5</span>
@@ -432,22 +673,53 @@
                     </li>
 
                     <li class="guns__item profile-profile-forums__item">
-                      <a class="guns__link profile-profile-forums__link" href="#">
+                      <a
+                        class="guns__link profile-profile-forums__link"
+                        href="#"
+                      >
                         <div class="guns__post profile-profile-forums__post">
-                          <p class="trending-now__post-meta profile-profile-forums__post-meta-date">
-                            <span class="trending-now__post-date profile-profile-forums__post-date"
+                          <p
+                            class="
+                              trending-now__post-meta
+                              profile-profile-forums__post-meta-date
+                            "
+                          >
+                            <span
+                              class="
+                                trending-now__post-date
+                                profile-profile-forums__post-date
+                              "
                               >10 September 2021</span
                             >
                           </p>
 
-                          <h3 class="title-v3 guns__post-title profile-profile-forums__post-title">
+                          <h3
+                            class="
+                              title-v3
+                              guns__post-title
+                              profile-profile-forums__post-title
+                            "
+                          >
                             New Members: Please Read Guidelines
                           </h3>
 
-                          <div class="guns__post-meta profile-profile-forums__post-meta">
-                            <div class="guns__avatar-thumb profile-profile-forums__avatar-thumb">
+                          <div
+                            class="
+                              guns__post-meta
+                              profile-profile-forums__post-meta
+                            "
+                          >
+                            <div
+                              class="
+                                guns__avatar-thumb
+                                profile-profile-forums__avatar-thumb
+                              "
+                            >
                               <img
-                                class="guns__author-avatar profile-profile-forums__author-avatar"
+                                class="
+                                  guns__author-avatar
+                                  profile-profile-forums__author-avatar
+                                "
                                 src="../../img/photos/avatar.jpg"
                                 alt="Author avatar - man in white t-shirt"
                                 width="25"
@@ -455,21 +727,37 @@
                               />
                             </div>
 
-                            <span class="guns__author-name profile-profile-forums__author-name"
+                            <span
+                              class="
+                                guns__author-name
+                                profile-profile-forums__author-name
+                              "
                               >troz</span
                             >
 
                             <div class="post__views">
-                              <svg class="post__views-svg svg" width="16" height="16">
-                                <use href="./img/svg/sprite.svg#icon-post-vieweye"></use>
+                              <svg
+                                class="post__views-svg svg"
+                                width="16"
+                                height="16"
+                              >
+                                <use
+                                  href="./img/svg/sprite.svg#icon-post-vieweye"
+                                ></use>
                               </svg>
 
                               <span class="post__views-count">12</span>
                             </div>
 
                             <div class="post__comments">
-                              <svg class="post__comments-svg svg" width="14" height="14">
-                                <use href="../../img/svg/sprite.svg#icon-post-message"></use>
+                              <svg
+                                class="post__comments-svg svg"
+                                width="14"
+                                height="14"
+                              >
+                                <use
+                                  href="../../img/svg/sprite.svg#icon-post-message"
+                                ></use>
                               </svg>
 
                               <span class="post__comments-count">5</span>
@@ -481,18 +769,32 @@
                   </ul>
 
                   <ul
-                    class="guns__slider-list profile-profile-forums__slider-list hidden-on-tablet"
+                    class="
+                      guns__slider-list
+                      profile-profile-forums__slider-list
+                      hidden-on-tablet
+                    "
                   >
-                    <li class="guns__slider-item profile-profile-forums__slider-item">
+                    <li
+                      class="
+                        guns__slider-item
+                        profile-profile-forums__slider-item
+                      "
+                    >
                       <button
-                        class="guns__slider-button profile-profile-forums__slider-button active"
+                        class="
+                          guns__slider-button
+                          profile-profile-forums__slider-button
+                          active
+                        "
                       ></button>
                     </li>
 
                     <li
                       class="
                         guns__slider-item
-                        profile-profile-forums__slider-button profile-profile-forums__slider-item
+                        profile-profile-forums__slider-button
+                        profile-profile-forums__slider-item
                       "
                     >
                       <button class="guns__slider-button"></button>
@@ -501,7 +803,8 @@
                     <li
                       class="
                         guns__slider-item
-                        profile-profile-forums__slider-button profile-profile-forums__slider-item
+                        profile-profile-forums__slider-button
+                        profile-profile-forums__slider-item
                       "
                     >
                       <button class="guns__slider-button"></button>
@@ -510,7 +813,8 @@
                     <li
                       class="
                         guns__slider-item
-                        profile-profile-forums__slider-button profile-profile-forums__slider-item
+                        profile-profile-forums__slider-button
+                        profile-profile-forums__slider-item
                       "
                     >
                       <button class="guns__slider-button"></button>
@@ -530,8 +834,18 @@
                 </section>
 
                 <section class="guns profile__profile-blogs profile__section">
-                  <div class="title-wrapper guns__title-wrapper profile__title-wrapper">
-                    <h2 class="title-v2 guns__title profile__title section__title">Blogs</h2>
+                  <div
+                    class="
+                      title-wrapper
+                      guns__title-wrapper
+                      profile__title-wrapper
+                    "
+                  >
+                    <h2
+                      class="title-v2 guns__title profile__title section__title"
+                    >
+                      Blogs
+                    </h2>
                   </div>
 
                   <ul class="guns__list profile__list">
@@ -547,17 +861,35 @@
                           />
                         </div>
 
-                        <p class="top-blogposts__post-type profile-builds__post-type">Rifle</p>
+                        <p
+                          class="
+                            top-blogposts__post-type
+                            profile-builds__post-type
+                          "
+                        >
+                          Rifle
+                        </p>
 
                         <div class="guns__post profile__post">
-                          <h3 class="title-v3 guns__post-title profile__post-title">
+                          <h3
+                            class="
+                              title-v3
+                              guns__post-title
+                              profile__post-title
+                            "
+                          >
                             Izhmash officially presented the new AK-12
                           </h3>
 
                           <div class="guns__post-meta profile__post-meta">
-                            <div class="guns__avatar-thumb profile__avatar-thumb">
+                            <div
+                              class="guns__avatar-thumb profile__avatar-thumb"
+                            >
                               <img
-                                class="guns__author-avatar profile__author-avatar"
+                                class="
+                                  guns__author-avatar
+                                  profile__author-avatar
+                                "
                                 src="../../img/photos/avatar.jpg"
                                 alt="Author avatar - man in white t-shirt"
                                 width="25"
@@ -565,19 +897,33 @@
                               />
                             </div>
 
-                            <span class="guns__author-name profile__author-name">troz</span>
+                            <span class="guns__author-name profile__author-name"
+                              >troz</span
+                            >
 
                             <div class="post__views">
-                              <svg class="post__views-svg svg" width="16" height="16">
-                                <use href="./img/svg/sprite.svg#icon-post-vieweye"></use>
+                              <svg
+                                class="post__views-svg svg"
+                                width="16"
+                                height="16"
+                              >
+                                <use
+                                  href="./img/svg/sprite.svg#icon-post-vieweye"
+                                ></use>
                               </svg>
 
                               <span class="post__views-count">12</span>
                             </div>
 
                             <div class="post__comments">
-                              <svg class="post__comments-svg svg" width="14" height="14">
-                                <use href="../../img/svg/sprite.svg#icon-post-message"></use>
+                              <svg
+                                class="post__comments-svg svg"
+                                width="14"
+                                height="14"
+                              >
+                                <use
+                                  href="../../img/svg/sprite.svg#icon-post-message"
+                                ></use>
                               </svg>
 
                               <span class="post__comments-count">5</span>
@@ -599,17 +945,35 @@
                           />
                         </div>
 
-                        <p class="top-blogposts__post-type profile-builds__post-type">Shotgun</p>
+                        <p
+                          class="
+                            top-blogposts__post-type
+                            profile-builds__post-type
+                          "
+                        >
+                          Shotgun
+                        </p>
 
                         <div class="guns__post profile__post">
-                          <h3 class="title-v3 guns__post-title profile__post-title">
+                          <h3
+                            class="
+                              title-v3
+                              guns__post-title
+                              profile__post-title
+                            "
+                          >
                             Savage Mark 2 and a problem of extraction
                           </h3>
 
                           <div class="guns__post-meta profile__post-meta">
-                            <div class="guns__avatar-thumb profile__avatar-thumb">
+                            <div
+                              class="guns__avatar-thumb profile__avatar-thumb"
+                            >
                               <img
-                                class="guns__author-avatar profile__author-avatar"
+                                class="
+                                  guns__author-avatar
+                                  profile__author-avatar
+                                "
                                 src="../../img/photos/avatar.jpg"
                                 alt="Author avatar - man in white t-shirt"
                                 width="25"
@@ -617,19 +981,33 @@
                               />
                             </div>
 
-                            <span class="guns__author-name profile__author-name">troz</span>
+                            <span class="guns__author-name profile__author-name"
+                              >troz</span
+                            >
 
                             <div class="post__views">
-                              <svg class="post__views-svg svg" width="16" height="16">
-                                <use href="./img/svg/sprite.svg#icon-post-vieweye"></use>
+                              <svg
+                                class="post__views-svg svg"
+                                width="16"
+                                height="16"
+                              >
+                                <use
+                                  href="./img/svg/sprite.svg#icon-post-vieweye"
+                                ></use>
                               </svg>
 
                               <span class="post__views-count">12</span>
                             </div>
 
                             <div class="post__comments">
-                              <svg class="post__comments-svg svg" width="14" height="14">
-                                <use href="../../img/svg/sprite.svg#icon-post-message"></use>
+                              <svg
+                                class="post__comments-svg svg"
+                                width="14"
+                                height="14"
+                              >
+                                <use
+                                  href="../../img/svg/sprite.svg#icon-post-message"
+                                ></use>
                               </svg>
 
                               <span class="post__comments-count">5</span>
@@ -651,17 +1029,35 @@
                           />
                         </div>
 
-                        <p class="top-blogposts__post-type profile-builds__post-type">Handgun</p>
+                        <p
+                          class="
+                            top-blogposts__post-type
+                            profile-builds__post-type
+                          "
+                        >
+                          Handgun
+                        </p>
 
                         <div class="guns__post profile__post">
-                          <h3 class="title-v3 guns__post-title profile__post-title">
+                          <h3
+                            class="
+                              title-v3
+                              guns__post-title
+                              profile__post-title
+                            "
+                          >
                             Officially Presented the new AK-12
                           </h3>
 
                           <div class="guns__post-meta profile__post-meta">
-                            <div class="guns__avatar-thumb profile__avatar-thumb">
+                            <div
+                              class="guns__avatar-thumb profile__avatar-thumb"
+                            >
                               <img
-                                class="guns__author-avatar profile__author-avatar"
+                                class="
+                                  guns__author-avatar
+                                  profile__author-avatar
+                                "
                                 src="../../img/photos/avatar.jpg"
                                 alt="Author avatar - man in white t-shirt"
                                 width="25"
@@ -669,19 +1065,33 @@
                               />
                             </div>
 
-                            <span class="guns__author-name profile__author-name">troz</span>
+                            <span class="guns__author-name profile__author-name"
+                              >troz</span
+                            >
 
                             <div class="post__views">
-                              <svg class="post__views-svg svg" width="16" height="16">
-                                <use href="./img/svg/sprite.svg#icon-post-vieweye"></use>
+                              <svg
+                                class="post__views-svg svg"
+                                width="16"
+                                height="16"
+                              >
+                                <use
+                                  href="./img/svg/sprite.svg#icon-post-vieweye"
+                                ></use>
                               </svg>
 
                               <span class="post__views-count">12</span>
                             </div>
 
                             <div class="post__comments">
-                              <svg class="post__comments-svg svg" width="14" height="14">
-                                <use href="../../img/svg/sprite.svg#icon-post-message"></use>
+                              <svg
+                                class="post__comments-svg svg"
+                                width="14"
+                                height="14"
+                              >
+                                <use
+                                  href="../../img/svg/sprite.svg#icon-post-message"
+                                ></use>
                               </svg>
 
                               <span class="post__comments-count">5</span>
@@ -692,26 +1102,56 @@
                     </li>
                   </ul>
 
-                  <ul class="guns__slider-list profile__slider-list hidden-on-tablet">
+                  <ul
+                    class="
+                      guns__slider-list
+                      profile__slider-list
+                      hidden-on-tablet
+                    "
+                  >
                     <li class="guns__slider-item profile__slider-item">
-                      <button class="guns__slider-button profile__slider-button active"></button>
+                      <button
+                        class="
+                          guns__slider-button
+                          profile__slider-button
+                          active
+                        "
+                      ></button>
                     </li>
 
-                    <li class="guns__slider-item profile__slider-button profile__slider-item">
+                    <li
+                      class="
+                        guns__slider-item
+                        profile__slider-button profile__slider-item
+                      "
+                    >
                       <button class="guns__slider-button"></button>
                     </li>
 
-                    <li class="guns__slider-item profile__slider-button profile__slider-item">
+                    <li
+                      class="
+                        guns__slider-item
+                        profile__slider-button profile__slider-item
+                      "
+                    >
                       <button class="guns__slider-button"></button>
                     </li>
 
-                    <li class="guns__slider-item profile__slider-button profile__slider-item">
+                    <li
+                      class="
+                        guns__slider-item
+                        profile__slider-button profile__slider-item
+                      "
+                    >
                       <button class="guns__slider-button"></button>
                     </li>
                   </ul>
 
                   <button
-                    class="comments__show-more-btn profile__comments-show-more-btn"
+                    class="
+                      comments__show-more-btn
+                      profile__comments-show-more-btn
+                    "
                     type="button"
                   >
                     Show all
@@ -732,7 +1172,12 @@
                           class="hero__recentbuilds-cards-img"
                         />
                       </div>
-                      <h2 class="hero__recentbuilds-item-head profile__recentbuilds-item-head">
+                      <h2
+                        class="
+                          hero__recentbuilds-item-head
+                          profile__recentbuilds-item-head
+                        "
+                      >
                         Glock 22 Gen 4
                       </h2>
                       <div class="hero__recentbuilds-item-block res">
@@ -740,29 +1185,62 @@
                           src="../../img/photos/avatar.png"
                           class="hero__recentbuilds-item-block-human-images res"
                         />
-                        <p class="hero__recentbuilds-item-block-human-name res">troz</p>
-                        <svg class="hero__recentbuilds-item-block-human-icon res">
-                          <use href="../../img/svg/sprite.svg#icon-post-vieweye"></use>
+                        <p class="hero__recentbuilds-item-block-human-name res">
+                          troz
+                        </p>
+                        <svg
+                          class="hero__recentbuilds-item-block-human-icon res"
+                        >
+                          <use
+                            href="../../img/svg/sprite.svg#icon-post-vieweye"
+                          ></use>
                         </svg>
-                        <p class="hero__recentbuilds-item-block-human-vieweye res">12</p>
-                        <svg class="hero__recentbuilds-item-block-human-icon res">
-                          <use href="../../img/svg/sprite.svg#icon-post-message"></use>
+                        <p
+                          class="
+                            hero__recentbuilds-item-block-human-vieweye
+                            res
+                          "
+                        >
+                          12
+                        </p>
+                        <svg
+                          class="hero__recentbuilds-item-block-human-icon res"
+                        >
+                          <use
+                            href="../../img/svg/sprite.svg#icon-post-message"
+                          ></use>
                         </svg>
-                        <p class="hero__recentbuilds-item-block-human-comment">5</p>
+                        <p class="hero__recentbuilds-item-block-human-comment">
+                          5
+                        </p>
                       </div>
                       <ul class="hero__recentbuilds-item-stats-list">
-                        <li class="hero__recentbuilds-item-stats-item">Remington</li>
-                        <li class="hero__recentbuilds-item-stats-item">1911 R1 Enhanced</li>
-                        <li class="hero__recentbuilds-item-stats-item">.45 ACP</li>
+                        <li class="hero__recentbuilds-item-stats-item">
+                          Remington
+                        </li>
+                        <li class="hero__recentbuilds-item-stats-item">
+                          1911 R1 Enhanced
+                        </li>
+                        <li class="hero__recentbuilds-item-stats-item">
+                          .45 ACP
+                        </li>
                       </ul>
                     </div>
                   </li>
                   <li class="hero__recentbuilds-item res">
                     <div class="hero__recentbuilds-cards-toomb">
                       <div class="hero__recentbuilds-cards-images res">
-                        <img src="../../img/photos/ak1.png" class="hero__recentbuilds-cards-img" />
+                        <img
+                          src="../../img/photos/ak1.png"
+                          class="hero__recentbuilds-cards-img"
+                        />
                       </div>
-                      <h2 class="hero__recentbuilds-item-head profile__recentbuilds-item-head">
+                      <h2
+                        class="
+                          hero__recentbuilds-item-head
+                          profile__recentbuilds-item-head
+                        "
+                      >
                         Glock 22 Gen 4
                       </h2>
                       <div class="hero__recentbuilds-item-block res">
@@ -770,20 +1248,45 @@
                           src="../../img/photos/avatar.png"
                           class="hero__recentbuilds-item-block-human-images res"
                         />
-                        <p class="hero__recentbuilds-item-block-human-name res">troz</p>
-                        <svg class="hero__recentbuilds-item-block-human-icon res">
-                          <use href="../../img/svg/sprite.svg#icon-post-vieweye"></use>
+                        <p class="hero__recentbuilds-item-block-human-name res">
+                          troz
+                        </p>
+                        <svg
+                          class="hero__recentbuilds-item-block-human-icon res"
+                        >
+                          <use
+                            href="../../img/svg/sprite.svg#icon-post-vieweye"
+                          ></use>
                         </svg>
-                        <p class="hero__recentbuilds-item-block-human-vieweye res">12</p>
-                        <svg class="hero__recentbuilds-item-block-human-icon res">
-                          <use href="../../img/svg/sprite.svg#icon-post-message"></use>
+                        <p
+                          class="
+                            hero__recentbuilds-item-block-human-vieweye
+                            res
+                          "
+                        >
+                          12
+                        </p>
+                        <svg
+                          class="hero__recentbuilds-item-block-human-icon res"
+                        >
+                          <use
+                            href="../../img/svg/sprite.svg#icon-post-message"
+                          ></use>
                         </svg>
-                        <p class="hero__recentbuilds-item-block-human-comment">5</p>
+                        <p class="hero__recentbuilds-item-block-human-comment">
+                          5
+                        </p>
                       </div>
                       <ul class="hero__recentbuilds-item-stats-list">
-                        <li class="hero__recentbuilds-item-stats-item">Remington</li>
-                        <li class="hero__recentbuilds-item-stats-item">1911 R1 Enhanced</li>
-                        <li class="hero__recentbuilds-item-stats-item">.45 ACP</li>
+                        <li class="hero__recentbuilds-item-stats-item">
+                          Remington
+                        </li>
+                        <li class="hero__recentbuilds-item-stats-item">
+                          1911 R1 Enhanced
+                        </li>
+                        <li class="hero__recentbuilds-item-stats-item">
+                          .45 ACP
+                        </li>
                       </ul>
                     </div>
                   </li>
@@ -834,7 +1337,9 @@
 
                   <li class="trending-now__item">
                     <a class="trending-now__link" href="#">
-                      <h3 class="trending-now__post-title">New Members: Please Read Guidelines</h3>
+                      <h3 class="trending-now__post-title">
+                        New Members: Please Read Guidelines
+                      </h3>
                       <div class="trending-now__thumb res">
                         <img
                           class="trending-now__author-avatar res"
@@ -852,7 +1357,9 @@
 
                   <li class="trending-now__item">
                     <a class="trending-now__link" href="#">
-                      <h3 class="trending-now__post-title">Pencil Barrel Whip</h3>
+                      <h3 class="trending-now__post-title">
+                        Pencil Barrel Whip
+                      </h3>
                       <div class="trending-now__thumb res">
                         <img
                           class="trending-now__author-avatar res"
@@ -870,7 +1377,9 @@
                 </ul>
               </div>
               <div class="searchbuilds__block__trending-blogs">
-                <h2 class="searchbuilds__block__trending-head">Top blogposts</h2>
+                <h2 class="searchbuilds__block__trending-head">
+                  Top blogposts
+                </h2>
                 <ul class="top-blogposts__list res">
                   <li class="top-blogposts__item">
                     <a class="top-blogposts__link link res" href="#">
@@ -895,16 +1404,28 @@
                           <span class="post__author-name">troz</span>
 
                           <div class="post__views">
-                            <svg class="post__views-svg svg" width="16" height="16">
-                              <use href="./img/svg/sprite.svg#icon-post-vieweye"></use>
+                            <svg
+                              class="post__views-svg svg"
+                              width="16"
+                              height="16"
+                            >
+                              <use
+                                href="./img/svg/sprite.svg#icon-post-vieweye"
+                              ></use>
                             </svg>
 
                             <span class="post__views-count">12</span>
                           </div>
 
                           <div class="post__comments">
-                            <svg class="post__comments-svg svg" width="14" height="14">
-                              <use href="../../img/svg/sprite.svg#icon-post-message"></use>
+                            <svg
+                              class="post__comments-svg svg"
+                              width="14"
+                              height="14"
+                            >
+                              <use
+                                href="../../img/svg/sprite.svg#icon-post-message"
+                              ></use>
                             </svg>
 
                             <span class="post__comments-count">5</span>
@@ -935,16 +1456,28 @@
                           <span class="post__author-name">troz</span>
 
                           <div class="post__views">
-                            <svg class="post__views-svg svg" width="16" height="16">
-                              <use href="./img/svg/sprite.svg#icon-post-vieweye"></use>
+                            <svg
+                              class="post__views-svg svg"
+                              width="16"
+                              height="16"
+                            >
+                              <use
+                                href="./img/svg/sprite.svg#icon-post-vieweye"
+                              ></use>
                             </svg>
 
                             <span class="post__views-count">12</span>
                           </div>
 
                           <div class="post__comments">
-                            <svg class="post__comments-svg svg" width="14" height="14">
-                              <use href="../../img/svg/sprite.svg#icon-post-message"></use>
+                            <svg
+                              class="post__comments-svg svg"
+                              width="14"
+                              height="14"
+                            >
+                              <use
+                                href="../../img/svg/sprite.svg#icon-post-message"
+                              ></use>
                             </svg>
 
                             <span class="post__comments-count">5</span>
@@ -959,7 +1492,8 @@
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
+    -->
     <!-- Footer -->
     <%= _.template(require('./../includes/footer.html').default)(data) %>
   </body>
