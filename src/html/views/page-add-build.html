@@ -23,9 +23,9 @@
   </head>
   <body class="no-scroll">
     <!-- Header -->
-    <%= _.template(require('./../includes/header.html').default)(data) %>
+    <!-- <%= _.template(require('./../includes/header.html').default)(data) %> -->
     <!-- Search -->
-    <%= _.template(require('./../includes/search.html').default)(data) %>
+    <!-- <%= _.template(require('./../includes/search.html').default)(data) %> -->
 
     <div class="container build__searchbuilds-container">
       <ul class="searchbuilds-list">
@@ -48,15 +48,18 @@
 
           <ul class="breadcrumbs__list page-add-build__breadcrumbs-list">
             <li class="breadcrumbs__item page-add-build__breadcrumbs-item">
-              <button class="breadcrumbs__btn page-add-build__breadcrumbs-btn">
+              <button
+                class="breadcrumbs__btn page-add-build__breadcrumbs-btn"
+                type="button"
+              >
                 <svg
-                  width="26"
-                  height="26"
                   class="
                     breadcrumbs__svg
                     icon-checkbox-checked
                     page-add-build__breadcrumbs-svg
                   "
+                  width="26"
+                  height="26"
                 >
                   <use
                     href="../../img/svg/sprite.svg#icon-checkbox-checked"
@@ -67,24 +70,27 @@
               </button>
 
               <svg
+                class="breadcrumbs__next-page-arrow-svg"
                 width="8"
                 height="8"
-                class="breadcrumbs__next-page-arrow-svg"
               >
                 <use href="../../img/svg/sprite.svg#icon-down-arrow"></use>
               </svg>
             </li>
 
             <li class="breadcrumbs__item page-add-build__breadcrumbs-item">
-              <button class="breadcrumbs__btn page-add-build__breadcrumbs-btn">
+              <button
+                class="breadcrumbs__btn page-add-build__breadcrumbs-btn"
+                type="button"
+              >
                 <svg
-                  width="26"
-                  height="26"
                   class="
                     breadcrumbs__svg
                     icon-dot-in-box
                     page-add-build__breadcrumbs-svg
                   "
+                  width="26"
+                  height="26"
                 >
                   <use href="../../img/svg/sprite.svg#icon-dot-in-box"></use>
                 </svg>
@@ -93,16 +99,19 @@
               </button>
 
               <svg
+                class="breadcrumbs__next-page-arrow-svg"
                 width="8"
                 height="8"
-                class="breadcrumbs__next-page-arrow-svg"
               >
                 <use href="../../img/svg/sprite.svg#icon-down-arrow"></use>
               </svg>
             </li>
 
             <li class="breadcrumbs__item page-add-build__breadcrumbs-item">
-              <button class="breadcrumbs__btn page-add-build__breadcrumbs-btn">
+              <button
+                class="breadcrumbs__btn page-add-build__breadcrumbs-btn"
+                type="button"
+              >
                 <span
                   class="
                     breadcrumbs__position-counter
@@ -115,16 +124,19 @@
               </button>
 
               <svg
+                class="breadcrumbs__next-page-arrow-svg"
                 width="8"
                 height="8"
-                class="breadcrumbs__next-page-arrow-svg"
               >
                 <use href="../../img/svg/sprite.svg#icon-down-arrow"></use>
               </svg>
             </li>
 
             <li class="breadcrumbs__item page-add-build__breadcrumbs-item">
-              <button class="breadcrumbs__btn page-add-build__breadcrumbs-btn">
+              <button
+                class="breadcrumbs__btn page-add-build__breadcrumbs-btn"
+                type="button"
+              >
                 <span
                   class="
                     breadcrumbs__position-counter
@@ -139,16 +151,19 @@
               </button>
 
               <svg
+                class="breadcrumbs__next-page-arrow-svg"
                 width="8"
                 height="8"
-                class="breadcrumbs__next-page-arrow-svg"
               >
                 <use href="../../img/svg/sprite.svg#icon-down-arrow"></use>
               </svg>
             </li>
 
             <li class="breadcrumbs__item page-add-build__breadcrumbs-item">
-              <button class="breadcrumbs__btn page-add-build__breadcrumbs-btn">
+              <button
+                class="breadcrumbs__btn page-add-build__breadcrumbs-btn"
+                type="button"
+              >
                 <span
                   class="
                     breadcrumbs__position-counter
@@ -167,73 +182,543 @@
           <section class="main-features page-add-build__subsection">
             <div class="page-add-build__container">
               <form class="page-add-build__form">
-                <h2 class="section-title page-add-build__subtitle">
-                  Main features
-                </h2>
+                <div class="form-group page-add-build__form-group">
+                  <h2 class="section-title page-add-build__subtitle">
+                    Main features
+                  </h2>
 
-                <label class="page-add-build__label">
-                  <span class="page-add-build__label-text">Build name</span>
+                  <label class="page-add-build__label">
+                    <span class="page-add-build__label-text">Build name</span>
 
-                  <input
-                    type="text"
-                    name="add-build__name"
-                    class="page-add-build__input"
-                    value="New Budget rifles from armalite"
-                    disabled
-                    minlength="3"
-                    maxlength="100"
-                  />
-                </label>
+                    <input
+                      class="page-add-build__input"
+                      name="add-build__name"
+                      type="text"
+                      value="New Budget rifles from armalite"
+                      disabled
+                      minlength="3"
+                      maxlength="100"
+                    />
+                  </label>
+                </div>
 
-                <label class="page-add-build__label-radio-group">
-                  <span class="page-add-build__label-text">Build type</span>
-                </label>
+                <div class="form-group page-add-build__form-group">
+                  <h3 class="page-add-build__label-radio-group">
+                    <span class="page-add-build__label-text">Build type</span>
+                  </h3>
 
-                <ul class="page-add-build__type-list">
-                  <li class="page-add-build__type-item">
-                    <label class="page-add-build__label-radio option-one">
-                      <input
-                        type="radio"
-                        name="add-build__type"
-                        class="page-add-build__input-radio"
-                        value="rifle"
-                        checked
-                      />
+                  <ul class="page-add-build__type-list">
+                    <li class="page-add-build__type-item">
+                      <label class="page-add-build__label-radio option-one">
+                        <input
+                          class="page-add-build__input-radio"
+                          name="add-build__type"
+                          type="radio"
+                          value="rifle"
+                          checked
+                        />
 
-                      <p class="page-add-build__label-radio-text">Rifle</p>
-                    </label>
-                  </li>
+                        <p class="page-add-build__label-radio-text">Rifle</p>
+                      </label>
+                    </li>
 
-                  <li class="page-add-build__type-item">
-                    <label class="page-add-build__label-radio option-two">
-                      <input
-                        type="radio"
-                        name="add-build__type"
-                        class="page-add-build__input-radio"
-                        value="shotgun"
-                      />
+                    <li class="page-add-build__type-item">
+                      <label class="page-add-build__label-radio option-two">
+                        <input
+                          class="page-add-build__input-radio"
+                          name="add-build__type"
+                          type="radio"
+                          value="shotgun"
+                        />
 
-                      <p class="page-add-build__label-radio-text">Shotgun</p>
-                    </label>
-                  </li>
+                        <p class="page-add-build__label-radio-text">Shotgun</p>
+                      </label>
+                    </li>
 
-                  <li class="page-add-build__type-item">
-                    <label class="page-add-build__label-radio option-three">
-                      <input
-                        type="radio"
-                        name="add-build__type"
-                        class="page-add-build__input-radio"
-                        value="handgun"
-                      />
+                    <li class="page-add-build__type-item">
+                      <label class="page-add-build__label-radio option-three">
+                        <input
+                          class="page-add-build__input-radio"
+                          name="add-build__type"
+                          type="radio"
+                          value="handgun"
+                        />
 
-                      <p class="page-add-build__label-radio-text">Handgun</p>
-                    </label>
-                  </li>
-                </ul>
+                        <p class="page-add-build__label-radio-text">Handgun</p>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
 
-                <h2 class="section-title page-add-build__subtitle">
-                  Build options
-                </h2>
+                <div class="form-group page-add-build__form-group">
+                  <h2 class="section-title page-add-build__subtitle">
+                    Build options
+                  </h2>
+
+                  <h3 class="page-add-build__label-radio-group">
+                    Choose build base
+                  </h3>
+
+                  <ul
+                    data-dropdown-list
+                    class="page-add-build__build-base-list"
+                  >
+                    <li class="page-add-build__build-base-item">
+                      <button
+                        class="page-add-build__drop-btn"
+                        data-dropdown-open
+                        type="button"
+                        value="make"
+                      >
+                        Make
+                      </button>
+                      <div
+                        class="page-add-build__dropdown-content is-hidden"
+                        data-dropdown-menu-make
+                      >
+                        <label class="page-add-build__label-input-filter">
+                          <input
+                            class="page-add-build__input-filter"
+                            name="page-add-build__input-filter"
+                            type="text"
+                            placeholder="Search"
+                          />
+                        </label>
+                        <ul class="page-add-build__dropdown-options-list">
+                          <li class="page-add-build__dropdown-options-item">
+                            <p class="page-add-build__dropdown-option-text">
+                              Adirondack leather products
+                            </p>
+                          </li>
+                          <li class="page-add-build__dropdown-options-item">
+                            <p class="page-add-build__dropdown-option-text">
+                              Advanced armament
+                            </p>
+                          </li>
+                          <li class="page-add-build__dropdown-options-item">
+                            <p class="page-add-build__dropdown-option-text">
+                              Advanced technology
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+
+                    <li class="page-add-build__build-base-item">
+                      <button
+                        class="page-add-build__drop-btn"
+                        data-dropdown-open
+                        type="button"
+                        value="model"
+                      >
+                        Model
+                      </button>
+                      <div
+                        class="page-add-build__dropdown-content is-hidden"
+                        data-dropdown-menu-model
+                      >
+                        <label class="page-add-build__label-input-filter">
+                          <input
+                            class="page-add-build__input-filter"
+                            name="page-add-build__input-filter"
+                            type="text"
+                            placeholder="Search.."
+                          />
+                        </label>
+                        <ul class="page-add-build__dropdown-options-list">
+                          <li class="page-add-build__dropdown-options-item">
+                            <p class="page-add-build__dropdown-option-text">
+                              Adirondack leather products
+                            </p>
+                          </li>
+                          <li class="page-add-build__dropdown-options-item">
+                            <p class="page-add-build__dropdown-option-text">
+                              Advanced armament
+                            </p>
+                          </li>
+                          <li class="page-add-build__dropdown-options-item">
+                            <p class="page-add-build__dropdown-option-text">
+                              Advanced technology
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+
+                    <li class="page-add-build__build-base-item">
+                      <button
+                        class="page-add-build__drop-btn"
+                        data-dropdown-open
+                        type="button"
+                        value="caliber"
+                      >
+                        Caliber
+                      </button>
+                      <div
+                        class="page-add-build__dropdown-content is-hidden"
+                        data-dropdown-menu-caliber
+                      >
+                        <label class="page-add-build__label-input-filter">
+                          <input
+                            class="page-add-build__input-filter"
+                            name="page-add-build__input-filter"
+                            type="text"
+                            placeholder="Search.."
+                          />
+                        </label>
+                        <ul class="page-add-build__dropdown-options-list">
+                          <li class="page-add-build__dropdown-options-item">
+                            <p class="page-add-build__dropdown-option-text">
+                              Adirondack leather products
+                            </p>
+                          </li>
+                          <li class="page-add-build__dropdown-options-item">
+                            <p class="page-add-build__dropdown-option-text">
+                              Advanced armament
+                            </p>
+                          </li>
+                          <li class="page-add-build__dropdown-options-item">
+                            <p class="page-add-build__dropdown-option-text">
+                              Advanced technology
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="form-group page-add-build__form-group">
+                  <h2 class="section-title page-add-build__subtitle">
+                    Build options
+                  </h2>
+
+                  <ul class="build__part-list page-add-build__part-list">
+                    <li class="page-add-build__part-item">
+                      <a class="build__part-list-link" href="#">
+                        <div class="build__part-list-thumb">
+                          <img
+                            class="build__part-list-image"
+                            src="../../img/photos/build-parts/build-part-001.jpg"
+                            alt="Build part - optical sight"
+                            width="80"
+                            height="80"
+                          />
+                        </div>
+                        <div class="build__part-list-meta">
+                          <ul
+                            class="
+                              rating__list
+                              build__rating build__part-list-rating
+                            "
+                          >
+                            <li class="rating__item build__rating-item">
+                              <svg
+                                class="rating__svg build__rating-svg"
+                                width="15"
+                                height="15"
+                              >
+                                <use
+                                  href="../../img/svg/sprite.svg#icon-star-filled"
+                                ></use>
+                              </svg>
+                            </li>
+                            <li class="rating__item build__rating-item">
+                              <svg
+                                class="rating__svg build__rating-svg"
+                                width="15"
+                                height="15"
+                              >
+                                <use
+                                  href="../../img/svg/sprite.svg#icon-star-filled"
+                                ></use>
+                              </svg>
+                            </li>
+                            <li class="rating__item build__rating-item">
+                              <svg
+                                class="rating__svg build__rating-svg"
+                                width="15"
+                                height="15"
+                              >
+                                <use
+                                  href="../../img/svg/sprite.svg#icon-star-outline"
+                                ></use>
+                              </svg>
+                            </li>
+                            <li class="rating__item build__rating-item">
+                              <svg
+                                class="rating__svg build__rating-svg"
+                                width="15"
+                                height="15"
+                              >
+                                <use
+                                  href="../../img/svg/sprite.svg#icon-star-outline"
+                                ></use>
+                              </svg>
+                            </li>
+                            <li class="rating__item build__rating-item">
+                              <svg
+                                class="rating__svg build__rating-svg"
+                                width="15"
+                                height="15"
+                              >
+                                <use
+                                  href="../../img/svg/sprite.svg#icon-star-outline"
+                                ></use>
+                              </svg>
+                            </li>
+                          </ul>
+                          <h4 class="build__part-list-name">RMR RM06</h4>
+                          <p class="build__part-list-type">BCU</p>
+                        </div>
+
+                        <div class="profile-friends__toolbar-overlay">
+                          <button
+                            class="
+                              profile-friends__toolbar-remove-friend-btn
+                              profile-builds__toolbar-btn
+                              page-add-build__toolbar-remove-part-btn
+                            "
+                            type="button"
+                          >
+                            <svg
+                              width="19"
+                              height="19"
+                              class="profile-builds__toolbar-icon svg"
+                            >
+                              <use
+                                href="../../img/svg/sprite.svg#icon-delete"
+                              ></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="page-add-build__part-item">
+                      <a class="build__part-list-link" href="#">
+                        <div class="build__part-list-thumb">
+                          <img
+                            class="build__part-list-image"
+                            src="../../img/photos/build-parts/build-part-002.jpg"
+                            alt="Build part - flashlight"
+                            width="80"
+                            height="80"
+                          />
+                        </div>
+                        <div class="build__part-list-meta">
+                          <ul
+                            class="
+                              rating__list
+                              build__rating build__part-list-rating
+                            "
+                          >
+                            <li class="rating__item build__rating-item">
+                              <svg
+                                class="rating__svg build__rating-svg"
+                                width="15"
+                                height="15"
+                              >
+                                <use
+                                  href="../../img/svg/sprite.svg#icon-star-filled"
+                                ></use>
+                              </svg>
+                            </li>
+                            <li class="rating__item build__rating-item">
+                              <svg
+                                class="rating__svg build__rating-svg"
+                                width="15"
+                                height="15"
+                              >
+                                <use
+                                  href="../../img/svg/sprite.svg#icon-star-filled"
+                                ></use>
+                              </svg>
+                            </li>
+                            <li class="rating__item build__rating-item">
+                              <svg
+                                class="rating__svg build__rating-svg"
+                                width="15"
+                                height="15"
+                              >
+                                <use
+                                  href="../../img/svg/sprite.svg#icon-star-outline"
+                                ></use>
+                              </svg>
+                            </li>
+                            <li class="rating__item build__rating-item">
+                              <svg
+                                class="rating__svg build__rating-svg"
+                                width="15"
+                                height="15"
+                              >
+                                <use
+                                  href="../../img/svg/sprite.svg#icon-star-outline"
+                                ></use>
+                              </svg>
+                            </li>
+                            <li class="rating__item build__rating-item">
+                              <svg
+                                class="rating__svg build__rating-svg"
+                                width="15"
+                                height="15"
+                              >
+                                <use
+                                  href="../../img/svg/sprite.svg#icon-star-outline"
+                                ></use>
+                              </svg>
+                            </li>
+                          </ul>
+                          <h4 class="build__part-list-name">X300U-A</h4>
+                          <p class="build__part-list-type">LMC</p>
+                        </div>
+
+                        <div class="profile-friends__toolbar-overlay">
+                          <button
+                            class="
+                              profile-friends__toolbar-remove-friend-btn
+                              profile-builds__toolbar-btn
+                              page-add-build__toolbar-remove-part-btn
+                            "
+                            type="button"
+                          >
+                            <svg
+                              width="19"
+                              height="19"
+                              class="profile-builds__toolbar-icon svg"
+                            >
+                              <use
+                                href="../../img/svg/sprite.svg#icon-delete"
+                              ></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="page-add-build__part-item">
+                      <a class="build__part-list-link" href="#">
+                        <div class="build__part-list-thumb">
+                          <img
+                            class="build__part-list-image"
+                            src="../../img/photos/build-parts/build-part-003.jpg"
+                            alt="Build part - Threaded barrel for glock 19.9 mm"
+                            width="80"
+                            height="80"
+                          />
+                        </div>
+                        <div class="build__part-list-meta">
+                          <ul
+                            class="
+                              rating__list
+                              build__rating build__part-list-rating
+                            "
+                          >
+                            <li class="rating__item build__rating-item">
+                              <svg
+                                class="rating__svg build__rating-svg"
+                                width="15"
+                                height="15"
+                              >
+                                <use
+                                  href="../../img/svg/sprite.svg#icon-star-filled"
+                                ></use>
+                              </svg>
+                            </li>
+                            <li class="rating__item build__rating-item">
+                              <svg
+                                class="rating__svg build__rating-svg"
+                                width="15"
+                                height="15"
+                              >
+                                <use
+                                  href="../../img/svg/sprite.svg#icon-star-filled"
+                                ></use>
+                              </svg>
+                            </li>
+                            <li class="rating__item build__rating-item">
+                              <svg
+                                class="rating__svg build__rating-svg"
+                                width="15"
+                                height="15"
+                              >
+                                <use
+                                  href="../../img/svg/sprite.svg#icon-star-outline"
+                                ></use>
+                              </svg>
+                            </li>
+                            <li class="rating__item build__rating-item">
+                              <svg
+                                class="rating__svg build__rating-svg"
+                                width="15"
+                                height="15"
+                              >
+                                <use
+                                  href="../../img/svg/sprite.svg#icon-star-outline"
+                                ></use>
+                              </svg>
+                            </li>
+                            <li class="rating__item build__rating-item">
+                              <svg
+                                class="rating__svg build__rating-svg"
+                                width="15"
+                                height="15"
+                              >
+                                <use
+                                  href="../../img/svg/sprite.svg#icon-star-outline"
+                                ></use>
+                              </svg>
+                            </li>
+                          </ul>
+                          <h4 class="build__part-list-name">
+                            Threaded barrel for glock 19.9 mm
+                          </h4>
+                          <p class="build__part-list-type">BCU</p>
+                        </div>
+
+                        <div class="profile-friends__toolbar-overlay">
+                          <button
+                            class="
+                              profile-friends__toolbar-remove-friend-btn
+                              profile-builds__toolbar-btn
+                              page-add-build__toolbar-remove-part-btn
+                            "
+                            type="button"
+                          >
+                            <svg
+                              width="19"
+                              height="19"
+                              class="profile-builds__toolbar-icon svg"
+                            >
+                              <use
+                                href="../../img/svg/sprite.svg#icon-delete"
+                              ></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Make -->
+                <!-- Model -->
+                <!-- Caliber -->
+                <!-- Search -->
+                <!-- Adirondack leather products -->
+                <!-- Advanced armament -->
+                <!-- Advanced technology -->
+
+                <!-- Build parts -->
+                <!-- RMR RM06 -->
+                <!-- BCU -->
+
+                <!-- plus SVG + Add parts button -->
+
+                <!-- Add pictures & description -->
+                <!-- IMG + DELETE ICON -->
+                <!-- CROP ICON + Crop -->
+                <!-- plus SVG + add pictures -->
+                <!-- Select one or more files from your computer -->
+                <!-- Save & Publish btn -->
               </form>
             </div>
           </section>
@@ -242,6 +727,6 @@
     </main>
 
     <!-- Footer -->
-    <%= _.template(require('./../includes/footer.html').default)(data) %>
+    <!-- <%= _.template(require('./../includes/footer.html').default)(data) %> -->
   </body>
 </html>

@@ -137,7 +137,6 @@
 
 .footer__lists-flex-container {
   display: flex;
-  justify-content: space-between;
   column-gap: clamp(15px, 19vw, 301px);
 }
 
@@ -210,6 +209,7 @@
 
   .footer__lists-flex-container {
     flex-wrap: wrap;
+    column-gap: clamp(15px, 19vw, 81px);
   }
 
   .footer-legal__title.is-hidden {
