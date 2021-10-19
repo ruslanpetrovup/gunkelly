@@ -178,7 +178,7 @@
 
   &:focus,
   &:hover {
-    color: lighten($color-accent, 21);
+    color: lighten($color-accent, 5);
     box-shadow: 0 0 35px rgba($color-black, 0.05);
   }
 }
@@ -319,8 +319,8 @@
   @include transition;
   transition-property: color;
 
-  .build__part-list-link:focus &,
-  .build__part-list-link:hover & {
+  a.build__part-list-link:focus &,
+  a.build__part-list-link:hover & {
     color: $color-accent;
   }
 }

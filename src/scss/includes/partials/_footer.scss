@@ -7,7 +7,7 @@
 
 .footer__container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .footer__brand-wrapper {
@@ -137,7 +137,7 @@
 
 .footer__lists-flex-container {
   display: flex;
-  column-gap: clamp(15px, 19vw, 301px);
+  justify-content: space-between;
 }
 
 .footer-navigation-wrapper {
@@ -189,8 +189,22 @@
   }
 
   .footer__brand-wrapper {
+    position: relative;
     display: flex;
     border-bottom: 1px solid $color-border;
+
+    &::after {
+      position: absolute;
+      top: 100%;
+      left: -100%;
+
+      display: block;
+      width: 200vw;
+      height: 1px;
+      content: '';
+
+      background-color: $color-border;
+    }
   }
 
   .footer__logo-wrapper {
@@ -209,7 +223,6 @@
 
   .footer__lists-flex-container {
     flex-wrap: wrap;
-    column-gap: clamp(15px, 19vw, 81px);
   }
 
   .footer-legal__title.is-hidden {
@@ -225,6 +238,10 @@
   .footer-nav-wrapper {
     flex-basis: calc((100% - 91px) / 2);
   }
+
+  // .footer__builds-links-wrapper { }
+  // .footer__builds-title {}
+  // .footer__builds-links {}
 }
 
 // // Tablet

@@ -7,6 +7,10 @@
   margin: 0 auto;
 }
 
+.page-add-build__form {
+  padding-bottom: 40px;
+}
+
 .page-add-build__form-group {
   padding-bottom: 50px;
   margin-bottom: 50px;
@@ -16,6 +20,7 @@
 .breadcrumbs__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 35px;
 
   padding: 21px 43px;
@@ -119,10 +124,6 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 1.4;
-}
-
-.page-add-build__label {
-  margin-bottom: 40px;
 }
 
 .page-add-build__label-radio-group {
@@ -277,12 +278,13 @@
 }
 
 .page-add-build__dropdown-content {
-  min-height: 243px;
-  background: $color-white;
-  box-shadow: 2px 2px 35px rgba($color-black, 0.07);
-  contain: strict;
+  contain: content;
+
+  max-height: 182px;
   overflow-y: auto;
 
+  background: $color-white;
+  box-shadow: 2px 2px 35px rgba($color-black, 0.07);
   @include transition;
   transition-property: transform, visibility, opacity, height, min-height;
 
@@ -305,8 +307,6 @@
   flex-direction: column;
   gap: 15px;
   padding: 15px 20px;
-
-  max-height: 150px;
 }
 
 /* Adirondack leather products */
@@ -317,14 +317,13 @@
 }
 
 .page-add-build__part-list {
+  contain: none;
   flex-direction: row;
-  align-items: center;
   flex-wrap: wrap;
+  align-items: center;
   gap: $page-add-build__part-list-gap;
-}
 
-.page-add-build__part-item {
-  flex-basis: calc((100% - 2 * #{$page-add-build__part-list-gap}) / 3);
+  margin-bottom: 35px;
 }
 
 .build__part-list-link {
@@ -332,11 +331,136 @@
 }
 
 .page-add-build__toolbar-remove-part-btn {
-  width: 34px;
-  height: 34px;
-  padding: 5px 5px 10px 10px;
-  top: 2px;
-  right: 2px;
+  top: -10px;
+  right: -10px;
+  position: relative;
+  padding: 5px 10px 10px 10px;
+
+  margin-left: auto;
+}
+.page-add-build__add-parts-btn {
+  margin-bottom: 0;
+}
+
+.page-add-build__toolbar-overlay {
+  pointer-events: initial;
+  visibility: visible;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+}
+
+// .page-add-build__add-pictures-item { }
+
+.page-add-build__add-picture-thumb {
+  position: relative;
+  margin-right: 29px;
+  margin-bottom: 28px;
+}
+
+.page-add-build__part-list-meta {
+  margin-right: 20px;
+}
+
+/* Select one or more files from your computer */
+.page-add-build__add-pictures-text {
+  margin-top: 15px;
+
+  text-align: center;
+
+  font-size: 14px;
+  line-height: 1.2;
+  color: $color-comments-posted-date;
+}
+
+.page-add-build__toolbar-crop-image-btn {
+  position: relative;
+  top: unset;
+  right: unset;
+  margin: 0;
+
+  left: -1px;
+  bottom: -10px;
+}
+
+.profile-builds__toolbar-icon {
+  min-width: 19px;
+  min-height: 19px;
+}
+
+/* Crop */
+.page-add-build__toolbar-crop-image-btn-text {
+  margin-left: 10px;
+
+  font-size: 14px;
+  line-height: 17px;
+  color: $color-grey;
+}
+
+.crop-btn {
+  appearance: none;
+  background: none;
+  position: absolute;
+  border: none;
+
+  display: flex;
+  align-items: center;
+
+  left: -11px;
+  bottom: -5px;
+
+  min-width: 12px;
+  min-height: 12px;
+  padding: 11px 15px 5px;
+}
+
+.page-add-build__add-pictures-btn {
+  margin-top: 58px;
+}
+
+/* Save & Publish */
+.btn--primary {
+  appearance: none;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  min-height: 50px;
+
+  padding: 16px;
+
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: $color-white;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+
+  background: $color-accent;
+  border: none;
+  border-radius: 4px;
+}
+
+.page-add-build__loader-overlay {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba($color-white, 0.9);
+
+  @include transition;
+  transition-property: visibility, opacity;
+}
+
+.page-add-build__loader-icon {
+  width: 40px;
+  height: 41px;
 }
 
 /*
@@ -354,8 +478,12 @@
 
 // up to bigger mobile
 @media screen and (max-width: 479px) {
-  .page-add-build__type-item {
+  .page-add-build__type-item:not(:last-child) {
     margin: 0 auto 12px;
+  }
+
+  .page-add-build__type-item:last-child {
+    margin: 0 auto;
   }
 }
 
@@ -379,6 +507,30 @@
 
 // up to tablet
 @media screen and (max-width: 767px) {
+  .page-add-build__title {
+    margin-bottom: 25px;
+  }
+
+  .breadcrumbs__list {
+    gap: 15px;
+    padding: 21px 19px;
+    margin-bottom: 40px;
+  }
+
+  .breadcrumbs__btn {
+    gap: 10px;
+  }
+
+  .breadcrumbs__btn-text {
+    &:not(.current) {
+      display: none;
+    }
+  }
+
+  .page-add-build__subtitle {
+    margin-bottom: 40px;
+  }
+
   // .page-add-build__type-list { }
 
   .page-add-build__type-item {
@@ -390,12 +542,55 @@
   }
 
   .page-add-build__part-list {
+    justify-content: center;
     gap: 20px;
+  }
+
+  .page-add-build__part-item {
+    flex-basis: 100%;
+    max-width: 340px;
+  }
+
+  .page-add-build__add-pictures-list {
+    gap: $page-add-build__add-pictures-list-mobile;
+  }
+
+  .page-add-build__add-pictures-item {
+    flex-basis: calc((100% - #{$page-add-build__add-pictures-list-mobile}) / 2);
+    max-width: $page-add-build__card-width;
+  }
+
+  .breadcrumbs__next-page-arrow-svg {
+    display: none;
+  }
+
+  .page-add-build__image {
+    width: 130px;
+    height: 130px;
+    border: none;
   }
 }
 
 // from tablet
 @media screen and (min-width: 768px) {
-  .page-add-build__type-list {
+  // .page-add-build__type-list {}
+
+  .page-add-build__part-item {
+    flex-basis: calc((100% - 2 * #{$page-add-build__part-list-gap}) / 3);
+  }
+
+  .page-add-build__add-pictures-list {
+    gap: $page-add-build__add-pictures-list-mobile;
+  }
+
+  .page-add-build__add-pictures-item {
+    flex-basis: calc((100% - 3 * #{$page-add-build__add-pictures-list}) / 4);
+  }
+}
+
+// from desktop
+@media screen and (min-width: 1200px) {
+  .page-add-build__add-pictures-list {
+    gap: $page-add-build__add-pictures-list;
   }
 }

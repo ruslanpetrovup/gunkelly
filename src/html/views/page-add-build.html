@@ -23,9 +23,9 @@
   </head>
   <body class="no-scroll">
     <!-- Header -->
-    <!-- <%= _.template(require('./../includes/header.html').default)(data) %> -->
+    <%= _.template(require('./../includes/header.html').default)(data) %>
     <!-- Search -->
-    <!-- <%= _.template(require('./../includes/search.html').default)(data) %> -->
+    <%= _.template(require('./../includes/search.html').default)(data) %>
 
     <div class="container build__searchbuilds-container">
       <ul class="searchbuilds-list">
@@ -260,8 +260,8 @@
                   </h3>
 
                   <ul
-                    data-dropdown-list
                     class="page-add-build__build-base-list"
+                    data-dropdown-list
                   >
                     <li class="page-add-build__build-base-item">
                       <button
@@ -285,6 +285,21 @@
                           />
                         </label>
                         <ul class="page-add-build__dropdown-options-list">
+                          <li class="page-add-build__dropdown-options-item">
+                            <p class="page-add-build__dropdown-option-text">
+                              Adirondack leather products
+                            </p>
+                          </li>
+                          <li class="page-add-build__dropdown-options-item">
+                            <p class="page-add-build__dropdown-option-text">
+                              Advanced armament
+                            </p>
+                          </li>
+                          <li class="page-add-build__dropdown-options-item">
+                            <p class="page-add-build__dropdown-option-text">
+                              Advanced technology
+                            </p>
+                          </li>
                           <li class="page-add-build__dropdown-options-item">
                             <p class="page-add-build__dropdown-option-text">
                               Adirondack leather products
@@ -341,6 +356,21 @@
                               Advanced technology
                             </p>
                           </li>
+                          <li class="page-add-build__dropdown-options-item">
+                            <p class="page-add-build__dropdown-option-text">
+                              Adirondack leather products
+                            </p>
+                          </li>
+                          <li class="page-add-build__dropdown-options-item">
+                            <p class="page-add-build__dropdown-option-text">
+                              Advanced armament
+                            </p>
+                          </li>
+                          <li class="page-add-build__dropdown-options-item">
+                            <p class="page-add-build__dropdown-option-text">
+                              Advanced technology
+                            </p>
+                          </li>
                         </ul>
                       </div>
                     </li>
@@ -355,7 +385,7 @@
                         Caliber
                       </button>
                       <div
-                        class="page-add-build__dropdown-content is-hidden"
+                        class="page-add-build__dropdown-content"
                         data-dropdown-menu-caliber
                       >
                         <label class="page-add-build__label-input-filter">
@@ -367,6 +397,21 @@
                           />
                         </label>
                         <ul class="page-add-build__dropdown-options-list">
+                          <li class="page-add-build__dropdown-options-item">
+                            <p class="page-add-build__dropdown-option-text">
+                              Adirondack leather products
+                            </p>
+                          </li>
+                          <li class="page-add-build__dropdown-options-item">
+                            <p class="page-add-build__dropdown-option-text">
+                              Advanced armament
+                            </p>
+                          </li>
+                          <li class="page-add-build__dropdown-options-item">
+                            <p class="page-add-build__dropdown-option-text">
+                              Advanced technology
+                            </p>
+                          </li>
                           <li class="page-add-build__dropdown-options-item">
                             <p class="page-add-build__dropdown-option-text">
                               Adirondack leather products
@@ -395,7 +440,7 @@
 
                   <ul class="build__part-list page-add-build__part-list">
                     <li class="page-add-build__part-item">
-                      <a class="build__part-list-link" href="#">
+                      <div class="build__part-list-link">
                         <div class="build__part-list-thumb">
                           <img
                             class="build__part-list-image"
@@ -405,7 +450,12 @@
                             height="80"
                           />
                         </div>
-                        <div class="build__part-list-meta">
+                        <div
+                          class="
+                            build__part-list-meta
+                            page-add-build__part-list-meta
+                          "
+                        >
                           <ul
                             class="
                               rating__list
@@ -472,7 +522,12 @@
                           <p class="build__part-list-type">BCU</p>
                         </div>
 
-                        <div class="profile-friends__toolbar-overlay">
+                        <div
+                          class="
+                            profile-friends__toolbar-overlay
+                            page-add-build__toolbar-overlay
+                          "
+                        >
                           <button
                             class="
                               profile-friends__toolbar-remove-friend-btn
@@ -482,9 +537,9 @@
                             type="button"
                           >
                             <svg
+                              class="profile-builds__toolbar-icon svg"
                               width="19"
                               height="19"
-                              class="profile-builds__toolbar-icon svg"
                             >
                               <use
                                 href="../../img/svg/sprite.svg#icon-delete"
@@ -492,10 +547,10 @@
                             </svg>
                           </button>
                         </div>
-                      </a>
+                      </div>
                     </li>
                     <li class="page-add-build__part-item">
-                      <a class="build__part-list-link" href="#">
+                      <div class="build__part-list-link">
                         <div class="build__part-list-thumb">
                           <img
                             class="build__part-list-image"
@@ -505,7 +560,12 @@
                             height="80"
                           />
                         </div>
-                        <div class="build__part-list-meta">
+                        <div
+                          class="
+                            build__part-list-meta
+                            page-add-build__part-list-meta
+                          "
+                        >
                           <ul
                             class="
                               rating__list
@@ -572,7 +632,12 @@
                           <p class="build__part-list-type">LMC</p>
                         </div>
 
-                        <div class="profile-friends__toolbar-overlay">
+                        <div
+                          class="
+                            profile-friends__toolbar-overlay
+                            page-add-build__toolbar-overlay
+                          "
+                        >
                           <button
                             class="
                               profile-friends__toolbar-remove-friend-btn
@@ -582,9 +647,9 @@
                             type="button"
                           >
                             <svg
+                              class="profile-builds__toolbar-icon svg"
                               width="19"
                               height="19"
-                              class="profile-builds__toolbar-icon svg"
                             >
                               <use
                                 href="../../img/svg/sprite.svg#icon-delete"
@@ -592,10 +657,10 @@
                             </svg>
                           </button>
                         </div>
-                      </a>
+                      </div>
                     </li>
                     <li class="page-add-build__part-item">
-                      <a class="build__part-list-link" href="#">
+                      <div class="build__part-list-link">
                         <div class="build__part-list-thumb">
                           <img
                             class="build__part-list-image"
@@ -605,7 +670,12 @@
                             height="80"
                           />
                         </div>
-                        <div class="build__part-list-meta">
+                        <div
+                          class="
+                            build__part-list-meta
+                            page-add-build__part-list-meta
+                          "
+                        >
                           <ul
                             class="
                               rating__list
@@ -674,7 +744,12 @@
                           <p class="build__part-list-type">BCU</p>
                         </div>
 
-                        <div class="profile-friends__toolbar-overlay">
+                        <div
+                          class="
+                            profile-friends__toolbar-overlay
+                            page-add-build__toolbar-overlay
+                          "
+                        >
                           <button
                             class="
                               profile-friends__toolbar-remove-friend-btn
@@ -684,9 +759,9 @@
                             type="button"
                           >
                             <svg
+                              class="profile-builds__toolbar-icon svg"
                               width="19"
                               height="19"
-                              class="profile-builds__toolbar-icon svg"
                             >
                               <use
                                 href="../../img/svg/sprite.svg#icon-delete"
@@ -694,31 +769,366 @@
                             </svg>
                           </button>
                         </div>
-                      </a>
+                      </div>
                     </li>
                   </ul>
+
+                  <button
+                    class="
+                      comments__show-more-btn
+                      profile__add-build-button
+                      page-add-build__add-parts-btn
+                    "
+                    type="button"
+                  >
+                    <svg
+                      class="profile__add-build-button-icon"
+                      width="15"
+                      height="15"
+                    >
+                      <use
+                        href="../../img/svg/sprite.svg#icon-add-simple"
+                      ></use>
+                    </svg>
+
+                    Add parts
+                  </button>
                 </div>
 
-                <!-- Make -->
-                <!-- Model -->
-                <!-- Caliber -->
-                <!-- Search -->
-                <!-- Adirondack leather products -->
-                <!-- Advanced armament -->
-                <!-- Advanced technology -->
+                <div class="form-group page-add-build__form-group">
+                  <h2 class="section-title page-add-build__subtitle">
+                    Add pictures & description
+                  </h2>
 
-                <!-- Build parts -->
-                <!-- RMR RM06 -->
-                <!-- BCU -->
+                  <ul
+                    class="
+                      build__part-list
+                      page-add-build__part-list
+                      page-add-build__add-pictures-list
+                    "
+                  >
+                    <li
+                      class="
+                        page-add-build__part-item
+                        page-add-build__add-pictures-item
+                      "
+                    >
+                      <div class="build__part-list-link">
+                        <div
+                          class="
+                            build__part-list-thumb
+                            page-add-build__add-picture-thumb
+                          "
+                        >
+                          <img
+                            class="build__part-list-image page-add-build__image"
+                            src="../../img/photos/page-add-build/add-build-001.jpg"
+                            alt="Sniper rifle"
+                            width="138"
+                            height="138"
+                          />
+                        </div>
 
-                <!-- plus SVG + Add parts button -->
+                        <div
+                          class="
+                            profile-friends__toolbar-overlay
+                            page-add-build__toolbar-overlay
+                          "
+                        >
+                          <button
+                            class="
+                              profile-friends__toolbar-remove-friend-btn
+                              profile-builds__toolbar-btn
+                              page-add-build__toolbar-remove-part-btn
+                            "
+                            type="button"
+                          >
+                            <svg
+                              class="profile-builds__toolbar-icon svg"
+                              width="19"
+                              height="19"
+                            >
+                              <use
+                                href="../../img/svg/sprite.svg#icon-delete"
+                              ></use>
+                            </svg>
+                          </button>
 
-                <!-- Add pictures & description -->
-                <!-- IMG + DELETE ICON -->
-                <!-- CROP ICON + Crop -->
-                <!-- plus SVG + add pictures -->
-                <!-- Select one or more files from your computer -->
-                <!-- Save & Publish btn -->
+                          <button class="crop-btn" type="button">
+                            <svg
+                              class="profile-builds__toolbar-icon svg"
+                              width="12"
+                              height="12"
+                            >
+                              <use
+                                href="../../img/svg/sprite.svg#icon-crop"
+                              ></use>
+                            </svg>
+
+                            <span
+                              class="
+                                page-add-build__toolbar-crop-image-btn-text
+                              "
+                              >Crop</span
+                            >
+                          </button>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li
+                      class="
+                        page-add-build__part-item
+                        page-add-build__add-pictures-item
+                      "
+                    >
+                      <div class="build__part-list-link">
+                        <div
+                          class="
+                            build__part-list-thumb
+                            page-add-build__add-picture-thumb
+                          "
+                        >
+                          <img
+                            class="build__part-list-image page-add-build__image"
+                            src="../../img/photos/page-add-build/add-build-002.jpg"
+                            alt="Powerfull sniper rifle"
+                            width="138"
+                            height="138"
+                          />
+                        </div>
+
+                        <div
+                          class="
+                            profile-friends__toolbar-overlay
+                            page-add-build__toolbar-overlay
+                          "
+                        >
+                          <button
+                            class="
+                              profile-friends__toolbar-remove-friend-btn
+                              profile-builds__toolbar-btn
+                              page-add-build__toolbar-remove-part-btn
+                            "
+                            type="button"
+                          >
+                            <svg
+                              class="profile-builds__toolbar-icon svg"
+                              width="19"
+                              height="19"
+                            >
+                              <use
+                                href="../../img/svg/sprite.svg#icon-delete"
+                              ></use>
+                            </svg>
+                          </button>
+
+                          <button class="crop-btn" type="button">
+                            <svg
+                              class="profile-builds__toolbar-icon svg"
+                              width="12"
+                              height="12"
+                            >
+                              <use
+                                href="../../img/svg/sprite.svg#icon-crop"
+                              ></use>
+                            </svg>
+
+                            <span
+                              class="
+                                page-add-build__toolbar-crop-image-btn-text
+                              "
+                              >Crop</span
+                            >
+                          </button>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li
+                      class="
+                        page-add-build__part-item
+                        page-add-build__add-pictures-item
+                      "
+                    >
+                      <div class="build__part-list-link">
+                        <div
+                          class="
+                            build__part-list-thumb
+                            page-add-build__add-picture-thumb
+                          "
+                        >
+                          <img
+                            class="build__part-list-image page-add-build__image"
+                            src="../../img/photos/page-add-build/add-build-003.jpg"
+                            alt="Mechanical manual shutter of a powerful sniper rifle close-up"
+                            width="138"
+                            height="138"
+                          />
+                        </div>
+
+                        <div
+                          class="
+                            profile-friends__toolbar-overlay
+                            page-add-build__toolbar-overlay
+                          "
+                        >
+                          <button
+                            class="
+                              profile-friends__toolbar-remove-friend-btn
+                              profile-builds__toolbar-btn
+                              page-add-build__toolbar-remove-part-btn
+                            "
+                            type="button"
+                          >
+                            <svg
+                              class="profile-builds__toolbar-icon svg"
+                              width="19"
+                              height="19"
+                            >
+                              <use
+                                href="../../img/svg/sprite.svg#icon-delete"
+                              ></use>
+                            </svg>
+                          </button>
+
+                          <button class="crop-btn" type="button">
+                            <svg
+                              class="profile-builds__toolbar-icon svg"
+                              width="12"
+                              height="12"
+                            >
+                              <use
+                                href="../../img/svg/sprite.svg#icon-crop"
+                              ></use>
+                            </svg>
+
+                            <span
+                              class="
+                                page-add-build__toolbar-crop-image-btn-text
+                              "
+                              >Crop</span
+                            >
+                          </button>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li
+                      class="
+                        page-add-build__part-item
+                        page-add-build__add-pictures-item
+                      "
+                    >
+                      <div class="build__part-list-link">
+                        <div
+                          class="
+                            build__part-list-thumb
+                            page-add-build__add-picture-thumb
+                          "
+                        >
+                          <img
+                            class="build__part-list-image page-add-build__image"
+                            src="../../img/photos/page-add-build/add-build-003.jpg"
+                            alt="Whitened image of rifle on a tripod in an open air shooting range"
+                            width="138"
+                            height="138"
+                          />
+
+                          <div class="page-add-build__loader-overlay">
+                            <svg
+                              width="40"
+                              height="41"
+                              class="page-add-build__loader-icon svg"
+                            >
+                              <use
+                                href="../../img/svg/sprite.svg#icon-preloader"
+                              ></use>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div
+                          class="
+                            profile-friends__toolbar-overlay
+                            page-add-build__toolbar-overlay
+                          "
+                        >
+                          <button
+                            class="
+                              profile-friends__toolbar-remove-friend-btn
+                              profile-builds__toolbar-btn
+                              page-add-build__toolbar-remove-part-btn
+                            "
+                            type="button"
+                          >
+                            <svg
+                              class="profile-builds__toolbar-icon svg"
+                              width="19"
+                              height="19"
+                            >
+                              <use
+                                href="../../img/svg/sprite.svg#icon-delete"
+                              ></use>
+                            </svg>
+                          </button>
+
+                          <button class="crop-btn is-hidden" type="button">
+                            <svg
+                              class="profile-builds__toolbar-icon svg"
+                              width="12"
+                              height="12"
+                            >
+                              <use
+                                href="../../img/svg/sprite.svg#icon-crop"
+                              ></use>
+                            </svg>
+
+                            <span
+                              class="
+                                page-add-build__toolbar-crop-image-btn-text
+                              "
+                              >Crop</span
+                            >
+                          </button>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+
+                  <button
+                    class="
+                      comments__show-more-btn
+                      profile__add-build-button
+                      page-add-build__add-parts-btn
+                      page-add-build__add-pictures-btn
+                    "
+                    type="button"
+                  >
+                    <svg
+                      class="profile__add-build-button-icon"
+                      width="15"
+                      height="15"
+                    >
+                      <use
+                        href="../../img/svg/sprite.svg#icon-add-simple"
+                      ></use>
+                    </svg>
+
+                    Add pictures
+                  </button>
+
+                  <p class="page-add-build__add-pictures-text">
+                    Select one or more files from your computer
+                  </p>
+                </div>
+
+                <button
+                  class="btn--primary page-add-build__add-build-submit-btn"
+                  type="submit"
+                >
+                  Save & Publish
+                </button>
               </form>
             </div>
           </section>
@@ -727,6 +1137,6 @@
     </main>
 
     <!-- Footer -->
-    <!-- <%= _.template(require('./../includes/footer.html').default)(data) %> -->
+    <%= _.template(require('./../includes/footer.html').default)(data) %>
   </body>
 </html>
