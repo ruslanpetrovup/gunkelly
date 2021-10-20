@@ -471,6 +471,33 @@
   margin-top: 35px;
 }
 
+.page-add-build__part-not-found-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+/* Not found! */
+.page-add-page-build__part-not-found-text {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+
+  color: $color-comments-posted-date;
+}
+
+/* add new */
+.page-add-build__add-new-part-btn {
+  width: unset;
+  padding: 16px 28px;
+  margin: unset;
+}
+
+.page-add-build__options-list-wrapper {
+  position: relative;
+}
+
 /*
 
 
