@@ -67,9 +67,27 @@
           </ul>
 
           <h1 class="searchbuilds-head">Search Builds</h1>
-
+          <ul class="searchbuilds-list-mobile">
+            <li>
+            <button class="searchbuilds-list-mobile-button-filter">
+                <svg class="searchbuilds-list-mobile-icon filter">
+                  <use href="../../img/svg/sprite.svg#icon-filter"></use>
+                </svg>
+                Filter
+            </button>
+          </li>
+            <li>
+            <button class="searchbuilds-list-mobile-button-sort">
+              Order By
+                <svg class="searchbuilds-list-mobile-icon sort">
+                  <use href="../../img/svg/sprite.svg#icon-arrow-right"></use>
+                </svg>
+            </button>
+          </li>
+          </ul>
           <div class="searchbuilds__block">
             <!-- Filter -->
+          
             <div class="searchbuilds__block__filter">
               <div class="searchbuilds__block__filter-toomb">
                 <div class="searchbuilds__block__filter-toomb-category">
@@ -163,8 +181,140 @@
               <button class="searchbuilds__block__filter-Sbutton">
                 search
               </button>
-            </div>
+              </div>
 
+          <!-- Sorte Mobile -->
+          <div class="searchbuilds__block__sorte-mobile">
+            <div class="searchbuilds__block__filter-toomb">
+              <div class="searchbuilds__block__filter-toomb-category">
+                <ul class="searchbuilds__block__filter-mobile-toomb-list">
+                  <li class="searchbuilds__block__filter-mobile-toomb-list-item">Order By</li>
+                  <li class="searchbuilds__block__filter-mobile-toomb-list-item">
+                    <button class="searchbuilds__block__sorte-toomb-close">
+                      <svg class="searchbuilds__block__filter-toomb-close-icon">
+                        <use href="../../img/svg/sprite.svg#icon-close-sign"></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+                <ul class="searchbuilds__block__cards_sorte-list">
+                  <li class="searchbuilds__block__cards_sorte-item">
+                    <p class="searchbuilds__block__cards_sorte-item-text active">
+                      date
+                    </p>
+                    <svg class="searchbuilds__block__cards_sorte-item-icon">
+                      <use href="../../img/svg/sprite.svg#icon-arrow-down"></use>
+                    </svg>
+                  </li>
+                  <li class="searchbuilds__block__cards_sorte-item">
+                    <p class="searchbuilds__block__cards_sorte-item-text">
+                      rating
+                    </p>
+                    <!-- <svg class="searchbuilds__block__cards_sorte-item-icon">
+                                                                            <use href=""></use>
+                                                                        </svg> -->
+                  </li>
+                  <li class="searchbuilds__block__cards_sorte-item">
+                    <p class="searchbuilds__block__cards_sorte-item-text">
+                      comments
+                    </p>
+                    <!-- <svg class="searchbuilds__block__cards_sorte-item-icon">
+                                                                            <use href=""></use>
+                                                                        </svg> -->
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Filter Mobile -->
+          <div class="searchbuilds__block__filter-mobile">
+            <div class="searchbuilds__block__filter-toomb">
+              <div class="searchbuilds__block__filter-toomb-category">
+                <ul class="searchbuilds__block__filter-mobile-toomb-list">
+                  <li class="searchbuilds__block__filter-mobile-toomb-list-item">Filter</li>
+                  <li class="searchbuilds__block__filter-mobile-toomb-list-item">
+                    <button class="searchbuilds__block__filter-toomb-close">
+                      <svg class="searchbuilds__block__filter-toomb-close-icon">
+                        <use href="../../img/svg/sprite.svg#icon-close-sign"></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+                <h2 class="searchbuilds__block__filter-toomb-head">
+                  Choose a category:
+                </h2>
+          
+                <ul class="searchbuilds__block__filter-list">
+                  <li class="searchbuilds__block__filter-item active">
+                    <button class="searchbuilds__block__filter-button">
+                      All
+                    </button>
+                  </li>
+                  <li class="searchbuilds__block__filter-item">
+                    <button class="searchbuilds__block__filter-button rifle">
+                      Rifle
+                    </button>
+                  </li>
+                  <li class="searchbuilds__block__filter-item">
+                    <button class="searchbuilds__block__filter-button shotgun">
+                      Shotgun
+                    </button>
+                  </li>
+                  <li class="searchbuilds__block__filter-item">
+                    <button class="searchbuilds__block__filter-button handgun">
+                      Handgun
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div class="searchbuilds__block__filter-toomb__type">
+                <h2 class="searchbuilds__block__filter-toomb-head next">
+                  Choose type of build:
+                </h2>
+                <ul class="searchbuilds__block__filter-toomb-list">
+                  <li class="searchbuilds__block__filter-toomb-item">
+                    <input type="text" placeholder="Brand" class="searchbuilds__block__filter-toomb-input" />
+                  </li>
+                  <li class="searchbuilds__block__filter-toomb-item">
+                    <input type="text" placeholder="Model" class="searchbuilds__block__filter-toomb-input" />
+                  </li>
+                  <li class="searchbuilds__block__filter-toomb-item">
+                    <input type="text" placeholder="Caliber" class="searchbuilds__block__filter-toomb-input" />
+                  </li>
+                </ul>
+                <!-- Option -->
+                <div class="searchbuilds__block__filter-toomb__sunk">
+                  <span class="searchbuilds__block__filter-toomb__sunk-span">
+                    <h2 class="searchbuilds__block__filter-toomb__sunk-head">
+                      Option set 1
+                    </h2>
+                    <svg class="searchbuilds__block__filter-toomb__sunk-icon">
+                      <use href="../../img/svg/sprite.svg#icon-delete"></use>
+                    </svg>
+                  </span>
+                  <ul class="searchbuilds__block__filter-toomb__sunk-list">
+                    <li class="searchbuilds__block__filter-toomb__sunk-item">
+                      Manufacturer
+                    </li>
+                    <li class="searchbuilds__block__filter-toomb__sunk-item">
+                      Model
+                    </li>
+                    <li class="searchbuilds__block__filter-toomb__sunk-item">
+                      Part
+                    </li>
+                  </ul>
+                </div>
+                <button class="searchbuilds__block__filter-toomb__type-button">
+                  Add new filter
+                </button>
+              </div>
+            </div>
+            <button class="searchbuilds__block__filter-Sbutton">
+              search
+            </button>
+          </div>
             <!-- Cards -->
             <div class="searchbuilds__block__cards">
               <div class="searchbuilds__block__cards_sorte">
@@ -671,7 +821,45 @@
                   </svg>
                 </button>
               </div>
-            </div>
+              <div class="searchbuilds__pagin-mobile">
+                <button class="searchbuilds__pagin-back" type="button">
+                  <svg class="searchbuilds__pagin-back-icon">
+                    <use href="../../img/svg/sprite.svg#icon-arrow-right"></use>
+                  </svg>
+                  <p class="searchbuilds__pagin-back-text">back</p>
+                </button>
+              
+                <ul class="searchbuilds__pagin-list">
+                  <li class="searchbuilds__pagin-item">
+                    <button class="searchbuilds__pagin-item-button">1</button>
+                  </li>
+                  <li class="searchbuilds__pagin-item">
+                    <button class="searchbuilds__pagin-item-button">2</button>
+                  </li>
+                  <li class="searchbuilds__pagin-item">
+                    <button class="searchbuilds__pagin-item-button">3</button>
+                  </li>
+                  <li class="searchbuilds__pagin-item">
+                    <button class="searchbuilds__pagin-item-button">4</button>
+                  </li>
+                  </li>
+                  <li class="searchbuilds__pagin-item">
+                    <button class="searchbuilds__pagin-item-button">...</button>
+                  </li>
+                  <li class="searchbuilds__pagin-item">
+                    <button class="searchbuilds__pagin-item-button">45</button>
+                  </li>
+                </ul>
+              
+                <button class="searchbuilds__pagin-next" type="button">
+                  <p class="searchbuilds__pagin-next-text">forward</p>
+                  <svg class="searchbuilds__pagin-next-icon">
+                    <use href="../../img/svg/sprite.svg#icon-arrow-right"></use>
+                  </svg>
+                </button>
+              </div>
+              </div>
+
 
             <!-- Trending -->
             <div class="searchbuilds__block__trending res">
@@ -680,6 +868,8 @@
                 <ul class="trending-now__list res">
                   <li class="trending-now__item">
                     <a class="trending-now__link" href="#">
+                      <img class="trending-now__author-avatar-mobile" src="./img/photos/avatars-40x40/avatar-001-man-gray-shirt.jpg"
+                        alt="Man-gray-shirt" />
                       <h3 class="trending-now__post-title">
                         10 Tips for Choosing <br />
                         a Concealed Carry Handgun
@@ -761,6 +951,73 @@
               </div>
               <div class="searchbuilds__block__trending-builds">
                 <h2 class="searchbuilds__block__trending-head">Top builds</h2>
+                <ul class="guns__list shotgun__list-mobile">
+                  <li class="guns__item shotgun__item">
+                    <a class="guns__link shotgun__link" href="#">
+                      <div class="guns__thumb shotgun__thumb">
+                        <img class="guns__image shotgun__image" src="../../img/photos/shotgun/shotgun-001.jpg"
+                          alt="Shotgun image Saiga 12 Slash fore grip" width="277" height="200" />
+                      </div>
+                
+                      <div class="guns__post shotgun__post">
+                        <h3 class="title-v3 guns__post-title shotgun__post-title">
+                          Saiga 12 Slash fore grip
+                        </h3>
+                
+                        <div class="guns__post-meta shotgun__post-meta">
+                          <div class="guns__avatar-thumb shotgun__avatar-thumb">
+                            <img class="guns__author-avatar shotgun__author-avatar" src="../../img/photos/avatar.jpg"
+                              alt="Author avatar - man in white t-shirt" width="25" height="25" />
+                          </div>
+                
+                          <span class="guns__author-name shotgun__author-name">troz</span>
+                
+                          <div class="post__views shotgun__post-views">
+                            <svg class="
+                                                post__views-svg
+                                                svg
+                                                shotgun__post-views-svg
+                                              " width="16" height="16">
+                              <use href="./img/svg/sprite.svg#icon-post-vieweye"></use>
+                            </svg>
+                
+                            <span class="
+                                                post__views-count
+                                                shotgun__post-views-count
+                                              ">12</span>
+                          </div>
+                
+                          <div class="post__comments shotgun__post-comments">
+                            <svg class="
+                                                post__comments-svg
+                                                shotgun__post-comments-svg
+                                                svg
+                                              " width="14" height="14">
+                              <use href="../../img/svg/sprite.svg#icon-post-message"></use>
+                            </svg>
+                
+                            <span class="
+                                                post__comments-count
+                                                shotgun__post-comments-count
+                                              ">5</span>
+                          </div>
+                        </div>
+                      </div>
+                
+                      <ul class="guns__build shotgun__build">
+                        <li class="guns__build-item shotgun__build-item">
+                          <span class="guns__build-tag shotgun__build-tag">Remington</span>
+                        </li>
+                        <li class="guns__build-item shotgun__build-item">
+                          <span class="guns__build-tag shotgun__build-tag">1911 R1 Enhanced</span>
+                        </li>
+                        <li class="guns__build-item shotgun__build-item">
+                          <span class="guns__build-tag shotgun__build-tag">.45 ACP</span>
+                        </li>
+                      </ul>
+                    </a>
+                  </li>
+                </ul>
                 <ul class="hero__recentbuilds-list res">
                   <li class="hero__recentbuilds-item res">
                     <div class="hero__recentbuilds-cards-toomb">
@@ -902,8 +1159,7 @@
                           class="top-blogposts__image res"
                           src="../../img/photos/top-blogposts/top-blogpost-001-ak-12.jpg"
                           alt="top blogposts gun image ak-12"
-                          width="200"
-                          height="200"
+                          
                         />
                       </div>
 
@@ -1003,223 +1259,167 @@
                 </ul>
               </div>
             </div>
-          </div>
-
-          <!-- Most used parts -->
-          <div class="searchbuilds__mostparts">
-            <h1 class="searchbuilds__mostparts-head">Most used parts</h1>
-            <ul class="searchbuilds__mostparts-list">
-              <li class="searchbuilds__mostparts-item">
-                <img
-                  src="../../img/photos/catalogs/parts1.png"
-                  class="searchbuilds__mostparts-item-img"
-                />
-                <ul class="hero__topbuilds-toomb-list res">
-                  <li class="hero__topbuilds-toomb-item">
-                    <svg class="hero__topbuilds-toomb-item-icon">
-                      <use
-                        href="../../img/svg/sprite.svg#icon-star-filled"
-                      ></use>
-                    </svg>
-                  </li>
-                  <li class="hero__topbuilds-toomb-item">
-                    <svg class="hero__topbuilds-toomb-item-icon">
-                      <use
-                        href="../../img/svg/sprite.svg#icon-star-filled"
-                      ></use>
-                    </svg>
-                  </li>
-                  <li class="hero__topbuilds-toomb-item">
-                    <svg class="hero__topbuilds-toomb-item-icon">
-                      <use
-                        href="../../img/svg/sprite.svg#icon-star-outline"
-                      ></use>
-                    </svg>
-                  </li>
-                  <li class="hero__topbuilds-toomb-item">
-                    <svg class="hero__topbuilds-toomb-item-icon">
-                      <use
-                        href="../../img/svg/sprite.svg#icon-star-outline"
-                      ></use>
-                    </svg>
-                  </li>
-                  <li class="hero__topbuilds-toomb-item">
-                    <svg class="hero__topbuilds-toomb-item-icon">
-                      <use
-                        href="../../img/svg/sprite.svg#icon-star-outline"
-                      ></use>
-                    </svg>
-                  </li>
-                </ul>
-                <h2 class="searchbuilds__mostparts-item-head">
-                  Lower receiver group w/stock mod 0
-                </h2>
-                <p class="searchbuilds__mostparts-item-text">
-                  BCM (Bravo Company USA)
-                </p>
-              </li>
-              <li class="searchbuilds__mostparts-item">
-                <img
-                  src="../../img/photos/catalogs/parts2.png"
-                  class="searchbuilds__mostparts-item-img"
-                />
-                <ul class="hero__topbuilds-toomb-list res">
-                  <li class="hero__topbuilds-toomb-item">
-                    <svg class="hero__topbuilds-toomb-item-icon">
-                      <use
-                        href="../../img/svg/sprite.svg#icon-star-filled"
-                      ></use>
-                    </svg>
-                  </li>
-                  <li class="hero__topbuilds-toomb-item">
-                    <svg class="hero__topbuilds-toomb-item-icon">
-                      <use
-                        href="../../img/svg/sprite.svg#icon-star-filled"
-                      ></use>
-                    </svg>
-                  </li>
-                  <li class="hero__topbuilds-toomb-item">
-                    <svg class="hero__topbuilds-toomb-item-icon">
-                      <use
-                        href="../../img/svg/sprite.svg#icon-star-outline"
-                      ></use>
-                    </svg>
-                  </li>
-                  <li class="hero__topbuilds-toomb-item">
-                    <svg class="hero__topbuilds-toomb-item-icon">
-                      <use
-                        href="../../img/svg/sprite.svg#icon-star-outline"
-                      ></use>
-                    </svg>
-                  </li>
-                  <li class="hero__topbuilds-toomb-item">
-                    <svg class="hero__topbuilds-toomb-item-icon">
-                      <use
-                        href="../../img/svg/sprite.svg#icon-star-outline"
-                      ></use>
-                    </svg>
-                  </li>
-                </ul>
-                <h2 class="searchbuilds__mostparts-item-head">
-                  Intrafuse T6 rifle stock 6-position collapsible ruger 10/22
-                  standart
-                </h2>
-                <p class="searchbuilds__mostparts-item-text">
-                  LMT (Lewis Machine & Tool)
-                </p>
-              </li>
-              <li class="searchbuilds__mostparts-item">
-                <img
-                  src="../../img/photos/catalogs/parts3.png"
-                  class="searchbuilds__mostparts-item-img"
-                />
-                <ul class="hero__topbuilds-toomb-list res">
-                  <li class="hero__topbuilds-toomb-item">
-                    <svg class="hero__topbuilds-toomb-item-icon">
-                      <use
-                        href="../../img/svg/sprite.svg#icon-star-filled"
-                      ></use>
-                    </svg>
-                  </li>
-                  <li class="hero__topbuilds-toomb-item">
-                    <svg class="hero__topbuilds-toomb-item-icon">
-                      <use
-                        href="../../img/svg/sprite.svg#icon-star-filled"
-                      ></use>
-                    </svg>
-                  </li>
-                  <li class="hero__topbuilds-toomb-item">
-                    <svg class="hero__topbuilds-toomb-item-icon">
-                      <use
-                        href="../../img/svg/sprite.svg#icon-star-outline"
-                      ></use>
-                    </svg>
-                  </li>
-                  <li class="hero__topbuilds-toomb-item">
-                    <svg class="hero__topbuilds-toomb-item-icon">
-                      <use
-                        href="../../img/svg/sprite.svg#icon-star-outline"
-                      ></use>
-                    </svg>
-                  </li>
-                  <li class="hero__topbuilds-toomb-item">
-                    <svg class="hero__topbuilds-toomb-item-icon">
-                      <use
-                        href="../../img/svg/sprite.svg#icon-star-outline"
-                      ></use>
-                    </svg>
-                  </li>
-                </ul>
-                <h2 class="searchbuilds__mostparts-item-head">
-                  AR15 upper receiver assembly
-                </h2>
-                <p class="searchbuilds__mostparts-item-text">STAG ARMS LLC</p>
-              </li>
-              <li class="searchbuilds__mostparts-item">
-                <img
-                  src="../../img/photos/catalogs/parts4.png"
-                  class="searchbuilds__mostparts-item-img"
-                />
-                <ul class="hero__topbuilds-toomb-list res">
-                  <li class="hero__topbuilds-toomb-item">
-                    <svg class="hero__topbuilds-toomb-item-icon">
-                      <use
-                        href="../../img/svg/sprite.svg#icon-star-filled"
-                      ></use>
-                    </svg>
-                  </li>
-                  <li class="hero__topbuilds-toomb-item">
-                    <svg class="hero__topbuilds-toomb-item-icon">
-                      <use
-                        href="../../img/svg/sprite.svg#icon-star-filled"
-                      ></use>
-                    </svg>
-                  </li>
-                  <li class="hero__topbuilds-toomb-item">
-                    <svg class="hero__topbuilds-toomb-item-icon">
-                      <use
-                        href="../../img/svg/sprite.svg#icon-star-outline"
-                      ></use>
-                    </svg>
-                  </li>
-                  <li class="hero__topbuilds-toomb-item">
-                    <svg class="hero__topbuilds-toomb-item-icon">
-                      <use
-                        href="../../img/svg/sprite.svg#icon-star-outline"
-                      ></use>
-                    </svg>
-                  </li>
-                  <li class="hero__topbuilds-toomb-item">
-                    <svg class="hero__topbuilds-toomb-item-icon">
-                      <use
-                        href="../../img/svg/sprite.svg#icon-star-outline"
-                      ></use>
-                    </svg>
-                  </li>
-                </ul>
-                <h2 class="searchbuilds__mostparts-item-head">
-                  AR15 Stripped lower Receiver
-                </h2>
-                <p class="searchbuilds__mostparts-item-text">TAPCO</p>
-              </li>
-            </ul>
-            <ul class="hero__topbuilds-toomb-buttons res">
-              <li class="hero__topbuilds-toomb-buttons-item res">
-                <button
-                  class="hero__topbuilds-toomb-item-button res active"
-                ></button>
-              </li>
-              <li class="hero__topbuilds-toomb-buttons-item res">
-                <button class="hero__topbuilds-toomb-item-button res"></button>
-              </li>
-              <li class="hero__topbuilds-toomb-buttons-item res">
-                <button class="hero__topbuilds-toomb-item-button res"></button>
-              </li>
-              <li class="hero__topbuilds-toomb-buttons-item res">
-                <button class="hero__topbuilds-toomb-item-button res"></button>
-              </li>
-            </ul>
-          </div>
+        </div>
+        <!-- Mostparts -->
+        <div class="searchbuilds__mostparts">
+          <h1 class="searchbuilds__mostparts-head">Most used parts</h1>
+          <ul class="searchbuilds__mostparts-list">
+            <li class="searchbuilds__mostparts-item">
+              <img src="../../img/photos/catalogs/parts1.png" class="searchbuilds__mostparts-item-img" />
+              <ul class="hero__topbuilds-toomb-list res">
+                <li class="hero__topbuilds-toomb-item">
+                  <svg class="hero__topbuilds-toomb-item-icon">
+                    <use href="../../img/svg/sprite.svg#icon-star-filled"></use>
+                  </svg>
+                </li>
+                <li class="hero__topbuilds-toomb-item">
+                  <svg class="hero__topbuilds-toomb-item-icon">
+                    <use href="../../img/svg/sprite.svg#icon-star-filled"></use>
+                  </svg>
+                </li>
+                <li class="hero__topbuilds-toomb-item">
+                  <svg class="hero__topbuilds-toomb-item-icon">
+                    <use href="../../img/svg/sprite.svg#icon-star-outline"></use>
+                  </svg>
+                </li>
+                <li class="hero__topbuilds-toomb-item">
+                  <svg class="hero__topbuilds-toomb-item-icon">
+                    <use href="../../img/svg/sprite.svg#icon-star-outline"></use>
+                  </svg>
+                </li>
+                <li class="hero__topbuilds-toomb-item">
+                  <svg class="hero__topbuilds-toomb-item-icon">
+                    <use href="../../img/svg/sprite.svg#icon-star-outline"></use>
+                  </svg>
+                </li>
+              </ul>
+              <h2 class="searchbuilds__mostparts-item-head">
+                Lower receiver group w/stock mod 0
+              </h2>
+              <p class="searchbuilds__mostparts-item-text">
+                BCM (Bravo Company USA)
+              </p>
+            </li>
+            <li class="searchbuilds__mostparts-item">
+              <img src="../../img/photos/catalogs/parts2.png" class="searchbuilds__mostparts-item-img" />
+              <ul class="hero__topbuilds-toomb-list res">
+                <li class="hero__topbuilds-toomb-item">
+                  <svg class="hero__topbuilds-toomb-item-icon">
+                    <use href="../../img/svg/sprite.svg#icon-star-filled"></use>
+                  </svg>
+                </li>
+                <li class="hero__topbuilds-toomb-item">
+                  <svg class="hero__topbuilds-toomb-item-icon">
+                    <use href="../../img/svg/sprite.svg#icon-star-filled"></use>
+                  </svg>
+                </li>
+                <li class="hero__topbuilds-toomb-item">
+                  <svg class="hero__topbuilds-toomb-item-icon">
+                    <use href="../../img/svg/sprite.svg#icon-star-outline"></use>
+                  </svg>
+                </li>
+                <li class="hero__topbuilds-toomb-item">
+                  <svg class="hero__topbuilds-toomb-item-icon">
+                    <use href="../../img/svg/sprite.svg#icon-star-outline"></use>
+                  </svg>
+                </li>
+                <li class="hero__topbuilds-toomb-item">
+                  <svg class="hero__topbuilds-toomb-item-icon">
+                    <use href="../../img/svg/sprite.svg#icon-star-outline"></use>
+                  </svg>
+                </li>
+              </ul>
+              <h2 class="searchbuilds__mostparts-item-head">
+                Intrafuse T6 rifle stock 6-position collapsible ruger 10/22
+                standart
+              </h2>
+              <p class="searchbuilds__mostparts-item-text">
+                LMT (Lewis Machine & Tool)
+              </p>
+            </li>
+            <li class="searchbuilds__mostparts-item">
+              <img src="../../img/photos/catalogs/parts3.png" class="searchbuilds__mostparts-item-img" />
+              <ul class="hero__topbuilds-toomb-list res">
+                <li class="hero__topbuilds-toomb-item">
+                  <svg class="hero__topbuilds-toomb-item-icon">
+                    <use href="../../img/svg/sprite.svg#icon-star-filled"></use>
+                  </svg>
+                </li>
+                <li class="hero__topbuilds-toomb-item">
+                  <svg class="hero__topbuilds-toomb-item-icon">
+                    <use href="../../img/svg/sprite.svg#icon-star-filled"></use>
+                  </svg>
+                </li>
+                <li class="hero__topbuilds-toomb-item">
+                  <svg class="hero__topbuilds-toomb-item-icon">
+                    <use href="../../img/svg/sprite.svg#icon-star-outline"></use>
+                  </svg>
+                </li>
+                <li class="hero__topbuilds-toomb-item">
+                  <svg class="hero__topbuilds-toomb-item-icon">
+                    <use href="../../img/svg/sprite.svg#icon-star-outline"></use>
+                  </svg>
+                </li>
+                <li class="hero__topbuilds-toomb-item">
+                  <svg class="hero__topbuilds-toomb-item-icon">
+                    <use href="../../img/svg/sprite.svg#icon-star-outline"></use>
+                  </svg>
+                </li>
+              </ul>
+              <h2 class="searchbuilds__mostparts-item-head">
+                AR15 upper receiver assembly
+              </h2>
+              <p class="searchbuilds__mostparts-item-text">STAG ARMS LLC</p>
+            </li>
+            <li class="searchbuilds__mostparts-item">
+              <img src="../../img/photos/catalogs/parts4.png" class="searchbuilds__mostparts-item-img" />
+              <ul class="hero__topbuilds-toomb-list res">
+                <li class="hero__topbuilds-toomb-item">
+                  <svg class="hero__topbuilds-toomb-item-icon">
+                    <use href="../../img/svg/sprite.svg#icon-star-filled"></use>
+                  </svg>
+                </li>
+                <li class="hero__topbuilds-toomb-item">
+                  <svg class="hero__topbuilds-toomb-item-icon">
+                    <use href="../../img/svg/sprite.svg#icon-star-filled"></use>
+                  </svg>
+                </li>
+                <li class="hero__topbuilds-toomb-item">
+                  <svg class="hero__topbuilds-toomb-item-icon">
+                    <use href="../../img/svg/sprite.svg#icon-star-outline"></use>
+                  </svg>
+                </li>
+                <li class="hero__topbuilds-toomb-item">
+                  <svg class="hero__topbuilds-toomb-item-icon">
+                    <use href="../../img/svg/sprite.svg#icon-star-outline"></use>
+                  </svg>
+                </li>
+                <li class="hero__topbuilds-toomb-item">
+                  <svg class="hero__topbuilds-toomb-item-icon">
+                    <use href="../../img/svg/sprite.svg#icon-star-outline"></use>
+                  </svg>
+                </li>
+              </ul>
+              <h2 class="searchbuilds__mostparts-item-head">
+                AR15 Stripped lower Receiver
+              </h2>
+              <p class="searchbuilds__mostparts-item-text">TAPCO</p>
+            </li>
+          </ul>
+          <ul class="hero__topbuilds-toomb-buttons res">
+            <li class="hero__topbuilds-toomb-buttons-item res">
+              <button class="hero__topbuilds-toomb-item-button res active"></button>
+            </li>
+            <li class="hero__topbuilds-toomb-buttons-item res">
+              <button class="hero__topbuilds-toomb-item-button res"></button>
+            </li>
+            <li class="hero__topbuilds-toomb-buttons-item res">
+              <button class="hero__topbuilds-toomb-item-button res"></button>
+            </li>
+            <li class="hero__topbuilds-toomb-buttons-item res">
+              <button class="hero__topbuilds-toomb-item-button res"></button>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

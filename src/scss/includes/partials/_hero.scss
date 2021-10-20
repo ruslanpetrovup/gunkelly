@@ -1,254 +1,793 @@
-.hero {
-  padding-top: 40px;
-  padding-bottom: 60px;
-}
-.hero__content {
-  display: flex;
-}
-.hero__topbuilds {
-  //   display: flex;
-  margin-right: 40px;
-}
-.hero__topbuilds-head {
-  font-family: Rogan;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 43px;
-  color: #000000;
-  margin-bottom: 30px;
-}
-.hero__topbuilds-toomb-stats {
-  padding: 35px 0px 25px 30px;
-  background: #263238;
-}
-.hero__topbuilds-toomb {
-  display: flex;
-  position: relative;
-}
-.hero__topbuilds-toomb-list {
-  display: flex;
-  margin-bottom: 23px;
-}
-.hero__topbuilds-toomb-item-icon {
-  width: 17px;
-  height: 16px;
-  color: transparent;
-}
-.hero__topbuilds-toomb-item-icon.active {
-  fill: #e1cd18;
-}
-.hero__topbuilds-toomb-stats-head {
-  width: 280px;
-  font-family: Rogan;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 30px;
-  line-height: 36px;
-  color: #ffffff;
-  margin-bottom: 10px;
-}
-.hero__topbuilds-toomb-stats__human {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-.hero__topbuilds-toomb-stats__human-images {
-  margin-right: 10px;
-}
-.hero__topbuilds-toomb-stats__human-name {
-  font-family: Rogan;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  color: #ffffff;
-  opacity: 0.5;
-  margin-right: 12px;
-}
-.hero__topbuilds-toomb-stats__human-icon {
-  width: 16px;
-  height: 16px;
-  margin-right: 7px;
-  color: #ffffff;
-}
-.hero__topbuilds-toomb-stats__human-vieweye {
-  font-family: Rogan;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  color: #ffffff;
-  margin-right: 11px;
-}
-.hero__topbuilds-toomb-stats__human-comment {
-  font-family: Rogan;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  color: #ffffff;
-}
-.hero__topbuilds-toomb-stats-button {
-  appearance: none;
-  background: #198ccd;
-  border-radius: 4px;
-  border: none;
-  font-family: Rogan;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 120%;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #ffffff;
-  padding: 17px 29px;
-  margin-bottom: 20px;
-}
-.hero__topbuilds-toomb-stats-list {
-  display: flex;
-}
-.hero__topbuilds-toomb-stats-item {
-  font-family: Rogan;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  color: #ffffff;
-  padding: 4px 6px;
-  border: 1px solid rgba(25, 140, 205, 0.25);
-  border-radius: 2px;
-  &:not(:first-child) {
-    margin-left: 5px;
+@media screen and (max-width: 767px) {
+  .hero {
+    padding-top: 40px;
+    padding-bottom: 60px;
   }
-}
-.hero__topbuilds-toomb-buttons {
-  position: absolute;
-  display: flex;
-  left: 30px;
-  bottom: 25px;
-}
-.hero__topbuilds-toomb-buttons-item {
-  &:not(:first-child) {
-    margin-left: 15px;
+  .hero__content {
+    display: flex;
+    flex-direction: column;
   }
-}
-.hero__topbuilds-toomb-item-button {
-  appearance: none;
-  border: none;
-  background: #4c585f;
-  width: 6px;
-  height: 6px;
-  &.active {
-    background: #ffffff;
+  .hero__topbuilds {
+    display: flex;
+    flex-direction: column;
   }
-}
-// Recent Builds
-.hero__recentbuilds-head {
-  font-family: Rogan;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 43px;
-  color: #000000;
-  margin-bottom: 30px;
-}
-.hero__recentbuilds-cards {
-  display: flex;
-  align-items: center;
-  // border-top: 1px solid #f2f2f2;
-  // border-bottom: 1px solid #f2f2f2;
-  // padding: 14px 0;
-}
-.hero__recentbuilds-item {
-  display: flex;
-  align-items: center;
-  padding: 14px 0;
-  border-top: 1px solid #f2f2f2;
-  &:last-child {
-    border-bottom: 1px solid #f2f2f2;
+  .hero__topbuilds-head {
+    font-family: Rogan;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 43px;
+    color: #000000;
+    margin-bottom: 30px;
   }
-}
-.hero__recentbuilds-item-block {
-  display: flex;
-  align-items: center;
-  margin-top: 5px;
-}
-.hero__recentbuilds-item-head {
-  font-family: Rogan;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  color: #000000;
-}
-/* Glock 22 Gen 4 */
-.profile__recentbuilds-item-head {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 22px;
-}
+  .hero__topbuilds-toomb-stats {
+    padding: 35px 25px 25px 30px;
+    background: #263238;
+  }
+  .hero__topbuilds-toomb-images {
+    width: 100%;
+  }
+  .hero__topbuilds-toomb-images-gun {
+    width: 100%;
+  }
+  .hero__topbuilds-toomb {
+    display: flex;
+    position: relative;
+    flex-direction: column-reverse;
+  }
+  .hero__topbuilds-toomb-list {
+    display: flex;
+    margin-bottom: 23px;
+  }
+  .hero__topbuilds-toomb-item-icon {
+    width: 17px;
+    height: 16px;
+    color: transparent;
+  }
+  .hero__topbuilds-toomb-item-icon.active {
+    fill: #e1cd18;
+  }
+  .hero__topbuilds-toomb-stats-head {
+    width: 280px;
+    font-family: Rogan;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  .hero__topbuilds-toomb-stats__human {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .hero__topbuilds-toomb-stats__human-images {
+    margin-right: 10px;
+  }
+  .hero__topbuilds-toomb-stats__human-name {
+    font-family: Rogan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+    opacity: 0.5;
+    margin-right: 12px;
+  }
+  .hero__topbuilds-toomb-stats__human-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 7px;
+    color: #ffffff;
+  }
+  .hero__topbuilds-toomb-stats__human-vieweye {
+    font-family: Rogan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+    margin-right: 11px;
+  }
+  .hero__topbuilds-toomb-stats__human-comment {
+    font-family: Rogan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+  }
+  .hero__topbuilds-toomb-stats-button {
+    appearance: none;
+    background: #198ccd;
+    border-radius: 4px;
+    border: none;
+    font-family: Rogan;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 17px 29px;
+    margin-bottom: 20px;
+  }
+  .hero__topbuilds-toomb-stats-list {
+    display: flex;
+  }
+  .hero__topbuilds-toomb-stats-item {
+    font-family: Rogan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+    padding: 4px 6px;
+    border: 1px solid rgba(25, 140, 205, 0.25);
+    border-radius: 2px;
+    &:not(:first-child) {
+      margin-left: 5px;
+    }
+  }
+  .hero__topbuilds-toomb-buttons {
+    display: none;
+  }
+  .hero__topbuilds-toomb-buttons-mobile {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+  }
+  .hero__topbuilds-toomb-buttons-item {
+    &:not(:first-child) {
+      margin-left: 15px;
+    }
+  }
+  .hero__topbuilds-toomb-item-button {
+    appearance: none;
+    border: none;
+    background: #4c585f;
+    width: 6px;
+    height: 6px;
+    &.active {
+      background: #ffffff;
+    }
+  }
+  // Recent Builds
+  .hero__recentbuilds {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .hero__recentbuilds-head {
+    font-family: Rogan;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 43px;
+    color: #000000;
+    margin-bottom: 30px;
+  }
+  .hero__recentbuilds-cards {
+    display: flex;
+    align-items: center;
+    // border-top: 1px solid #f2f2f2;
+    // border-bottom: 1px solid #f2f2f2;
+    // padding: 14px 0;
+  }
+  .hero__recentbuilds-item {
+    display: flex;
+    align-items: center;
+    padding: 14px 0;
+    border-top: 1px solid #f2f2f2;
+    &:last-child {
+      border-bottom: 1px solid #f2f2f2;
+    }
+  }
+  .hero__recentbuilds-item-block {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+  }
+  .hero__recentbuilds-item-head {
+    font-family: Rogan;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+  }
+  /* Glock 22 Gen 4 */
+  .profile__recentbuilds-item-head {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+  }
 
-.hero__recentbuilds-item-block-human-images {
-  margin-right: 10px;
-}
-.hero__recentbuilds-item-block-human-name {
-  font-family: Rogan;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  color: #000000;
-  opacity: 0.5;
-  margin-right: 12px;
-}
-.hero__recentbuilds-item-block-human-icon {
-  width: 16px;
-  height: 16px;
-  margin-right: 7px;
-  stroke: #000000;
-}
-.hero__recentbuilds-item-block-human-vieweye {
-  font-family: Rogan;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  color: #000000;
-  margin-right: 11px;
-}
-.hero__recentbuilds-item-block-human-comment {
-  font-family: Rogan;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  color: #000000;
-}
-.hero__recentbuilds-cards-toomb {
-  margin-right: auto;
-}
-.hero__recentbuilds-item-stats-list {
-  display: flex;
-  margin-top: 20px;
-  flex-wrap: wrap;
-  gap: 5px;
-}
+  .hero__recentbuilds-item-block-human-images {
+    margin-right: 10px;
+  }
+  .hero__recentbuilds-item-block-human-name {
+    font-family: Rogan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    opacity: 0.5;
+    margin-right: 12px;
+  }
+  .hero__recentbuilds-item-block-human-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 7px;
+    stroke: #000000;
+  }
+  .hero__recentbuilds-item-block-human-vieweye {
+    font-family: Rogan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin-right: 11px;
+  }
+  .hero__recentbuilds-item-block-human-comment {
+    font-family: Rogan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+  }
+  .hero__recentbuilds-cards-toomb {
+    margin-right: auto;
+  }
+  .hero__recentbuilds-item-stats-list {
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
 
-.hero__recentbuilds-item-stats-item {
-  font-family: Rogan;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  color: #000000;
-  padding: 4px 4px;
-  border: 1px solid rgba(25, 140, 205, 0.25);
-  border-radius: 2px;
+  .hero__recentbuilds-item-stats-item {
+    font-family: Rogan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    padding: 4px 4px;
+    border: 1px solid rgba(25, 140, 205, 0.25);
+    border-radius: 2px;
+  }
+  .hero__recentbuilds-cards-images {
+    margin-left: 35px;
+  }
+  .hero__recentbuilds-cards-img {
+    display: block;
+  }
 }
-.hero__recentbuilds-cards-images {
-  margin-left: 35px;
+// Tablet
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero__topbuilds-toomb-buttons-mobile {
+    display: none;
+  }
+  .hero {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+  .hero__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .hero__topbuilds {
+    //   display: flex;
+    margin-right: 40px;
+  }
+  .hero__topbuilds-head {
+    font-family: Rogan;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 43px;
+    color: #000000;
+    margin-bottom: 30px;
+  }
+  .hero__topbuilds-toomb-stats {
+    padding: 35px 0px 25px 30px;
+    background: #263238;
+  }
+  .hero__topbuilds-toomb {
+    display: flex;
+    position: relative;
+  }
+  .hero__topbuilds-toomb-list {
+    display: flex;
+    margin-bottom: 23px;
+  }
+  .hero__topbuilds-toomb-item-icon {
+    width: 17px;
+    height: 16px;
+    color: transparent;
+  }
+  .hero__topbuilds-toomb-item-icon.active {
+    fill: #e1cd18;
+  }
+  .hero__topbuilds-toomb-stats-head {
+    width: 280px;
+    font-family: Rogan;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  .hero__topbuilds-toomb-stats__human {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .hero__topbuilds-toomb-stats__human-images {
+    margin-right: 10px;
+  }
+  .hero__topbuilds-toomb-stats__human-name {
+    font-family: Rogan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+    opacity: 0.5;
+    margin-right: 12px;
+  }
+  .hero__topbuilds-toomb-stats__human-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 7px;
+    color: #ffffff;
+  }
+  .hero__topbuilds-toomb-stats__human-vieweye {
+    font-family: Rogan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+    margin-right: 11px;
+  }
+  .hero__topbuilds-toomb-stats__human-comment {
+    font-family: Rogan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+  }
+  .hero__topbuilds-toomb-stats-button {
+    appearance: none;
+    background: #198ccd;
+    border-radius: 4px;
+    border: none;
+    font-family: Rogan;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 17px 29px;
+    margin-bottom: 20px;
+  }
+  .hero__topbuilds-toomb-stats-list {
+    display: flex;
+  }
+  .hero__topbuilds-toomb-stats-item {
+    font-family: Rogan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+    padding: 4px 6px;
+    border: 1px solid rgba(25, 140, 205, 0.25);
+    border-radius: 2px;
+    &:not(:first-child) {
+      margin-left: 5px;
+    }
+  }
+  .hero__topbuilds-toomb-buttons {
+    position: absolute;
+    display: flex;
+    left: 30px;
+    bottom: 25px;
+  }
+  .hero__topbuilds-toomb-buttons-item {
+    &:not(:first-child) {
+      margin-left: 15px;
+    }
+  }
+  .hero__topbuilds-toomb-item-button {
+    appearance: none;
+    border: none;
+    background: #4c585f;
+    width: 6px;
+    height: 6px;
+    &.active {
+      background: #ffffff;
+    }
+  }
+  // Recent Builds
+  .hero__recentbuilds-head {
+    font-family: Rogan;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 43px;
+    color: #000000;
+    margin-bottom: 30px;
+  }
+  .hero__recentbuilds-cards {
+    display: flex;
+    align-items: center;
+    // border-top: 1px solid #f2f2f2;
+    // border-bottom: 1px solid #f2f2f2;
+    // padding: 14px 0;
+  }
+  .hero__recentbuilds-item {
+    display: flex;
+    align-items: center;
+    padding: 14px 0;
+    border-top: 1px solid #f2f2f2;
+    &:last-child {
+      border-bottom: 1px solid #f2f2f2;
+    }
+  }
+  .hero__recentbuilds-item-block {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+  }
+  .hero__recentbuilds-item-head {
+    font-family: Rogan;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+  }
+  /* Glock 22 Gen 4 */
+  .profile__recentbuilds-item-head {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .hero__recentbuilds-item-block-human-images {
+    margin-right: 10px;
+  }
+  .hero__recentbuilds-item-block-human-name {
+    font-family: Rogan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    opacity: 0.5;
+    margin-right: 12px;
+  }
+  .hero__recentbuilds-item-block-human-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 7px;
+    stroke: #000000;
+  }
+  .hero__recentbuilds-item-block-human-vieweye {
+    font-family: Rogan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin-right: 11px;
+  }
+  .hero__recentbuilds-item-block-human-comment {
+    font-family: Rogan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+  }
+  .hero__recentbuilds-cards-toomb {
+    margin-right: auto;
+  }
+  .hero__recentbuilds-item-stats-list {
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .hero__recentbuilds-item-stats-item {
+    font-family: Rogan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    padding: 4px 4px;
+    border: 1px solid rgba(25, 140, 205, 0.25);
+    border-radius: 2px;
+  }
+  .hero__recentbuilds-cards-images {
+    margin-left: 35px;
+  }
+  .hero__recentbuilds-cards-img {
+    display: block;
+  }
 }
-.hero__recentbuilds-cards-img {
-  display: block;
+// Desktop
+@media screen and (min-width: 1200px) {
+  .hero__topbuilds-toomb-buttons-mobile {
+    display: none;
+  }
+  .hero {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+  .hero__content {
+    display: flex;
+  }
+  .hero__topbuilds {
+    //   display: flex;
+    margin-right: 40px;
+  }
+  .hero__topbuilds-head {
+    font-family: Rogan;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 43px;
+    color: #000000;
+    margin-bottom: 30px;
+  }
+  .hero__topbuilds-toomb-stats {
+    padding: 35px 0px 25px 30px;
+    background: #263238;
+  }
+  .hero__topbuilds-toomb {
+    display: flex;
+    position: relative;
+  }
+  .hero__topbuilds-toomb-list {
+    display: flex;
+    margin-bottom: 23px;
+  }
+  .hero__topbuilds-toomb-item-icon {
+    width: 17px;
+    height: 16px;
+    color: transparent;
+  }
+  .hero__topbuilds-toomb-item-icon.active {
+    fill: #e1cd18;
+  }
+  .hero__topbuilds-toomb-stats-head {
+    width: 280px;
+    font-family: Rogan;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  .hero__topbuilds-toomb-stats__human {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .hero__topbuilds-toomb-stats__human-images {
+    margin-right: 10px;
+  }
+  .hero__topbuilds-toomb-stats__human-name {
+    font-family: Rogan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+    opacity: 0.5;
+    margin-right: 12px;
+  }
+  .hero__topbuilds-toomb-stats__human-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 7px;
+    color: #ffffff;
+  }
+  .hero__topbuilds-toomb-stats__human-vieweye {
+    font-family: Rogan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+    margin-right: 11px;
+  }
+  .hero__topbuilds-toomb-stats__human-comment {
+    font-family: Rogan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+  }
+  .hero__topbuilds-toomb-stats-button {
+    appearance: none;
+    background: #198ccd;
+    border-radius: 4px;
+    border: none;
+    font-family: Rogan;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 17px 29px;
+    margin-bottom: 20px;
+  }
+  .hero__topbuilds-toomb-stats-list {
+    display: flex;
+  }
+  .hero__topbuilds-toomb-stats-item {
+    font-family: Rogan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+    padding: 4px 6px;
+    border: 1px solid rgba(25, 140, 205, 0.25);
+    border-radius: 2px;
+    &:not(:first-child) {
+      margin-left: 5px;
+    }
+  }
+  .hero__topbuilds-toomb-buttons {
+    position: absolute;
+    display: flex;
+    left: 30px;
+    bottom: 25px;
+  }
+  .hero__topbuilds-toomb-buttons-item {
+    &:not(:first-child) {
+      margin-left: 15px;
+    }
+  }
+  .hero__topbuilds-toomb-item-button {
+    appearance: none;
+    border: none;
+    background: #4c585f;
+    width: 6px;
+    height: 6px;
+    &.active {
+      background: #ffffff;
+    }
+  }
+  // Recent Builds
+  .hero__recentbuilds-head {
+    font-family: Rogan;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 43px;
+    color: #000000;
+    margin-bottom: 30px;
+  }
+  .hero__recentbuilds-cards {
+    display: flex;
+    align-items: center;
+    // border-top: 1px solid #f2f2f2;
+    // border-bottom: 1px solid #f2f2f2;
+    // padding: 14px 0;
+  }
+  .hero__recentbuilds-item {
+    display: flex;
+    align-items: center;
+    padding: 14px 0;
+    border-top: 1px solid #f2f2f2;
+    &:last-child {
+      border-bottom: 1px solid #f2f2f2;
+    }
+  }
+  .hero__recentbuilds-item-block {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+  }
+  .hero__recentbuilds-item-head {
+    font-family: Rogan;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+  }
+  /* Glock 22 Gen 4 */
+  .profile__recentbuilds-item-head {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .hero__recentbuilds-item-block-human-images {
+    margin-right: 10px;
+  }
+  .hero__recentbuilds-item-block-human-name {
+    font-family: Rogan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    opacity: 0.5;
+    margin-right: 12px;
+  }
+  .hero__recentbuilds-item-block-human-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 7px;
+    stroke: #000000;
+  }
+  .hero__recentbuilds-item-block-human-vieweye {
+    font-family: Rogan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin-right: 11px;
+  }
+  .hero__recentbuilds-item-block-human-comment {
+    font-family: Rogan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+  }
+  .hero__recentbuilds-cards-toomb {
+    margin-right: auto;
+  }
+  .hero__recentbuilds-item-stats-list {
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .hero__recentbuilds-item-stats-item {
+    font-family: Rogan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    padding: 4px 4px;
+    border: 1px solid rgba(25, 140, 205, 0.25);
+    border-radius: 2px;
+  }
+  .hero__recentbuilds-cards-images {
+    margin-left: 35px;
+  }
+  .hero__recentbuilds-cards-img {
+    display: block;
+  }
 }
