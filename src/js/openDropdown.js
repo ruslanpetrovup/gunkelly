@@ -1,25 +1,46 @@
-const initMobileMenu = () => {
-  const dropdownList = document.querySelector('[data-dropdown-list]');
+const openDropdown = () => {
+  const addBuildForm = document.querySelector('[data-pageaddbuild-form]');
+  const emptyTypeMessage = document.querySelector('[data-choose-type-empty]');
+  const typeOptions = document.querySelectorAll('[data-choose-type-radio]');
 
-  const toggleDropDown = dropdownToToggle =>
-    dropdownToToggle.classList.toggle('is-hidden');
+  const toggleIsHidden = elem => elem?.classList?.toggle('is-hidden');
 
-  const onChooseOptionsBtnClick = ({ target }) => {
-    if (target.nodeName !== 'BUTTON') return;
+  // show error message if selected build type is empty (rifle/shotgun/handgun)
+  const onFormSubmit = e => {
+    e.preventDefault(); // To other developers -> remove this line to enable default form submit
+    console.log(e);
+    const { elements } = e.currentTarget;
+    console.log(elements[['add-build-type']]);
 
-    console.log(target.value);
+    const isTypeEmpty = elements['add-build-type']?.value === '' ? true : false;
+    const isErrorTextHidden =
+      emptyTypeMessage?.classList?.contains('is-hidden');
 
-    const dropdownToToggle = document.querySelector(
-      `[data-dropdown-menu-${target.value}]`,
-    );
-    console.log('onChooseOptionsBtnClick ~ dropdownToToggle', dropdownToToggle);
+    // if type not selected - show error message
+    if (isTypeEmpty && isErrorTextHidden) {
+      emptyTypeMessage.classList.remove('is-hidden');
+    }
 
-    if (dropdownToToggle) {
-      toggleDropDown(dropdownToToggle);
+    // if type selected - hide error message
+    if (!isTypeEmpty && !isErrorTextHidden) {
+      emptyTypeMessage?.classList?.add('is-hidden');
     }
   };
 
-  dropdownList.addEventListener('click', onChooseOptionsBtnClick);
+  // show dropdown menu
+  const onChooseOptionsBtnClick = ({
+    target: { nodeName, dataset, value },
+  }) => {
+    if (nodeName !== 'BUTTON' || !dataset.hasOwnProperty('dropdownOpen')) {
+      return;
+    }
+
+    const dropdown = document.querySelector(`[data-dropdown-menu-${value}]`);
+    toggleIsHidden(dropdown);
+  };
+
+  addBuildForm?.addEventListener('click', onChooseOptionsBtnClick);
+  addBuildForm?.addEventListener('submit', onFormSubmit);
 };
 
-export default initMobileMenu;
+export default openDropdown;

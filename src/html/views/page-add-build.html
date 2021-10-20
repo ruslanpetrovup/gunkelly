@@ -181,7 +181,7 @@
 
           <section class="main-features page-add-build__subsection">
             <div class="page-add-build__container">
-              <form class="page-add-build__form">
+              <form class="page-add-build__form" data-pageaddbuild-form>
                 <div class="form-group page-add-build__form-group">
                   <h2 class="section-title page-add-build__subtitle">
                     Main features
@@ -212,10 +212,9 @@
                       <label class="page-add-build__label-radio option-one">
                         <input
                           class="page-add-build__input-radio"
-                          name="add-build__type"
+                          name="add-build-type"
                           type="radio"
                           value="rifle"
-                          checked
                         />
 
                         <p class="page-add-build__label-radio-text">Rifle</p>
@@ -226,7 +225,7 @@
                       <label class="page-add-build__label-radio option-two">
                         <input
                           class="page-add-build__input-radio"
-                          name="add-build__type"
+                          name="add-build-type"
                           type="radio"
                           value="shotgun"
                         />
@@ -239,7 +238,7 @@
                       <label class="page-add-build__label-radio option-three">
                         <input
                           class="page-add-build__input-radio"
-                          name="add-build__type"
+                          name="add-build-type"
                           type="radio"
                           value="handgun"
                         />
@@ -248,6 +247,13 @@
                       </label>
                     </li>
                   </ul>
+
+                  <p
+                    data-choose-type-empty
+                    class="page-add-build__type-error-text is-hidden"
+                  >
+                    Please select a build type
+                  </p>
                 </div>
 
                 <div class="form-group page-add-build__form-group">
@@ -793,6 +799,126 @@
 
                     Add parts
                   </button>
+
+                  <ul
+                    class="
+                      page-add-build__build-base-list
+                      page-add-build__build-options-list
+                    "
+                    data-dropdown-list
+                  >
+                    <li class="page-add-build__build-base-item">
+                      <button
+                        class="page-add-build__drop-btn"
+                        data-dropdown-open
+                        type="button"
+                        value="category"
+                      >
+                        Category
+                      </button>
+                      <div
+                        class="page-add-build__dropdown-content is-hidden"
+                        data-dropdown-menu-category
+                      >
+                        <label class="page-add-build__label-input-filter">
+                          <input
+                            class="page-add-build__input-filter"
+                            name="page-add-build__input-filter"
+                            type="text"
+                            placeholder="Search"
+                          />
+                        </label>
+                        <ul class="page-add-build__dropdown-options-list">
+                          <li class="page-add-build__dropdown-options-item">
+                            <p class="page-add-build__dropdown-option-text">
+                              Adirondack leather products
+                            </p>
+                          </li>
+                          <li class="page-add-build__dropdown-options-item">
+                            <p class="page-add-build__dropdown-option-text">
+                              Advanced armament
+                            </p>
+                          </li>
+                          <li class="page-add-build__dropdown-options-item">
+                            <p class="page-add-build__dropdown-option-text">
+                              Advanced technology
+                            </p>
+                          </li>
+                          <li class="page-add-build__dropdown-options-item">
+                            <p class="page-add-build__dropdown-option-text">
+                              Adirondack leather products
+                            </p>
+                          </li>
+                          <li class="page-add-build__dropdown-options-item">
+                            <p class="page-add-build__dropdown-option-text">
+                              Advanced armament
+                            </p>
+                          </li>
+                          <li class="page-add-build__dropdown-options-item">
+                            <p class="page-add-build__dropdown-option-text">
+                              Advanced technology
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+
+                    <li class="page-add-build__build-base-item">
+                      <button
+                        class="page-add-build__drop-btn"
+                        data-dropdown-open
+                        type="button"
+                        value="manufacturer"
+                      >
+                        Manufacturer
+                      </button>
+                      <div
+                        class="page-add-build__dropdown-content is-hidden"
+                        data-dropdown-menu-manufacturer
+                      >
+                        <label class="page-add-build__label-input-filter">
+                          <input
+                            class="page-add-build__input-filter"
+                            name="page-add-build__input-filter"
+                            type="text"
+                            placeholder="Search.."
+                          />
+                        </label>
+                        <ul class="page-add-build__dropdown-options-list">
+                          <li class="page-add-build__dropdown-options-item">
+                            <p class="page-add-build__dropdown-option-text">
+                              Adirondack leather products
+                            </p>
+                          </li>
+                          <li class="page-add-build__dropdown-options-item">
+                            <p class="page-add-build__dropdown-option-text">
+                              Advanced armament
+                            </p>
+                          </li>
+                          <li class="page-add-build__dropdown-options-item">
+                            <p class="page-add-build__dropdown-option-text">
+                              Advanced technology
+                            </p>
+                          </li>
+                          <li class="page-add-build__dropdown-options-item">
+                            <p class="page-add-build__dropdown-option-text">
+                              Adirondack leather products
+                            </p>
+                          </li>
+                          <li class="page-add-build__dropdown-options-item">
+                            <p class="page-add-build__dropdown-option-text">
+                              Advanced armament
+                            </p>
+                          </li>
+                          <li class="page-add-build__dropdown-options-item">
+                            <p class="page-add-build__dropdown-option-text">
+                              Advanced technology
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
 
                 <div class="form-group page-add-build__form-group">
