@@ -1,5 +1,5 @@
 import initMobileMenu from './openWindow.js';
 initMobileMenu();
 
-import initDropdownFilter from './openDropdown.js';
-initDropdownFilter();
+import openDropdown from './openDropdown.js';
+openDropdown();
