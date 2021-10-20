@@ -23,3 +23,24 @@ Index - `Trending Now` section:
     li { p30 }
     avatar { mb25 }
     post-title { mb10 }
+
+<!-- Make -->
+<!-- Model -->
+<!-- Caliber -->
+<!-- Search -->
+<!-- Adirondack leather products -->
+<!-- Advanced armament -->
+<!-- Advanced technology -->
+
+<!-- Build parts, RMR RM06, BCU -->
+<!-- plus SVG + Add parts button -->
+<!-- Add pictures & description -->
+
+<!-- IMG + DELETE ICON -->
+<!-- CROP ICON + Crop -->
+<!-- Loading ICON -->
+
+<!-- plus SVG + add pictures -->
+<!-- Select one or more files from your computer -->
+
+<!-- Save & Publish btn -->
