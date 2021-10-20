@@ -15,3 +15,9 @@
     max-width: $container;
   }
 }
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 405px;
+    margin: 0 auto;
+  }
+}

@@ -71,3 +71,26 @@
   color: #198ccd;
   margin-top: 35px;
 }
+@media screen and(max-width: 767px) {
+  .manufacturers__block {
+    display: flex;
+    flex-direction: column;
+  }
+  .manufacturers__pages-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .search__content-mobile {
+    display: flex;
+    align-items: center;
+  }
+  .mobile-close {
+    display: none;
+  }
+  .manufacturers__pages-cards {
+    flex-direction: column;
+  }
+  .manufacturers__pages-cards-item {
+    width: 100%;
+  }
+}

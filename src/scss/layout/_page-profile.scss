@@ -248,3 +248,42 @@
 .profile__section {
   padding-bottom: 50px;
 }
+.profile__hero-img-mobile {
+  display: none;
+}
+@media screen and(max-width: 767px) {
+  .profile__hero-img {
+    display: none;
+  }
+  .profile__hero-img-mobile {
+    display: block;
+    width: 100%;
+  }
+  .profile__hero-toomb {
+    min-height: unset;
+  }
+  .profile__content {
+    flex-direction: column;
+  }
+  .profile__human {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .profile__human-toomb {
+    margin-right: 0;
+  }
+  .profile__human-head {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .profile__human-button {
+    margin-left: 0;
+    width: 100%;
+    justify-content: center;
+  }
+  .profile__pages-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
