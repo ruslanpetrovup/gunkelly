@@ -1,23 +1,26 @@
-.page-html {
-  min-height: 100%;
+html {
+  height: 100vh;
   overflow-y: scroll;
 
   &.no-scroll {
-    overflow-y: hidden; // STOP MOVING AROUND!
+    overflow-y: hidden; /* STOP MOVING AROUND! */
   }
 }
 
 body {
   position: relative;
-  min-height: 100%;
+  width: 100%;
+  min-height: 100vh;
 
+  // width: 100% !important;
+  // overflow-x: hidden !important;
   margin: 0;
 
   font-family: var(--main-font), sans-serif;
   color: $color-black;
-  overflow-y: hidden;
 
+  overflow-y: scroll;
   &.no-scroll {
-    overflow-y: scroll;
+    overflow-y: hidden; /* STOP MOVING AROUND! */
   }
 }
