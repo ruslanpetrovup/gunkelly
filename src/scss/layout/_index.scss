@@ -1,6 +1,8 @@
 // .trending-now { }
-.trending-now__title-wrapper {
+.title-wrapper {
   margin-bottom: 30px;
+}
+.trending-now__title-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -120,12 +122,19 @@
 
 .top-blogposts__thumb {
   max-width: 400px;
+  flex-basis: 200px;
   min-width: 200px;
+  contain: content;
+  overflow: hidden;
 }
-// .top-blogposts__image {}
+
+.top-blogposts__image {
+  max-width: 100%;
+  height: auto;
+}
 
 .top-blogposts-meta {
-  padding: 32px 0 32px 25px;
+  padding: 12px 0 12px 19px;
   word-break: break-word;
 }
 
@@ -137,7 +146,7 @@
 .top-blogposts__post-type {
   display: inline-block;
 
-  margin-bottom: 21px;
+  margin-bottom: 20px;
 
   font-size: 18px;
   line-height: 22px;
@@ -283,6 +292,8 @@
 }
 
 .guns__image {
+  max-width: 100%;
+  height: auto;
   margin-bottom: 25px;
 }
 
@@ -355,20 +366,117 @@
   }
 }
 
-// mobile
+// up to tablet
 @media screen and (max-width: 767px) {
+  .guns__container {
+    contain: content;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .title-wrapper {
+    margin-bottom: 25px;
+    display: block;
+  }
+
+  .guns__title {
+    margin-bottom: 15px;
+  }
+
   .guns__list {
     margin-bottom: 25px;
   }
 
+  .guns__item {
+    min-width: 100%;
+  }
+
+  .guns__thumb {
+    max-width: 375px;
+  }
+  .guns__image {
+    width: 100%;
+    height: auto;
+  }
+
+  .guns__title-wrapper,
+  .guns__build,
+  .guns__post {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   .guns__list,
   .trending-now__list,
-  .guns__slider-list,
-  .top-blogposts__list {
+  .guns__slider-list {
     contain: content;
     flex-wrap: nowrap;
   }
+
+  .trending-now__list,
+  .top-blogposts__list {
+    overflow-x: auto;
+  }
+
+  .trending-now__container {
+    padding-right: 0;
+  }
+
+  .trending-now__title {
+    margin-bottom: 15px;
+  }
+
+  .trending-now__list {
+    gap: 20px;
+    padding-right: $padding;
+  }
+
+  .trending-now__item {
+    width: 100%;
+    flex-grow: 1;
+    min-width: 325px;
+  }
+
+  .top-blogposts__container {
+    padding-right: 0;
+  }
+  .top-blogposts__title-wrapper {
+    margin-bottom: 20px;
+  }
+  .top-blogposts__list {
+    gap: 20px;
+    flex-wrap: nowrap;
+    padding-right: $padding;
+  }
+  .top-blogposts__item {
+    min-width: 325px;
+    width: 100%;
+  }
+  .top-blogposts__thumb {
+    min-width: 160px;
+  }
 }
 
-// tablet
-// @media screen and (min-width: 768px) {}
+// from Tablet
+@media screen and (min-width: 768px) {
+  .top-blogposts-meta {
+    padding: 32px 0 32px 25px;
+  }
+}
+
+// from Tablet to desktop
+@media screen and(min-width: 768px) and(max-width: 1199px) {
+  .top-blogposts__item {
+    flex-basis: calc((100% - 2 * 5px) / 3);
+  }
+
+  .top-blogposts__thumb {
+    min-width: 160px;
+  }
+
+  .top-blogposts__post-title {
+    font-size: 17px;
+  }
+}
+
+// @media screen and (min-width: 1200px) { }

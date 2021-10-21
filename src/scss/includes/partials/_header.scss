@@ -65,15 +65,15 @@
     opacity: 1;
     visibility: visible;
   }
-  .header__menu-mobile-overflow-wrapper {
-    padding: 13px 15px;
-    width: calc(#{100%} + 17px);
-    height: 100%;
+  // .header__menu-mobile-overflow-wrapper {
+  //   padding: 13px 15px;
 
-    .header__menu-mobile.open & {
-      overflow-y: scroll;
-    }
-  }
+  //   height: 100%;
+
+  //   .header__menu-mobile.open & {
+  //     overflow-y: scroll;
+  //   }
+  // }
   .header__menu-mobile-close {
     display: flex;
     justify-content: space-between;

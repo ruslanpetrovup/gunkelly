@@ -20,6 +20,7 @@
 .build__searchbuilds-container {
   margin-top: 40px;
   margin-bottom: 40px;
+  contain: content;
 }
 
 // .build__main-content { }
@@ -341,6 +342,7 @@
 .build__details-image {
   max-width: 100%;
   height: auto;
+  margin: 0 auto;
 }
 
 /* Build comments 25 */
@@ -353,6 +355,7 @@
 
 .build__comments-count {
   color: $color-comments-count;
+  margin-left: 10px;
 }
 
 // .comments__form {}
@@ -542,7 +545,10 @@
 .build__description {
   font-size: 14px;
   line-height: 1.4;
-  margin-bottom: 27px;
+
+  &:not(:last-child) {
+    margin-bottom: 27px;
+  }
 }
 
 /*
@@ -573,6 +579,33 @@
 
 // mobile
 @media screen and (max-width: 767px) {
+  .searchbuilds-link-a {
+    white-space: nowrap;
+  }
+  .build__flex-container {
+    padding-right: 0;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+
+  .build__part-list-aside {
+    display: none;
+  }
+
+  // .build__part-list-aside {
+  //   position: absolute;
+  //   top: 643px;
+  //   left: 0;
+  //   min-width: 100%;
+  //   min-height: 100%;
+  //   padding: 0 15px;
+  // }
+
+  .build__main-content-wrapper {
+    max-width: 100%;
+    margin-left: unset;
+  }
+
   .build__searchbuilds-container {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -582,12 +615,22 @@
     padding-bottom: 50px;
   }
 
+  .build__thumb {
+    margin-bottom: 10px;
+  }
+
   .build__photos-list {
     margin-bottom: 20px;
+    gap: 10px;
   }
 
   .build__part-list-wrapper {
     padding: 0;
+  }
+
+  .build__part-list-wrapper-mobile {
+    padding: 0 15px;
+    box-shadow: none;
   }
 
   .build__part-list-title {
@@ -596,6 +639,98 @@
 
   .build__part-list {
     gap: 40px;
+    overflow-x: auto;
+  }
+
+  .build__post-meta {
+    margin-bottom: 15px;
+  }
+
+  .build__copy-wrapper {
+    margin-right: 10px;
+    padding-left: 22px;
+  }
+
+  .build__share-btn-text {
+    display: none;
+  }
+
+  .build__share-btn {
+    padding: 14px;
+  }
+
+  .share-btn__svg {
+    margin-right: 0;
+    min-width: 20px;
+  }
+
+  // .build__photos-item {}
+
+  .build__post-meta-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .copy-btn {
+    padding-right: 20px;
+  }
+
+  .build__link-to-copy {
+    margin-right: 27px;
+  }
+
+  .build__post-meta-wrapper,
+  .build__photos-list {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  // .build__post-meta-wrapper { }
+  .build__photos-list {
+    margin-bottom: 50px;
+    justify-content: center;
+  }
+
+  .build__photos-item {
+    &:nth-child(n + 4) {
+      display: none;
+    }
+
+    &:nth-child(n + 8) {
+      display: initial;
+    }
+  }
+
+  .build__photos-thumb {
+    max-width: 79px;
+    max-height: 79px;
+  }
+  .build__photos-image {
+    max-width: 100%;
+    height: auto;
+  }
+  // .build__description {}
+  .build__title-mobile {
+    margin-bottom: 20px;
+  }
+
+  .build__part-list-item {
+    width: fit-content;
+    white-space: nowrap;
+  }
+
+  .build__comments-submit-review-btn {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .comments-review-label {
+    margin-bottom: 15px;
+  }
+  .simbuilds__title {
+    margin-bottom: 20px;
+  }
+  .build__comments-title {
+    margin-bottom: 20px;
   }
 }
 
