@@ -1,7 +1,7 @@
 @media screen and (max-width: 767px) {
   .hero {
     padding-top: 40px;
-    padding-bottom: 60px;
+    padding-bottom: 55px;
   }
   .hero__content {
     display: flex;
@@ -10,6 +10,7 @@
   .hero__topbuilds {
     display: flex;
     flex-direction: column;
+    margin-bottom: 40px;
   }
   .hero__topbuilds-head {
     font-family: Rogan;

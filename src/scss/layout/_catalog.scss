@@ -364,43 +364,43 @@
     color: #000000;
     margin-bottom: 18px;
   }
-  .guns__list {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .guns__item {
-    width: 375px;
-    flex-basis: unset;
-  }
-  .guns__thumb {
-    min-width: unset;
-    max-width: unset;
-  }
-  .guns__image {
-    max-width: 375px;
-    height: 271px;
-    width: 100%;
-  }
-  .guns__post {
-    padding-left: 15px;
-  }
-  .guns__build {
-    padding-left: 15px;
-  }
+  // .guns__list {
+  //   flex-wrap: wrap;
+  //   justify-content: center;
+  // }
+  // .guns__item {
+  //   width: 375px;
+  //   flex-basis: unset;
+  // }
+  // .guns__thumb {
+  //   min-width: unset;
+  //   max-width: unset;
+  // }
+  // .guns__image {
+  //   max-width: 375px;
+  //   height: 271px;
+  //   width: 100%;
+  // }
+  // .guns__post {
+  //   padding-left: 15px;
+  // }
+  // .guns__build {
+  //   padding-left: 15px;
+  // }
   .trending-now__list.res {
     display: flex;
     flex-direction: column;
     gap: 18px;
     margin-bottom: 30px;
   }
-  .trending-now__item {
-    &:nth-child(n + 1) {
-      display: none;
-    }
-    &:first-child {
-      display: flex;
-    }
-  }
+  // .trending-now__item {
+  //   &:nth-child(n + 1) {
+  //     display: none;
+  //   }
+  //   &:first-child {
+  //     display: flex;
+  //   }
+  // }
   .trending-now__thumb.res {
     display: flex;
     margin-bottom: 0px;
@@ -468,9 +468,9 @@
   .top-blogposts-meta.res {
     padding: 0;
   }
-  .top-blogposts__post-title {
-    width: 125px;
-  }
+  // .top-blogposts__post-title {
+  //   width: 125px;
+  // }
   .searchbuilds__pagin {
     display: none;
   }
@@ -976,9 +976,9 @@
   .top-blogposts-meta.res {
     padding: 0;
   }
-  .top-blogposts__post-title {
-    width: 125px;
-  }
+  // .top-blogposts__post-title {
+  //   width: 125px;
+  // }
   .searchbuilds__pagin {
     display: flex;
     justify-content: space-between;
@@ -1484,9 +1484,9 @@
   .top-blogposts-meta.res {
     padding: 0;
   }
-  .top-blogposts__post-title {
-    width: 125px;
-  }
+  // .top-blogposts__post-title {
+  //   width: 125px;
+  // }
   .searchbuilds__pagin {
     display: flex;
     justify-content: space-between;
