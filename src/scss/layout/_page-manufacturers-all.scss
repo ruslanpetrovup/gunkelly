@@ -79,6 +79,7 @@
   .manufacturers__pages-list {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 30px;
   }
   .search__content-mobile {
     display: flex;
@@ -93,9 +94,19 @@
   .manufacturers__pages-cards-item {
     width: 100%;
   }
+  .manufacturers__search-container-mobile {
+    border-bottom: 1px solid rgba(#000000, 0.05);
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 }
 @media screen and(min-width: 767px) and (max-width: 1199px) {
   .manufacturers__pages-list {
     flex-wrap: wrap;
+    padding: 0 15px;
+  }
+
+  .manufacturers__block {
+    gap: 10px;
   }
 }

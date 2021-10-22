@@ -22,9 +22,12 @@
 .profile-settings__form-label {
   flex: 1 0 calc(100% * #{$profile-settings__form-label-width});
   margin-right: auto;
-
+  font-family: 'Rogan';
   font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
   line-height: 1.4;
+  color: #000000;
   white-space: nowrap;
 }
 
@@ -52,3 +55,29 @@
 
 /* * * * * * * * */
 // .profile-settings__input-password { }
+@media screen and (max-width: 767px) {
+  .profile-friends__block {
+    width: unset;
+  }
+  .profile-settings__settings-title {
+    margin-bottom: 20px;
+  }
+  .profile-settings__list {
+    max-width: unset;
+  }
+  .profile-settings__item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .profile-settings__change-wrapper {
+    width: 100%;
+  }
+  .profile-settings__section {
+    padding-bottom: 40px;
+  }
+
+  .profile-settings__section-mobile {
+    padding-bottom: 50px;
+  }
+}

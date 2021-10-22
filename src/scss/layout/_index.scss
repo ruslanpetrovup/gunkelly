@@ -268,7 +268,9 @@
 
 .guns__thumb {
   min-width: 277px;
-  max-width: 300px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
 }
 // .rifle__thumb {}
 
@@ -291,7 +293,6 @@
 
 .guns__image {
   max-width: 100%;
-  height: auto;
   margin-bottom: 25px;
 }
 
