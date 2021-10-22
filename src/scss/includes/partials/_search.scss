@@ -59,13 +59,19 @@
 }
 @media screen and(max-width: 767px) {
   .search {
-    opacity: 0;
-    width: 100%;
     position: absolute;
-    transform: translateY(-200%);
+    width: 100%;
+    pointer-events: none;
+    visibility: hidden;
     background: #ffffff;
+    opacity: 0;
+    transform: translateY(-200%);
+    @include transition;
+    transition-property: opacity, visibility;
   }
   .search.open {
+    pointer-events: initial;
+    visibility: visible;
     opacity: 1;
     transform: translateY(0);
   }

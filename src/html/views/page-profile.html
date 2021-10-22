@@ -29,7 +29,7 @@
     <%= _.template(require('./../includes/search.html').default)(data) %>
 
     <!-- Profile -->
-    <div class="profile">
+    <main class="profile">
       <div class="profile__hero">
         <div class="profile__hero-toomb">
           <img
@@ -51,10 +51,11 @@
             </button>
           </div>
         </div>
-        <div class="container">
+
+        <div class="container page-profile__container">
           <div class="profile__content">
             <div class="profile__block">
-              <div class="profile__human">
+              <div class="profile__human mobile__container">
                 <div class="profile__human-toomb">
                   <img
                     src="../../img/photos/profile/avatar.jpg"
@@ -82,1120 +83,1338 @@
 
               <div class="profile__pages">
                 <!-- Menu Profile -->
-                <ul class="profile__pages-list">
-                  <li class="profile__pages-item">
-                    <a
-                      href="./page-profile.html"
-                      class="profile__pages-item-button active"
-                      >Profile</a
-                    >
-                  </li>
-                  <li class="profile__pages-item">
-                    <a
-                      href="./page-profile-builds.html"
-                      class="profile__pages-item-button"
-                      >Builds</a
-                    >
-                  </li>
-                  <li class="profile__pages-item">
-                    <a
-                      href="./page-profile-forums.html"
-                      class="profile__pages-item-button"
-                      >Forums</a
-                    >
-                  </li>
-                  <li class="profile__pages-item">
-                    <a
-                      href="./page-profile-blog.html"
-                      class="profile__pages-item-button"
-                      >Blogs</a
-                    >
-                  </li>
-                  <li class="profile__pages-item">
-                    <a
-                      href="./page-profile-friends.html"
-                      class="profile__pages-item-button"
-                      >Friends</a
-                    >
-                  </li>
-                  <li class="profile__pages-item">
-                    <a
-                      href="./page-profile-settings.html"
-                      class="profile__pages-item-button"
-                      >Settings</a
-                    >
-                  </li>
-                </ul>
+                <div class="mobile__container">
+                  <ul class="profile__pages-list">
+                    <li class="profile__pages-item">
+                      <a
+                        href="./page-profile.html"
+                        class="profile__pages-item-button active"
+                        >Profile</a
+                      >
+                    </li>
+                    <li class="profile__pages-item">
+                      <a
+                        href="./page-profile-builds.html"
+                        class="profile__pages-item-button"
+                        >Builds</a
+                      >
+                    </li>
+                    <li class="profile__pages-item">
+                      <a
+                        href="./page-profile-forums.html"
+                        class="profile__pages-item-button"
+                        >Forums</a
+                      >
+                    </li>
+                    <li class="profile__pages-item">
+                      <a
+                        href="./page-profile-blog.html"
+                        class="profile__pages-item-button"
+                        >Blogs</a
+                      >
+                    </li>
+                    <li class="profile__pages-item">
+                      <a
+                        href="./page-profile-friends.html"
+                        class="profile__pages-item-button"
+                        >Friends</a
+                      >
+                    </li>
+                    <li class="profile__pages-item">
+                      <a
+                        href="./page-profile-settings.html"
+                        class="profile__pages-item-button"
+                        >Settings</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
                 <!-- Next Content -->
 
-                <section class="guns profile__profile-builds profile__section">
-                  <div
-                    class="
-                      title-wrapper
-                      guns__title-wrapper
-                      profile__title-wrapper
-                    "
-                  >
-                    <h2
-                      class="title-v2 guns__title profile__title section__title"
+                <section class="guns rifle section build__section">
+                  <div class="mobile__container-wide">
+                    <div
+                      class="
+                        title-wrapper
+                        guns__title-wrapper
+                        rifle__title-wrapper
+                      "
                     >
-                      Builds
-                    </h2>
-                  </div>
+                      <h2 class="title-v2 guns__title section__title">
+                        Builds
+                      </h2>
+                    </div>
 
-                  <ul class="guns__list profile__list">
-                    <li class="guns__item profile__item">
-                      <a class="guns__link profile__link" href="#">
-                        <div class="guns__thumb profile__thumb">
-                          <img
-                            class="guns__image profile__image"
-                            src="../../img/photos/rifle/rifle-001.jpg"
-                            alt="Gun image"
-                            width="277"
-                            height="200"
-                          />
-                        </div>
-
-                        <div class="guns__post profile__post">
-                          <h3
-                            class="
-                              title-v3
-                              guns__post-title
-                              profile__post-title
-                            "
-                          >
-                            Remington 700 Rebuild
-                          </h3>
-
-                          <div class="guns__post-meta profile__post-meta">
-                            <div
-                              class="guns__avatar-thumb profile__avatar-thumb"
-                            >
-                              <img
-                                class="
-                                  guns__author-avatar
-                                  profile__author-avatar
+                    <ul class="guns__list rifle__list page-parts__builds-list">
+                      <li
+                        class="guns__item rifle__item page-parts__builds-item"
+                      >
+                        <a class="guns__link rifle__link" href="#">
+                          <div class="guns__thumb rifle__thumb">
+                            <picture>
+                              <source
+                                media="(min-width: 768px)"
+                                srcset="
+                                  ../../img/photos/rifle/rifle-001.jpg 277w
                                 "
-                                src="../../img/photos/avatar.jpg"
-                                alt="Author avatar - man in white t-shirt"
-                                width="25"
-                                height="25"
+                                sizes="(min-width: 768px) 277px, 33vw"
+                                title="Gun image"
                               />
-                            </div>
 
-                            <span class="guns__author-name profile__author-name"
-                              >troz</span
+                              <source
+                                media="(max-width: 767px)"
+                                srcset="
+                                  ../../img/photos/parts/parts-mobile-builds-001-375w.jpg 375w
+                                "
+                                sizes="(max-width: 767px) 375px, 100vw"
+                                title="Gun image"
+                              />
+
+                              <img
+                                class="guns__image rifle__image"
+                                src="../../img/photos/parts/parts-mobile-builds-001-375w.jpg"
+                                alt="Gun image"
+                              />
+                            </picture>
+                          </div>
+
+                          <div class="guns__post rifle__post">
+                            <h3
+                              class="
+                                title-v3
+                                guns__post-title
+                                rifle__post-title
+                              "
                             >
+                              B25 Shotgun in 20 gauge
+                            </h3>
 
-                            <div class="post__views">
-                              <svg
-                                class="post__views-svg svg"
-                                width="16"
-                                height="16"
+                            <div class="guns__post-meta rifle__post-meta">
+                              <div
+                                class="guns__avatar-thumb rifle__avatar-thumb"
                               >
-                                <use
-                                  href="./img/svg/sprite.svg#icon-post-vieweye"
-                                ></use>
-                              </svg>
+                                <img
+                                  class="
+                                    guns__author-avatar
+                                    rifle__author-avatar
+                                  "
+                                  src="../../img/photos/avatar.jpg"
+                                  alt="Author avatar - man in white t-shirt"
+                                  width="25"
+                                  height="25"
+                                />
+                              </div>
 
-                              <span class="post__views-count">12</span>
-                            </div>
-
-                            <div class="post__comments">
-                              <svg
-                                class="post__comments-svg svg"
-                                width="14"
-                                height="14"
+                              <span class="guns__author-name rifle__author-name"
+                                >troz</span
                               >
-                                <use
-                                  href="../../img/svg/sprite.svg#icon-post-message"
-                                ></use>
-                              </svg>
 
-                              <span class="post__comments-count">5</span>
+                              <div class="post__views">
+                                <svg
+                                  class="post__views-svg svg"
+                                  width="16"
+                                  height="16"
+                                >
+                                  <use
+                                    href="./img/svg/sprite.svg#icon-post-vieweye"
+                                  ></use>
+                                </svg>
+
+                                <span class="post__views-count">12</span>
+                              </div>
+
+                              <div class="post__comments">
+                                <svg
+                                  class="post__comments-svg svg"
+                                  width="14"
+                                  height="14"
+                                >
+                                  <use
+                                    href="../../img/svg/sprite.svg#icon-post-message"
+                                  ></use>
+                                </svg>
+
+                                <span class="post__comments-count">5</span>
+                              </div>
                             </div>
                           </div>
-                        </div>
 
-                        <ul class="guns__build profile__build">
-                          <li class="guns__build-item profile__build-item">
-                            <span class="guns__build-tag">Remington</span>
-                          </li>
-                          <li class="guns__build-item profile__build-item">
-                            <span class="guns__build-tag"
-                              >1911 R1 Enhanced</span
-                            >
-                          </li>
-                          <li class="guns__build-item profile__build-item">
-                            <span class="guns__build-tag">.45 ACP</span>
-                          </li>
-                        </ul>
-                      </a>
-                    </li>
-
-                    <li class="guns__item profile__item">
-                      <a class="guns__link profile__link" href="#">
-                        <div class="guns__thumb profile__thumb">
-                          <img
-                            class="guns__image profile__image"
-                            src="../../img/photos/rifle/rifle-002.jpg"
-                            alt="Rifle image"
-                            width="277"
-                            height="200"
-                          />
-                        </div>
-
-                        <div class="guns__post profile__post">
-                          <h3
-                            class="
-                              title-v3
-                              guns__post-title
-                              profile__post-title
-                            "
-                          >
-                            Accuracy Int’l AT 308
-                          </h3>
-
-                          <div class="guns__post-meta profile__post-meta">
-                            <div
-                              class="guns__avatar-thumb profile__avatar-thumb"
-                            >
-                              <img
-                                class="
-                                  guns__author-avatar
-                                  profile__author-avatar
-                                "
-                                src="../../img/photos/avatar.jpg"
-                                alt="Author avatar - man in white t-shirt"
-                                width="25"
-                                height="25"
-                              />
-                            </div>
-
-                            <span class="guns__author-name profile__author-name"
-                              >troz</span
-                            >
-
-                            <div class="post__views">
-                              <svg
-                                class="post__views-svg svg"
-                                width="16"
-                                height="16"
+                          <ul class="guns__build rifle__build">
+                            <li class="guns__build-item rifle__build-item">
+                              <span class="guns__build-tag">Remington</span>
+                            </li>
+                            <li class="guns__build-item rifle__build-item">
+                              <span class="guns__build-tag"
+                                >1911 R1 Enhanced</span
                               >
-                                <use
-                                  href="./img/svg/sprite.svg#icon-post-vieweye"
-                                ></use>
-                              </svg>
+                            </li>
+                            <li class="guns__build-item rifle__build-item">
+                              <span class="guns__build-tag">.45 ACP</span>
+                            </li>
+                          </ul>
+                        </a>
+                      </li>
 
-                              <span class="post__views-count">12</span>
-                            </div>
+                      <li
+                        class="guns__item rifle__item page-parts__builds-item"
+                      >
+                        <a class="guns__link rifle__link" href="#">
+                          <div class="guns__thumb rifle__thumb">
+                            <img
+                              class="guns__image rifle__image"
+                              src="../../img/photos/rifle/rifle-002.jpg"
+                              alt="Rifle image"
+                              width="277"
+                              height="200"
+                            />
+                          </div>
 
-                            <div class="post__comments">
-                              <svg
-                                class="post__comments-svg svg"
-                                width="14"
-                                height="14"
+                          <div class="guns__post rifle__post">
+                            <h3
+                              class="
+                                title-v3
+                                guns__post-title
+                                rifle__post-title
+                              "
+                            >
+                              Accuracy Int’l AT 308
+                            </h3>
+
+                            <div class="guns__post-meta rifle__post-meta">
+                              <div
+                                class="guns__avatar-thumb rifle__avatar-thumb"
                               >
-                                <use
-                                  href="../../img/svg/sprite.svg#icon-post-message"
-                                ></use>
-                              </svg>
+                                <img
+                                  class="
+                                    guns__author-avatar
+                                    rifle__author-avatar
+                                  "
+                                  src="../../img/photos/avatar.jpg"
+                                  alt="Author avatar - man in white t-shirt"
+                                  width="25"
+                                  height="25"
+                                />
+                              </div>
 
-                              <span class="post__comments-count">5</span>
+                              <span class="guns__author-name rifle__author-name"
+                                >troz</span
+                              >
+
+                              <div class="post__views">
+                                <svg
+                                  class="post__views-svg svg"
+                                  width="16"
+                                  height="16"
+                                >
+                                  <use
+                                    href="./img/svg/sprite.svg#icon-post-vieweye"
+                                  ></use>
+                                </svg>
+
+                                <span class="post__views-count">12</span>
+                              </div>
+
+                              <div class="post__comments">
+                                <svg
+                                  class="post__comments-svg svg"
+                                  width="14"
+                                  height="14"
+                                >
+                                  <use
+                                    href="../../img/svg/sprite.svg#icon-post-message"
+                                  ></use>
+                                </svg>
+
+                                <span class="post__comments-count">5</span>
+                              </div>
                             </div>
                           </div>
-                        </div>
 
-                        <ul class="guns__build profile__build">
-                          <li class="guns__build-item profile__build-item">
-                            <span class="guns__build-tag">Remington</span>
-                          </li>
-                          <li class="guns__build-item profile__build-item">
-                            <span class="guns__build-tag"
-                              >1911 R1 Enhanced</span
-                            >
-                          </li>
-                          <li class="guns__build-item profile__build-item">
-                            <span class="guns__build-tag">.45 ACP</span>
-                          </li>
-                        </ul>
-                      </a>
-                    </li>
-
-                    <li class="guns__item profile__item">
-                      <a class="guns__link profile__link" href="#">
-                        <div class="guns__thumb profile__thumb">
-                          <img
-                            class="guns__image profile__image"
-                            src="../../img/photos/rifle/rifle-003.jpg"
-                            alt="Rifle image"
-                            width="277"
-                            height="200"
-                          />
-                        </div>
-
-                        <div class="guns__post profile__post">
-                          <h3
-                            class="
-                              title-v3
-                              guns__post-title
-                              profile__post-title
-                            "
-                          >
-                            Golden Anniversary
-                          </h3>
-
-                          <div class="guns__post-meta profile__post-meta">
-                            <div
-                              class="guns__avatar-thumb profile__avatar-thumb"
-                            >
-                              <img
-                                class="
-                                  guns__author-avatar
-                                  profile__author-avatar
-                                "
-                                src="../../img/photos/avatar.jpg"
-                                alt="Author avatar - man in white t-shirt"
-                                width="25"
-                                height="25"
-                              />
-                            </div>
-
-                            <span class="guns__author-name profile__author-name"
-                              >troz</span
-                            >
-
-                            <div class="post__views">
-                              <svg
-                                class="post__views-svg svg"
-                                width="16"
-                                height="16"
+                          <ul class="guns__build rifle__build">
+                            <li class="guns__build-item rifle__build-item">
+                              <span class="guns__build-tag">Remington</span>
+                            </li>
+                            <li class="guns__build-item rifle__build-item">
+                              <span class="guns__build-tag"
+                                >1911 R1 Enhanced</span
                               >
-                                <use
-                                  href="./img/svg/sprite.svg#icon-post-vieweye"
-                                ></use>
-                              </svg>
+                            </li>
+                            <li class="guns__build-item rifle__build-item">
+                              <span class="guns__build-tag">.45 ACP</span>
+                            </li>
+                          </ul>
+                        </a>
+                      </li>
 
-                              <span class="post__views-count">12</span>
-                            </div>
+                      <li
+                        class="guns__item rifle__item page-parts__builds-item"
+                      >
+                        <a class="guns__link rifle__link" href="#">
+                          <div class="guns__thumb rifle__thumb">
+                            <img
+                              class="guns__image rifle__image"
+                              src="../../img/photos/rifle/rifle-003.jpg"
+                              alt="Rifle image"
+                              width="277"
+                              height="200"
+                            />
+                          </div>
 
-                            <div class="post__comments">
-                              <svg
-                                class="post__comments-svg svg"
-                                width="14"
-                                height="14"
+                          <div class="guns__post rifle__post">
+                            <h3
+                              class="
+                                title-v3
+                                guns__post-title
+                                rifle__post-title
+                              "
+                            >
+                              Golden Anniversary
+                            </h3>
+
+                            <div class="guns__post-meta rifle__post-meta">
+                              <div
+                                class="guns__avatar-thumb rifle__avatar-thumb"
                               >
-                                <use
-                                  href="../../img/svg/sprite.svg#icon-post-message"
-                                ></use>
-                              </svg>
+                                <img
+                                  class="
+                                    guns__author-avatar
+                                    rifle__author-avatar
+                                  "
+                                  src="../../img/photos/avatar.jpg"
+                                  alt="Author avatar - man in white t-shirt"
+                                  width="25"
+                                  height="25"
+                                />
+                              </div>
 
-                              <span class="post__comments-count">5</span>
+                              <span class="guns__author-name rifle__author-name"
+                                >troz</span
+                              >
+
+                              <div class="post__views">
+                                <svg
+                                  class="post__views-svg svg"
+                                  width="16"
+                                  height="16"
+                                >
+                                  <use
+                                    href="./img/svg/sprite.svg#icon-post-vieweye"
+                                  ></use>
+                                </svg>
+
+                                <span class="post__views-count">12</span>
+                              </div>
+
+                              <div class="post__comments">
+                                <svg
+                                  class="post__comments-svg svg"
+                                  width="14"
+                                  height="14"
+                                >
+                                  <use
+                                    href="../../img/svg/sprite.svg#icon-post-message"
+                                  ></use>
+                                </svg>
+
+                                <span class="post__comments-count">5</span>
+                              </div>
                             </div>
                           </div>
-                        </div>
 
-                        <ul class="guns__build profile__build">
-                          <li class="guns__build-item profile__build-item">
-                            <span class="guns__build-tag">Remington</span>
-                          </li>
-                          <li class="guns__build-item profile__build-item">
-                            <span class="guns__build-tag"
-                              >1911 R1 Enhanced</span
-                            >
-                          </li>
-                          <li class="guns__build-item profile__build-item">
-                            <span class="guns__build-tag">.45 ACP</span>
-                          </li>
-                        </ul>
-                      </a>
-                    </li>
-                  </ul>
+                          <ul class="guns__build rifle__build">
+                            <li class="guns__build-item rifle__build-item">
+                              <span class="guns__build-tag">Remington</span>
+                            </li>
+                            <li class="guns__build-item rifle__build-item">
+                              <span class="guns__build-tag"
+                                >1911 R1 Enhanced</span
+                              >
+                            </li>
+                            <li class="guns__build-item rifle__build-item">
+                              <span class="guns__build-tag">.45 ACP</span>
+                            </li>
+                          </ul>
+                        </a>
+                      </li>
+                    </ul>
 
-                  <ul
-                    class="
-                      guns__slider-list
-                      profile__slider-list
-                      hidden-on-tablet
-                    "
-                  >
-                    <li class="guns__slider-item profile__slider-item">
-                      <button
-                        type="button"
+                    <div class="mobile__container">
+                      <ul
                         class="
-                          guns__slider-button
-                          profile__slider-button
-                          active
+                          guns__slider-list
+                          rifle__slider-list
+                          hidden-on-tablet
                         "
-                      ></button>
-                    </li>
-
-                    <li
-                      class="
-                        guns__slider-item
-                        profile__slider-button profile__slider-item
-                      "
-                    >
+                      >
+                        <li class="guns__slider-item rifle__slider-item">
+                          <button
+                            type="button"
+                            class="
+                              guns__slider-button
+                              rifle__slider-button
+                              active
+                            "
+                          ></button>
+                        </li>
+                        <li
+                          class="
+                            guns__slider-item
+                            rifle__slider-button rifle__slider-item
+                          "
+                        >
+                          <button
+                            type="button"
+                            class="guns__slider-button"
+                          ></button>
+                        </li>
+                        <li
+                          class="
+                            guns__slider-item
+                            rifle__slider-button rifle__slider-item
+                          "
+                        >
+                          <button
+                            type="button"
+                            class="guns__slider-button"
+                          ></button>
+                        </li>
+                        <li
+                          class="
+                            guns__slider-item
+                            rifle__slider-button rifle__slider-item
+                          "
+                        >
+                          <button
+                            type="button"
+                            class="guns__slider-button"
+                          ></button>
+                        </li>
+                      </ul>
                       <button
+                        class="
+                          comments__show-more-btn
+                          profile__comments-show-more-btn
+                        "
                         type="button"
-                        class="guns__slider-button"
-                      ></button>
-                    </li>
-
-                    <li
-                      class="
-                        guns__slider-item
-                        profile__slider-button profile__slider-item
-                      "
-                    >
-                      <button
-                        type="button"
-                        class="guns__slider-button"
-                      ></button>
-                    </li>
-
-                    <li
-                      class="
-                        guns__slider-item
-                        profile__slider-button profile__slider-item
-                      "
-                    >
-                      <button
-                        type="button"
-                        class="guns__slider-button"
-                      ></button>
-                    </li>
-                  </ul>
-                  <button
-                    class="
-                      comments__show-more-btn
-                      profile__comments-show-more-btn
-                    "
-                    type="button"
-                  >
-                    Show all
-                  </button>
+                      >
+                        Show all
+                      </button>
+                    </div>
+                  </div>
                 </section>
 
                 <section class="guns profile__profile-forums profile__section">
-                  <div
-                    class="
-                      title-wrapper
-                      guns__title-wrapper
-                      profile__title-wrapper
-                    "
-                  >
-                    <h2
+                  <div class="mobile__container">
+                    <div
                       class="
-                        title-v2
-                        guns__title
-                        profile__title
-                        profile-profile-forums__title
-                        section__title
+                        title-wrapper
+                        guns__title-wrapper
+                        profile__title-wrapper
                       "
                     >
-                      Forums
-                    </h2>
-                  </div>
-
-                  <ul class="guns__list profile-profile-forums__list">
-                    <li class="guns__item profile-profile-forums__item">
-                      <a
-                        class="guns__link profile-profile-forums__link"
-                        href="#"
-                      >
-                        <div class="guns__post profile-profile-forums__post">
-                          <p
-                            class="
-                              trending-now__post-meta
-                              profile-profile-forums__post-meta-date
-                            "
-                          >
-                            <span
-                              class="
-                                trending-now__post-date
-                                profile-profile-forums__post-date
-                              "
-                              >Today</span
-                            >
-                          </p>
-
-                          <h3
-                            class="
-                              title-v3
-                              guns__post-title
-                              profile-profile-forums__post-title
-                            "
-                          >
-                            10 Tips for Choosing a Concealed Carry Handgun
-                          </h3>
-
-                          <div
-                            class="
-                              guns__post-meta
-                              profile-profile-forums__post-meta
-                            "
-                          >
-                            <div
-                              class="
-                                guns__avatar-thumb
-                                profile-profile-forums__avatar-thumb
-                              "
-                            >
-                              <img
-                                class="
-                                  guns__author-avatar
-                                  profile-profile-forums__author-avatar
-                                "
-                                src="../../img/photos/avatar.jpg"
-                                alt="Author avatar - man in white t-shirt"
-                                width="25"
-                                height="25"
-                              />
-                            </div>
-
-                            <span
-                              class="
-                                guns__author-name
-                                profile-profile-forums__author-name
-                              "
-                              >troz</span
-                            >
-
-                            <div class="post__views">
-                              <svg
-                                class="post__views-svg svg"
-                                width="16"
-                                height="16"
-                              >
-                                <use
-                                  href="./img/svg/sprite.svg#icon-post-vieweye"
-                                ></use>
-                              </svg>
-
-                              <span class="post__views-count">12</span>
-                            </div>
-
-                            <div class="post__comments">
-                              <svg
-                                class="post__comments-svg svg"
-                                width="14"
-                                height="14"
-                              >
-                                <use
-                                  href="../../img/svg/sprite.svg#icon-post-message"
-                                ></use>
-                              </svg>
-
-                              <span class="post__comments-count">5</span>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                    </li>
-
-                    <li class="guns__item profile-profile-forums__item">
-                      <a
-                        class="guns__link profile-profile-forums__link"
-                        href="#"
-                      >
-                        <div class="guns__post profile-profile-forums__post">
-                          <p
-                            class="
-                              trending-now__post-meta
-                              profile-profile-forums__post-meta-date
-                            "
-                          >
-                            <span
-                              class="
-                                trending-now__post-date
-                                profile-profile-forums__post-date
-                              "
-                              >Yesterday</span
-                            >
-                          </p>
-
-                          <h3
-                            class="
-                              title-v3
-                              guns__post-title
-                              profile-profile-forums__post-title
-                            "
-                          >
-                            Firearms definitions and requirements
-                          </h3>
-
-                          <div
-                            class="
-                              guns__post-meta
-                              profile-profile-forums__post-meta
-                            "
-                          >
-                            <div
-                              class="
-                                guns__avatar-thumb
-                                profile-profile-forums__avatar-thumb
-                              "
-                            >
-                              <img
-                                class="
-                                  guns__author-avatar
-                                  profile-profile-forums__author-avatar
-                                "
-                                src="../../img/photos/avatar.jpg"
-                                alt="Author avatar - man in white t-shirt"
-                                width="25"
-                                height="25"
-                              />
-                            </div>
-
-                            <span
-                              class="
-                                guns__author-name
-                                profile-profile-forums__author-name
-                              "
-                              >troz</span
-                            >
-
-                            <div class="post__views">
-                              <svg
-                                class="post__views-svg svg"
-                                width="16"
-                                height="16"
-                              >
-                                <use
-                                  href="./img/svg/sprite.svg#icon-post-vieweye"
-                                ></use>
-                              </svg>
-
-                              <span class="post__views-count">12</span>
-                            </div>
-
-                            <div class="post__comments">
-                              <svg
-                                class="post__comments-svg svg"
-                                width="14"
-                                height="14"
-                              >
-                                <use
-                                  href="../../img/svg/sprite.svg#icon-post-message"
-                                ></use>
-                              </svg>
-
-                              <span class="post__comments-count">5</span>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                    </li>
-
-                    <li class="guns__item profile-profile-forums__item">
-                      <a
-                        class="guns__link profile-profile-forums__link"
-                        href="#"
-                      >
-                        <div class="guns__post profile-profile-forums__post">
-                          <p
-                            class="
-                              trending-now__post-meta
-                              profile-profile-forums__post-meta-date
-                            "
-                          >
-                            <span
-                              class="
-                                trending-now__post-date
-                                profile-profile-forums__post-date
-                              "
-                              >10 September 2021</span
-                            >
-                          </p>
-
-                          <h3
-                            class="
-                              title-v3
-                              guns__post-title
-                              profile-profile-forums__post-title
-                            "
-                          >
-                            New Members: Please Read Guidelines
-                          </h3>
-
-                          <div
-                            class="
-                              guns__post-meta
-                              profile-profile-forums__post-meta
-                            "
-                          >
-                            <div
-                              class="
-                                guns__avatar-thumb
-                                profile-profile-forums__avatar-thumb
-                              "
-                            >
-                              <img
-                                class="
-                                  guns__author-avatar
-                                  profile-profile-forums__author-avatar
-                                "
-                                src="../../img/photos/avatar.jpg"
-                                alt="Author avatar - man in white t-shirt"
-                                width="25"
-                                height="25"
-                              />
-                            </div>
-
-                            <span
-                              class="
-                                guns__author-name
-                                profile-profile-forums__author-name
-                              "
-                              >troz</span
-                            >
-
-                            <div class="post__views">
-                              <svg
-                                class="post__views-svg svg"
-                                width="16"
-                                height="16"
-                              >
-                                <use
-                                  href="./img/svg/sprite.svg#icon-post-vieweye"
-                                ></use>
-                              </svg>
-
-                              <span class="post__views-count">12</span>
-                            </div>
-
-                            <div class="post__comments">
-                              <svg
-                                class="post__comments-svg svg"
-                                width="14"
-                                height="14"
-                              >
-                                <use
-                                  href="../../img/svg/sprite.svg#icon-post-message"
-                                ></use>
-                              </svg>
-
-                              <span class="post__comments-count">5</span>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                    </li>
-                  </ul>
-
-                  <ul
-                    class="
-                      guns__slider-list
-                      profile-profile-forums__slider-list
-                      hidden-on-tablet
-                    "
-                  >
-                    <li
-                      class="
-                        guns__slider-item
-                        profile-profile-forums__slider-item
-                      "
-                    >
-                      <button
-                        type="button"
+                      <h2
                         class="
-                          guns__slider-button
-                          profile-profile-forums__slider-button
-                          active
+                          title-v2
+                          guns__title
+                          profile__title
+                          profile-profile-forums__title
+                          section__title
                         "
-                      ></button>
-                    </li>
-
-                    <li
+                      >
+                        Forums
+                      </h2>
+                    </div>
+                    <ul class="guns__list profile-profile-forums__list">
+                      <li class="guns__item profile-profile-forums__item">
+                        <a
+                          class="guns__link profile-profile-forums__link"
+                          href="#"
+                        >
+                          <div class="guns__post profile-profile-forums__post">
+                            <p
+                              class="
+                                trending-now__post-meta
+                                profile-profile-forums__post-meta-date
+                              "
+                            >
+                              <span
+                                class="
+                                  trending-now__post-date
+                                  profile-profile-forums__post-date
+                                "
+                                >Today</span
+                              >
+                            </p>
+                            <h3
+                              class="
+                                title-v3
+                                guns__post-title
+                                profile-profile-forums__post-title
+                              "
+                            >
+                              10 Tips for Choosing a Concealed Carry Handgun
+                            </h3>
+                            <div
+                              class="
+                                guns__post-meta
+                                profile-profile-forums__post-meta
+                              "
+                            >
+                              <div
+                                class="
+                                  guns__avatar-thumb
+                                  profile-profile-forums__avatar-thumb
+                                "
+                              >
+                                <img
+                                  class="
+                                    guns__author-avatar
+                                    profile-profile-forums__author-avatar
+                                  "
+                                  src="../../img/photos/avatar.jpg"
+                                  alt="Author avatar - man in white t-shirt"
+                                  width="25"
+                                  height="25"
+                                />
+                              </div>
+                              <span
+                                class="
+                                  guns__author-name
+                                  profile-profile-forums__author-name
+                                "
+                                >troz</span
+                              >
+                              <div class="post__views">
+                                <svg
+                                  class="post__views-svg svg"
+                                  width="16"
+                                  height="16"
+                                >
+                                  <use
+                                    href="./img/svg/sprite.svg#icon-post-vieweye"
+                                  ></use>
+                                </svg>
+                                <span class="post__views-count">12</span>
+                              </div>
+                              <div class="post__comments">
+                                <svg
+                                  class="post__comments-svg svg"
+                                  width="14"
+                                  height="14"
+                                >
+                                  <use
+                                    href="../../img/svg/sprite.svg#icon-post-message"
+                                  ></use>
+                                </svg>
+                                <span class="post__comments-count">5</span>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="guns__item profile-profile-forums__item">
+                        <a
+                          class="guns__link profile-profile-forums__link"
+                          href="#"
+                        >
+                          <div class="guns__post profile-profile-forums__post">
+                            <p
+                              class="
+                                trending-now__post-meta
+                                profile-profile-forums__post-meta-date
+                              "
+                            >
+                              <span
+                                class="
+                                  trending-now__post-date
+                                  profile-profile-forums__post-date
+                                "
+                                >Yesterday</span
+                              >
+                            </p>
+                            <h3
+                              class="
+                                title-v3
+                                guns__post-title
+                                profile-profile-forums__post-title
+                              "
+                            >
+                              Firearms definitions and requirements
+                            </h3>
+                            <div
+                              class="
+                                guns__post-meta
+                                profile-profile-forums__post-meta
+                              "
+                            >
+                              <div
+                                class="
+                                  guns__avatar-thumb
+                                  profile-profile-forums__avatar-thumb
+                                "
+                              >
+                                <img
+                                  class="
+                                    guns__author-avatar
+                                    profile-profile-forums__author-avatar
+                                  "
+                                  src="../../img/photos/avatar.jpg"
+                                  alt="Author avatar - man in white t-shirt"
+                                  width="25"
+                                  height="25"
+                                />
+                              </div>
+                              <span
+                                class="
+                                  guns__author-name
+                                  profile-profile-forums__author-name
+                                "
+                                >troz</span
+                              >
+                              <div class="post__views">
+                                <svg
+                                  class="post__views-svg svg"
+                                  width="16"
+                                  height="16"
+                                >
+                                  <use
+                                    href="./img/svg/sprite.svg#icon-post-vieweye"
+                                  ></use>
+                                </svg>
+                                <span class="post__views-count">12</span>
+                              </div>
+                              <div class="post__comments">
+                                <svg
+                                  class="post__comments-svg svg"
+                                  width="14"
+                                  height="14"
+                                >
+                                  <use
+                                    href="../../img/svg/sprite.svg#icon-post-message"
+                                  ></use>
+                                </svg>
+                                <span class="post__comments-count">5</span>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="guns__item profile-profile-forums__item">
+                        <a
+                          class="guns__link profile-profile-forums__link"
+                          href="#"
+                        >
+                          <div class="guns__post profile-profile-forums__post">
+                            <p
+                              class="
+                                trending-now__post-meta
+                                profile-profile-forums__post-meta-date
+                              "
+                            >
+                              <span
+                                class="
+                                  trending-now__post-date
+                                  profile-profile-forums__post-date
+                                "
+                                >10 September 2021</span
+                              >
+                            </p>
+                            <h3
+                              class="
+                                title-v3
+                                guns__post-title
+                                profile-profile-forums__post-title
+                              "
+                            >
+                              New Members: Please Read Guidelines
+                            </h3>
+                            <div
+                              class="
+                                guns__post-meta
+                                profile-profile-forums__post-meta
+                              "
+                            >
+                              <div
+                                class="
+                                  guns__avatar-thumb
+                                  profile-profile-forums__avatar-thumb
+                                "
+                              >
+                                <img
+                                  class="
+                                    guns__author-avatar
+                                    profile-profile-forums__author-avatar
+                                  "
+                                  src="../../img/photos/avatar.jpg"
+                                  alt="Author avatar - man in white t-shirt"
+                                  width="25"
+                                  height="25"
+                                />
+                              </div>
+                              <span
+                                class="
+                                  guns__author-name
+                                  profile-profile-forums__author-name
+                                "
+                                >troz</span
+                              >
+                              <div class="post__views">
+                                <svg
+                                  class="post__views-svg svg"
+                                  width="16"
+                                  height="16"
+                                >
+                                  <use
+                                    href="./img/svg/sprite.svg#icon-post-vieweye"
+                                  ></use>
+                                </svg>
+                                <span class="post__views-count">12</span>
+                              </div>
+                              <div class="post__comments">
+                                <svg
+                                  class="post__comments-svg svg"
+                                  width="14"
+                                  height="14"
+                                >
+                                  <use
+                                    href="../../img/svg/sprite.svg#icon-post-message"
+                                  ></use>
+                                </svg>
+                                <span class="post__comments-count">5</span>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                    <ul
                       class="
-                        guns__slider-item
-                        profile-profile-forums__slider-button
-                        profile-profile-forums__slider-item
+                        guns__slider-list
+                        profile-profile-forums__slider-list
+                        hidden-on-tablet
                       "
                     >
-                      <button
-                        type="button"
-                        class="guns__slider-button"
-                      ></button>
-                    </li>
-
-                    <li
+                      <li
+                        class="
+                          guns__slider-item
+                          profile-profile-forums__slider-item
+                        "
+                      >
+                        <button
+                          type="button"
+                          class="
+                            guns__slider-button
+                            profile-profile-forums__slider-button
+                            active
+                          "
+                        ></button>
+                      </li>
+                      <li
+                        class="
+                          guns__slider-item
+                          profile-profile-forums__slider-button
+                          profile-profile-forums__slider-item
+                        "
+                      >
+                        <button
+                          type="button"
+                          class="guns__slider-button"
+                        ></button>
+                      </li>
+                      <li
+                        class="
+                          guns__slider-item
+                          profile-profile-forums__slider-button
+                          profile-profile-forums__slider-item
+                        "
+                      >
+                        <button
+                          type="button"
+                          class="guns__slider-button"
+                        ></button>
+                      </li>
+                      <li
+                        class="
+                          guns__slider-item
+                          profile-profile-forums__slider-button
+                          profile-profile-forums__slider-item
+                        "
+                      >
+                        <button
+                          type="button"
+                          class="guns__slider-button"
+                        ></button>
+                      </li>
+                    </ul>
+                    <button
                       class="
-                        guns__slider-item
-                        profile-profile-forums__slider-button
-                        profile-profile-forums__slider-item
+                        comments__show-more-btn
+                        profile__comments-show-more-btn
+                        profile-profile-forums__comments-show-more-btn
                       "
+                      type="button"
                     >
-                      <button
-                        type="button"
-                        class="guns__slider-button"
-                      ></button>
-                    </li>
-
-                    <li
-                      class="
-                        guns__slider-item
-                        profile-profile-forums__slider-button
-                        profile-profile-forums__slider-item
-                      "
-                    >
-                      <button
-                        type="button"
-                        class="guns__slider-button"
-                      ></button>
-                    </li>
-                  </ul>
-
-                  <button
-                    class="
-                      comments__show-more-btn
-                      profile__comments-show-more-btn
-                      profile-profile-forums__comments-show-more-btn
-                    "
-                    type="button"
-                  >
-                    Show all
-                  </button>
+                      Show all
+                    </button>
+                  </div>
                 </section>
 
-                <section class="guns profile__profile-blogs profile__section">
-                  <div
-                    class="
-                      title-wrapper
-                      guns__title-wrapper
-                      profile__title-wrapper
-                    "
-                  >
-                    <h2
-                      class="title-v2 guns__title profile__title section__title"
+                <section class="guns shotgun section catalog__top-builds">
+                  <div class="container guns__container">
+                    <div
+                      class="
+                        title-wrapper
+                        guns__title-wrapper
+                        catalog__section-title-wrapper
+                      "
                     >
-                      Blogs
-                    </h2>
-                  </div>
+                      <h2 class="title-v2 guns__title section__title">Blogs</h2>
+                    </div>
 
-                  <ul class="guns__list profile__list">
-                    <li class="guns__item profile__item">
-                      <a class="guns__link profile__link" href="#">
-                        <div class="guns__thumb profile__thumb">
-                          <img
-                            class="guns__image profile__image"
-                            src="../../img/photos/top-blogposts/top-blogpost-001-ak-12.jpg"
-                            alt="Gun image"
-                            width="277"
-                            height="200"
-                          />
-                        </div>
-
-                        <p
-                          class="
-                            top-blogposts__post-type
-                            profile-builds__post-type
-                          "
-                        >
-                          Rifle
-                        </p>
-
-                        <div class="guns__post profile__post">
-                          <h3
-                            class="
-                              title-v3
-                              guns__post-title
-                              profile__post-title
-                            "
-                          >
-                            Izhmash officially presented the new AK-12
-                          </h3>
-
-                          <div class="guns__post-meta profile__post-meta">
-                            <div
-                              class="guns__avatar-thumb profile__avatar-thumb"
-                            >
-                              <img
-                                class="
-                                  guns__author-avatar
-                                  profile__author-avatar
+                    <ul class="guns__list shotgun__list">
+                      <li class="guns__item shotgun__item">
+                        <a class="guns__link shotgun__link" href="#">
+                          <div class="guns__thumb shotgun__thumb">
+                            <picture>
+                              <source
+                                media="(min-width: 768px)"
+                                srcset="
+                                  ../../img/photos/top-blogposts/top-blogpost-001-ak-12.jpg 277w
                                 "
-                                src="../../img/photos/avatar.jpg"
-                                alt="Author avatar - man in white t-shirt"
-                                width="25"
-                                height="25"
+                                sizes="(min-width: 768px) 277px, 33vw"
+                                title="Gun image"
                               />
-                            </div>
 
-                            <span class="guns__author-name profile__author-name"
-                              >troz</span
+                              <source
+                                media="(max-width: 767px)"
+                                srcset="
+                                  ../../img/photos/profile/profile-builds-mobile-375w.jpg 375w
+                                "
+                                sizes="(max-width: 767px) 375px, 100vw"
+                                title="Gun image"
+                              />
+
+                              <img
+                                class="guns__image shotgun__image"
+                                src="../../img/photos/profile/profile-builds-mobile-375w.jpg"
+                                alt="Gun image"
+                              />
+                            </picture>
+                          </div>
+
+                          <div class="guns__post shotgun__post">
+                            <h3
+                              class="
+                                title-v3
+                                guns__post-title
+                                shotgun__post-title
+                              "
                             >
+                              Savage Mark 2 and a problem of extraction
+                            </h3>
 
-                            <div class="post__views">
-                              <svg
-                                class="post__views-svg svg"
-                                width="16"
-                                height="16"
+                            <div class="guns__post-meta shotgun__post-meta">
+                              <div
+                                class="guns__avatar-thumb shotgun__avatar-thumb"
                               >
-                                <use
-                                  href="./img/svg/sprite.svg#icon-post-vieweye"
-                                ></use>
-                              </svg>
+                                <img
+                                  class="
+                                    guns__author-avatar
+                                    shotgun__author-avatar
+                                  "
+                                  src="../../img/photos/avatar.jpg"
+                                  alt="Author avatar - man in white t-shirt"
+                                  width="25"
+                                  height="25"
+                                />
+                              </div>
 
-                              <span class="post__views-count">12</span>
-                            </div>
-
-                            <div class="post__comments">
-                              <svg
-                                class="post__comments-svg svg"
-                                width="14"
-                                height="14"
+                              <span
+                                class="guns__author-name shotgun__author-name"
+                                >troz</span
                               >
-                                <use
-                                  href="../../img/svg/sprite.svg#icon-post-message"
-                                ></use>
-                              </svg>
 
-                              <span class="post__comments-count">5</span>
+                              <div class="post__views shotgun__post-views">
+                                <svg
+                                  class="
+                                    post__views-svg
+                                    svg
+                                    shotgun__post-views-svg
+                                  "
+                                  width="16"
+                                  height="16"
+                                >
+                                  <use
+                                    href="./img/svg/sprite.svg#icon-post-vieweye"
+                                  ></use>
+                                </svg>
+
+                                <span
+                                  class="
+                                    post__views-count
+                                    shotgun__post-views-count
+                                  "
+                                  >12</span
+                                >
+                              </div>
+
+                              <div
+                                class="post__comments shotgun__post-comments"
+                              >
+                                <svg
+                                  class="
+                                    post__comments-svg
+                                    shotgun__post-comments-svg
+                                    svg
+                                  "
+                                  width="14"
+                                  height="14"
+                                >
+                                  <use
+                                    href="../../img/svg/sprite.svg#icon-post-message"
+                                  ></use>
+                                </svg>
+
+                                <span
+                                  class="
+                                    post__comments-count
+                                    shotgun__post-comments-count
+                                  "
+                                  >5</span
+                                >
+                              </div>
                             </div>
                           </div>
-                        </div>
-                      </a>
-                    </li>
 
-                    <li class="guns__item profile__item">
-                      <a class="guns__link profile__link" href="#">
-                        <div class="guns__thumb profile__thumb">
-                          <img
-                            class="guns__image profile__image"
-                            src="../../img/photos/top-blogposts/top-blogpost-002-savage-mark-2.jpg"
-                            alt="Rifle image"
-                            width="277"
-                            height="200"
-                          />
-                        </div>
-
-                        <p
-                          class="
-                            top-blogposts__post-type
-                            profile-builds__post-type
-                          "
-                        >
-                          Shotgun
-                        </p>
-
-                        <div class="guns__post profile__post">
-                          <h3
-                            class="
-                              title-v3
-                              guns__post-title
-                              profile__post-title
-                            "
-                          >
-                            Savage Mark 2 and a problem of extraction
-                          </h3>
-
-                          <div class="guns__post-meta profile__post-meta">
-                            <div
-                              class="guns__avatar-thumb profile__avatar-thumb"
-                            >
-                              <img
-                                class="
-                                  guns__author-avatar
-                                  profile__author-avatar
-                                "
-                                src="../../img/photos/avatar.jpg"
-                                alt="Author avatar - man in white t-shirt"
-                                width="25"
-                                height="25"
-                              />
-                            </div>
-
-                            <span class="guns__author-name profile__author-name"
-                              >troz</span
-                            >
-
-                            <div class="post__views">
-                              <svg
-                                class="post__views-svg svg"
-                                width="16"
-                                height="16"
+                          <ul class="guns__build shotgun__build">
+                            <li class="guns__build-item shotgun__build-item">
+                              <span class="guns__build-tag shotgun__build-tag"
+                                >Remington</span
                               >
-                                <use
-                                  href="./img/svg/sprite.svg#icon-post-vieweye"
-                                ></use>
-                              </svg>
-
-                              <span class="post__views-count">12</span>
-                            </div>
-
-                            <div class="post__comments">
-                              <svg
-                                class="post__comments-svg svg"
-                                width="14"
-                                height="14"
+                            </li>
+                            <li class="guns__build-item shotgun__build-item">
+                              <span class="guns__build-tag shotgun__build-tag"
+                                >1911 R1 Enhanced</span
                               >
-                                <use
-                                  href="../../img/svg/sprite.svg#icon-post-message"
-                                ></use>
-                              </svg>
+                            </li>
+                            <li class="guns__build-item shotgun__build-item">
+                              <span class="guns__build-tag shotgun__build-tag"
+                                >.45 ACP</span
+                              >
+                            </li>
+                          </ul>
+                        </a>
+                      </li>
 
-                              <span class="post__comments-count">5</span>
+                      <li class="guns__item shotgun__item">
+                        <a class="guns__link shotgun__link" href="#">
+                          <div class="guns__thumb shotgun__thumb">
+                            <img
+                              class="guns__image shotgun__image"
+                              src="../../img/photos/shotgun/shotgun-002.jpg"
+                              alt="Shotgun image Verp 12 Comp. fore grip"
+                              width="277"
+                              height="200"
+                            />
+                          </div>
+
+                          <div class="guns__post shotgun__post">
+                            <h3
+                              class="
+                                title-v3
+                                guns__post-title
+                                shotgun__post-title
+                              "
+                            >
+                              Verp 12 Comp. fore grip
+                            </h3>
+
+                            <div class="guns__post-meta shotgun__post-meta">
+                              <div
+                                class="guns__avatar-thumb shotgun__avatar-thumb"
+                              >
+                                <img
+                                  class="
+                                    guns__author-avatar
+                                    shotgun__author-avatar
+                                  "
+                                  src="../../img/photos/avatar.jpg"
+                                  alt="Author avatar - man in white t-shirt"
+                                  width="25"
+                                  height="25"
+                                />
+                              </div>
+
+                              <span
+                                class="guns__author-name shotgun__author-name"
+                                >troz</span
+                              >
+
+                              <div class="post__views shotgun__post-views">
+                                <svg
+                                  class="
+                                    post__views-svg
+                                    svg
+                                    shotgun__post-views-svg
+                                  "
+                                  width="16"
+                                  height="16"
+                                >
+                                  <use
+                                    href="./img/svg/sprite.svg#icon-post-vieweye"
+                                  ></use>
+                                </svg>
+
+                                <span
+                                  class="
+                                    post__views-count
+                                    shotgun__post-views-count
+                                  "
+                                  >12</span
+                                >
+                              </div>
+
+                              <div
+                                class="post__comments shotgun__post-comments"
+                              >
+                                <svg
+                                  class="
+                                    post__comments-svg
+                                    shotgun__post-comments-svg
+                                    svg
+                                  "
+                                  width="14"
+                                  height="14"
+                                >
+                                  <use
+                                    href="../../img/svg/sprite.svg#icon-post-message"
+                                  ></use>
+                                </svg>
+
+                                <span
+                                  class="
+                                    post__comments-count
+                                    shotgun__post-comments-count
+                                  "
+                                  >5</span
+                                >
+                              </div>
                             </div>
                           </div>
-                        </div>
-                      </a>
-                    </li>
 
-                    <li class="guns__item profile__item">
-                      <a class="guns__link profile__link" href="#">
-                        <div class="guns__thumb profile__thumb">
-                          <img
-                            class="guns__image profile__image"
-                            src="../../img/photos/rifle/rifle-001.jpg"
-                            alt="Rifle image"
-                            width="277"
-                            height="200"
-                          />
-                        </div>
-
-                        <p
-                          class="
-                            top-blogposts__post-type
-                            profile-builds__post-type
-                          "
-                        >
-                          Handgun
-                        </p>
-
-                        <div class="guns__post profile__post">
-                          <h3
-                            class="
-                              title-v3
-                              guns__post-title
-                              profile__post-title
-                            "
-                          >
-                            Officially Presented the new AK-12
-                          </h3>
-
-                          <div class="guns__post-meta profile__post-meta">
-                            <div
-                              class="guns__avatar-thumb profile__avatar-thumb"
-                            >
-                              <img
-                                class="
-                                  guns__author-avatar
-                                  profile__author-avatar
-                                "
-                                src="../../img/photos/avatar.jpg"
-                                alt="Author avatar - man in white t-shirt"
-                                width="25"
-                                height="25"
-                              />
-                            </div>
-
-                            <span class="guns__author-name profile__author-name"
-                              >troz</span
-                            >
-
-                            <div class="post__views">
-                              <svg
-                                class="post__views-svg svg"
-                                width="16"
-                                height="16"
+                          <ul class="guns__build shotgun__build">
+                            <li class="guns__build-item shotgun__build-item">
+                              <span class="guns__build-tag shotgun__build-tag"
+                                >Remington</span
                               >
-                                <use
-                                  href="./img/svg/sprite.svg#icon-post-vieweye"
-                                ></use>
-                              </svg>
-
-                              <span class="post__views-count">12</span>
-                            </div>
-
-                            <div class="post__comments">
-                              <svg
-                                class="post__comments-svg svg"
-                                width="14"
-                                height="14"
+                            </li>
+                            <li class="guns__build-item shotgun__build-item">
+                              <span class="guns__build-tag shotgun__build-tag"
+                                >1911 R1 Enhanced</span
                               >
-                                <use
-                                  href="../../img/svg/sprite.svg#icon-post-message"
-                                ></use>
-                              </svg>
+                            </li>
+                            <li class="guns__build-item shotgun__build-item">
+                              <span class="guns__build-tag shotgun__build-tag"
+                                >.45 ACP</span
+                              >
+                            </li>
+                          </ul>
+                        </a>
+                      </li>
 
-                              <span class="post__comments-count">5</span>
+                      <li class="guns__item shotgun__item">
+                        <a class="guns__link shotgun__link" href="#">
+                          <div class="guns__thumb shotgun__thumb">
+                            <img
+                              class="guns__image shotgun__image"
+                              src="../../img/photos/shotgun/shotgun-003.jpg"
+                              alt="Shotgun image Custom Mossberg 500"
+                              width="277"
+                              height="200"
+                            />
+                          </div>
+
+                          <div class="guns__post shotgun__post">
+                            <h3
+                              class="
+                                title-v3
+                                guns__post-title
+                                shotgun__post-title
+                              "
+                            >
+                              Custom Mossberg 500
+                            </h3>
+
+                            <div class="guns__post-meta shotgun__post-meta">
+                              <div
+                                class="guns__avatar-thumb shotgun__avatar-thumb"
+                              >
+                                <img
+                                  class="
+                                    guns__author-avatar
+                                    shotgun__author-avatar
+                                  "
+                                  src="../../img/photos/avatar.jpg"
+                                  alt="Author avatar - man in white t-shirt"
+                                  width="25"
+                                  height="25"
+                                />
+                              </div>
+
+                              <span
+                                class="guns__author-name shotgun__author-name"
+                                >troz</span
+                              >
+
+                              <div class="post__views shotgun__post-views">
+                                <svg
+                                  class="
+                                    post__views-svg
+                                    svg
+                                    shotgun__post-views-svg
+                                  "
+                                  width="16"
+                                  height="16"
+                                >
+                                  <use
+                                    href="./img/svg/sprite.svg#icon-post-vieweye"
+                                  ></use>
+                                </svg>
+
+                                <span
+                                  class="
+                                    post__views-count
+                                    shotgun__post-views-count
+                                  "
+                                  >12</span
+                                >
+                              </div>
+
+                              <div
+                                class="post__comments shotgun__post-comments"
+                              >
+                                <svg
+                                  class="
+                                    post__comments-svg
+                                    shotgun__post-comments-svg
+                                    svg
+                                  "
+                                  width="14"
+                                  height="14"
+                                >
+                                  <use
+                                    href="../../img/svg/sprite.svg#icon-post-message"
+                                  ></use>
+                                </svg>
+
+                                <span
+                                  class="
+                                    post__comments-count
+                                    shotgun__post-comments-count
+                                  "
+                                  >5</span
+                                >
+                              </div>
                             </div>
                           </div>
-                        </div>
-                      </a>
-                    </li>
-                  </ul>
 
-                  <ul
-                    class="
-                      guns__slider-list
-                      profile__slider-list
-                      hidden-on-tablet
-                    "
-                  >
-                    <li class="guns__slider-item profile__slider-item">
-                      <button
-                        type="button"
+                          <ul class="guns__build shotgun__build">
+                            <li class="guns__build-item shotgun__build-item">
+                              <span class="guns__build-tag shotgun__build-tag"
+                                >Remington</span
+                              >
+                            </li>
+                            <li class="guns__build-item shotgun__build-item">
+                              <span class="guns__build-tag shotgun__build-tag"
+                                >1911 R1 Enhanced</span
+                              >
+                            </li>
+                            <li class="guns__build-item shotgun__build-item">
+                              <span class="guns__build-tag shotgun__build-tag"
+                                >.45 ACP</span
+                              >
+                            </li>
+                          </ul>
+                        </a>
+                      </li>
+
+                      <li class="guns__item shotgun__item">
+                        <a class="guns__link shotgun__link" href="#">
+                          <div class="guns__thumb shotgun__thumb">
+                            <img
+                              class="guns__image shotgun__image"
+                              src="../../img/photos/shotgun/shotgun-004.jpg"
+                              alt="Shotgun image B25 in 20 gauge"
+                              width="277"
+                              height="200"
+                            />
+                          </div>
+
+                          <div class="guns__post shotgun__post">
+                            <h3
+                              class="
+                                title-v3
+                                guns__post-title
+                                shotgun__post-title
+                              "
+                            >
+                              B25 Shotgun in 20 gauge
+                            </h3>
+
+                            <div class="guns__post-meta shotgun__post-meta">
+                              <div
+                                class="guns__avatar-thumb shotgun__avatar-thumb"
+                              >
+                                <img
+                                  class="
+                                    guns__author-avatar
+                                    shotgun__author-avatar
+                                  "
+                                  src="../../img/photos/avatar.jpg"
+                                  alt="Author avatar - man in white t-shirt"
+                                  width="25"
+                                  height="25"
+                                />
+                              </div>
+
+                              <span
+                                class="guns__author-name shotgun__author-name"
+                                >troz</span
+                              >
+
+                              <div class="post__views shotgun__post-views">
+                                <svg
+                                  class="
+                                    post__views-svg
+                                    svg
+                                    shotgun__post-views-svg
+                                  "
+                                  width="16"
+                                  height="16"
+                                >
+                                  <use
+                                    href="./img/svg/sprite.svg#icon-post-vieweye"
+                                  ></use>
+                                </svg>
+
+                                <span
+                                  class="
+                                    post__views-count
+                                    shotgun__post-views-count
+                                  "
+                                  >12</span
+                                >
+                              </div>
+
+                              <div
+                                class="post__comments shotgun__post-comments"
+                              >
+                                <svg
+                                  class="
+                                    post__comments-svg
+                                    shotgun__post-comments-svg
+                                    svg
+                                  "
+                                  width="14"
+                                  height="14"
+                                >
+                                  <use
+                                    href="../../img/svg/sprite.svg#icon-post-message"
+                                  ></use>
+                                </svg>
+
+                                <span
+                                  class="
+                                    post__comments-count
+                                    shotgun__post-comments-count
+                                  "
+                                  >5</span
+                                >
+                              </div>
+                            </div>
+                          </div>
+
+                          <ul class="guns__build shotgun__build">
+                            <li class="guns__build-item shotgun__build-item">
+                              <span class="guns__build-tag shotgun__build-tag"
+                                >Remington</span
+                              >
+                            </li>
+                            <li class="guns__build-item shotgun__build-item">
+                              <span class="guns__build-tag shotgun__build-tag"
+                                >1911 R1 Enhanced</span
+                              >
+                            </li>
+                            <li class="guns__build-item shotgun__build-item">
+                              <span class="guns__build-tag shotgun__build-tag"
+                                >.45 ACP</span
+                              >
+                            </li>
+                          </ul>
+                        </a>
+                      </li>
+                    </ul>
+
+                    <ul
+                      class="
+                        guns__slider-list
+                        shotgun__slider-list
+                        hidden-on-tablet
+                      "
+                    >
+                      <li class="guns__slider-item shotgun__slider-item">
+                        <button
+                          type="button"
+                          class="
+                            guns__slider-button
+                            shotgun__slider-button
+                            active
+                          "
+                        ></button>
+                      </li>
+
+                      <li
                         class="
-                          guns__slider-button
-                          profile__slider-button
-                          active
+                          guns__slider-item
+                          shotgun__slider-button shotgun__slider-item
                         "
-                      ></button>
-                    </li>
+                      >
+                        <button
+                          type="button"
+                          class="guns__slider-button"
+                        ></button>
+                      </li>
 
-                    <li
-                      class="
-                        guns__slider-item
-                        profile__slider-button profile__slider-item
-                      "
-                    >
-                      <button
-                        type="button"
-                        class="guns__slider-button"
-                      ></button>
-                    </li>
+                      <li
+                        class="
+                          guns__slider-item
+                          shotgun__slider-button shotgun__slider-item
+                        "
+                      >
+                        <button
+                          type="button"
+                          class="guns__slider-button"
+                        ></button>
+                      </li>
 
-                    <li
-                      class="
-                        guns__slider-item
-                        profile__slider-button profile__slider-item
-                      "
-                    >
-                      <button
-                        type="button"
-                        class="guns__slider-button"
-                      ></button>
-                    </li>
-
-                    <li
-                      class="
-                        guns__slider-item
-                        profile__slider-button profile__slider-item
-                      "
-                    >
-                      <button
-                        type="button"
-                        class="guns__slider-button"
-                      ></button>
-                    </li>
-                  </ul>
-
-                  <button
-                    class="
-                      comments__show-more-btn
-                      profile__comments-show-more-btn
-                    "
-                    type="button"
-                  >
-                    Show all
-                  </button>
+                      <li
+                        class="
+                          guns__slider-item
+                          shotgun__slider-button shotgun__slider-item
+                        "
+                      >
+                        <button
+                          type="button"
+                          class="guns__slider-button"
+                        ></button>
+                      </li>
+                    </ul>
+                  </div>
                 </section>
               </div>
             </div>
+
             <!-- Trending -->
             <div class="searchbuilds__block__trending res">
               <div class="searchbuilds__block__trending-now">
@@ -1637,7 +1856,743 @@
           </div>
         </div>
       </div>
-    </div>
+
+      <section class="guns shotgun section catalog__top-builds">
+        <div class="container guns__container">
+          <div
+            class="
+              title-wrapper
+              guns__title-wrapper
+              catalog__section-title-wrapper
+            "
+          >
+            <h2 class="title-v2 guns__title section__title">Top builds</h2>
+          </div>
+
+          <ul class="guns__list shotgun__list">
+            <li class="guns__item shotgun__item">
+              <a class="guns__link shotgun__link" href="#">
+                <div class="guns__thumb shotgun__thumb">
+                  <picture>
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="../../img/photos/shotgun/shotgun-001.jpg 277w"
+                      sizes="(min-width: 768px) 277px, 33vw"
+                      title="Gun image"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ../../img/photos/shotgun/guns-mobile-002-375w.jpg 375w
+                      "
+                      sizes="(max-width: 767px) 375px, 100vw"
+                      title="Gun image"
+                    />
+
+                    <img
+                      class="guns__image shotgun__image"
+                      src="../../img/photos/shotgun/guns-mobile-002-375w.jpg"
+                      alt="Gun image"
+                    />
+                  </picture>
+                </div>
+
+                <div class="guns__post shotgun__post">
+                  <h3 class="title-v3 guns__post-title shotgun__post-title">
+                    Saiga 12 Slash fore grip
+                  </h3>
+
+                  <div class="guns__post-meta shotgun__post-meta">
+                    <div class="guns__avatar-thumb shotgun__avatar-thumb">
+                      <img
+                        class="guns__author-avatar shotgun__author-avatar"
+                        src="../../img/photos/avatar.jpg"
+                        alt="Author avatar - man in white t-shirt"
+                        width="25"
+                        height="25"
+                      />
+                    </div>
+
+                    <span class="guns__author-name shotgun__author-name"
+                      >troz</span
+                    >
+
+                    <div class="post__views shotgun__post-views">
+                      <svg
+                        class="post__views-svg svg shotgun__post-views-svg"
+                        width="16"
+                        height="16"
+                      >
+                        <use
+                          href="./img/svg/sprite.svg#icon-post-vieweye"
+                        ></use>
+                      </svg>
+
+                      <span class="post__views-count shotgun__post-views-count"
+                        >12</span
+                      >
+                    </div>
+
+                    <div class="post__comments shotgun__post-comments">
+                      <svg
+                        class="
+                          post__comments-svg
+                          shotgun__post-comments-svg
+                          svg
+                        "
+                        width="14"
+                        height="14"
+                      >
+                        <use
+                          href="../../img/svg/sprite.svg#icon-post-message"
+                        ></use>
+                      </svg>
+
+                      <span
+                        class="
+                          post__comments-count
+                          shotgun__post-comments-count
+                        "
+                        >5</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <ul class="guns__build shotgun__build">
+                  <li class="guns__build-item shotgun__build-item">
+                    <span class="guns__build-tag shotgun__build-tag"
+                      >Remington</span
+                    >
+                  </li>
+                  <li class="guns__build-item shotgun__build-item">
+                    <span class="guns__build-tag shotgun__build-tag"
+                      >1911 R1 Enhanced</span
+                    >
+                  </li>
+                  <li class="guns__build-item shotgun__build-item">
+                    <span class="guns__build-tag shotgun__build-tag"
+                      >.45 ACP</span
+                    >
+                  </li>
+                </ul>
+              </a>
+            </li>
+
+            <li class="guns__item shotgun__item">
+              <a class="guns__link shotgun__link" href="#">
+                <div class="guns__thumb shotgun__thumb">
+                  <img
+                    class="guns__image shotgun__image"
+                    src="../../img/photos/shotgun/shotgun-002.jpg"
+                    alt="Shotgun image Verp 12 Comp. fore grip"
+                    width="277"
+                    height="200"
+                  />
+                </div>
+
+                <div class="guns__post shotgun__post">
+                  <h3 class="title-v3 guns__post-title shotgun__post-title">
+                    Verp 12 Comp. fore grip
+                  </h3>
+
+                  <div class="guns__post-meta shotgun__post-meta">
+                    <div class="guns__avatar-thumb shotgun__avatar-thumb">
+                      <img
+                        class="guns__author-avatar shotgun__author-avatar"
+                        src="../../img/photos/avatar.jpg"
+                        alt="Author avatar - man in white t-shirt"
+                        width="25"
+                        height="25"
+                      />
+                    </div>
+
+                    <span class="guns__author-name shotgun__author-name"
+                      >troz</span
+                    >
+
+                    <div class="post__views shotgun__post-views">
+                      <svg
+                        class="post__views-svg svg shotgun__post-views-svg"
+                        width="16"
+                        height="16"
+                      >
+                        <use
+                          href="./img/svg/sprite.svg#icon-post-vieweye"
+                        ></use>
+                      </svg>
+
+                      <span class="post__views-count shotgun__post-views-count"
+                        >12</span
+                      >
+                    </div>
+
+                    <div class="post__comments shotgun__post-comments">
+                      <svg
+                        class="
+                          post__comments-svg
+                          shotgun__post-comments-svg
+                          svg
+                        "
+                        width="14"
+                        height="14"
+                      >
+                        <use
+                          href="../../img/svg/sprite.svg#icon-post-message"
+                        ></use>
+                      </svg>
+
+                      <span
+                        class="
+                          post__comments-count
+                          shotgun__post-comments-count
+                        "
+                        >5</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <ul class="guns__build shotgun__build">
+                  <li class="guns__build-item shotgun__build-item">
+                    <span class="guns__build-tag shotgun__build-tag"
+                      >Remington</span
+                    >
+                  </li>
+                  <li class="guns__build-item shotgun__build-item">
+                    <span class="guns__build-tag shotgun__build-tag"
+                      >1911 R1 Enhanced</span
+                    >
+                  </li>
+                  <li class="guns__build-item shotgun__build-item">
+                    <span class="guns__build-tag shotgun__build-tag"
+                      >.45 ACP</span
+                    >
+                  </li>
+                </ul>
+              </a>
+            </li>
+
+            <li class="guns__item shotgun__item">
+              <a class="guns__link shotgun__link" href="#">
+                <div class="guns__thumb shotgun__thumb">
+                  <img
+                    class="guns__image shotgun__image"
+                    src="../../img/photos/shotgun/shotgun-003.jpg"
+                    alt="Shotgun image Custom Mossberg 500"
+                    width="277"
+                    height="200"
+                  />
+                </div>
+
+                <div class="guns__post shotgun__post">
+                  <h3 class="title-v3 guns__post-title shotgun__post-title">
+                    Custom Mossberg 500
+                  </h3>
+
+                  <div class="guns__post-meta shotgun__post-meta">
+                    <div class="guns__avatar-thumb shotgun__avatar-thumb">
+                      <img
+                        class="guns__author-avatar shotgun__author-avatar"
+                        src="../../img/photos/avatar.jpg"
+                        alt="Author avatar - man in white t-shirt"
+                        width="25"
+                        height="25"
+                      />
+                    </div>
+
+                    <span class="guns__author-name shotgun__author-name"
+                      >troz</span
+                    >
+
+                    <div class="post__views shotgun__post-views">
+                      <svg
+                        class="post__views-svg svg shotgun__post-views-svg"
+                        width="16"
+                        height="16"
+                      >
+                        <use
+                          href="./img/svg/sprite.svg#icon-post-vieweye"
+                        ></use>
+                      </svg>
+
+                      <span class="post__views-count shotgun__post-views-count"
+                        >12</span
+                      >
+                    </div>
+
+                    <div class="post__comments shotgun__post-comments">
+                      <svg
+                        class="
+                          post__comments-svg
+                          shotgun__post-comments-svg
+                          svg
+                        "
+                        width="14"
+                        height="14"
+                      >
+                        <use
+                          href="../../img/svg/sprite.svg#icon-post-message"
+                        ></use>
+                      </svg>
+
+                      <span
+                        class="
+                          post__comments-count
+                          shotgun__post-comments-count
+                        "
+                        >5</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <ul class="guns__build shotgun__build">
+                  <li class="guns__build-item shotgun__build-item">
+                    <span class="guns__build-tag shotgun__build-tag"
+                      >Remington</span
+                    >
+                  </li>
+                  <li class="guns__build-item shotgun__build-item">
+                    <span class="guns__build-tag shotgun__build-tag"
+                      >1911 R1 Enhanced</span
+                    >
+                  </li>
+                  <li class="guns__build-item shotgun__build-item">
+                    <span class="guns__build-tag shotgun__build-tag"
+                      >.45 ACP</span
+                    >
+                  </li>
+                </ul>
+              </a>
+            </li>
+
+            <li class="guns__item shotgun__item">
+              <a class="guns__link shotgun__link" href="#">
+                <div class="guns__thumb shotgun__thumb">
+                  <img
+                    class="guns__image shotgun__image"
+                    src="../../img/photos/shotgun/shotgun-004.jpg"
+                    alt="Shotgun image B25 in 20 gauge"
+                    width="277"
+                    height="200"
+                  />
+                </div>
+
+                <div class="guns__post shotgun__post">
+                  <h3 class="title-v3 guns__post-title shotgun__post-title">
+                    B25 Shotgun in 20 gauge
+                  </h3>
+
+                  <div class="guns__post-meta shotgun__post-meta">
+                    <div class="guns__avatar-thumb shotgun__avatar-thumb">
+                      <img
+                        class="guns__author-avatar shotgun__author-avatar"
+                        src="../../img/photos/avatar.jpg"
+                        alt="Author avatar - man in white t-shirt"
+                        width="25"
+                        height="25"
+                      />
+                    </div>
+
+                    <span class="guns__author-name shotgun__author-name"
+                      >troz</span
+                    >
+
+                    <div class="post__views shotgun__post-views">
+                      <svg
+                        class="post__views-svg svg shotgun__post-views-svg"
+                        width="16"
+                        height="16"
+                      >
+                        <use
+                          href="./img/svg/sprite.svg#icon-post-vieweye"
+                        ></use>
+                      </svg>
+
+                      <span class="post__views-count shotgun__post-views-count"
+                        >12</span
+                      >
+                    </div>
+
+                    <div class="post__comments shotgun__post-comments">
+                      <svg
+                        class="
+                          post__comments-svg
+                          shotgun__post-comments-svg
+                          svg
+                        "
+                        width="14"
+                        height="14"
+                      >
+                        <use
+                          href="../../img/svg/sprite.svg#icon-post-message"
+                        ></use>
+                      </svg>
+
+                      <span
+                        class="
+                          post__comments-count
+                          shotgun__post-comments-count
+                        "
+                        >5</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <ul class="guns__build shotgun__build">
+                  <li class="guns__build-item shotgun__build-item">
+                    <span class="guns__build-tag shotgun__build-tag"
+                      >Remington</span
+                    >
+                  </li>
+                  <li class="guns__build-item shotgun__build-item">
+                    <span class="guns__build-tag shotgun__build-tag"
+                      >1911 R1 Enhanced</span
+                    >
+                  </li>
+                  <li class="guns__build-item shotgun__build-item">
+                    <span class="guns__build-tag shotgun__build-tag"
+                      >.45 ACP</span
+                    >
+                  </li>
+                </ul>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="guns__slider-list shotgun__slider-list hidden-on-tablet">
+            <li class="guns__slider-item shotgun__slider-item">
+              <button
+                type="button"
+                class="guns__slider-button shotgun__slider-button active"
+              ></button>
+            </li>
+
+            <li
+              class="
+                guns__slider-item
+                shotgun__slider-button shotgun__slider-item
+              "
+            >
+              <button type="button" class="guns__slider-button"></button>
+            </li>
+
+            <li
+              class="
+                guns__slider-item
+                shotgun__slider-button shotgun__slider-item
+              "
+            >
+              <button type="button" class="guns__slider-button"></button>
+            </li>
+
+            <li
+              class="
+                guns__slider-item
+                shotgun__slider-button shotgun__slider-item
+              "
+            >
+              <button type="button" class="guns__slider-button"></button>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="trending-now section catalog__trending-now">
+        <div class="container trending-now__container">
+          <div
+            class="
+              title-wrapper
+              trending-now__title-wrapper
+              catalog__section-title-wrapper
+            "
+          >
+            <h2 class="title-v2 trending-now__title section__title">
+              Trending now
+            </h2>
+          </div>
+
+          <ul class="trending-now__list">
+            <li class="trending-now__item">
+              <a class="trending-now__link" href="#">
+                <div class="trending-now__thumb">
+                  <img
+                    class="trending-now__author-avatar"
+                    src="./img/photos/avatars-40x40/avatar-001-man-gray-shirt.jpg"
+                    alt="Man-gray-shirt"
+                    width="40"
+                    height="40"
+                  />
+                </div>
+
+                <h3 class="trending-now__post-title">
+                  10 Tips for Choosing <br />
+                  a Concealed Carry Handgun
+                </h3>
+
+                <p class="trending-now__post-meta">
+                  <span class="trending-now__author-name">troz</span>,
+                  <span class="trending-now__post-date">today</span>
+                </p>
+              </a>
+            </li>
+
+            <li class="trending-now__item">
+              <a class="trending-now__link" href="#">
+                <div class="trending-now__thumb">
+                  <img
+                    class="trending-now__author-avatar"
+                    src="./img/photos/avatars-40x40/avatar-002-man-red-tshirt.jpg"
+                    alt="Man-red-tshirt"
+                    width="40"
+                    height="40"
+                  />
+                </div>
+
+                <h3 class="trending-now__post-title">
+                  Firearms definitions and requirements
+                </h3>
+
+                <p class="trending-now__post-meta">
+                  <span class="trending-now__author-name">troz</span>,
+                  <span class="trending-now__post-date">yesterday</span>
+                </p>
+              </a>
+            </li>
+
+            <li class="trending-now__item">
+              <a class="trending-now__link" href="#">
+                <div class="trending-now__thumb">
+                  <img
+                    class="trending-now__author-avatar"
+                    src="./img/photos/avatars-40x40/avatar-003-man-white-tshirt.jpg"
+                    alt="Man-white-tshirt"
+                    width="40"
+                    height="40"
+                  />
+                </div>
+
+                <h3 class="trending-now__post-title">
+                  New Members: Please Read Guidelines
+                </h3>
+
+                <p class="trending-now__post-meta">
+                  <span class="trending-now__author-name">troz</span>,
+                  <span class="trending-now__post-date">yesterday</span>
+                </p>
+              </a>
+            </li>
+
+            <li class="trending-now__item">
+              <a class="trending-now__link" href="#">
+                <div class="trending-now__thumb">
+                  <img
+                    class="trending-now__author-avatar"
+                    src="./img/photos/avatars-40x40/avatar-004-man-striped-tshirt.jpg"
+                    alt="Man-striped-tshirt"
+                    width="40"
+                    height="40"
+                  />
+                </div>
+
+                <h3 class="trending-now__post-title">Pencil Barrel Whip</h3>
+
+                <p class="trending-now__post-meta">
+                  <span class="trending-now__author-name">troz</span>,
+                  <span class="trending-now__post-date">10 September 2020</span>
+                </p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="top-blogposts section catalog__top-blogposts">
+        <div class="container top-blogposts__container">
+          <div
+            class="top-blogposts__title-wrapper catalog__section-title-wrapper"
+          >
+            <h2 class="title-v2 top-blogposts__title">Top blogposts</h2>
+          </div>
+
+          <ul class="top-blogposts__list">
+            <li class="top-blogposts__item">
+              <a class="top-blogposts__link link" href="#">
+                <div class="top-blogposts__thumb">
+                  <picture>
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ../../img/photos/top-blogposts/top-blogpost-mobile-001-160w.jpg 160w
+                      "
+                      sizes="(max-width: 767px) 160px, 100%"
+                      title="Sniper rifle"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ../../img/photos/top-blogposts/top-blogpost-001-ak-12.jpg 200w
+                      "
+                      sizes="(max-width: 768px) 200px, 100%"
+                      title="AK-12"
+                    />
+
+                    <img
+                      class="top-blogposts__image"
+                      src="../../img/photos/top-blogposts/top-blogpost-001-ak-12.jpg"
+                      alt="top blogposts gun image"
+                      width="200"
+                      height="200"
+                    />
+                  </picture>
+                </div>
+
+                <div class="top-blogposts-meta">
+                  <p class="top-blogposts__post-type">Rifle</p>
+
+                  <p class="top-blogposts__post-title">
+                    Izhmash officially presented the new AK-12
+                  </p>
+
+                  <div class="post top-blogposts__post">
+                    <span class="post__author-name">troz</span>
+
+                    <div class="post__views">
+                      <svg class="post__views-svg svg" width="16" height="16">
+                        <use
+                          href="./img/svg/sprite.svg#icon-post-vieweye"
+                        ></use>
+                      </svg>
+
+                      <span class="post__views-count">12</span>
+                    </div>
+
+                    <div class="post__comments">
+                      <svg
+                        class="post__comments-svg svg"
+                        width="14"
+                        height="14"
+                      >
+                        <use
+                          href="../../img/svg/sprite.svg#icon-post-message"
+                        ></use>
+                      </svg>
+
+                      <span class="post__comments-count">5</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="top-blogposts__item">
+              <a class="top-blogposts__link link" href="#">
+                <div class="top-blogposts__thumb">
+                  <img
+                    class="top-blogposts__image"
+                    src="../../img/photos/top-blogposts/top-blogpost-002-savage-mark-2.jpg"
+                    alt="top blogposts gun image savage-mark-2"
+                    width="200"
+                    height="200"
+                  />
+                </div>
+
+                <div class="top-blogposts-meta">
+                  <p class="top-blogposts__post-type">Shotgun</p>
+
+                  <p class="top-blogposts__post-title">
+                    Savage Mark 2 and a problem of extraction
+                  </p>
+
+                  <div class="post top-blogposts__post">
+                    <span class="post__author-name">troz</span>
+
+                    <div class="post__views">
+                      <svg class="post__views-svg svg" width="16" height="16">
+                        <use
+                          href="./img/svg/sprite.svg#icon-post-vieweye"
+                        ></use>
+                      </svg>
+
+                      <span class="post__views-count">12</span>
+                    </div>
+
+                    <div class="post__comments">
+                      <svg
+                        class="post__comments-svg svg"
+                        width="14"
+                        height="14"
+                      >
+                        <use
+                          href="../../img/svg/sprite.svg#icon-post-message"
+                        ></use>
+                      </svg>
+
+                      <span class="post__comments-count">5</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="top-blogposts__item">
+              <a class="top-blogposts__link link" href="#">
+                <div class="top-blogposts__thumb">
+                  <img
+                    class="top-blogposts__image"
+                    src="../../img/photos/top-blogposts/top-blogpost-003-handgun.jpg"
+                    alt="top blogposts handgun image"
+                    width="200"
+                    height="200"
+                  />
+                </div>
+
+                <div class="top-blogposts-meta">
+                  <p class="top-blogposts__post-type">Handgun</p>
+
+                  <p class="top-blogposts__post-title">
+                    New budget rifles from armalite
+                  </p>
+
+                  <div class="post top-blogposts__post">
+                    <span class="post__author-name">troz</span>
+
+                    <div class="post__views">
+                      <svg class="post__views-svg svg" width="16" height="16">
+                        <use
+                          href="./img/svg/sprite.svg#icon-post-vieweye"
+                        ></use>
+                      </svg>
+
+                      <span class="post__views-count">12</span>
+                    </div>
+
+                    <div class="post__comments">
+                      <svg
+                        class="post__comments-svg svg"
+                        width="14"
+                        height="14"
+                      >
+                        <use
+                          href="../../img/svg/sprite.svg#icon-post-message"
+                        ></use>
+                      </svg>
+
+                      <span class="post__comments-count">5</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
     <!-- Footer -->
     <%= _.template(require('./../includes/footer.html').default)(data) %>
   </body>

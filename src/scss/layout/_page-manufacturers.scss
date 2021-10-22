@@ -6,4 +6,38 @@
     padding-right: 0;
     padding-left: 0;
   }
+  .manufacturer__block {
+    margin-top: 20px;
+    gap: 20px;
+  }
+  .searchbuilds-head {
+    padding-bottom: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: none;
+  }
+  .manufacturers__pages-list {
+    position: relative;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 28px;
+
+      display: block;
+      width: calc(#{100%} - 56px);
+      height: 1px;
+
+      background-color: rgba(#000000, 0.05);
+    }
+
+    &::before {
+      top: 34.26%;
+    }
+
+    &::after {
+      bottom: 33.14%;
+    }
+  }
 }

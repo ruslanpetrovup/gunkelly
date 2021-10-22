@@ -74,6 +74,14 @@
 .profile-friends__friend-name {
   margin: 0 auto 5px;
 }
+
+/* 25 friend */
+.profile-friends__friend-friends-count {
+  font-size: 14px;
+  line-height: 17px;
+  color: #999999;
+}
+
 .profile-friends__searchbuilds-block-trending {
   margin-left: auto; // 29px
 }
@@ -89,5 +97,26 @@
   .profile-friends__btn:focus &,
   .profile-friends__btn:hover & {
     color: $color-accent;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .profile-friends__list {
+    flex-wrap: wrap;
+    gap: 21px;
+  }
+  .profile-friends__item {
+    flex-basis: calc((100% - 21px) / 2);
+    min-width: unset;
+    min-height: unset;
+  }
+
+  .profile-friends__thumb {
+    width: 60px;
+  }
+
+  .profile-friends__image {
+    width: 100%;
+    height: auto;
   }
 }

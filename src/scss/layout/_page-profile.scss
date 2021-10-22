@@ -229,6 +229,8 @@
 
 .profile-profile-forums__link {
   padding: 30px;
+  background: #ffffff;
+  border: 1px solid rgba($color-black, 0.05);
 }
 .profile-profile-forums__post {
   margin-bottom: 0;
@@ -252,6 +254,12 @@
   display: none;
 }
 @media screen and(max-width: 767px) {
+  .page-profile__container {
+    margin: 0 auto;
+    padding-right: 0;
+    padding-left: 0;
+    max-width: 405px;
+  }
   .profile__hero-img {
     display: none;
   }
@@ -285,5 +293,26 @@
   .profile__pages-list {
     flex-wrap: wrap;
     justify-content: center;
+
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 65px;
+      left: 20px;
+      width: calc(#{100%} - 66px);
+      height: 1px;
+
+      background-color: rgba($color-black, 0.05);
+    }
+  }
+
+  .profile__title-wrapper {
+    margin-bottom: 20px;
+  }
+  // .profile__pages-item { }
+  .profile__thumb {
+    max-width: unset;
   }
 }
