@@ -121,15 +121,13 @@
 }
 
 .top-blogposts__thumb {
-  max-width: 400px;
-  flex-basis: 200px;
-  min-width: 200px;
+  min-width: 160px;
   contain: content;
   overflow: hidden;
 }
 
 .top-blogposts__image {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -379,9 +377,7 @@
     display: block;
   }
 
-  .guns__title {
-    margin-bottom: 15px;
-  }
+  // .guns__title {}
 
   .guns__list {
     margin-bottom: 25px;
@@ -404,6 +400,9 @@
   .guns__post {
     padding-left: 15px;
     padding-right: 15px;
+  }
+  .guns__title-wrapper {
+    gap: 15px;
   }
 
   .guns__list,
@@ -452,17 +451,10 @@
     min-width: 325px;
     width: 100%;
   }
-  .top-blogposts__thumb {
-    min-width: 160px;
-  }
 }
 
 // from Tablet
-@media screen and (min-width: 768px) {
-  .top-blogposts-meta {
-    padding: 32px 0 32px 25px;
-  }
-}
+// @media screen and (min-width: 768px) { }
 
 // from Tablet to desktop
 @media screen and(min-width: 768px) and(max-width: 1199px) {
@@ -470,13 +462,17 @@
     flex-basis: calc((100% - 2 * 5px) / 3);
   }
 
-  .top-blogposts__thumb {
-    min-width: 160px;
-  }
-
   .top-blogposts__post-title {
     font-size: 17px;
   }
 }
 
-// @media screen and (min-width: 1200px) { }
+@media screen and (min-width: 1200px) {
+  .top-blogposts__thumb {
+    min-width: 200px;
+    width: 200px;
+  }
+  .top-blogposts-meta {
+    padding: 32px 0 32px 25px;
+  }
+}
