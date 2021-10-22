@@ -704,10 +704,12 @@
     max-width: 79px;
     max-height: 79px;
   }
+
   .build__photos-image {
     max-width: 100%;
     height: auto;
   }
+
   // .build__description {}
   .build__title-mobile {
     margin-bottom: 20px;
@@ -718,23 +720,35 @@
     white-space: nowrap;
   }
 
+  .comments-review-label {
+    margin-bottom: 15px;
+  }
+
+  /* Enter your review */
+  .comments__review {
+    font-family: 'Rogan';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #999999;
+  }
+
   .build__comments-submit-review-btn {
     width: 100%;
     margin-bottom: 30px;
   }
 
-  .comments-review-label {
-    margin-bottom: 15px;
-  }
   .simbuilds__title {
     margin-bottom: 20px;
   }
+
   .build__comments-title {
     margin-bottom: 20px;
   }
 }
 
-// tablet
+// from tablet
 @media screen and (min-width: 768px) {
   .build__part-list {
     flex-direction: column;
@@ -744,5 +758,16 @@
   .simbuilds__list {
     margin-top: 41px;
     margin-bottom: 40px;
+  }
+
+  .build__part-list-wrapper-mobile {
+    display: none;
+  }
+}
+
+// from tablet to desktop
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .build__part-list-link {
+    flex-wrap: wrap;
   }
 }

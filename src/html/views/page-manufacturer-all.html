@@ -1,575 +1,1556 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <meta name="description" content="Guns and weaponry site" />
     <meta name="theme-color" content="#263238" />
     <title>Manufacturers-all</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <link rel="stylesheet" href="css/style.bundle.css" />
+  </head>
 
-    <link rel="preload" href="./sass/fonts/CaviarDreams.woff2" crossorigin="anonymous" as="font" />
-
-    <!-- 700 -->
-    <link rel="preload" href="../../fonts/rogan/Rogan-Bold.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
-
-    <!-- 400 -->
-    <link rel="preload" href="../../fonts/rogan/Rogan-Regular.woff2" crossorigin="anonymous" as="font"
-        type="font/woff2" />
-</head>
-
-<body class="no-scroll">
+  <body class="no-scroll">
     <!-- Header -->
     <%= _.template(require('./../includes/header.html').default)(data) %>
     <!-- Search -->
     <%= _.template(require('./../includes/search.html').default)(data) %>
 
-    <div class="manufacturers">
-        <div class="container">
-            <div class="manufacturers__content">
-                <div class="searchbuilds__content">
-                    <ul class="searchbuilds-list">
-                        <li class="searchbuilds-link">
-                            <a href="">Home</a>
-                        </li>
-                        <li class="searchbuilds-link">
-                            <a href="">Manufacturers</a>
-                        </li>
-                    </ul>
-                    <h1 class="searchbuilds-head">Manufacturers</h1>
+    <main class="manufacturers">
+      <div class="container">
+        <div class="manufacturers__content">
+          <div class="searchbuilds__content">
+            <ul class="searchbuilds-list">
+              <li class="searchbuilds-link">
+                <a href="">Home</a>
+              </li>
+              <li class="searchbuilds-link">
+                <a href="">Manufacturers</a>
+              </li>
+            </ul>
 
+            <h1 class="searchbuilds-head">Manufacturers</h1>
 
-                    <!-- Manufacturers -->
-                    <div class="manufacturers__block">
-                        <div class="manufacturers__pages">
-                            <div class="mobile-close">
-                            <div class="search">
-                                <div class="container">
-                                    <div class="search__content">
-                                        <span class="search__span">
-                                            <svg class="search__icon">
-                                                <use href="../../img/svg/sprite.svg#icon-search"></use>
-                                            </svg>
-                                        </span>
-                                        <input class="search__input" type="search" placeholder="Enter manufacturer name" />
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-                            <div class="search-mobile">
-                                <div class="container">
-                                    <div class="search__content-mobile">
-                                        <span class="search__span">
-                                            <svg class="search__icon">
-                                                <use href="../../img/svg/sprite.svg#icon-search"></use>
-                                            </svg>
-                                        </span>
-                                        <input class="search__input" type="search" placeholder="Enter manufacturer name" />
-                                    </div>
-                                </div>
-                            </div>
-                            <ul class="manufacturers__pages-list">
-                                <li class="manufacturers__pages-item">
-                                    <button type="button" class="manufacturers__pages-item-button">
-                                        all
-                                    </button>
-                                </li>
-                                <li class="manufacturers__pages-item">
-                                    <button type="button" class="manufacturers__pages-item-button">
-                                        a
-                                    </button>
-                                </li>
-                                <li class="manufacturers__pages-item">
-                                    <button type="button" class="manufacturers__pages-item-button">
-                                        b
-                                    </button>
-                                </li>
-                                <li class="manufacturers__pages-item">
-                                    <button type="button" class="manufacturers__pages-item-button">
-                                        c
-                                    </button>
-                                </li>
-                                <li class="manufacturers__pages-item">
-                                    <button type="button" class="manufacturers__pages-item-button">
-                                        d
-                                    </button>
-                                </li>
-                                <li class="manufacturers__pages-item">
-                                    <button type="button" class="manufacturers__pages-item-button active">
-                                        e
-                                    </button>
-                                </li>
-                                <li class="manufacturers__pages-item">
-                                    <button type="button" class="manufacturers__pages-item-button">
-                                        f
-                                    </button>
-                                </li>
-                                <li class="manufacturers__pages-item">
-                                    <button type="button" class="manufacturers__pages-item-button">
-                                        g
-                                    </button>
-                                </li>
-                                <li class="manufacturers__pages-item">
-                                    <button type="button" class="manufacturers__pages-item-button">
-                                        h
-                                    </button>
-                                </li>
-                                <li class="manufacturers__pages-item">
-                                    <button type="button" class="manufacturers__pages-item-button">
-                                        i
-                                    </button>
-                                </li>
-                                <li class="manufacturers__pages-item">
-                                    <button type="button" class="manufacturers__pages-item-button">
-                                        j
-                                    </button>
-                                </li>
-                                <li class="manufacturers__pages-item">
-                                    <button type="button" class="manufacturers__pages-item-button">
-                                        k
-                                    </button>
-                                </li>
-                                <li class="manufacturers__pages-item">
-                                    <button type="button" class="manufacturers__pages-item-button">
-                                        l
-                                    </button>
-                                </li>
-                                <li class="manufacturers__pages-item">
-                                    <button type="button" class="manufacturers__pages-item-button">
-                                        m
-                                    </button>
-                                </li>
-                                <li class="manufacturers__pages-item">
-                                    <button type="button" class="manufacturers__pages-item-button">
-                                        n
-                                    </button>
-                                </li>
-                                <li class="manufacturers__pages-item">
-                                    <button type="button" class="manufacturers__pages-item-button">
-                                        o
-                                    </button>
-                                </li>
-                                <li class="manufacturers__pages-item">
-                                    <button type="button" class="manufacturers__pages-item-button">
-                                        p
-                                    </button>
-                                </li>
-                                <li class="manufacturers__pages-item">
-                                    <button type="button" class="manufacturers__pages-item-button">
-                                        q
-                                    </button>
-                                </li>
-                                <li class="manufacturers__pages-item">
-                                    <button type="button" class="manufacturers__pages-item-button">
-                                        r
-                                    </button>
-                                </li>
-                                <li class="manufacturers__pages-item">
-                                    <button type="button" class="manufacturers__pages-item-button">
-                                        s
-                                    </button>
-                                </li>
-                                <li class="manufacturers__pages-item">
-                                    <button type="button" class="manufacturers__pages-item-button">
-                                        t
-                                    </button>
-                                </li>
-                                <li class="manufacturers__pages-item">
-                                    <button type="button" class="manufacturers__pages-item-button">
-                                        u
-                                    </button>
-                                </li>
-                                <li class="manufacturers__pages-item">
-                                    <button type="button" class="manufacturers__pages-item-button">
-                                        v
-                                    </button>
-                                </li>
-                                <li class="manufacturers__pages-item">
-                                    <button type="button" class="manufacturers__pages-item-button">
-                                        w
-                                    </button>
-                                </li>
-                                <li class="manufacturers__pages-item">
-                                    <button type="button" class="manufacturers__pages-item-button">
-                                        x
-                                    </button>
-                                </li>
-                                <li class="manufacturers__pages-item">
-                                    <button type="button" class="manufacturers__pages-item-button">
-                                        y
-                                    </button>
-                                </li>
-                                <li class="manufacturers__pages-item">
-                                    <button type="button" class="manufacturers__pages-item-button">
-                                        z
-                                    </button>
-                                </li>
-                            </ul>
-                            <ul class="manufacturers__pages-cards">
-                                <li class="manufacturers__pages-cards-item">
-                                    <a class="manufacturers__pages-cards-item-link">ER Shaw Precision Guns
-                                        </a>
-                                </li>
-                                <li class="manufacturers__pages-cards-item">
-                                    <a class="manufacturers__pages-cards-item-link">Eagle eye precision ammunition
-                                        </a>
-                                </li>
-                                <li class="manufacturers__pages-cards-item">
-                                    <a class="manufacturers__pages-cards-item-link">Eberlestock USA LLC.
-                                        </a>
-                                </li>
-                                <li class="manufacturers__pages-cards-item">
-                                    <a class="manufacturers__pages-cards-item-link">Echo Nine Three
-                                        </a>
-                                </li>
-                                <li class="manufacturers__pages-cards-item">
-                                    <a class="manufacturers__pages-cards-item-link active">Echo-Sigma Emergency Systems
-                                        </a>
-                                </li>
-                                <li class="manufacturers__pages-cards-item">
-                                    <a class="manufacturers__pages-cards-item-link">Ed Brown Products, Inc.
-                                        </a>
-                                </li>
-                            </ul>
-                            <button class="manufacturers__pages-button" type="button">
-                                Show more
-                            </button>
+            <!-- Manufacturers -->
+            <div class="manufacturers__block">
+              <div class="manufacturers__pages">
+                <div class="mobile-close">
+                  <div class="search">
+                    <div class="container">
+                      <div class="search__content">
+                        <span class="search__span">
+                          <svg class="search__icon">
+                            <use
+                              href="../../img/svg/sprite.svg#icon-search"
+                            ></use>
+                          </svg>
+                        </span>
+                        <input
+                          class="search__input"
+                          type="search"
+                          placeholder="Enter manufacturer name"
+                        />
+                      </div>
                     </div>
-                    <div class="searchbuilds__block__trending res">
-                        <div class="searchbuilds__block__trending-now">
-                            <h2 class="searchbuilds__block__trending-head">Trending now</h2>
-                            <ul class="trending-now__list res">
-                                <li class="trending-now__item">
-                                    <a class="trending-now__link" href="#">
-                                        <img class="trending-now__author-avatar-mobile"
-                                            src="./img/photos/avatars-40x40/avatar-001-man-gray-shirt.jpg" alt="Man-gray-shirt" />
-                                        <h3 class="trending-now__post-title">
-                                            10 Tips for Choosing <br />
-                                            a Concealed Carry Handgun
-                                        </h3>
-                                        <div class="trending-now__thumb res">
-                                            <img class="trending-now__author-avatar res"
-                                                src="./img/photos/avatars-40x40/avatar-001-man-gray-shirt.jpg" alt="Man-gray-shirt" />
+                  </div>
+                </div>
 
-                                            <p class="trending-now__post-meta res">
-                                                <span class="trending-now__author-name">troz</span>,
-                                                <span class="trending-now__post-date">today</span>
-                                            </p>
-                                        </div>
-                                    </a>
-                                </li>
-
-                                <li class="trending-now__item">
-                                    <a class="trending-now__link" href="#">
-                                        <h3 class="trending-now__post-title">
-                                            Firearms definitions and requirements
-                                        </h3>
-                                        <div class="trending-now__thumb res">
-                                            <img class="trending-now__author-avatar res"
-                                                src="./img/photos/avatars-40x40/avatar-002-man-red-tshirt.jpg" alt="Man-red-tshirt" />
-                                            <p class="trending-now__post-meta res">
-                                                <span class="trending-now__author-name">troz</span>,
-                                                <span class="trending-now__post-date">yesterday</span>
-                                            </p>
-                                        </div>
-                                    </a>
-                                </li>
-
-                                <li class="trending-now__item">
-                                    <a class="trending-now__link" href="#">
-                                        <h3 class="trending-now__post-title">
-                                            New Members: Please Read Guidelines
-                                        </h3>
-                                        <div class="trending-now__thumb res">
-                                            <img class="trending-now__author-avatar res"
-                                                src="./img/photos/avatars-40x40/avatar-003-man-white-tshirt.jpg" alt="Man-white-tshirt" />
-
-                                            <p class="trending-now__post-meta res">
-                                                <span class="trending-now__author-name">troz</span>,
-                                                <span class="trending-now__post-date">yesterday</span>
-                                            </p>
-                                        </div>
-                                    </a>
-                                </li>
-
-                                <li class="trending-now__item">
-                                    <a class="trending-now__link" href="#">
-                                        <h3 class="trending-now__post-title">
-                                            Pencil Barrel Whip
-                                        </h3>
-                                        <div class="trending-now__thumb res">
-                                            <img class="trending-now__author-avatar res"
-                                                src="./img/photos/avatars-40x40/avatar-004-man-striped-tshirt.jpg"
-                                                alt="Man-striped-tshirt" />
-
-                                            <p class="trending-now__post-meta res">
-                                                <span class="trending-now__author-name">troz</span>,
-                                                <span class="trending-now__post-date">today</span>
-                                            </p>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="searchbuilds__block__trending-builds">
-                            <h2 class="searchbuilds__block__trending-head">Top builds</h2>
-                            <ul class="guns__list shotgun__list-mobile res">
-                                <li class="guns__item shotgun__item">
-                                    <a class="guns__link shotgun__link" href="#">
-                                        <div class="guns__thumb shotgun__thumb">
-                                            <img class="guns__image shotgun__image" src="../../img/photos/shotgun/shotgun-001.jpg"
-                                                alt="Shotgun image Saiga 12 Slash fore grip" width="277" height="200" />
-                                        </div>
-
-                                        <div class="guns__post shotgun__post">
-                                            <h3 class="title-v3 guns__post-title shotgun__post-title">
-                                                Saiga 12 Slash fore grip
-                                            </h3>
-
-                                            <div class="guns__post-meta shotgun__post-meta">
-                                                <div class="guns__avatar-thumb shotgun__avatar-thumb">
-                                                    <img class="guns__author-avatar shotgun__author-avatar"
-                                                        src="../../img/photos/avatar.jpg" alt="Author avatar - man in white t-shirt"
-                                                        width="25" height="25" />
-                                                </div>
-
-                                                <span class="guns__author-name shotgun__author-name">troz</span>
-
-                                                <div class="post__views shotgun__post-views">
-                                                    <svg class="
-                                                                                            post__views-svg
-                                                                                            svg
-                                                                                            shotgun__post-views-svg
-                                                                                          " width="16" height="16">
-                                                        <use href="./img/svg/sprite.svg#icon-post-vieweye"></use>
-                                                    </svg>
-
-                                                    <span class="
-                                                                                            post__views-count
-                                                                                            shotgun__post-views-count
-                                                                                          ">12</span>
-                                                </div>
-
-                                                <div class="post__comments shotgun__post-comments">
-                                                    <svg class="
-                                                                                            post__comments-svg
-                                                                                            shotgun__post-comments-svg
-                                                                                            svg
-                                                                                          " width="14" height="14">
-                                                        <use href="../../img/svg/sprite.svg#icon-post-message"></use>
-                                                    </svg>
-
-                                                    <span class="
-                                                                                            post__comments-count
-                                                                                            shotgun__post-comments-count
-                                                                                          ">5</span>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <ul class="guns__build shotgun__build">
-                                            <li class="guns__build-item shotgun__build-item">
-                                                <span class="guns__build-tag shotgun__build-tag">Remington</span>
-                                            </li>
-                                            <li class="guns__build-item shotgun__build-item">
-                                                <span class="guns__build-tag shotgun__build-tag">1911 R1 Enhanced</span>
-                                            </li>
-                                            <li class="guns__build-item shotgun__build-item">
-                                                <span class="guns__build-tag shotgun__build-tag">.45 ACP</span>
-                                            </li>
-                                        </ul>
-                                    </a>
-                                </li>
-                            </ul>
-                            <ul class="hero__recentbuilds-list res">
-                                <li class="hero__recentbuilds-item res">
-                                    <div class="hero__recentbuilds-cards-toomb">
-                                        <div class="hero__recentbuilds-cards-images res">
-                                            <img src="../../img/photos/pistol1.png" class="hero__recentbuilds-cards-img" />
-                                        </div>
-                                        <h2 class="
-                                                                      hero__recentbuilds-item-head
-                                                                      profile__recentbuilds-item-head
-                                                                    ">
-                                            Glock 22 Gen 4
-                                        </h2>
-                                        <div class="hero__recentbuilds-item-block res">
-                                            <img src="../../img/photos/avatar.png" class="hero__recentbuilds-item-block-human-images res" />
-                                            <p class="hero__recentbuilds-item-block-human-name res">
-                                                troz
-                                            </p>
-                                            <svg class="hero__recentbuilds-item-block-human-icon res">
-                                                <use href="../../img/svg/sprite.svg#icon-post-vieweye"></use>
-                                            </svg>
-                                            <p class="
-                                                                        hero__recentbuilds-item-block-human-vieweye
-                                                                        res
-                                                                      ">
-                                                12
-                                            </p>
-                                            <svg class="hero__recentbuilds-item-block-human-icon res">
-                                                <use href="../../img/svg/sprite.svg#icon-post-message"></use>
-                                            </svg>
-                                            <p class="hero__recentbuilds-item-block-human-comment">
-                                                5
-                                            </p>
-                                        </div>
-                                        <ul class="hero__recentbuilds-item-stats-list">
-                                            <li class="hero__recentbuilds-item-stats-item">
-                                                Remington
-                                            </li>
-                                            <li class="hero__recentbuilds-item-stats-item">
-                                                1911 R1 Enhanced
-                                            </li>
-                                            <li class="hero__recentbuilds-item-stats-item">
-                                                .45 ACP
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="hero__recentbuilds-item res">
-                                    <div class="hero__recentbuilds-cards-toomb">
-                                        <div class="hero__recentbuilds-cards-images res">
-                                            <img src="../../img/photos/ak1.png" class="hero__recentbuilds-cards-img" />
-                                        </div>
-                                        <h2 class="
-                                                                      hero__recentbuilds-item-head
-                                                                      profile__recentbuilds-item-head
-                                                                    ">
-                                            Glock 22 Gen 4
-                                        </h2>
-                                        <div class="hero__recentbuilds-item-block res">
-                                            <img src="../../img/photos/avatar.png" class="hero__recentbuilds-item-block-human-images res" />
-                                            <p class="hero__recentbuilds-item-block-human-name res">
-                                                troz
-                                            </p>
-                                            <svg class="hero__recentbuilds-item-block-human-icon res">
-                                                <use href="../../img/svg/sprite.svg#icon-post-vieweye"></use>
-                                            </svg>
-                                            <p class="
-                                                                        hero__recentbuilds-item-block-human-vieweye
-                                                                        res
-                                                                      ">
-                                                12
-                                            </p>
-                                            <svg class="hero__recentbuilds-item-block-human-icon res">
-                                                <use href="../../img/svg/sprite.svg#icon-post-message"></use>
-                                            </svg>
-                                            <p class="hero__recentbuilds-item-block-human-comment">
-                                                5
-                                            </p>
-                                        </div>
-                                        <ul class="hero__recentbuilds-item-stats-list">
-                                            <li class="hero__recentbuilds-item-stats-item">
-                                                Remington
-                                            </li>
-                                            <li class="hero__recentbuilds-item-stats-item">
-                                                1911 R1 Enhanced
-                                            </li>
-                                            <li class="hero__recentbuilds-item-stats-item">
-                                                .45 ACP
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="searchbuilds__block__trending-blogs">
-                            <h2 class="searchbuilds__block__trending-head">
-                                Top blogposts
-                            </h2>
-                            <ul class="top-blogposts__list res">
-                                <li class="top-blogposts__item">
-                                    <a class="top-blogposts__link link res" href="#">
-                                        <div class="top-blogposts__thumb res">
-                                            <img class="top-blogposts__image res"
-                                                src="../../img/photos/top-blogposts/top-blogpost-001-ak-12.jpg"
-                                                alt="top blogposts gun image ak-12" />
-                                        </div>
-
-                                        <div class="top-blogposts-meta res">
-                                            <p class="top-blogposts__post-type">Rifle</p>
-
-                                            <p class="top-blogposts__post-title res">
-                                                Izhmash officially presented the new AK-12
-                                            </p>
-
-                                            <div class="post top-blogposts__post">
-                                                <span class="post__author-name">troz</span>
-
-                                                <div class="post__views">
-                                                    <svg class="post__views-svg svg" width="16" height="16">
-                                                        <use href="./img/svg/sprite.svg#icon-post-vieweye"></use>
-                                                    </svg>
-
-                                                    <span class="post__views-count">12</span>
-                                                </div>
-
-                                                <div class="post__comments">
-                                                    <svg class="post__comments-svg svg" width="14" height="14">
-                                                        <use href="../../img/svg/sprite.svg#icon-post-message"></use>
-                                                    </svg>
-
-                                                    <span class="post__comments-count">5</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-
-                                <li class="top-blogposts__item">
-                                    <a class="top-blogposts__link link res" href="#">
-                                        <div class="top-blogposts__thumb res">
-                                            <img class="top-blogposts__image res"
-                                                src="../../img/photos/top-blogposts/top-blogpost-002-savage-mark-2.jpg"
-                                                alt="top blogposts gun image savage-mark-2" />
-                                        </div>
-
-                                        <div class="top-blogposts-meta res">
-                                            <p class="top-blogposts__post-type">Shotgun</p>
-
-                                            <p class="top-blogposts__post-title res">
-                                                Savage Mark 2 and a problem of extraction
-                                            </p>
-
-                                            <div class="post top-blogposts__post">
-                                                <span class="post__author-name">troz</span>
-
-                                                <div class="post__views">
-                                                    <svg class="post__views-svg svg" width="16" height="16">
-                                                        <use href="./img/svg/sprite.svg#icon-post-vieweye"></use>
-                                                    </svg>
-
-                                                    <span class="post__views-count">12</span>
-                                                </div>
-
-                                                <div class="post__comments">
-                                                    <svg class="post__comments-svg svg" width="14" height="14">
-                                                        <use href="../../img/svg/sprite.svg#icon-post-message"></use>
-                                                    </svg>
-
-                                                    <span class="post__comments-count">5</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                <div class="search-mobile">
+                  <div class="container">
+                    <div class="search__content-mobile">
+                      <span class="search__span">
+                        <svg class="search__icon">
+                          <use
+                            href="../../img/svg/sprite.svg#icon-search"
+                          ></use>
+                        </svg>
+                      </span>
+                      <input
+                        class="search__input"
+                        type="search"
+                        placeholder="Enter manufacturer name"
+                      />
                     </div>
-                    </div>
+                  </div>
+                </div>
+
+                <ul class="manufacturers__pages-list">
+                  <li class="manufacturers__pages-item">
+                    <button
+                      type="button"
+                      class="manufacturers__pages-item-button"
+                    >
+                      all
+                    </button>
+                  </li>
+                  <li class="manufacturers__pages-item">
+                    <button
+                      type="button"
+                      class="manufacturers__pages-item-button"
+                    >
+                      a
+                    </button>
+                  </li>
+                  <li class="manufacturers__pages-item">
+                    <button
+                      type="button"
+                      class="manufacturers__pages-item-button"
+                    >
+                      b
+                    </button>
+                  </li>
+                  <li class="manufacturers__pages-item">
+                    <button
+                      type="button"
+                      class="manufacturers__pages-item-button"
+                    >
+                      c
+                    </button>
+                  </li>
+                  <li class="manufacturers__pages-item">
+                    <button
+                      type="button"
+                      class="manufacturers__pages-item-button"
+                    >
+                      d
+                    </button>
+                  </li>
+                  <li class="manufacturers__pages-item">
+                    <button
+                      type="button"
+                      class="manufacturers__pages-item-button active"
+                    >
+                      e
+                    </button>
+                  </li>
+                  <li class="manufacturers__pages-item">
+                    <button
+                      type="button"
+                      class="manufacturers__pages-item-button"
+                    >
+                      f
+                    </button>
+                  </li>
+                  <li class="manufacturers__pages-item">
+                    <button
+                      type="button"
+                      class="manufacturers__pages-item-button"
+                    >
+                      g
+                    </button>
+                  </li>
+                  <li class="manufacturers__pages-item">
+                    <button
+                      type="button"
+                      class="manufacturers__pages-item-button"
+                    >
+                      h
+                    </button>
+                  </li>
+                  <li class="manufacturers__pages-item">
+                    <button
+                      type="button"
+                      class="manufacturers__pages-item-button"
+                    >
+                      i
+                    </button>
+                  </li>
+                  <li class="manufacturers__pages-item">
+                    <button
+                      type="button"
+                      class="manufacturers__pages-item-button"
+                    >
+                      j
+                    </button>
+                  </li>
+                  <li class="manufacturers__pages-item">
+                    <button
+                      type="button"
+                      class="manufacturers__pages-item-button"
+                    >
+                      k
+                    </button>
+                  </li>
+                  <li class="manufacturers__pages-item">
+                    <button
+                      type="button"
+                      class="manufacturers__pages-item-button"
+                    >
+                      l
+                    </button>
+                  </li>
+                  <li class="manufacturers__pages-item">
+                    <button
+                      type="button"
+                      class="manufacturers__pages-item-button"
+                    >
+                      m
+                    </button>
+                  </li>
+                  <li class="manufacturers__pages-item">
+                    <button
+                      type="button"
+                      class="manufacturers__pages-item-button"
+                    >
+                      n
+                    </button>
+                  </li>
+                  <li class="manufacturers__pages-item">
+                    <button
+                      type="button"
+                      class="manufacturers__pages-item-button"
+                    >
+                      o
+                    </button>
+                  </li>
+                  <li class="manufacturers__pages-item">
+                    <button
+                      type="button"
+                      class="manufacturers__pages-item-button"
+                    >
+                      p
+                    </button>
+                  </li>
+                  <li class="manufacturers__pages-item">
+                    <button
+                      type="button"
+                      class="manufacturers__pages-item-button"
+                    >
+                      q
+                    </button>
+                  </li>
+                  <li class="manufacturers__pages-item">
+                    <button
+                      type="button"
+                      class="manufacturers__pages-item-button"
+                    >
+                      r
+                    </button>
+                  </li>
+                  <li class="manufacturers__pages-item">
+                    <button
+                      type="button"
+                      class="manufacturers__pages-item-button"
+                    >
+                      s
+                    </button>
+                  </li>
+                  <li class="manufacturers__pages-item">
+                    <button
+                      type="button"
+                      class="manufacturers__pages-item-button"
+                    >
+                      t
+                    </button>
+                  </li>
+                  <li class="manufacturers__pages-item">
+                    <button
+                      type="button"
+                      class="manufacturers__pages-item-button"
+                    >
+                      u
+                    </button>
+                  </li>
+                  <li class="manufacturers__pages-item">
+                    <button
+                      type="button"
+                      class="manufacturers__pages-item-button"
+                    >
+                      v
+                    </button>
+                  </li>
+                  <li class="manufacturers__pages-item">
+                    <button
+                      type="button"
+                      class="manufacturers__pages-item-button"
+                    >
+                      w
+                    </button>
+                  </li>
+                  <li class="manufacturers__pages-item">
+                    <button
+                      type="button"
+                      class="manufacturers__pages-item-button"
+                    >
+                      x
+                    </button>
+                  </li>
+                  <li class="manufacturers__pages-item">
+                    <button
+                      type="button"
+                      class="manufacturers__pages-item-button"
+                    >
+                      y
+                    </button>
+                  </li>
+                  <li class="manufacturers__pages-item">
+                    <button
+                      type="button"
+                      class="manufacturers__pages-item-button"
+                    >
+                      z
+                    </button>
+                  </li>
+                </ul>
+
+                <ul class="manufacturers__pages-cards">
+                  <li class="manufacturers__pages-cards-item">
+                    <a class="manufacturers__pages-cards-item-link"
+                      >ER Shaw Precision Guns
+                    </a>
+                  </li>
+                  <li class="manufacturers__pages-cards-item">
+                    <a class="manufacturers__pages-cards-item-link"
+                      >Eagle eye precision ammunition
+                    </a>
+                  </li>
+                  <li class="manufacturers__pages-cards-item">
+                    <a class="manufacturers__pages-cards-item-link"
+                      >Eberlestock USA LLC.
+                    </a>
+                  </li>
+                  <li class="manufacturers__pages-cards-item">
+                    <a class="manufacturers__pages-cards-item-link"
+                      >Echo Nine Three
+                    </a>
+                  </li>
+                  <li class="manufacturers__pages-cards-item">
+                    <a class="manufacturers__pages-cards-item-link active"
+                      >Echo-Sigma Emergency Systems
+                    </a>
+                  </li>
+                  <li class="manufacturers__pages-cards-item">
+                    <a class="manufacturers__pages-cards-item-link"
+                      >Ed Brown Products, Inc.
+                    </a>
+                  </li>
+                </ul>
+
+                <button class="manufacturers__pages-button" type="button">
+                  Show more
+                </button>
+              </div>
+
+              <div class="searchbuilds__block__trending res">
+                <div class="searchbuilds__block__trending-now">
+                  <h2 class="searchbuilds__block__trending-head">
+                    Trending now
+                  </h2>
+                  <ul class="trending-now__list res">
+                    <li class="trending-now__item">
+                      <a class="trending-now__link" href="#">
+                        <img
+                          class="trending-now__author-avatar-mobile"
+                          src="./img/photos/avatars-40x40/avatar-001-man-gray-shirt.jpg"
+                          alt="Man-gray-shirt"
+                        />
+                        <h3 class="trending-now__post-title">
+                          10 Tips for Choosing <br />
+                          a Concealed Carry Handgun
+                        </h3>
+                        <div class="trending-now__thumb res">
+                          <img
+                            class="trending-now__author-avatar res"
+                            src="./img/photos/avatars-40x40/avatar-001-man-gray-shirt.jpg"
+                            alt="Man-gray-shirt"
+                          />
+
+                          <p class="trending-now__post-meta res">
+                            <span class="trending-now__author-name">troz</span>,
+                            <span class="trending-now__post-date">today</span>
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="trending-now__item">
+                      <a class="trending-now__link" href="#">
+                        <h3 class="trending-now__post-title">
+                          Firearms definitions and requirements
+                        </h3>
+                        <div class="trending-now__thumb res">
+                          <img
+                            class="trending-now__author-avatar res"
+                            src="./img/photos/avatars-40x40/avatar-002-man-red-tshirt.jpg"
+                            alt="Man-red-tshirt"
+                          />
+                          <p class="trending-now__post-meta res">
+                            <span class="trending-now__author-name">troz</span>,
+                            <span class="trending-now__post-date"
+                              >yesterday</span
+                            >
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="trending-now__item">
+                      <a class="trending-now__link" href="#">
+                        <h3 class="trending-now__post-title">
+                          New Members: Please Read Guidelines
+                        </h3>
+                        <div class="trending-now__thumb res">
+                          <img
+                            class="trending-now__author-avatar res"
+                            src="./img/photos/avatars-40x40/avatar-003-man-white-tshirt.jpg"
+                            alt="Man-white-tshirt"
+                          />
+
+                          <p class="trending-now__post-meta res">
+                            <span class="trending-now__author-name">troz</span>,
+                            <span class="trending-now__post-date"
+                              >yesterday</span
+                            >
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="trending-now__item">
+                      <a class="trending-now__link" href="#">
+                        <h3 class="trending-now__post-title">
+                          Pencil Barrel Whip
+                        </h3>
+                        <div class="trending-now__thumb res">
+                          <img
+                            class="trending-now__author-avatar res"
+                            src="./img/photos/avatars-40x40/avatar-004-man-striped-tshirt.jpg"
+                            alt="Man-striped-tshirt"
+                          />
+
+                          <p class="trending-now__post-meta res">
+                            <span class="trending-now__author-name">troz</span>,
+                            <span class="trending-now__post-date">today</span>
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="searchbuilds__block__trending-builds">
+                  <h2 class="searchbuilds__block__trending-head">Top builds</h2>
+                  <ul class="guns__list shotgun__list-mobile res">
+                    <li class="guns__item shotgun__item">
+                      <a class="guns__link shotgun__link" href="#">
+                        <div class="guns__thumb shotgun__thumb">
+                          <img
+                            class="guns__image shotgun__image"
+                            src="../../img/photos/shotgun/shotgun-001.jpg"
+                            alt="Shotgun image Saiga 12 Slash fore grip"
+                            width="277"
+                            height="200"
+                          />
+                        </div>
+
+                        <div class="guns__post shotgun__post">
+                          <h3
+                            class="
+                              title-v3
+                              guns__post-title
+                              shotgun__post-title
+                            "
+                          >
+                            Saiga 12 Slash fore grip
+                          </h3>
+
+                          <div class="guns__post-meta shotgun__post-meta">
+                            <div
+                              class="guns__avatar-thumb shotgun__avatar-thumb"
+                            >
+                              <img
+                                class="
+                                  guns__author-avatar
+                                  shotgun__author-avatar
+                                "
+                                src="../../img/photos/avatar.jpg"
+                                alt="Author avatar - man in white t-shirt"
+                                width="25"
+                                height="25"
+                              />
+                            </div>
+
+                            <span class="guns__author-name shotgun__author-name"
+                              >troz</span
+                            >
+
+                            <div class="post__views shotgun__post-views">
+                              <svg
+                                class="
+                                  post__views-svg
+                                  svg
+                                  shotgun__post-views-svg
+                                "
+                                width="16"
+                                height="16"
+                              >
+                                <use
+                                  href="./img/svg/sprite.svg#icon-post-vieweye"
+                                ></use>
+                              </svg>
+
+                              <span
+                                class="
+                                  post__views-count
+                                  shotgun__post-views-count
+                                "
+                                >12</span
+                              >
+                            </div>
+
+                            <div class="post__comments shotgun__post-comments">
+                              <svg
+                                class="
+                                  post__comments-svg
+                                  shotgun__post-comments-svg
+                                  svg
+                                "
+                                width="14"
+                                height="14"
+                              >
+                                <use
+                                  href="../../img/svg/sprite.svg#icon-post-message"
+                                ></use>
+                              </svg>
+
+                              <span
+                                class="
+                                  post__comments-count
+                                  shotgun__post-comments-count
+                                "
+                                >5</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+
+                        <ul class="guns__build shotgun__build">
+                          <li class="guns__build-item shotgun__build-item">
+                            <span class="guns__build-tag shotgun__build-tag"
+                              >Remington</span
+                            >
+                          </li>
+                          <li class="guns__build-item shotgun__build-item">
+                            <span class="guns__build-tag shotgun__build-tag"
+                              >1911 R1 Enhanced</span
+                            >
+                          </li>
+                          <li class="guns__build-item shotgun__build-item">
+                            <span class="guns__build-tag shotgun__build-tag"
+                              >.45 ACP</span
+                            >
+                          </li>
+                        </ul>
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="hero__recentbuilds-list res">
+                    <li class="hero__recentbuilds-item res">
+                      <div class="hero__recentbuilds-cards-toomb">
+                        <div class="hero__recentbuilds-cards-images res">
+                          <img
+                            src="../../img/photos/pistol1.png"
+                            class="hero__recentbuilds-cards-img"
+                          />
+                        </div>
+                        <h2
+                          class="
+                            hero__recentbuilds-item-head
+                            profile__recentbuilds-item-head
+                          "
+                        >
+                          Glock 22 Gen 4
+                        </h2>
+                        <div class="hero__recentbuilds-item-block res">
+                          <img
+                            src="../../img/photos/avatar.png"
+                            class="
+                              hero__recentbuilds-item-block-human-images
+                              res
+                            "
+                          />
+                          <p
+                            class="hero__recentbuilds-item-block-human-name res"
+                          >
+                            troz
+                          </p>
+                          <svg
+                            class="hero__recentbuilds-item-block-human-icon res"
+                          >
+                            <use
+                              href="../../img/svg/sprite.svg#icon-post-vieweye"
+                            ></use>
+                          </svg>
+                          <p
+                            class="
+                              hero__recentbuilds-item-block-human-vieweye
+                              res
+                            "
+                          >
+                            12
+                          </p>
+                          <svg
+                            class="hero__recentbuilds-item-block-human-icon res"
+                          >
+                            <use
+                              href="../../img/svg/sprite.svg#icon-post-message"
+                            ></use>
+                          </svg>
+                          <p
+                            class="hero__recentbuilds-item-block-human-comment"
+                          >
+                            5
+                          </p>
+                        </div>
+                        <ul class="hero__recentbuilds-item-stats-list">
+                          <li class="hero__recentbuilds-item-stats-item">
+                            Remington
+                          </li>
+                          <li class="hero__recentbuilds-item-stats-item">
+                            1911 R1 Enhanced
+                          </li>
+                          <li class="hero__recentbuilds-item-stats-item">
+                            .45 ACP
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="hero__recentbuilds-item res">
+                      <div class="hero__recentbuilds-cards-toomb">
+                        <div class="hero__recentbuilds-cards-images res">
+                          <img
+                            src="../../img/photos/ak1.png"
+                            class="hero__recentbuilds-cards-img"
+                          />
+                        </div>
+                        <h2
+                          class="
+                            hero__recentbuilds-item-head
+                            profile__recentbuilds-item-head
+                          "
+                        >
+                          Glock 22 Gen 4
+                        </h2>
+                        <div class="hero__recentbuilds-item-block res">
+                          <img
+                            src="../../img/photos/avatar.png"
+                            class="
+                              hero__recentbuilds-item-block-human-images
+                              res
+                            "
+                          />
+                          <p
+                            class="hero__recentbuilds-item-block-human-name res"
+                          >
+                            troz
+                          </p>
+                          <svg
+                            class="hero__recentbuilds-item-block-human-icon res"
+                          >
+                            <use
+                              href="../../img/svg/sprite.svg#icon-post-vieweye"
+                            ></use>
+                          </svg>
+                          <p
+                            class="
+                              hero__recentbuilds-item-block-human-vieweye
+                              res
+                            "
+                          >
+                            12
+                          </p>
+                          <svg
+                            class="hero__recentbuilds-item-block-human-icon res"
+                          >
+                            <use
+                              href="../../img/svg/sprite.svg#icon-post-message"
+                            ></use>
+                          </svg>
+                          <p
+                            class="hero__recentbuilds-item-block-human-comment"
+                          >
+                            5
+                          </p>
+                        </div>
+                        <ul class="hero__recentbuilds-item-stats-list">
+                          <li class="hero__recentbuilds-item-stats-item">
+                            Remington
+                          </li>
+                          <li class="hero__recentbuilds-item-stats-item">
+                            1911 R1 Enhanced
+                          </li>
+                          <li class="hero__recentbuilds-item-stats-item">
+                            .45 ACP
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="searchbuilds__block__trending-blogs">
+                  <h2 class="searchbuilds__block__trending-head">
+                    Top blogposts
+                  </h2>
+                  <ul class="top-blogposts__list res">
+                    <li class="top-blogposts__item">
+                      <a class="top-blogposts__link link res" href="#">
+                        <div class="top-blogposts__thumb res">
+                          <img
+                            class="top-blogposts__image res"
+                            src="../../img/photos/top-blogposts/top-blogpost-001-ak-12.jpg"
+                            alt="top blogposts gun image ak-12"
+                          />
+                        </div>
+
+                        <div class="top-blogposts-meta res">
+                          <p class="top-blogposts__post-type">Rifle</p>
+
+                          <p class="top-blogposts__post-title res">
+                            Izhmash officially presented the new AK-12
+                          </p>
+
+                          <div class="post top-blogposts__post">
+                            <span class="post__author-name">troz</span>
+
+                            <div class="post__views">
+                              <svg
+                                class="post__views-svg svg"
+                                width="16"
+                                height="16"
+                              >
+                                <use
+                                  href="./img/svg/sprite.svg#icon-post-vieweye"
+                                ></use>
+                              </svg>
+
+                              <span class="post__views-count">12</span>
+                            </div>
+
+                            <div class="post__comments">
+                              <svg
+                                class="post__comments-svg svg"
+                                width="14"
+                                height="14"
+                              >
+                                <use
+                                  href="../../img/svg/sprite.svg#icon-post-message"
+                                ></use>
+                              </svg>
+
+                              <span class="post__comments-count">5</span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="top-blogposts__item">
+                      <a class="top-blogposts__link link res" href="#">
+                        <div class="top-blogposts__thumb res">
+                          <img
+                            class="top-blogposts__image res"
+                            src="../../img/photos/top-blogposts/top-blogpost-002-savage-mark-2.jpg"
+                            alt="top blogposts gun image savage-mark-2"
+                          />
+                        </div>
+
+                        <div class="top-blogposts-meta res">
+                          <p class="top-blogposts__post-type">Shotgun</p>
+
+                          <p class="top-blogposts__post-title res">
+                            Savage Mark 2 and a problem of extraction
+                          </p>
+
+                          <div class="post top-blogposts__post">
+                            <span class="post__author-name">troz</span>
+
+                            <div class="post__views">
+                              <svg
+                                class="post__views-svg svg"
+                                width="16"
+                                height="16"
+                              >
+                                <use
+                                  href="./img/svg/sprite.svg#icon-post-vieweye"
+                                ></use>
+                              </svg>
+
+                              <span class="post__views-count">12</span>
+                            </div>
+
+                            <div class="post__comments">
+                              <svg
+                                class="post__comments-svg svg"
+                                width="14"
+                                height="14"
+                              >
+                                <use
+                                  href="../../img/svg/sprite.svg#icon-post-message"
+                                ></use>
+                              </svg>
+
+                              <span class="post__comments-count">5</span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
+      </div>
 
-<!-- Footer -->
-<%= _.template(require('./../includes/footer.html').default)(data) %>
+      <section class="trending-now section catalog__trending-now">
+        <div class="container trending-now__container">
+          <div
+            class="
+              title-wrapper
+              trending-now__title-wrapper
+              catalog__section-title-wrapper
+            "
+          >
+            <h2 class="title-v2 trending-now__title section__title">
+              Trending now
+            </h2>
+          </div>
 
-</body>
+          <ul class="trending-now__list">
+            <li class="trending-now__item">
+              <a class="trending-now__link" href="#">
+                <div class="trending-now__thumb">
+                  <img
+                    class="trending-now__author-avatar"
+                    src="./img/photos/avatars-40x40/avatar-001-man-gray-shirt.jpg"
+                    alt="Man-gray-shirt"
+                    width="40"
+                    height="40"
+                  />
+                </div>
+
+                <h3 class="trending-now__post-title">
+                  10 Tips for Choosing <br />
+                  a Concealed Carry Handgun
+                </h3>
+
+                <p class="trending-now__post-meta">
+                  <span class="trending-now__author-name">troz</span>,
+                  <span class="trending-now__post-date">today</span>
+                </p>
+              </a>
+            </li>
+
+            <li class="trending-now__item">
+              <a class="trending-now__link" href="#">
+                <div class="trending-now__thumb">
+                  <img
+                    class="trending-now__author-avatar"
+                    src="./img/photos/avatars-40x40/avatar-002-man-red-tshirt.jpg"
+                    alt="Man-red-tshirt"
+                    width="40"
+                    height="40"
+                  />
+                </div>
+
+                <h3 class="trending-now__post-title">
+                  Firearms definitions and requirements
+                </h3>
+
+                <p class="trending-now__post-meta">
+                  <span class="trending-now__author-name">troz</span>,
+                  <span class="trending-now__post-date">yesterday</span>
+                </p>
+              </a>
+            </li>
+
+            <li class="trending-now__item">
+              <a class="trending-now__link" href="#">
+                <div class="trending-now__thumb">
+                  <img
+                    class="trending-now__author-avatar"
+                    src="./img/photos/avatars-40x40/avatar-003-man-white-tshirt.jpg"
+                    alt="Man-white-tshirt"
+                    width="40"
+                    height="40"
+                  />
+                </div>
+
+                <h3 class="trending-now__post-title">
+                  New Members: Please Read Guidelines
+                </h3>
+
+                <p class="trending-now__post-meta">
+                  <span class="trending-now__author-name">troz</span>,
+                  <span class="trending-now__post-date">yesterday</span>
+                </p>
+              </a>
+            </li>
+
+            <li class="trending-now__item">
+              <a class="trending-now__link" href="#">
+                <div class="trending-now__thumb">
+                  <img
+                    class="trending-now__author-avatar"
+                    src="./img/photos/avatars-40x40/avatar-004-man-striped-tshirt.jpg"
+                    alt="Man-striped-tshirt"
+                    width="40"
+                    height="40"
+                  />
+                </div>
+
+                <h3 class="trending-now__post-title">Pencil Barrel Whip</h3>
+
+                <p class="trending-now__post-meta">
+                  <span class="trending-now__author-name">troz</span>,
+                  <span class="trending-now__post-date">10 September 2020</span>
+                </p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="guns shotgun section catalog__top-builds">
+        <div class="container guns__container">
+          <div
+            class="
+              title-wrapper
+              guns__title-wrapper
+              catalog__section-title-wrapper
+            "
+          >
+            <h2 class="title-v2 guns__title section__title">Top builds</h2>
+          </div>
+
+          <ul class="guns__list shotgun__list">
+            <li class="guns__item shotgun__item">
+              <a class="guns__link shotgun__link" href="#">
+                <div class="guns__thumb shotgun__thumb">
+                  <picture>
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="../../img/photos/shotgun/shotgun-001.jpg 277w"
+                      sizes="(min-width: 768px) 277px, 33vw"
+                      title="Gun image"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ../../img/photos/shotgun/guns-mobile-002-370w.jpg 370w
+                      "
+                      sizes="(max-width: 767px) 370px, 100vw"
+                      title="Gun image"
+                    />
+
+                    <img
+                      class="guns__image shotgun__image"
+                      src="../../img/photos/shotgun/guns-mobile-002-370w.jpg"
+                      alt="Gun image"
+                    />
+                  </picture>
+                </div>
+
+                <div class="guns__post shotgun__post">
+                  <h3 class="title-v3 guns__post-title shotgun__post-title">
+                    Saiga 12 Slash fore grip
+                  </h3>
+
+                  <div class="guns__post-meta shotgun__post-meta">
+                    <div class="guns__avatar-thumb shotgun__avatar-thumb">
+                      <img
+                        class="guns__author-avatar shotgun__author-avatar"
+                        src="../../img/photos/avatar.jpg"
+                        alt="Author avatar - man in white t-shirt"
+                        width="25"
+                        height="25"
+                      />
+                    </div>
+
+                    <span class="guns__author-name shotgun__author-name"
+                      >troz</span
+                    >
+
+                    <div class="post__views shotgun__post-views">
+                      <svg
+                        class="post__views-svg svg shotgun__post-views-svg"
+                        width="16"
+                        height="16"
+                      >
+                        <use
+                          href="./img/svg/sprite.svg#icon-post-vieweye"
+                        ></use>
+                      </svg>
+
+                      <span class="post__views-count shotgun__post-views-count"
+                        >12</span
+                      >
+                    </div>
+
+                    <div class="post__comments shotgun__post-comments">
+                      <svg
+                        class="
+                          post__comments-svg
+                          shotgun__post-comments-svg
+                          svg
+                        "
+                        width="14"
+                        height="14"
+                      >
+                        <use
+                          href="../../img/svg/sprite.svg#icon-post-message"
+                        ></use>
+                      </svg>
+
+                      <span
+                        class="
+                          post__comments-count
+                          shotgun__post-comments-count
+                        "
+                        >5</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <ul class="guns__build shotgun__build">
+                  <li class="guns__build-item shotgun__build-item">
+                    <span class="guns__build-tag shotgun__build-tag"
+                      >Remington</span
+                    >
+                  </li>
+                  <li class="guns__build-item shotgun__build-item">
+                    <span class="guns__build-tag shotgun__build-tag"
+                      >1911 R1 Enhanced</span
+                    >
+                  </li>
+                  <li class="guns__build-item shotgun__build-item">
+                    <span class="guns__build-tag shotgun__build-tag"
+                      >.45 ACP</span
+                    >
+                  </li>
+                </ul>
+              </a>
+            </li>
+
+            <li class="guns__item shotgun__item">
+              <a class="guns__link shotgun__link" href="#">
+                <div class="guns__thumb shotgun__thumb">
+                  <img
+                    class="guns__image shotgun__image"
+                    src="../../img/photos/shotgun/shotgun-002.jpg"
+                    alt="Shotgun image Verp 12 Comp. fore grip"
+                    width="277"
+                    height="200"
+                  />
+                </div>
+
+                <div class="guns__post shotgun__post">
+                  <h3 class="title-v3 guns__post-title shotgun__post-title">
+                    Verp 12 Comp. fore grip
+                  </h3>
+
+                  <div class="guns__post-meta shotgun__post-meta">
+                    <div class="guns__avatar-thumb shotgun__avatar-thumb">
+                      <img
+                        class="guns__author-avatar shotgun__author-avatar"
+                        src="../../img/photos/avatar.jpg"
+                        alt="Author avatar - man in white t-shirt"
+                        width="25"
+                        height="25"
+                      />
+                    </div>
+
+                    <span class="guns__author-name shotgun__author-name"
+                      >troz</span
+                    >
+
+                    <div class="post__views shotgun__post-views">
+                      <svg
+                        class="post__views-svg svg shotgun__post-views-svg"
+                        width="16"
+                        height="16"
+                      >
+                        <use
+                          href="./img/svg/sprite.svg#icon-post-vieweye"
+                        ></use>
+                      </svg>
+
+                      <span class="post__views-count shotgun__post-views-count"
+                        >12</span
+                      >
+                    </div>
+
+                    <div class="post__comments shotgun__post-comments">
+                      <svg
+                        class="
+                          post__comments-svg
+                          shotgun__post-comments-svg
+                          svg
+                        "
+                        width="14"
+                        height="14"
+                      >
+                        <use
+                          href="../../img/svg/sprite.svg#icon-post-message"
+                        ></use>
+                      </svg>
+
+                      <span
+                        class="
+                          post__comments-count
+                          shotgun__post-comments-count
+                        "
+                        >5</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <ul class="guns__build shotgun__build">
+                  <li class="guns__build-item shotgun__build-item">
+                    <span class="guns__build-tag shotgun__build-tag"
+                      >Remington</span
+                    >
+                  </li>
+                  <li class="guns__build-item shotgun__build-item">
+                    <span class="guns__build-tag shotgun__build-tag"
+                      >1911 R1 Enhanced</span
+                    >
+                  </li>
+                  <li class="guns__build-item shotgun__build-item">
+                    <span class="guns__build-tag shotgun__build-tag"
+                      >.45 ACP</span
+                    >
+                  </li>
+                </ul>
+              </a>
+            </li>
+
+            <li class="guns__item shotgun__item">
+              <a class="guns__link shotgun__link" href="#">
+                <div class="guns__thumb shotgun__thumb">
+                  <img
+                    class="guns__image shotgun__image"
+                    src="../../img/photos/shotgun/shotgun-003.jpg"
+                    alt="Shotgun image Custom Mossberg 500"
+                    width="277"
+                    height="200"
+                  />
+                </div>
+
+                <div class="guns__post shotgun__post">
+                  <h3 class="title-v3 guns__post-title shotgun__post-title">
+                    Custom Mossberg 500
+                  </h3>
+
+                  <div class="guns__post-meta shotgun__post-meta">
+                    <div class="guns__avatar-thumb shotgun__avatar-thumb">
+                      <img
+                        class="guns__author-avatar shotgun__author-avatar"
+                        src="../../img/photos/avatar.jpg"
+                        alt="Author avatar - man in white t-shirt"
+                        width="25"
+                        height="25"
+                      />
+                    </div>
+
+                    <span class="guns__author-name shotgun__author-name"
+                      >troz</span
+                    >
+
+                    <div class="post__views shotgun__post-views">
+                      <svg
+                        class="post__views-svg svg shotgun__post-views-svg"
+                        width="16"
+                        height="16"
+                      >
+                        <use
+                          href="./img/svg/sprite.svg#icon-post-vieweye"
+                        ></use>
+                      </svg>
+
+                      <span class="post__views-count shotgun__post-views-count"
+                        >12</span
+                      >
+                    </div>
+
+                    <div class="post__comments shotgun__post-comments">
+                      <svg
+                        class="
+                          post__comments-svg
+                          shotgun__post-comments-svg
+                          svg
+                        "
+                        width="14"
+                        height="14"
+                      >
+                        <use
+                          href="../../img/svg/sprite.svg#icon-post-message"
+                        ></use>
+                      </svg>
+
+                      <span
+                        class="
+                          post__comments-count
+                          shotgun__post-comments-count
+                        "
+                        >5</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <ul class="guns__build shotgun__build">
+                  <li class="guns__build-item shotgun__build-item">
+                    <span class="guns__build-tag shotgun__build-tag"
+                      >Remington</span
+                    >
+                  </li>
+                  <li class="guns__build-item shotgun__build-item">
+                    <span class="guns__build-tag shotgun__build-tag"
+                      >1911 R1 Enhanced</span
+                    >
+                  </li>
+                  <li class="guns__build-item shotgun__build-item">
+                    <span class="guns__build-tag shotgun__build-tag"
+                      >.45 ACP</span
+                    >
+                  </li>
+                </ul>
+              </a>
+            </li>
+
+            <li class="guns__item shotgun__item">
+              <a class="guns__link shotgun__link" href="#">
+                <div class="guns__thumb shotgun__thumb">
+                  <img
+                    class="guns__image shotgun__image"
+                    src="../../img/photos/shotgun/shotgun-004.jpg"
+                    alt="Shotgun image B25 in 20 gauge"
+                    width="277"
+                    height="200"
+                  />
+                </div>
+
+                <div class="guns__post shotgun__post">
+                  <h3 class="title-v3 guns__post-title shotgun__post-title">
+                    B25 Shotgun in 20 gauge
+                  </h3>
+
+                  <div class="guns__post-meta shotgun__post-meta">
+                    <div class="guns__avatar-thumb shotgun__avatar-thumb">
+                      <img
+                        class="guns__author-avatar shotgun__author-avatar"
+                        src="../../img/photos/avatar.jpg"
+                        alt="Author avatar - man in white t-shirt"
+                        width="25"
+                        height="25"
+                      />
+                    </div>
+
+                    <span class="guns__author-name shotgun__author-name"
+                      >troz</span
+                    >
+
+                    <div class="post__views shotgun__post-views">
+                      <svg
+                        class="post__views-svg svg shotgun__post-views-svg"
+                        width="16"
+                        height="16"
+                      >
+                        <use
+                          href="./img/svg/sprite.svg#icon-post-vieweye"
+                        ></use>
+                      </svg>
+
+                      <span class="post__views-count shotgun__post-views-count"
+                        >12</span
+                      >
+                    </div>
+
+                    <div class="post__comments shotgun__post-comments">
+                      <svg
+                        class="
+                          post__comments-svg
+                          shotgun__post-comments-svg
+                          svg
+                        "
+                        width="14"
+                        height="14"
+                      >
+                        <use
+                          href="../../img/svg/sprite.svg#icon-post-message"
+                        ></use>
+                      </svg>
+
+                      <span
+                        class="
+                          post__comments-count
+                          shotgun__post-comments-count
+                        "
+                        >5</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <ul class="guns__build shotgun__build">
+                  <li class="guns__build-item shotgun__build-item">
+                    <span class="guns__build-tag shotgun__build-tag"
+                      >Remington</span
+                    >
+                  </li>
+                  <li class="guns__build-item shotgun__build-item">
+                    <span class="guns__build-tag shotgun__build-tag"
+                      >1911 R1 Enhanced</span
+                    >
+                  </li>
+                  <li class="guns__build-item shotgun__build-item">
+                    <span class="guns__build-tag shotgun__build-tag"
+                      >.45 ACP</span
+                    >
+                  </li>
+                </ul>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="guns__slider-list shotgun__slider-list hidden-on-tablet">
+            <li class="guns__slider-item shotgun__slider-item">
+              <button
+                type="button"
+                class="guns__slider-button shotgun__slider-button active"
+              ></button>
+            </li>
+
+            <li
+              class="
+                guns__slider-item
+                shotgun__slider-button shotgun__slider-item
+              "
+            >
+              <button type="button" class="guns__slider-button"></button>
+            </li>
+
+            <li
+              class="
+                guns__slider-item
+                shotgun__slider-button shotgun__slider-item
+              "
+            >
+              <button type="button" class="guns__slider-button"></button>
+            </li>
+
+            <li
+              class="
+                guns__slider-item
+                shotgun__slider-button shotgun__slider-item
+              "
+            >
+              <button type="button" class="guns__slider-button"></button>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="top-blogposts section catalog__top-blogposts">
+        <div class="container top-blogposts__container">
+          <div
+            class="top-blogposts__title-wrapper catalog__section-title-wrapper"
+          >
+            <h2 class="title-v2 top-blogposts__title">Top blogposts</h2>
+          </div>
+
+          <ul class="top-blogposts__list">
+            <li class="top-blogposts__item">
+              <a class="top-blogposts__link link" href="#">
+                <div class="top-blogposts__thumb">
+                  <picture>
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ../../img/photos/top-blogposts/top-blogpost-mobile-001-160w.jpg 160w
+                      "
+                      sizes="(max-width: 767px) 160px, 100%"
+                      title="Sniper rifle"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ../../img/photos/top-blogposts/top-blogpost-001-ak-12.jpg 200w
+                      "
+                      sizes="(max-width: 768px) 200px, 100%"
+                      title="AK-12"
+                    />
+
+                    <img
+                      class="top-blogposts__image"
+                      src="../../img/photos/top-blogposts/top-blogpost-001-ak-12.jpg"
+                      alt="top blogposts gun image"
+                      width="200"
+                      height="200"
+                    />
+                  </picture>
+                </div>
+
+                <div class="top-blogposts-meta">
+                  <p class="top-blogposts__post-type">Rifle</p>
+
+                  <p class="top-blogposts__post-title">
+                    Izhmash officially presented the new AK-12
+                  </p>
+
+                  <div class="post top-blogposts__post">
+                    <span class="post__author-name">troz</span>
+
+                    <div class="post__views">
+                      <svg class="post__views-svg svg" width="16" height="16">
+                        <use
+                          href="./img/svg/sprite.svg#icon-post-vieweye"
+                        ></use>
+                      </svg>
+
+                      <span class="post__views-count">12</span>
+                    </div>
+
+                    <div class="post__comments">
+                      <svg
+                        class="post__comments-svg svg"
+                        width="14"
+                        height="14"
+                      >
+                        <use
+                          href="../../img/svg/sprite.svg#icon-post-message"
+                        ></use>
+                      </svg>
+
+                      <span class="post__comments-count">5</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="top-blogposts__item">
+              <a class="top-blogposts__link link" href="#">
+                <div class="top-blogposts__thumb">
+                  <img
+                    class="top-blogposts__image"
+                    src="../../img/photos/top-blogposts/top-blogpost-002-savage-mark-2.jpg"
+                    alt="top blogposts gun image savage-mark-2"
+                    width="200"
+                    height="200"
+                  />
+                </div>
+
+                <div class="top-blogposts-meta">
+                  <p class="top-blogposts__post-type">Shotgun</p>
+
+                  <p class="top-blogposts__post-title">
+                    Savage Mark 2 and a problem of extraction
+                  </p>
+
+                  <div class="post top-blogposts__post">
+                    <span class="post__author-name">troz</span>
+
+                    <div class="post__views">
+                      <svg class="post__views-svg svg" width="16" height="16">
+                        <use
+                          href="./img/svg/sprite.svg#icon-post-vieweye"
+                        ></use>
+                      </svg>
+
+                      <span class="post__views-count">12</span>
+                    </div>
+
+                    <div class="post__comments">
+                      <svg
+                        class="post__comments-svg svg"
+                        width="14"
+                        height="14"
+                      >
+                        <use
+                          href="../../img/svg/sprite.svg#icon-post-message"
+                        ></use>
+                      </svg>
+
+                      <span class="post__comments-count">5</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="top-blogposts__item">
+              <a class="top-blogposts__link link" href="#">
+                <div class="top-blogposts__thumb">
+                  <img
+                    class="top-blogposts__image"
+                    src="../../img/photos/top-blogposts/top-blogpost-003-handgun.jpg"
+                    alt="top blogposts handgun image"
+                    width="200"
+                    height="200"
+                  />
+                </div>
+
+                <div class="top-blogposts-meta">
+                  <p class="top-blogposts__post-type">Handgun</p>
+
+                  <p class="top-blogposts__post-title">
+                    New budget rifles from armalite
+                  </p>
+
+                  <div class="post top-blogposts__post">
+                    <span class="post__author-name">troz</span>
+
+                    <div class="post__views">
+                      <svg class="post__views-svg svg" width="16" height="16">
+                        <use
+                          href="./img/svg/sprite.svg#icon-post-vieweye"
+                        ></use>
+                      </svg>
+
+                      <span class="post__views-count">12</span>
+                    </div>
+
+                    <div class="post__comments">
+                      <svg
+                        class="post__comments-svg svg"
+                        width="14"
+                        height="14"
+                      >
+                        <use
+                          href="../../img/svg/sprite.svg#icon-post-message"
+                        ></use>
+                      </svg>
+
+                      <span class="post__comments-count">5</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <%= _.template(require('./../includes/footer.html').default)(data) %>
+  </body>
+</html>

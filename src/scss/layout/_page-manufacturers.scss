@@ -1,3 +1,9 @@
 .searchbuilds__mostparts.res {
   margin-top: 60px;
 }
+@media screen and (max-width: 767px) {
+  .page-manufacturer__container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
